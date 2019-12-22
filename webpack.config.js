@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const path = require('path');
@@ -6,6 +7,11 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   entry: './src/index.js',
+  resolve: {
+    alias: {
+      '~': path.resolve(__dirname, 'src')
+    }
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
@@ -14,7 +20,10 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+        ],
       },
     ]
   },
@@ -29,6 +38,9 @@ module.exports = {
       host: 'localhost',
       port: 3000,
       server: { baseDir: ['dist'] }
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'styles.min.css'
     })
   ]
 };
