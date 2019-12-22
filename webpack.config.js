@@ -30,6 +30,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'React app',
+      template: path.resolve(__dirname, 'public/index.html'),
     }),
     new CleanWebpackPlugin(),
     new BrowserSyncPlugin({
