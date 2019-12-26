@@ -21,7 +21,7 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         exclude: [/node_modules/],
-        use: [{ loader: "babel-loader" }]
+        loader: 'babel-loader'
       },
       {
         test: /\.css$/i,
@@ -39,8 +39,6 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new BrowserSyncPlugin({
-      // browse to http://localhost:3000/ during development,
-      // ./public directory is being served
       host: 'localhost',
       port: 3000,
       server: { baseDir: ['dist'] }
