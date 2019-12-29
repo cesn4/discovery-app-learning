@@ -38,7 +38,13 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
-          'sass-loader'
+          'sass-loader',
+          {
+            loader: 'sass-resources-loader',
+            options: {
+              resources: path.resolve(__dirname, 'src/styles/res/_index.scss'),
+            },
+          },
         ],
       },
     ]
