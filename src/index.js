@@ -3,11 +3,9 @@ import ReactDOM from 'react-dom';
 
 import App from '~/App';
 
+import '~/styles/styles.css';
+
 ReactDOM.render(
-    React.createElement(App),
+    <App />,
     document.getElementById('root'),
 );
-
-
-import '~/styles/styles.css';
-console.log('james');
