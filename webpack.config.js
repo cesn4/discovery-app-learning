@@ -14,7 +14,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.[hash].js'
   },
   module: {
     rules: [
@@ -47,7 +47,7 @@ module.exports = {
       server: { baseDir: ['dist'] }
     }),
     new MiniCssExtractPlugin({
-      filename: 'styles.min.css'
+      filename: 'styles.min.[hash].css'
     })
   ]
 };
