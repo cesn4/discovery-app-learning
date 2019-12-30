@@ -10,7 +10,7 @@ const Home = () => {
             Home view
             <Footer />
         </div>
-    )
+    );
 };
 
 export default Home;
