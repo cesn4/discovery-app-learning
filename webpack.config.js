@@ -8,11 +8,11 @@ const path = require("path");
 module.exports = {
     mode: "development",
     entry: "./src/index.js",
-    devtool: "sourcemap",
-    stats: "minimal",
+    devtool: "sourcemap", // Nurodo kad kurtu source maps, lengviau debuginti koda per chrome dev tools
+    stats: "minimal", // Sitas nurodo kad console langelyje rodytu maziau info, pagrinde tik errorus
     resolve: {
         alias: {
-        "~": path.resolve(__dirname, "src")
+            "~": path.resolve(__dirname, "src") // nustatymas kad ~ reiskia src direktorija
         }
     },
     output: {
