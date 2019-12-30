@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const StylelintPlugin = require('stylelint-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const path = require('path');
 
@@ -8,6 +9,7 @@ module.exports = {
   mode: 'development',
   entry: './src/index.js',
   devtool: 'sourcemap',
+  stats: 'minimal',
   resolve: {
     alias: {
       '~': path.resolve(__dirname, 'src')
@@ -65,6 +67,7 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: 'styles.min.[hash].css'
-    })
+    }),
+    new StylelintPlugin()
   ]
 };

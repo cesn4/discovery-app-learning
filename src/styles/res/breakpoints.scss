@@ -1,7 +1,6 @@
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 1200px;
 
-
 @mixin if-tablet {
     @media screen and (min-width: $breakpoint-tablet) {
         @content;
