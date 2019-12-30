@@ -7,6 +7,7 @@ const path = require('path');
 module.exports = {
   mode: 'development',
   entry: './src/index.js',
+  devtool: 'sourcemap',
   resolve: {
     alias: {
       '~': path.resolve(__dirname, 'src')
