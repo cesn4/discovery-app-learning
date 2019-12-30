@@ -7,10 +7,6 @@ module.exports = {
         'plugin:react/recommended',
         'standard'
     ],
-    globals: {
-        Atomics: 'readonly',
-        SharedArrayBuffer: 'readonly'
-    },
     parserOptions: {
         ecmaFeatures: {
             jsx: true
@@ -21,8 +17,15 @@ module.exports = {
     plugins: [
         'react'
     ],
+    settings: {
+        'react': {
+            "version": "detect"
+        }
+    },
     rules: {
         'semi': ['error', 'always'],
-        'indent': ['error', 4]
+        'indent': ['error', 4],
+        'react/jsx-uses-react': 'error',
+        'react/jsx-uses-vars': 'error',
     }
 }
