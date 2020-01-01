@@ -84,4 +84,13 @@
     .headerMenu li {
         margin: 11px;
     }
+
+    @media screen and (min-width: 1200px) {
+        .logo {
+            margin-left: 1.4%;
+        }
+        .photo {
+            margin-right: 1.4%;
+        }
+    }
 }
