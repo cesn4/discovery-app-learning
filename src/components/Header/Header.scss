@@ -35,14 +35,24 @@
 .headerMenu {
     display: none;
     visibility: hidden;
-    font-family: $color-shark;
+    color: $color-shark;
     font-family: Helvetica, sans-serif;
     font-size: 11px;
     text-transform: uppercase;
     line-height: 1.82;
-    opacity: 0.5;
     font-weight: bold;
 }
+
+.menuDiscovery {
+    opacity: 0.5;
+}
+.menuContact {
+    opacity: 0.5;
+}
+.menuPhotos {
+    opacity: 0.5;
+}
+
 
 @media screen and (min-width: 768px) {
     .header {
@@ -74,5 +84,4 @@
     .headerMenu li {
         margin: 11px;
     }
-
 }
