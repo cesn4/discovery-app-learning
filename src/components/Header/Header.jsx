@@ -5,7 +5,7 @@ import './Header.scss';
 const Header = () => {
     return (
         <header className="header">
-            <div className="menu"></div>
+            <div className="menu-icon"></div>
             <div className="logo">LOGO</div>
             <div className="photo"></div>
         </header>
