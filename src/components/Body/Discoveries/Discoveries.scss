@@ -96,3 +96,53 @@
     font-style: oblique;
     color: #a6adb4;
 }
+
+@media screen and (min-width: 768px) {
+    .discoveriesBox {
+        height: 343px;
+    }
+    .discoText {
+        margin-left: 10.4%;
+        margin-right: 10.4%;
+    }
+    .travelInfo, .techInfo {
+        width: 284px;
+    }
+    .discConBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        height: 243px;
+        width: 604px;
+    }
+    .discTravel {
+        margin-right: 5.2%;
+    }
+}
+
+//DeskTopo layout @media nukisau "~/style/res/breakpoints.scss"
+
+@media screen and (min-width: 1200px) {
+    .discoveriesBox {
+        height: 600px;
+        width: 600px;
+    }
+    .discoText {
+        margin-left: 16.6%;
+        margin-right: 16.6%;
+        margin-top: 11.6%;
+    }
+    .travelInfo, .techInfo {
+        width: 100%;
+    }
+    .discConBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 300px;
+        width: 320px;
+    }
+    .discTravel {
+        margin-right: 0%;
+    }
+}
