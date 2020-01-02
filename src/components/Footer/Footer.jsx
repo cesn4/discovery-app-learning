@@ -7,6 +7,7 @@ const Footer = () => {
     return (
         <footer className="footer">
             Footer
+            {/* ir sitaip panaudoji importuota image */}
             <img className="footer__image" src={image} alt="" />
             <div className="footer__bgi"></div>
         </footer>
