@@ -1,3 +1,15 @@
 .footer {
-    background-color: $color-footer-background; // Sitas failas nera sujungtas su styles folderiu, bet galim pasiekt kintamuosius 'sass-resources-loader' pagalba
+    background-color: $color-footer-background;
+    display: flex;
+
+    &__image {
+        height: 100px;
+    }
+
+    &__bgi {
+        background-image: url('/assets/image.jpg'); // Sitaip gali importuot paveikslelius scss failuose. url() kai nenurodai http:// tai by default ten bus /src, del to uztenka nurodyt /assets/image.jpg kad pasigautu paveiksleli.
+        background-size: cover;
+        height: 100px;
+        width: 100px;
+    }
 }
