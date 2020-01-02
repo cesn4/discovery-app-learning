@@ -1,6 +1,6 @@
 import React from 'react';
 
-import image from '~/assets/image.jpg'; // This is how you import image in jsx
+import image from '~/assets/image.jpg'; // Sitaip gali importuot paveiksleli jsx failuose. Importuoji kaip bet kuri kita komponenta.
 import './Footer.scss';
 
 const Footer = () => {

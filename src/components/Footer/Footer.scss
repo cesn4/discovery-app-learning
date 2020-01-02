@@ -10,6 +10,6 @@
         width: 100px;
         height: 100px;
         background-size: cover;
-        background-image: url('/assets/image.jpg'); // This is how you import image in scss. In scss url() if you do not add http then it by default starts as /src.
+        background-image: url('/assets/image.jpg'); // Sitaip gali importuot paveikslelius scss failuose. url() kai nenurodai http:// tai by default ten bus /src, del to uztenka nurodyt /assets/image.jpg kad pasigautu paveiksleli.
     }
 }
