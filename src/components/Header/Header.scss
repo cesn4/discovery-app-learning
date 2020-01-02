@@ -1,14 +1,3 @@
 .header {
     background-color: $color-accent; // Sitas failas nera sujungtas su styles folderiu, bet galim pasiekt kintamuosius 'sass-resources-loader' pagalba
-
-    &__image {
-        width: 100px;
-    }
-
-    &__bgi {
-        width: 100px;
-        height: 100px;
-        background-size: cover;
-        background-image: url('../../assets/image.jpg');
-    }
 }

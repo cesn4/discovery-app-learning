@@ -1,3 +1,15 @@
 .footer {
-    background-color: $color-footer-background; // Sitas failas nera sujungtas su styles folderiu, bet galim pasiekt kintamuosius 'sass-resources-loader' pagalba
+    background-color: $color-footer-background;
+    display: flex;
+
+    &__image {
+        height: 100px;
+    }
+
+    &__bgi {
+        width: 100px;
+        height: 100px;
+        background-size: cover;
+        background-image: url('../../assets/image.jpg');
+    }
 }
