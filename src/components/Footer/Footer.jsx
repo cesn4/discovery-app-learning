@@ -1,6 +1,6 @@
 import React from 'react';
 
-import image from '~/assets/image.jpg';
+import image from '~/assets/image.jpg'; // This is how you import image in jsx
 import './Footer.scss';
 
 const Footer = () => {

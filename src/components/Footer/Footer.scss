@@ -10,6 +10,6 @@
         width: 100px;
         height: 100px;
         background-size: cover;
-        background-image: url('../../assets/image.jpg');
+        background-image: url('/assets/image.jpg'); // This is how you import image in scss. In scss url() if you do not add http then it by default starts as /src.
     }
 }
