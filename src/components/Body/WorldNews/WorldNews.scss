@@ -7,7 +7,6 @@
     background-position: right;
 }
 
-
 .worldNewsText {
     display: flex;
     flex-direction: column;
@@ -21,9 +20,58 @@
 .world-news {
     font-size: 24px;
     line-height: 1.75;
-    margin-top: 40px;
-    padding-bottom: 40px;
+    margin-top: 30px;
+    padding-bottom: 30px;
     border-bottom-style: solid;
     border-width: 2px;
     border-color: #ffffff;
+    text-transform: uppercase;
+}
+
+.newsTitle {
+    height: 58px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    line-height: 1.42;
+}
+
+.newsInfromation {
+    font-size: 16px;
+    height: 70px;
+    line-height: 1.63;
+    font-weight: normal;
+}
+
+.learnButton {
+    color: #ffffff;
+    background-color: $color-accent;
+    height: 40px;
+    width: 134px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 16px;
+}
+
+@media screen and (min-width: 561px) {
+    .learnButton {
+        margin-top: 5px;
+    }
+
+    .newsBox {
+        height: 400px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        .newsBox {
+            width: 840px;
+            height: 600px;
+        }
+        .worldNewsText {
+            margin-left: 16.6%;
+            margin-right: 16.6%;
+        }
+        .world-news {
+            margin-top: 25%;
+        }
+    }
 }
