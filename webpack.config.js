@@ -37,8 +37,19 @@ module.exports = {
             test: /\.scss$/i,
             use: [
             MiniCssExtractPlugin.loader,
-            "css-loader",
+            {
+                loader: "css-loader",
+                options: {
+                    importLoaders: 2
+                }
+            },
             "postcss-loader",
+            {
+                loader: "resolve-url-loader",
+                options: {
+                    root: path.resolve(__dirname, "src")
+                }
+            },
             "sass-loader",
             {
                 loader: "sass-resources-loader",
@@ -46,6 +57,18 @@ module.exports = {
                 resources: path.resolve(__dirname, "src/styles/res/_index.scss")
                 }
             }
+            ]
+        },
+        {
+            test: /\.(jpg|png|svg|gif)$/,
+            use: [
+                {
+                    loader: 'file-loader',
+                    options: {
+                        outputPath: 'assets/',
+                        name: '[name].[hash].[ext]'
+                    }
+                }
             ]
         }
         ]
