@@ -1,5 +1,6 @@
 import React from 'react';
 
+import HeaderMenu from '../HeaderMenu';
 import './Header.scss';
 
 const Header = () => {
@@ -7,12 +8,7 @@ const Header = () => {
         <header className="header">
             <div className="menu-icon"></div>
             <div className="logo">LOGO</div>
-            <ul className="headerMenu">
-                <li className="menuHome">Home</li>
-                <li className="menuDiscovery">Discovery</li>
-                <li className="menuPhotos">Photos</li>
-                <li className="menuContact">Contact</li>
-            </ul>
+            <HeaderMenu />
             <div className="photo"></div>
         </header>
     );
