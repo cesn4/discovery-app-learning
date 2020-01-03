@@ -33,7 +33,7 @@
 }
 
 
-@media screen and (min-width: 768px) {
+@include if-tablet {
     .header {
         height: 50px;
         justify-content: flex-end;
@@ -55,7 +55,7 @@
         margin-right: 2.6%;
     }
 
-    @media screen and (min-width: 1200px) {
+    @include if-desktop {
         .header__logo {
             margin-left: 1.4%;
         }
