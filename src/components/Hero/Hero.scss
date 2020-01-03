@@ -1,3 +1,35 @@
 .hero {
-    background-color: #ff66ff;
+    display: flex;
+    flex-direction: column;
+
+    &__news {
+        height: 388px;
+        width: 100%;
+
+        @include if-tablet {
+            height: 400px;
+        }
+
+        @include if-desktop {
+            height: 600px;
+            width: 840px;
+        }
+    }
+
+    &__discoveries {
+        height: 478px;
+        width: 100%;
+
+        @include if-tablet {
+            height: 343px;
+        }
+
+        @include if-desktop {
+            height: 478px;
+        }
+    }
+
+    @include if-desktop {
+        flex-direction: row;
+    }
 }
