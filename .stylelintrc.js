@@ -12,7 +12,6 @@ module.exports = {
         'block-closing-brace-newline-after': 'always',
         'selector-max-empty-lines': 0,
         'block-opening-brace-newline-after': 'always-multi-line',
-        'rule-empty-line-before': 'always-multi-line',
         'selector-type-case': 'lower',
         'value-keyword-case': 'lower',
         'at-rule-name-case': 'lower',
@@ -20,5 +19,9 @@ module.exports = {
         'selector-pseudo-element-case': 'lower',
         'property-case': 'lower',
         'scss/selector-no-redundant-nesting-selector': true,
+        'no-eol-whitespace': true,
+        'max-empty-lines': 1,
+        'block-closing-brace-empty-line-before': 'never',
+        'declaration-empty-line-before': 'never'
     }
 }

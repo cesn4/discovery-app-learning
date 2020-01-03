@@ -1,11 +1,10 @@
-
 .menu {
     display: none;
-    visibility: hidden;
-    line-height: 1.82;
-    font-size: 11px;
     font-family: Helvetica, sans-serif;
+    font-size: 11px;
     font-weight: bold;
+    line-height: 1.82;
+    visibility: hidden;
 
     &__discovery, &__photos, &__contact {
         color: $color-shark;
@@ -15,14 +14,16 @@
 
 @include if-tablet {
     .menu {
-        visibility: visible;
         display: flex;
+        visibility: visible;
+
         &__navigation {
             display: flex;
             list-style: none;
             margin-right: 29px;
             text-transform: uppercase;
         }
+
         .menu__navigation li {
             margin: 11px;
         }
