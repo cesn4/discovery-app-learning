@@ -1,6 +1,10 @@
 import React from 'react';
 
 import HeaderMenu from '../MainNavigation';
+
+import '~/assets/img/menuIcon.png';
+import '~/assets/img/woman.png';
+
 import './Header.scss';
 
 const Header = () => {
