@@ -4,15 +4,15 @@
     height: 44px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
 
     &__menu-icon {
         width: 16px;
         height: 14px;
-        background-image: url('/assets/img/menu\ icon@2x.jpg');
-        object-fit: contain;
-        margin-left: 4.26%;
+        background-image: url('/assets/img/menuIcon.png');
+        margin-left: 16px;
+        margin-right: auto;
     }
 
     &__logo {
@@ -21,15 +21,17 @@
         color: #a6adb4;
         font-weight: bold;
         line-height: 1.54 ;
+        text-align: center;
     }
 
     &__photo {
         width: 16px;
         height: 16px;
-        background-image: url(https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-image: url('/assets/img/woman.png');
         background-size: 16px 16px;
         border-radius: 50%;
-        margin-right: 4.26%;
+        margin-right: 16px;
+        margin-left: auto;
     }
 }
 
@@ -40,7 +42,7 @@
 
         &__logo {
             color: $color-light-red;
-            margin-left: 2.6%;
+            margin-left: 20px;
             text-align: left;
             margin-right: auto;
         }
@@ -52,16 +54,8 @@
             width: 30px;
             height: 30px;
             background-size: 30px 30px;
-            margin-right: 2.6%;
-        }
-    }
-
-    @include if-desktop {
-        .header__logo {
-            margin-left: 1.4%;
-        }
-        .header__photo {
-            margin-right: 1.4%;
+            margin-right: 20px;
+            margin-left: 0px;
         }
     }
 }

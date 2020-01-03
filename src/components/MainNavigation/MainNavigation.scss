@@ -1,5 +1,5 @@
 
-.header__menu {
+.navigation__menu {
     display: none;
     visibility: hidden;
     color: $color-shark;
@@ -16,13 +16,13 @@
 }
 
 @include if-tablet {
-    .header__menu {
+    .navigation__menu {
         display: flex;
         visibility: visible;
         list-style: none;
         margin-right: 29px;
     }
-    .header__menu li {
+    .navigation__menu li {
         margin: 11px;
     }
 }

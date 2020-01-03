@@ -1,11 +1,11 @@
 import React from 'react';
 
-import './HeaderMenu.scss';
+import './MainNavigation.scss';
 
-const HeaderMenu = () => {
+const MainNavigation = () => {
     return (
-        <div className="header-menu-box">
-            <ul className="header__menu">
+        <div className="navigation">
+            <ul className="navigation__menu">
                 <li className="menu__home">Home</li>
                 <li className="menu__discovery">Discovery</li>
                 <li className="menu__photos">Photos</li>
@@ -15,4 +15,4 @@ const HeaderMenu = () => {
     );
 };
 
-export default HeaderMenu;
+export default MainNavigation;
