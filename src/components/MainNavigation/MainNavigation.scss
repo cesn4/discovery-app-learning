@@ -1,28 +1,30 @@
 
-.navigation__menu {
+.menu {
     display: none;
     visibility: hidden;
-    color: $color-shark;
-    font-family: Helvetica, sans-serif;
-    font-size: 11px;
-    text-transform: uppercase;
     line-height: 1.82;
+    font-size: 11px;
+    font-family: Helvetica, sans-serif;
     font-weight: bold;
 
-
     &__discovery, &__photos, &__contact {
+        color: $color-shark;
         opacity: 0.5;
     }
 }
 
 @include if-tablet {
-    .navigation__menu {
-        display: flex;
+    .menu {
         visibility: visible;
-        list-style: none;
-        margin-right: 29px;
-    }
-    .navigation__menu li {
-        margin: 11px;
+        display: flex;
+        &__navigation {
+            display: flex;
+            list-style: none;
+            margin-right: 29px;
+            text-transform: uppercase;
+        }
+        .menu__navigation li {
+            margin: 11px;
+        }
     }
 }

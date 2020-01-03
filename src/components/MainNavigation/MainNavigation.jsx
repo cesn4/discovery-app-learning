@@ -4,8 +4,8 @@ import './MainNavigation.scss';
 
 const MainNavigation = () => {
     return (
-        <div className="navigation">
-            <ul className="navigation__menu">
+        <div className="menu">
+            <ul className="menu__navigation">
                 <li className="menu__home">Home</li>
                 <li className="menu__discovery">Discovery</li>
                 <li className="menu__photos">Photos</li>
