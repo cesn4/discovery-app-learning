@@ -5,54 +5,55 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
 
-.header__menu-icon {
-    width: 16px;
-    height: 14px;
-    background-image: url(https://i.ibb.co/gZ3Nypy/menu-icon.png);
-    object-fit: contain;
-    margin-left: 4.26%;
-}
 
-.header__logo {
-    font-size: 13px;
-    font-family: Helvetica, sans-serif;
-    color: #a6adb4;
-    font-weight: bold;
-    line-height: 1.54 ;
-}
+    &__menu-icon {
+        width: 16px;
+        height: 14px;
+        background-image: url('/assets/img/menu\ icon@2x.jpg');
+        object-fit: contain;
+        margin-left: 4.26%;
+    }
 
-.header__photo {
-    width: 16px;
-    height: 16px;
-    background-image: url(https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-    background-size: 16px 16px;
-    border-radius: 50%;
-    margin-right: 4.26%;
-}
+    &__logo {
+        font-size: 13px;
+        font-family: Helvetica, sans-serif;
+        color: #a6adb4;
+        font-weight: bold;
+        line-height: 1.54 ;
+    }
 
+    &__photo {
+        width: 16px;
+        height: 16px;
+        background-image: url(https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-size: 16px 16px;
+        border-radius: 50%;
+        margin-right: 4.26%;
+    }
+}
 
 @include if-tablet {
     .header {
         height: 50px;
         justify-content: flex-end;
-    }
-    .header__logo {
-        color: $color-light-red;
-        margin-left: 2.6%;
-        text-align: left;
-        margin-right: auto;
-    }
-    .header__menu-icon {
-        display: none;
-        visibility: hidden;
-    }
-    .header__photo {
-        width: 30px;
-        height: 30px;
-        background-size: 30px 30px;
-        margin-right: 2.6%;
+
+        &__logo {
+            color: $color-light-red;
+            margin-left: 2.6%;
+            text-align: left;
+            margin-right: auto;
+        }
+        &__menu-icon {
+            display: none;
+            visibility: hidden;
+        }
+        &__photo {
+            width: 30px;
+            height: 30px;
+            background-size: 30px 30px;
+            margin-right: 2.6%;
+        }
     }
 
     @include if-desktop {

@@ -8,10 +8,11 @@
     text-transform: uppercase;
     line-height: 1.82;
     font-weight: bold;
-}
 
-.menu__discovery, .menu__photos, .menu__contact {
-    opacity: 0.5;
+
+    &__discovery, &__photos, &__contact {
+        opacity: 0.5;
+    }
 }
 
 @include if-tablet {
