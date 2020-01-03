@@ -1,4 +1,5 @@
 .hero {
+    background-color: $color-accent;
     display: flex;
     flex-direction: column;
 
@@ -25,11 +26,28 @@
         }
 
         @include if-desktop {
-            height: 478px;
+            height: 600px;
         }
     }
 
     @include if-desktop {
         flex-direction: row;
+    }
+}
+
+
+.news {
+    color: $color-white;
+    display: flex;
+    flex-direction: column;
+    font-family: Helvetica, sans-serif;
+    margin: 0px 20px;
+
+    &__title {
+        align-items: center;
+        height: 20px;
+        padding-bottom: 40px;
+        padding-top: 40px;
+        width: 100%;
     }
 }
