@@ -6,10 +6,10 @@ import './Header.scss';
 const Header = () => {
     return (
         <header className="header">
-            <div className="menu-icon"></div>
-            <div className="logo">LOGO</div>
+            <div className="header__menu-icon"></div>
+            <div className="header__logo">LOGO</div>
             <HeaderMenu />
-            <div className="photo"></div>
+            <div className="header__photo"></div>
         </header>
     );
 };

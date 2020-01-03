@@ -1,5 +1,5 @@
 .header {
-    background-color: $color-porcelain; // Sitas failas nera sujungtas su styles folderiu, bet galim pasiekt kintamuosius 'sass-resources-loader' pagalba
+    background-color: $color-porcelain;
     width: 100%;
     height: 44px;
     display: flex;
@@ -7,7 +7,7 @@
     justify-content: space-between;
 }
 
-.menu-icon {
+.header__menu-icon {
     width: 16px;
     height: 14px;
     background-image: url(https://i.ibb.co/gZ3Nypy/menu-icon.png);
@@ -15,7 +15,7 @@
     margin-left: 4.26%;
 }
 
-.logo {
+.header__logo {
     font-size: 13px;
     font-family: Helvetica, sans-serif;
     color: #a6adb4;
@@ -23,7 +23,7 @@
     line-height: 1.54 ;
 }
 
-.photo {
+.header__photo {
     width: 16px;
     height: 16px;
     background-image: url(https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
@@ -38,17 +38,17 @@
         height: 50px;
         justify-content: flex-end;
     }
-    .logo {
+    .header__logo {
         color: $color-light-red;
         margin-left: 2.6%;
         text-align: left;
         margin-right: auto;
     }
-    .menu-icon {
+    .header__menu-icon {
         display: none;
         visibility: hidden;
     }
-    .photo {
+    .header__photo {
         width: 30px;
         height: 30px;
         background-size: 30px 30px;
@@ -56,10 +56,10 @@
     }
 
     @media screen and (min-width: 1200px) {
-        .logo {
+        .header__logo {
             margin-left: 1.4%;
         }
-        .photo {
+        .header__photo {
             margin-right: 1.4%;
         }
     }
