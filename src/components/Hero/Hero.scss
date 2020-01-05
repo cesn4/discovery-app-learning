@@ -1,53 +1,68 @@
-.hero {
-    background-color: $color-accent;
-    display: flex;
-    flex-direction: column;
 
-    &__news {
-        height: 388px;
-        width: 100%;
+.background {
+    background-image: url('/assets/mount.jpg');
+}
 
-        @include if-tablet {
-            height: 400px;
-        }
+.hero__news {
+    height: 388px;
+    padding: $hero-top-bot-padding $hero-sides-padding;
+    width: 100%;
 
-        @include if-desktop {
-            height: 600px;
-            width: 840px;
-        }
-    }
-
-    &__discoveries {
-        height: 478px;
-        width: 100%;
-
-        @include if-tablet {
-            height: 343px;
-        }
-
-        @include if-desktop {
-            height: 600px;
-        }
+    @include if-tablet {
+        height: 400px;
+        padding: 73px 80px;
     }
 
     @include if-desktop {
-        flex-direction: row;
+        height: 600px;
+        padding: 167px 140px;
     }
 }
-
 
 .news {
     color: $color-white;
     display: flex;
     flex-direction: column;
     font-family: Helvetica, sans-serif;
-    margin: 0px $layout-gutter;
 
     &__title {
-        align-items: center;
-        height: 20px;
-        padding-bottom: 40px;
-        padding-top: 40px;
+        border-bottom: solid;
+        border-color: $color-white;
+        border-width: 2px;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.75;
+        padding-bottom: $hero-top-bot-padding;
         width: 100%;
+    }
+
+    &__subtitle {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.42;
+        margin-bottom: 20px;
+        padding-top: $hero-top-bot-padding;
+    }
+
+    &__paragraph {
+        font-size: 16px;
+        line-height: 1.63;
+        margin-bottom: 20px;
+    }
+
+    &__button {
+        align-items: center;
+        background-color: $color-accent;
+        border-radius: 6px;
+        color: $color-white;
+        display: flex;
+        font-size: 11px;
+        font-weight: bold;
+        height: 40px;
+        justify-content: center;
+        line-height: 1.82;
+        margin-bottom: 40px;
+        text-align: center;
+        width: 151px;
     }
 }
