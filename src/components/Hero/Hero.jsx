@@ -9,7 +9,7 @@ const Hero = () => {
         <div className="hero">
             <Container>
                 <Row >
-                    <Col xl={6} className="background">
+                    <Col sm={12} md={12} xl={7} className="background">
                         <div className="hero__news">
                             <div className="news">
                                 <div className="news__title">
@@ -21,7 +21,7 @@ const Hero = () => {
                             </div>
                         </div>
                     </Col>
-                    <Col sm={12} md={12} xl={6}>
+                    <Col sm={12} md={12} xl={5}>
                         <div className="hero__discoveries">
                             <div className="discoveries">
                                 <h1 className="discoveries__title">DISCOVERIES</h1>

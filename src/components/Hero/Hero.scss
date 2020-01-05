@@ -1,21 +1,21 @@
 
-.background {
-    background-image: url('/assets/mount.jpg');
-}
-
 .hero__news {
+    background-image: url('/assets/mount.jpg');
     height: 388px;
-    padding: $hero-top-bot-padding $hero-sides-padding;
+    padding: $hero-top-bot-padding 0px;
     width: 100%;
 
     @include if-tablet {
+        align-items: center;
+        display: flex;
         height: 400px;
-        padding: 73px 80px;
+        justify-content: center;
+        padding: 0px 0px;
     }
 
     @include if-desktop {
         height: 600px;
-        padding: 167px 140px;
+        padding-right: 140px;
     }
 }
 
