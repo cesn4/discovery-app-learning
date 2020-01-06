@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Logo from '~/components/Logo';
 import MainNavigation from '~/components/MainNavigation';
 
 import '~/assets/img/menuIcon.png';
@@ -11,7 +12,7 @@ const Header = () => {
     return (
         <header className="header">
             <div className="header__menu-icon"></div>
-            <div className="header__logo">LOGO</div>
+            <Logo />
             <MainNavigation />
             <div className="header__photo"></div>
         </header>

@@ -14,15 +14,6 @@
         width: 16px;
     }
 
-    &__logo {
-        color: $color-header-logo-small;
-        font-family: Helvetica, sans-serif;
-        font-size: 13px;
-        font-weight: bold;
-        line-height: 1.54 ;
-        text-align: center;
-    }
-
     &__photo {
         background-image: url('/assets/img/woman.png');
         background-size: cover;
@@ -38,13 +29,6 @@
     .header {
         height: 50px;
         justify-content: flex-end;
-
-        &__logo {
-            color: $color-header-logo-big;
-            margin-left: 20px;
-            margin-right: auto;
-            text-align: left;
-        }
 
         &__menu-icon {
             display: none;
