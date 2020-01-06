@@ -1,5 +1,5 @@
 .logo {
-    color: $color-header-logo-small;
+    color: $color-header-inactive;
     font-family: Helvetica, sans-serif;
     font-size: 13px;
     font-weight: bold;
@@ -7,7 +7,7 @@
     text-align: center;
 
     @include if-tablet {
-        color: $color-header-logo-big;
+        color: $color-accent;
         margin-left: 20px;
         margin-right: auto;
         text-align: left;
