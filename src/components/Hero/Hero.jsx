@@ -7,7 +7,7 @@ import './Hero.scss';
 const Hero = () => {
     return (
         <div className="hero">
-            <Container>
+            <Container fluid>
                 <Row >
                     <Col sm={12} md={12} xl={7} className="background">
                         <div className="hero__news">

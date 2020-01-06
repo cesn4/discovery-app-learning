@@ -1,20 +1,24 @@
+.background {
+    background-image: url('/assets/mount.jpg');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+}
 
 .hero__news {
-    background-image: url('/assets/mount.jpg');
     height: 388px;
-    padding: $hero-top-bot-padding 0px;
+    padding: $hero-top-bot-padding 11px;
     width: 100%;
 
     @include if-tablet {
-        align-items: center;
         display: flex;
         height: 400px;
-        padding: 0px 0px;
+        padding: 73px 65px;
     }
 
     @include if-desktop {
         height: 600px;
-        padding-right: 140px;
+        padding: 167px 125px 0px 125px;
     }
 }
 
@@ -39,14 +43,14 @@
         font-size: 24px;
         font-weight: bold;
         line-height: 1.42;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         padding-top: $hero-top-bot-padding;
     }
 
     &__paragraph {
         font-size: 16px;
         line-height: 1.63;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     &__button {
@@ -60,7 +64,6 @@
         height: 40px;
         justify-content: center;
         line-height: 1.82;
-        margin-bottom: 40px;
         text-align: center;
         width: 151px;
     }
