@@ -6,7 +6,7 @@ const SectionNavigation = () => {
     return (
     <div className="section">
         <div className="section__title-box">
-            <span className="section__title"></span>
+            <span className="section__title">{this.prop.title}</span>
             <i className="section__button -left"></i>
             <i className="section__button -right"></i>
         </div>

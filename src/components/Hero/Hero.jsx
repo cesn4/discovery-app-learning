@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 
+import SectionNavigation from '~/components/SectionNavigation'
+
 import '~/assets/mount.jpg';
 import './Hero.scss';
 
@@ -22,11 +24,7 @@ const Hero = () => {
                         </div>
                     </Col>
                     <Col sm={12} md={12} xl={5}>
-                        <div className="hero__discoveries">
-                            <div className="discoveries">
-                                <h1 className="discoveries__title">DISCOVERIES</h1>
-                            </div>
-                        </div>
+                        <SectionNavigation />
                     </Col>
                 </Row>
             </Container>
