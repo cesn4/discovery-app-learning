@@ -1,6 +1,6 @@
 import React from 'react';
 
-import HeaderMenu from '../MainNavigation';
+import MainNavigation from '~/components/MainNavigation';
 
 import '~/assets/img/menuIcon.png';
 import '~/assets/img/woman.png';
@@ -12,7 +12,7 @@ const Header = () => {
         <header className="header">
             <div className="header__menu-icon"></div>
             <div className="header__logo">LOGO</div>
-            <HeaderMenu />
+            <MainNavigation />
             <div className="header__photo"></div>
         </header>
     );

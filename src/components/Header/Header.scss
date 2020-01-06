@@ -1,6 +1,6 @@
 .header {
     align-items: center;
-    background-color: $color-porcelain;
+    background-color: $color-header-background;
     display: flex;
     height: 44px;
     justify-content: center;
@@ -15,7 +15,7 @@
     }
 
     &__logo {
-        color: #a6adb4;
+        color: $color-header-logo-small;
         font-family: Helvetica, sans-serif;
         font-size: 13px;
         font-weight: bold;
@@ -40,7 +40,7 @@
         justify-content: flex-end;
 
         &__logo {
-            color: $color-light-red;
+            color: $color-header-logo-big;
             margin-left: 20px;
             margin-right: auto;
             text-align: left;
