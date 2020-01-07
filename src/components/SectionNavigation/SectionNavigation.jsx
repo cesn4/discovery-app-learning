@@ -51,14 +51,4 @@ SectionNavigation.propTypes = {
     text2: PropTypes.string.isRequired
 };
 
-SectionNavigation.defaultProps = {
-    section: 'text missing',
-    title: 'text missing',
-    subtitle: 'text missing',
-    text: 'text missing',
-    title2: 'text missing',
-    subtitle2: 'text missing',
-    text2: 'text missing'
-};
-
 export default SectionNavigation;
