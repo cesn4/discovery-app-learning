@@ -1,0 +1,15 @@
+.logo {
+    color: $color-header-inactive;
+    font-family: Helvetica, sans-serif;
+    font-size: $logo-size;
+    font-weight: bold;
+    line-height: 1.54 ;
+    text-align: center;
+
+    @include if-tablet {
+        color: $color-accent;
+        margin-left: 20px;
+        margin-right: auto;
+        text-align: left;
+    }
+}
