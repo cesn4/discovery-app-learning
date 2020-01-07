@@ -6,9 +6,11 @@
     line-height: 1.82;
     visibility: hidden;
 
-    &__discovery, &__photos, &__contact {
+    &__item {
         color: $color-box-background;
         opacity: 0.5;
+
+        &.-active { opacity: 1; }
     }
 }
 
@@ -24,7 +26,7 @@
             text-transform: uppercase;
         }
 
-        .menu__home, .menu__discovery, .menu__photos, .menu__contact {
+        &__item {
             margin: 11px;
         }
     }
