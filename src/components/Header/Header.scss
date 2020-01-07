@@ -1,3 +1,45 @@
 .header {
-    background-color: $color-accent; // Sitas failas nera sujungtas su styles folderiu, bet galim pasiekt kintamuosius 'sass-resources-loader' pagalba
+    align-items: center;
+    background-color: $color-header-background;
+    display: flex;
+    height: 44px;
+    justify-content: center;
+    width: 100%;
+
+    &__menu-icon {
+        background-image: url('/assets/img/menuIcon.png');
+        height: 14px;
+        margin-left: 16px;
+        margin-right: auto;
+        width: 16px;
+    }
+
+    &__photo {
+        background-image: url('/assets/img/woman.png');
+        background-size: cover;
+        border-radius: 50%;
+        height: 16px;
+        margin-left: auto;
+        margin-right: 16px;
+        width: 16px;
+    }
+}
+
+@include if-tablet {
+    .header {
+        height: 50px;
+        justify-content: flex-end;
+
+        &__menu-icon {
+            display: none;
+            visibility: hidden;
+        }
+
+        &__photo {
+            height: 30px;
+            margin-left: 0px;
+            margin-right: 20px;
+            width: 30px;
+        }
+    }
 }

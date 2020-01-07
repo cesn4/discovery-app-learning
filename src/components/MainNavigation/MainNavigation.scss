@@ -1,0 +1,31 @@
+.menu {
+    display: none;
+    font-family: Helvetica, sans-serif;
+    font-size: $main-navigation-size;
+    font-weight: bold;
+    line-height: 1.82;
+    visibility: hidden;
+
+    &__discovery, &__photos, &__contact {
+        color: $color-box-background;
+        opacity: 0.5;
+    }
+}
+
+@include if-tablet {
+    .menu {
+        display: flex;
+        visibility: visible;
+
+        &__navigation {
+            display: flex;
+            list-style: none;
+            margin-right: 29px;
+            text-transform: uppercase;
+        }
+
+        .menu__home, .menu__discovery, .menu__photos, .menu__contact {
+            margin: 11px;
+        }
+    }
+}
