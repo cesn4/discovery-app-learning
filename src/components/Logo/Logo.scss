@@ -2,7 +2,7 @@
     $_logo-size: 13px;
     color: $color-header-inactive;
     font-family: $font-family-primary;
-    font-size: $logo-size;
+    font-size: $_logo-size;
     font-weight: bold;
     line-height: 1.54;
     text-align: center;
