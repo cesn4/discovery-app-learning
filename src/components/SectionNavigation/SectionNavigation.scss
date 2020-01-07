@@ -1,16 +1,15 @@
 .section {
     font-family: $font-family-primary;
-    height: 478px;
+    height: 100px;
     padding: 30px 11px;
     width: 100%;
 
     @include if-tablet {
-        height: 343px;
         padding: 40px 65px;
     }
 
     @include if-desktop {
-        height: 600px;
+        height: 160px;
         padding-top: 70px;
     }
 
@@ -54,20 +53,5 @@
             height: 10px;
             width: 6px;
         }
-    }
-}
-
-.posts {
-
-    display: flex;
-    flex-direction: column;
-    padding-top: 35px;
-
-    @include if-tablet {
-        flex-direction: row;
-    }
-
-    @include if-desktop {
-        flex-direction: column;
     }
 }
