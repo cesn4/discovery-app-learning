@@ -6,10 +6,10 @@ const MainNavigation = () => {
     return (
         <div className="menu">
             <ul className="menu__navigation">
-                <li className="menu__home">Home</li>
-                <li className="menu__discovery">Discovery</li>
-                <li className="menu__photos">Photos</li>
-                <li className="menu__contact">Contact</li>
+                <li className="menu__item -active">Home</li>
+                <li className="menu__item">Discovery</li>
+                <li className="menu__item">Photos</li>
+                <li className="menu__item">Contact</li>
             </ul>
         </div>
     );
