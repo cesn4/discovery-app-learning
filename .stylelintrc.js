@@ -13,7 +13,6 @@ module.exports = {
         'block-closing-brace-newline-after': 'always',
         'selector-max-empty-lines': 0,
         'block-opening-brace-newline-after': 'always-multi-line',
-        'rule-empty-line-before': 'always-multi-line',
         'selector-type-case': 'lower',
         'value-keyword-case': 'lower',
         'at-rule-name-case': 'lower',
