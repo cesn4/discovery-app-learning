@@ -2,7 +2,8 @@ module.exports = {
     extends: 'stylelint-config-recommended-scss',
     plugins: [
         'stylelint-order',
-        'stylelint-scss'
+        'stylelint-scss',
+        'stylelint-declaration-use-variable'
     ],
     rules: {
         'color-no-invalid-hex': true,
@@ -20,5 +21,6 @@ module.exports = {
         'selector-pseudo-element-case': 'lower',
         'property-case': 'lower',
         'scss/selector-no-redundant-nesting-selector': true,
+        'sh-waqar/declaration-use-variable': [['color', 'font-size']],
     }
 }
