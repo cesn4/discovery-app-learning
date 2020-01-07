@@ -1,0 +1,53 @@
+.post {
+    display: flex;
+    flex-direction: column;
+
+    @include if-tablet {
+        margin-right: 40px;
+    }
+
+    &__title {
+        color: $color-accent;
+        font-size: $fonts-size-text;
+        font-weight: bold;
+        line-height: 1.25;
+        margin-bottom: 17px;
+        text-transform: uppercase;
+    }
+
+    &__subtitle {
+        color: $color-title-black;
+        font-size: $fonts-size-text;
+        font-weight: bold;
+        line-height: 1.25;
+        margin-bottom: 8px;
+    }
+
+    &__text {
+        color: $color-header-inactive;
+        font-size: $fonts-size-text;
+        line-height: 1.63;
+        margin-bottom: 8px;
+    }
+
+    &__time {
+        align-items: center;
+        display: flex;
+        margin-bottom: 35px;
+    }
+
+    &__clock {
+        background-image: url('/assets/img/time.png');
+        background-size: contain;
+        height: 16px;
+        margin-right: 10px;
+        width: 16px;
+    }
+
+    &__clock-time {
+        color: $color-header-inactive;
+        font-size: $logo-size;
+        font-style: oblique;
+        line-height: 2;
+    }
+}

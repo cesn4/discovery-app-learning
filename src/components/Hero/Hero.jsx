@@ -24,7 +24,7 @@ const Hero = () => {
                         </div>
                     </Col>
                     <Col sm={12} md={12} xl={5}>
-                        <SectionNavigation section="Discoveries" title="Travel" subtitle="Article title" text="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…" title2="Technology" subtitle2="Article title" text2="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…" />
+                        <SectionNavigation section="Discoveries" />
                     </Col>
                 </Row>
             </Container>
