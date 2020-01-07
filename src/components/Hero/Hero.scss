@@ -26,7 +26,7 @@
     color: $color-hero-text;
     display: flex;
     flex-direction: column;
-    font-family: Helvetica, sans-serif;
+    font-family: $font-family-primary;
 
     &__title {
         border-bottom: solid;
