@@ -1,1 +1,1 @@
-export { default } from './SectionNavigation'
+export { default } from './SectionNavigation';
