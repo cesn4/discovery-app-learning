@@ -1,3 +1,43 @@
 .section {
-    background-color: $color-body;
+    height: 478px;
+    padding: 30px 11px;
+    width: 100%;
+
+    &__title-box {
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 30px;
+        border-bottom: solid;
+        border-width: 1px;
+        border-color: $color-header-inactive;
+    }
+
+    &__title {
+        color: $color-title-black;
+        font-size: $fonts-size-h1;
+        font-weight: bold;
+        line-height: 0.83;
+        text-transform: uppercase;
+        margin-right: auto;
+    }
+
+    &__button {
+
+        &.-left {
+            background-image: url('/assets/img/arrowLeft.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 10px;
+            margin-right: 32px;
+            width: 6px;
+        }
+        &.-right {
+            background-image: url('/assets/img/arrowRight.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 10px;
+            width: 6px;
+        }
+    }
 }

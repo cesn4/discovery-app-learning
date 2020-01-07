@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import '~/assets/img/arrowLeft.png';
+import '~/assets/img/arrowRight.png';
+
 import './SectionNavigation.scss';
 
 class SectionNavigation extends React.Component {
@@ -14,14 +17,22 @@ class SectionNavigation extends React.Component {
                 </div>
                 <div className="posts">
                     <div className="posts__box-1">
-                        <span className="posts__title-1">{this.props.title}</span>
-                        <span className="posts__subtitle-1">{this.props.subtitle}</span>
-                        <p className="posts__text-1">{this.props.text}</p>
+                        <span className="posts__title">{this.props.title}</span>
+                        <span className="posts__subtitle">{this.props.subtitle}</span>
+                        <p className="posts__text">{this.props.text}</p>
+                        <div className="posts__time">
+                            <i className="posts__clock"></i>
+                            <span className="posts__time"></span>
+                        </div>
                     </div>
-                    <div className="post__box-2">
-                        <span className="posts__title-1">{this.props.title2}</span>
+                    <div className="posts__box-2">
+                        <span className="posts__title-2">{this.props.title2}</span>
                         <span className="posts__subtitle-2">{this.props.subtitle2}</span>
-                        <p className="post__text-2">{this.props.text2}</p>
+                        <p className="posts__text-2">{this.props.text2}</p>
+                        <div className="posts__time-2">
+                            <i className="posts__clock-2"></i>
+                            <span className="posts__time-2"></span>
+                        </div>
                     </div>
                 </div>
             </div>
