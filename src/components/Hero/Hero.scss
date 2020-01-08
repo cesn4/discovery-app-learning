@@ -23,13 +23,13 @@
             padding: 167px 125px 0px 125px;
         }
     }
-}
 
-.news {
-    color: $color-hero-text;
-    display: flex;
-    flex-direction: column;
-    font-family: $font-family-primary;
+    &__news-box {
+        color: $color-hero-text;
+        display: flex;
+        flex-direction: column;
+        font-family: $font-family-primary;
+    }
 
     &__title-box {
         border-bottom: solid;
