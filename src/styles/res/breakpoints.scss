@@ -12,10 +12,3 @@ $breakpoint-desktop: 1200px;
         @content;
     }
 }
-
-@mixin size($_size) {
-    height: $_size;
-    width: $_size;
-}
-
-
