@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 
+import Button from '~/components/Button';
+
 import '~/assets/mount.jpg';
 import './Hero.scss';
 
@@ -17,7 +19,7 @@ const Hero = () => {
                                 </div>
                                 <span className="news__subtitle">Amazing places in America to visit.</span>
                                 <p className="news__paragraph">For some reason — this country, this city, this neighborhood, this particular street — is the place you are living a majority of your life in.</p>
-                                <a className="news__button">LEARN MORE</a>
+                                <Button buttonName="LEARN MORE" />
                             </div>
                         </div>
                     </Col>

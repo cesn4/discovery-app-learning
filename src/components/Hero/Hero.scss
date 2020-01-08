@@ -7,7 +7,7 @@
 
 .hero__news {
     height: 388px;
-    padding: $hero-top-bot-padding 11px;
+    padding: $layout-top-padding, $layout-gutter;
     width: 100%;
 
     @include if-tablet {
@@ -35,7 +35,7 @@
         font-size: $fonts-size-h1;
         font-weight: bold;
         line-height: 1.75;
-        padding-bottom: $hero-top-bot-padding;
+        padding-bottom: $layout-top-padding;
         width: 100%;
     }
 
@@ -44,27 +44,12 @@
         font-weight: bold;
         line-height: 1.42;
         margin-bottom: 10px;
-        padding-top: $hero-top-bot-padding;
+        padding-top: $layout-top-padding;
     }
 
     &__paragraph {
         font-size: $fonts-size-text;
         line-height: 1.63;
         margin-bottom: 15px;
-    }
-
-    &__button {
-        align-items: center;
-        background-color: $color-accent;
-        border-radius: 6px;
-        color: $color-hero-text;
-        display: flex;
-        font-size: $fonts-size-button;
-        font-weight: bold;
-        height: 40px;
-        justify-content: center;
-        line-height: 1.82;
-        text-align: center;
-        width: 151px;
     }
 }
