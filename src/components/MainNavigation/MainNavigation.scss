@@ -1,9 +1,9 @@
 .menu {
     display: none;
     font-family: $font-family-primary;
-    font-size: $font-size-navigation;
+    font-size: $fonts-size-navigation;
     font-weight: bold;
-    line-height: 1.82;
+    line-height: $line-height-big;
     visibility: hidden;
 
     &__item {

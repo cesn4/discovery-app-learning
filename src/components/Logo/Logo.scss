@@ -4,7 +4,7 @@
     font-family: $font-family-primary;
     font-size: $_logo-size;
     font-weight: bold;
-    line-height: 1.54;
+    line-height: $line-height-medium;
     text-align: center;
 
     @include if-tablet {
