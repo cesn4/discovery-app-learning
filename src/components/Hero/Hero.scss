@@ -1,24 +1,27 @@
-.background {
-    background-image: url('/assets/mount.jpg');
-    background-position: center;
-    background-repeat: none;
-    background-size: cover;
-}
+.hero {
 
-.hero__news {
-    height: 388px;
-    padding: $layout-top-padding, $layout-gutter;
-    width: 100%;
-
-    @include if-tablet {
-        display: flex;
-        height: 400px;
-        padding: 73px 65px;
+    &__background {
+        background-image: url('/assets/mount.jpg');
+        background-position: center;
+        background-repeat: none;
+        background-size: cover;
     }
 
-    @include if-desktop {
-        height: 600px;
-        padding: 167px 125px 0px 125px;
+    &__news {
+        height: 388px;
+        padding: $layout-top-padding $layout-gutter;
+        width: 100%;
+
+        @include if-tablet {
+            display: flex;
+            height: 400px;
+            padding: 73px 65px;
+        }
+
+        @include if-desktop {
+            height: 600px;
+            padding: 167px 125px 0px 125px;
+        }
     }
 }
 
@@ -28,7 +31,7 @@
     flex-direction: column;
     font-family: $font-family-primary;
 
-    &__title {
+    &__title-box {
         border-bottom: solid;
         border-color: $color-hero-text;
         border-width: 2px;

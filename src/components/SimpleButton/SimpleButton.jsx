@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import './Button.scss';
+import './SimpleButton.scss';
 
-class Button extends React.Component {
+class SimpleButton extends React.Component {
     render () {
         return (
             <a href="#" className="button">{this.props.buttonName}</a>
@@ -11,8 +11,8 @@ class Button extends React.Component {
     }
 };
 
-Button.propTypes = {
+SimpleButton.propTypes = {
     buttonName: PropTypes.string.isRequired
 };
 
-export default Button;
+export default SimpleButton;
