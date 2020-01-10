@@ -14,4 +14,8 @@ SimpleButton.propTypes = {
     title: PropTypes.string.isRequired
 };
 
+SimpleButton.defaultProps = {
+    href: '#'
+};
+
 export default SimpleButton;
