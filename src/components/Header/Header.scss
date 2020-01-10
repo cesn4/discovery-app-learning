@@ -24,18 +24,18 @@
     }
 
     &__photo {
+        @include size(16px);
         background-image: url('/assets/img/woman.png');
         background-size: cover;
         border-radius: 50%;
         margin-left: auto;
         margin-right: 16px;
-        @include size(16px);
 
 
         @include if-tablet {
+            @include size(30px);
             margin-left: 0px;
             margin-right: 20px;
-            @include size(30px);
         }
     }
 }
