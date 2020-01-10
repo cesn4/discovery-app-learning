@@ -36,7 +36,7 @@
         border-color: $color-hero-text;
         border-width: 2px;
         font-size: $fonts-size-h1;
-        font-weight: bold;
+        font-weight: $font-weight-fat;
         line-height: $line-height-big;
         padding-bottom: $layout-top-padding;
         width: 100%;
@@ -44,7 +44,7 @@
 
     &__subtitle {
         font-size: $fonts-size-h1;
-        font-weight: bold;
+        font-weight: $font-weight-fat;
         line-height: $line-height-medium;
         margin-bottom: 10px;
         padding-top: $layout-top-padding;
