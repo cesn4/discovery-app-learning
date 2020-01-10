@@ -10,7 +10,7 @@ const SimpleButton = ({ title, href }) => {
 };
 
 SimpleButton.propTypes = {
-    href: PropTypes.string.isRequred,
+    href: PropTypes.string,
     title: PropTypes.string.isRequired
 };
 
