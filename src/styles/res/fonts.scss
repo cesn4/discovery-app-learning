@@ -1,9 +1,9 @@
 $font-family-primary: 'Public Sans', arial, sans-serif;
 
-$fonts-size-h1: 24px;
-$fonts-size-text: 16px;
-$fonts-size-button: 11px;
-$fonts-size-navigation: 11px;
+$fonts-size-h1: px-to-rem(24px);
+$fonts-size-text: px-to-rem(16px);
+$fonts-size-button: px-to-rem(11px);
+$fonts-size-navigation: px-to-rem(11px);
 
 $line-height-medium: 1.5;
 $line-height-big: 1.8;
