@@ -19,7 +19,7 @@ const Hero = () => {
                                 </div>
                                 <span className="hero__subtitle">Amazing places in America to visit.</span>
                                 <p className="hero__paragraph">For some reason — this country, this city, this neighborhood, this particular street — is the place you are living a majority of your life in.</p>
-                                <SimpleButton buttonName="LEARN MORE" />
+                                <SimpleButton title="LEARN MORE" />
                             </div>
                         </div>
                     </Col>
