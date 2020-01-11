@@ -28,8 +28,8 @@ const Hero = () => {
                     <Col sm={12} md={12} xl={5}>
                         <SectionNavigation title="Discoveries" />
                         <div className="hero__posts">
-                            <PostInfo title="Travel" subtitle="Article title" text="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…" time="2m ago"/>
-                            <PostInfo title="Technology" subtitle="Article title" text="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…" time="1h ago"/>
+                            <PostInfo title="Travel" subtitle="Article title" primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…" time="2m ago"/>
+                            <PostInfo title="Technology" subtitle="Article title" primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…" time="1h ago"/>
                         </div>
                     </Col>
                 </Row>

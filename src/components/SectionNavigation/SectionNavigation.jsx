@@ -9,11 +9,11 @@ import './SectionNavigation.scss';
 
 const SectionNavigation = ({ title }) => {
     return (
-        <div className="section">
-            <div className="section__title-box">
-                <span className="section__title">{title}</span>
-                <i className="section__button -left"></i>
-                <i className="section__button -right"></i>
+        <div className="section-navigation">
+            <div className="section-navigation__title-box">
+                <span className="section-navigation__title">{title}</span>
+                <i className="section-navigation__button -left"></i>
+                <i className="section-navigation__button -right"></i>
             </div>
         </div>
     );
