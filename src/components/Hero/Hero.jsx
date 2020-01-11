@@ -26,7 +26,7 @@ const Hero = () => {
                         </div>
                     </Col>
                     <Col sm={12} md={12} xl={5}>
-                        <SectionNavigation section="Discoveries" />
+                        <SectionNavigation title="Discoveries" />
                         <div className="hero__posts">
                             <PostInfo title="Travel" subtitle="Article title" text="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…" time="2m ago"/>
                             <PostInfo title="Technology" subtitle="Article title" text="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…" time="1h ago"/>
