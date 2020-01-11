@@ -1,10 +1,10 @@
 .logo {
     $_logo-size: 13px;
     color: $color-header-inactive;
-    font-family: Helvetica, sans-serif;
-    font-size: $_logo-size; // Cia keistesnis toks, logo yra dekoratyvus, tai jam font size kaip ir nereiktu kelt prie kintamuju bendru, tai galima pasikurt lokalu kintamaji
-    font-weight: bold;
-    line-height: 1.54;
+    font-family: $font-family-primary;
+    font-size: $_logo-size;
+    font-weight: $font-weight-fat;
+    line-height: $line-height-medium;
     text-align: center;
 
     @include if-tablet {
