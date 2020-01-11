@@ -30,8 +30,8 @@
     &__title {
         color: $color-title-black;
         font-size: $fonts-size-h1;
-        font-weight: bold;
-        line-height: 0.83;
+        font-weight: $font-weight-fat;
+        line-height: $line-height-small;
         margin-right: auto;
         text-transform: uppercase;
     }
