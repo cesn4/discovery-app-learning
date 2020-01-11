@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-grid-system';
 
 import SectionNavigation from '~/components/SectionNavigation';
 import PostInfo from '~/components/PostInfo';
+import SimpleButton from '~/components/SimpleButton';
 
 import '~/assets/mount.jpg';
 import './Hero.scss';
@@ -12,15 +13,15 @@ const Hero = () => {
         <div className="hero">
             <Container fluid>
                 <Row >
-                    <Col sm={12} md={12} xl={7} className="background">
+                    <Col sm={12} md={12} xl={7} className="hero__background">
                         <div className="hero__news">
-                            <div className="news">
-                                <div className="news__title">
-                                    <span>WORLD NEWS</span>
+                            <div className="hero__news-box">
+                                <div className="hero__title-box">
+                                    <span className="hero_title">WORLD NEWS</span>
                                 </div>
-                                <span className="news__subtitle">Amazing places in America to visit.</span>
-                                <p className="news__paragraph">For some reason — this country, this city, this neighborhood, this particular street — is the place you are living a majority of your life in.</p>
-                                <a className="news__button">LEARN MORE</a>
+                                <span className="hero__subtitle">Amazing places in America to visit.</span>
+                                <p className="hero__paragraph">For some reason — this country, this city, this neighborhood, this particular street — is the place you are living a majority of your life in.</p>
+                                <SimpleButton title="LEARN MORE" />
                             </div>
                         </div>
                     </Col>

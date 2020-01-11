@@ -1,10 +1,9 @@
 .menu {
     display: none;
     font-family: $font-family-primary;
-    font-size: $main-navigation-size;
-    font-weight: bold;
-    line-height: 1.82;
-    visibility: hidden;
+    font-size: $fonts-size-navigation;
+    font-weight: $font-weight-fat;
+    line-height: $line-height-big;
 
     &__item {
         color: $color-box-background;
