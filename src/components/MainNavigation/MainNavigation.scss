@@ -7,7 +7,6 @@
 
     @include if-tablet {
         display: flex;
-        visibility: visible;
     }
 
     &__navigation {
