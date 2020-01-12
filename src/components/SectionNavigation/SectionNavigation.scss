@@ -1,16 +1,10 @@
 .section-navigation {
     font-family: $font-family-primary;
-    height: 100px;
     padding: 30px 11px;
     width: 100%;
 
     @include if-tablet {
         padding: 40px 65px;
-    }
-
-    @include if-desktop {
-        height: 160px;
-        padding-top: 70px;
     }
 
     &__title-box {

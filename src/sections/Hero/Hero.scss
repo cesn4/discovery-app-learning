@@ -1,5 +1,12 @@
 .hero {
 
+    &__posts-box {
+
+        @include if-desktop {
+            padding-top: 50px;
+        }
+    }
+
     &__posts {
         display: flex;
         flex-direction: column;
