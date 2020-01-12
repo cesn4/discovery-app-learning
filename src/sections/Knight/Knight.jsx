@@ -1,10 +1,14 @@
 import React from 'react';
 
+import TrendingCard from '~/components/TrendingCard';
+
 import './Knight.scss';
 
 const Knight = () => {
     return (
-        <div className="main"></div>
+        <div className="knight">
+            <TrendingCard />
+        </div>
     );
 };
 
