@@ -12,7 +12,7 @@ const Knight = () => {
             <Container fluid>
                 <Row>
                     <Col sm={12} md={12} xl={12}>
-                        <SectionNavigation title="Trending" className="knight__navigation" />
+                        <SectionNavigation title="Trending" knight/>
                         <TrendingCard />
                     </Col>
                 </Row>

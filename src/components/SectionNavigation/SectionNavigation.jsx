@@ -11,7 +11,7 @@ import './SectionNavigation.scss';
 const SectionNavigation = ({ title, knight }) => {
     return (
         <div className={classNames('section-navigation', { '-knight': knight })}>
-            <div className="section-navigation__title-box">
+            <div className={classNames('section-navigation__title-box', { '-knight': knight })}>
                 <span className="section-navigation__title">{title}</span>
                 <i className="section-navigation__button -left"></i>
                 <i className="section-navigation__button -right"></i>

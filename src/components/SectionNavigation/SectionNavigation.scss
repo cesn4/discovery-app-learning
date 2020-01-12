@@ -9,8 +9,6 @@
 
     &.-knight {
 
-        border-bottom: none;
-
         @include if-desktop {
             padding-bottom: 0px;
         }
@@ -27,6 +25,11 @@
 
         @include if-desktop {
             margin-right: 60px;
+        }
+
+        &.-knight {
+            border-bottom: none;
+            padding-bottom: 40px;
         }
     }
 
