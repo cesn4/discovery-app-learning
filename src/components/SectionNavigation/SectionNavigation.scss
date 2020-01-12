@@ -1,6 +1,6 @@
 .section-navigation {
     font-family: $font-family-primary;
-    padding: 30px 11px;
+    padding: 40px 11px;
     width: 100%;
 
     @include if-tablet {
@@ -8,10 +8,7 @@
     }
 
     &.-knight {
-
-        @include if-desktop {
-            padding-bottom: 0px;
-        }
+        padding-bottom: 0px;
     }
 
     &__title-box {
@@ -21,7 +18,7 @@
         border-width: 1px;
         display: flex;
         justify-content: flex-end;
-        padding-bottom: 30px;
+        padding-bottom: 40px;
 
         @include if-desktop {
             margin-right: 60px;
@@ -29,7 +26,6 @@
 
         &.-knight {
             border-bottom: none;
-            padding-bottom: 40px;
         }
     }
 
