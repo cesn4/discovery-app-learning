@@ -55,4 +55,19 @@
         line-height: $line-height-medium;
         margin-bottom: 15px;
     }
+
+    &__posts {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 11px;
+
+        @include if-tablet {
+            flex-direction: row;
+            padding: 0px 65px;
+        }
+
+        @include if-desktop {
+            flex-direction: column;
+        }
+    }
 }

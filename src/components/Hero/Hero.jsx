@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 
+import SectionNavigation from '~/components/SectionNavigation';
+import PostInfo from '~/components/PostInfo';
 import SimpleButton from '~/components/SimpleButton';
 
 import '~/assets/mount.jpg';
@@ -24,10 +26,10 @@ const Hero = () => {
                         </div>
                     </Col>
                     <Col sm={12} md={12} xl={5}>
-                        <div className="hero__discoveries">
-                            <div className="discoveries">
-                                <h1 className="discoveries__title">DISCOVERIES</h1>
-                            </div>
+                        <SectionNavigation title="Discoveries" />
+                        <div className="hero__posts">
+                            <PostInfo title="Travel" subtitle="Article title" primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…" time="2m ago"/>
+                            <PostInfo title="Technology" subtitle="Article title" primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…" time="1h ago"/>
                         </div>
                     </Col>
                 </Row>

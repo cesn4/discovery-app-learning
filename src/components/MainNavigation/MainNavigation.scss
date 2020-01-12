@@ -5,28 +5,29 @@
     font-weight: $font-weight-fat;
     line-height: $line-height-big;
 
-    &__item {
-        color: $color-box-background;
-        opacity: 0.5;
-
-        &.-active { opacity: 1; }
-    }
-}
-
-@include if-tablet {
-    .menu {
+    @include if-tablet {
         display: flex;
-        visibility: visible;
+    }
 
-        &__navigation {
+    &__navigation {
+
+        @include if-tablet {
             display: flex;
             list-style: none;
             margin-right: 29px;
             text-transform: uppercase;
         }
+    }
 
-        &__item {
+    &__item {
+        color: $color-box-background;
+        opacity: 0.5;
+
+        &.-active { opacity: 1; }
+
+        @include if-tablet {
             margin: 11px;
         }
     }
 }
+
