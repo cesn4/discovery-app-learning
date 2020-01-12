@@ -7,13 +7,13 @@ import './PostInfo.scss';
 
 const PostInfo = ({ title, subtitle, primaryText, time }) => {
     return (
-        <div className="post">
-            <span className="post__title">{title}</span>
-            <span className="post__subtitle">{subtitle}</span>
-            <p className="post__text">{primaryText}</p>
-            <div className="post__time">
-                <i className="post__clock"></i>
-                <span className="post__clock-time">{time}</span>
+        <div className="post-info">
+            <span className="post-info__title">{title}</span>
+            <span className="post-info__subtitle">{subtitle}</span>
+            <p className="post-info__text">{primaryText}</p>
+            <div className="post-info__time">
+                <i className="post-info__clock"></i>
+                <span className="post-info__clock-time">{time}</span>
             </div>
         </div>
     );
