@@ -7,6 +7,15 @@
         padding: 40px 65px;
     }
 
+    &.-knight {
+
+        border-bottom: none;
+
+        @include if-desktop {
+            padding-bottom: 0px;
+        }
+    }
+
     &__title-box {
         align-items: center;
         border-bottom: solid;

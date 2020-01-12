@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
 import '~/assets/img/arrowLeft.png';
 import '~/assets/img/arrowRight.png';
@@ -7,9 +8,9 @@ import '~/assets/img/time.png';
 
 import './SectionNavigation.scss';
 
-const SectionNavigation = ({ title }) => {
+const SectionNavigation = ({ title, knight }) => {
     return (
-        <div className="section-navigation">
+        <div className={classNames('section-navigation', { '-knight': knight })}>
             <div className="section-navigation__title-box">
                 <span className="section-navigation__title">{title}</span>
                 <i className="section-navigation__button -left"></i>
@@ -20,7 +21,12 @@ const SectionNavigation = ({ title }) => {
 };
 
 SectionNavigation.propTypes = {
-    title: PropTypes.string.isRequired
+    title: PropTypes.string.isRequired,
+    knight: PropTypes.bool
+};
+
+SectionNavigation.defaultprops = {
+    knight: false
 };
 
 export default SectionNavigation;
