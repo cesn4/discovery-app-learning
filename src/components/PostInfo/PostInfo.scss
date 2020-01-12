@@ -7,6 +7,10 @@
         margin-right: 40px;
     }
 
+    @include if-desktop {
+        margin-right: 60px;
+    }
+
     &__title {
         color: $color-accent;
         font-size: $fonts-size-text;

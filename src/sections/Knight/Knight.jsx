@@ -2,15 +2,17 @@ import React from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 
 import TrendingCard from '~/components/TrendingCard';
+import SectionNavigation from '~/components/SectionNavigation';
 
 import './Knight.scss';
 
 const Knight = () => {
     return (
         <div className="knight">
-            <Container>
+            <Container fluid>
                 <Row>
-                    <Col>
+                    <Col sm={12} md={12} xl={12}>
+                        <SectionNavigation title="Trending" className="knight__navigation" />
                         <TrendingCard />
                     </Col>
                 </Row>

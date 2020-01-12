@@ -1,3 +1,7 @@
 .knight {
-    background-color: $color-accent;
+    background-color: $color-knight-background;
+
+    @include if-desktop {
+        margin-left: 60px;
+    }
 }
