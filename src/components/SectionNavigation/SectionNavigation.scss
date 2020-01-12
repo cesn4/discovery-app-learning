@@ -8,7 +8,11 @@
     }
 
     &.-knight {
-        padding-bottom: 0px;
+        padding: 40px 0px 0px 0px;
+
+        @include if-tablet {
+            padding: 40px 0px 0px 0px;
+        }
     }
 
     &__title-box {
@@ -26,6 +30,10 @@
 
         &.-knight {
             border-bottom: none;
+
+            @include if-desktop {
+                margin-right: 0px;
+            }
         }
     }
 

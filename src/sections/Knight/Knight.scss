@@ -1,7 +1,16 @@
 .knight {
     background-color: $color-knight-background;
+    padding: 0px 11px 0 11px;
+
+    @include if-tablet {
+        padding: 0px 65px 0px 65px;
+    }
 
     @include if-desktop {
-        padding-left: 60px;
+        padding: 0px 125px 0 125px;
+    }
+
+    &__box {
+        padding: 0px 11px;
     }
 }
