@@ -4,6 +4,9 @@ import { Container, Row, Col } from 'react-grid-system';
 import TrendingCard from '~/components/TrendingCard';
 import SectionNavigation from '~/components/SectionNavigation';
 
+import sunflower from '~/assets/img/sunflower.jpg';
+import road from '~/assets/img/1079101.jpg';
+import bridge from '~/assets/img/hn3826.jpg';
 import './Knight.scss';
 
 const Knight = () => {
@@ -15,13 +18,13 @@ const Knight = () => {
                         <SectionNavigation title="Trending" knight/>
                     </Col>
                     <Col sm={12} md={6} xl={4}>
-                        <TrendingCard title="Dolore magna aliqua" paragraphText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat." time="2m ago" />
+                        <TrendingCard image={bridge} title="Dolore magna aliqua" paragraphText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat." time="2m ago" />
                     </Col>
                     <Col sm={12} md={6} xl={4}>
-                        <TrendingCard title="Morbi eleifend a libero" paragraphText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat." time="1h ago"/>
+                        <TrendingCard image={road} title="Morbi eleifend a libero" paragraphText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat." time="1h ago"/>
                     </Col>
                     <Col sm={0} md={0} xl={4}>
-                        <TrendingCard notVisible title="Morbi eleifend a libero" paragraphText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat." time="3h ago"/>
+                        <TrendingCard image={sunflower} notVisible title="Morbi eleifend a libero" paragraphText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat." time="3h ago"/>
                     </Col>
                 </Row>
             </Container>

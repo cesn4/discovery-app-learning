@@ -3,13 +3,12 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import '~/assets/img/time.png';
-import '~/assets/hn3826.jpg';
 import './TrendingCard.scss';
 
-const TrendingCard = ({ title, time, paragraphText, notVisible }) => {
+const TrendingCard = ({ title, time, paragraphText, notVisible, image }) => {
     return (
         <div className={classNames('card', { '-notVisible': notVisible })} >
-            <div className="card__background"></div>
+            <img className="card__background" src={image} />
             <div className="card__text-box">
                 <span className="card__title">{title}</span>
                 <p className="card__paragraph-text">{paragraphText}</p>

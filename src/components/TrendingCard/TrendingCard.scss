@@ -11,11 +11,11 @@
     }
 
     &__background {
-        background: url("/assets/hn3826.jpg") no-repeat center;
-        background-size: cover;
+        background-size: contain;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
         height: 154px;
+        width: 100%;
     }
 
     &__text-box {
