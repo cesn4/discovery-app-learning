@@ -11,9 +11,9 @@ const TrendingCard = ({ title, time, paragraphText }) => {
                 <span className="card__title">{title}</span>
                 <p className="card__paragraph-text">{paragraphText}</p>
             </div>
-            <div className="post__time">
-                <i className="post__clock"></i>
-                <span className="post__clock-time">{time}</span>
+            <div className="card__time">
+                <i className="card__clock"></i>
+                <span className="card__clock-time">{time}</span>
             </div>
         </div>
     );
