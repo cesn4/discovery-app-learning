@@ -15,12 +15,12 @@
         @include if-tablet {
             display: flex;
             height: 400px;
-            padding: 73px 65px;
+            padding: 73px $layout-gutter-tablet;
         }
 
         @include if-desktop {
             height: 600px;
-            padding: 167px 125px 0px 125px;
+            padding: 167px $layout-gutter-desktop 0px $layout-gutter-desktop;
         }
     }
 

@@ -14,7 +14,7 @@
 
         @include if-tablet {
             flex-direction: row;
-            padding: 0px 65px;
+            padding: 0px $layout-gutter-tablet;
         }
 
         @include if-desktop {

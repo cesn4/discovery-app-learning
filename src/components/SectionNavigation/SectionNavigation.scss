@@ -4,7 +4,7 @@
     width: 100%;
 
     @include if-tablet {
-        padding: $layout-gutter-bigger 65px;
+        padding: $layout-gutter-bigger $layout-gutter-tablet;
     }
 
     &.-borderless {

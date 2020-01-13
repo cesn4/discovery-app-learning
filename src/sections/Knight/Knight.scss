@@ -3,11 +3,11 @@
     padding: 0px $layout-gutter 0 $layout-gutter;
 
     @include if-tablet {
-        padding: 0px 65px 0px 65px;
+        padding: 0px $layout-gutter-tablet 0px $layout-gutter-tablet;
     }
 
     @include if-desktop {
-        padding: 0px 125px 0 125px;
+        padding: 0px $layout-gutter-desktop 0 $layout-gutter-desktop;
     }
 
     &__box {
