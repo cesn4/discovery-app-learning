@@ -18,7 +18,7 @@ const Knight = () => {
                         <SectionNavigation title="Trending" borderless/>
                     </Col>
                     <Col sm={12} md={6} xl={4}>
-                        <TrendingCard image={bridge} title="Dolore magna aliqua" paragraphText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat." time="2m ago" />
+                        <TrendingCard firstItem image={bridge} title="Dolore magna aliqua" paragraphText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat." time="2m ago" />
                     </Col>
                     <Col sm={12} md={6} xl={4}>
                         <TrendingCard image={road} title="Morbi eleifend a libero" paragraphText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat." time="1h ago"/>

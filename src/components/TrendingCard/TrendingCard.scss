@@ -10,6 +10,14 @@
         }
     }
 
+    &.-firstItem {
+        margin-bottom: 40px;
+
+        @include if-tablet {
+            margin-bottom: 0px;
+        }
+    }
+
     &__background {
         background-size: contain;
         border-top-left-radius: 5px;
