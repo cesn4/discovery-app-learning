@@ -11,7 +11,7 @@
     }
 
     &.-firstItem {
-        margin-bottom: 40px;
+        margin-bottom: $layout-gutter-bigger;
 
         @include if-tablet {
             margin-bottom: 0px;

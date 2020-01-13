@@ -20,7 +20,7 @@ const Featured = () => {
                         <FeaturedCard firstItem background={hand} theme="CITY" title="Large article title mobile layout" paragraph="Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit vituperatoribus duo id. Affert detraxit voluptatum vis eu, inermis eloquentiam." time="2m ago"/>
                     </Col>
                     <Col sm={12} md={12} xl={8}>
-                        <FeaturedCard firstItem background={house} theme="TRAVEL" title="Large article title mobile layout" paragraph="Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit vituperatoribus duo id. Affert detraxit voluptatum vis eu, inermis eloquentiam." time="2m ago" />
+                        <FeaturedCard lastItem background={house} theme="TRAVEL" title="Large article title mobile layout" paragraph="Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit vituperatoribus duo id. Affert detraxit voluptatum vis eu, inermis eloquentiam." time="2m ago" />
                     </Col>
                 </Row>
             </Container>
