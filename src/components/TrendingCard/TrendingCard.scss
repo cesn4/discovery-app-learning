@@ -16,6 +16,10 @@
         border-top-right-radius: 5px;
         height: 154px;
         width: 100%;
+
+        @include if-tablet {
+            height: 180px;
+        }
     }
 
     &__text-box {
