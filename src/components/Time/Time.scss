@@ -1,0 +1,19 @@
+.time {
+    align-items: center;
+    display: flex;
+    margin-bottom: 35px;
+
+    &__clock {
+        @include size(16px);
+        background-image: url('/assets/img/time.png');
+        background-size: contain;
+        margin-right: 10px;
+    }
+
+    &__clock-time {
+        color: $color-header-inactive;
+        font-size: $fonts-size-navigation;
+        font-style: italic;
+        line-height: $line-height-big;
+    }
+}
