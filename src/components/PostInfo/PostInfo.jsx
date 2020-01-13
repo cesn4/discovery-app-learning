@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import '~/assets/img/time.png';
+import Time from '~/components/Time';
 
+import '~/assets/img/time.png';
 import './PostInfo.scss';
 
 const PostInfo = ({ title, subtitle, primaryText, time }) => {
@@ -11,10 +12,7 @@ const PostInfo = ({ title, subtitle, primaryText, time }) => {
             <span className="post-info__title">{title}</span>
             <span className="post-info__subtitle">{subtitle}</span>
             <p className="post-info__text">{primaryText}</p>
-            <div className="post-info__time">
-                <i className="post-info__clock"></i>
-                <span className="post-info__clock-time">{time}</span>
-            </div>
+            <Time timeText={time}/>
         </div>
     );
 };

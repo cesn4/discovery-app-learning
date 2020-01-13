@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
+import Time from '~/components/Time';
+
 import '~/assets/img/time.png';
 import './TrendingCard.scss';
 
@@ -12,10 +14,7 @@ const TrendingCard = ({ title, time, paragraphText, notVisible, image }) => {
             <div className="trending-card__text-box">
                 <span className="trending-card__title">{title}</span>
                 <p className="trending-card__paragraph-text">{paragraphText}</p>
-                <div className="trending-card__time">
-                    <i className="trending-card__clock"></i>
-                    <span className="trending-card__clock-time">{time}</span>
-                </div>
+                <Time timeText={time}/>
             </div>
         </div>
     );

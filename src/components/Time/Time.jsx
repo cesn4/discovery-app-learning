@@ -1,9 +1,10 @@
 import React from 'react';
-import PropTypes from 'porp-types'
+import PropTypes from 'prop-types';
 
+import '~/assets/img/time.png';
 import './Time.scss';
 
-const Time = ( timeText ) => {
+const Time = ({ timeText }) => {
     return (
         <div className="time">
             <i className="time__clock"></i>
@@ -14,6 +15,6 @@ const Time = ( timeText ) => {
 
 Time.propTypes = {
     timeText: PropTypes.string.isRequired
-}
+};
 
 export default Time;
