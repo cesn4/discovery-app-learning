@@ -4,6 +4,7 @@ import Header from '~/components/Header';
 import Footer from '~/components/Footer';
 import Hero from '~/sections/Hero';
 import Knight from '~/sections/Knight';
+import Featured from '~/sections/Featured';
 
 const Home = () => {
     return (
@@ -11,6 +12,7 @@ const Home = () => {
             <Header />
             <Hero />
             <Knight />
+            <Featured />
             <Footer />
         </div>
     );
