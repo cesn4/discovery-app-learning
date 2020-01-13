@@ -10,7 +10,7 @@
     &__posts {
         display: flex;
         flex-direction: column;
-        padding: 0px 11px;
+        padding: 0px $layout-gutter;
 
         @include if-tablet {
             flex-direction: row;

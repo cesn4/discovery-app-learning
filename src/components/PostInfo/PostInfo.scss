@@ -4,7 +4,7 @@
     font-family: $font-family-primary;
 
     @include if-tablet {
-        margin-right: 40px;
+        margin-right: $layout-gutter-bigger;
     }
 
     @include if-desktop {

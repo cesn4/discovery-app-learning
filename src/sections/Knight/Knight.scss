@@ -1,6 +1,6 @@
 .knight {
     background-color: $color-knight-background;
-    padding: 0px 11px 0 11px;
+    padding: 0px $layout-gutter 0 $layout-gutter;
 
     @include if-tablet {
         padding: 0px 65px 0px 65px;
@@ -11,6 +11,6 @@
     }
 
     &__box {
-        padding: 0px 11px;
+        padding: 0px $layout-gutter;
     }
 }

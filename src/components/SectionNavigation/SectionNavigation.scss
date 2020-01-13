@@ -1,17 +1,17 @@
 .section-navigation {
     font-family: $font-family-primary;
-    padding: 40px 11px;
+    padding: $layout-gutter-bigger $layout-gutter;
     width: 100%;
 
     @include if-tablet {
-        padding: 40px 65px;
+        padding: $layout-gutter-bigger 65px;
     }
 
-    &.-knight {
-        padding: 40px 0px 0px 0px;
+    &.-borderless {
+        padding: $layout-gutter-bigger 0px 0px 0px;
 
         @include if-tablet {
-            padding: 40px 0px 0px 0px;
+            padding: $layout-gutter-bigger 0px 0px 0px;
         }
     }
 
@@ -28,7 +28,7 @@
             margin-right: 60px;
         }
 
-        &.-knight {
+        &.-borderless {
             border-bottom: none;
 
             @include if-desktop {
@@ -48,20 +48,17 @@
 
     &__button {
 
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 10px;
+        width: 6px;
+
         &.-left {
             background-image: url('/assets/img/arrowLeft.png');
-            background-repeat: no-repeat;
-            background-size: contain;
-            height: 10px;
             margin-right: 32px;
-            width: 6px;
         }
         &.-right {
             background-image: url('/assets/img/arrowRight.png');
-            background-repeat: no-repeat;
-            background-size: contain;
-            height: 10px;
-            width: 6px;
         }
     }
 }

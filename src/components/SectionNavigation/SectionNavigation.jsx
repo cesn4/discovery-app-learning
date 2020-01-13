@@ -8,10 +8,10 @@ import '~/assets/img/time.png';
 
 import './SectionNavigation.scss';
 
-const SectionNavigation = ({ title, knight }) => {
+const SectionNavigation = ({ title, borderless }) => {
     return (
-        <div className={classNames('section-navigation', { '-knight': knight })}>
-            <div className={classNames('section-navigation__title-box', { '-knight': knight })}>
+        <div className={classNames('section-navigation', { '-borderless': borderless })}>
+            <div className={classNames('section-navigation__title-box', { '-borderless': borderless })}>
                 <span className="section-navigation__title">{title}</span>
                 <i className="section-navigation__button -left"></i>
                 <i className="section-navigation__button -right"></i>
@@ -22,11 +22,11 @@ const SectionNavigation = ({ title, knight }) => {
 
 SectionNavigation.propTypes = {
     title: PropTypes.string.isRequired,
-    knight: PropTypes.bool
+    borderless: PropTypes.bool
 };
 
 SectionNavigation.defaultprops = {
-    knight: false
+    borderless: false
 };
 
 export default SectionNavigation;
