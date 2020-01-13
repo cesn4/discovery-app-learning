@@ -7,14 +7,14 @@ import './TrendingCard.scss';
 
 const TrendingCard = ({ title, time, paragraphText, notVisible, image }) => {
     return (
-        <div className={classNames('card', { '-notVisible': notVisible })} >
-            <img className="card__background" src={image} />
-            <div className="card__text-box">
-                <span className="card__title">{title}</span>
-                <p className="card__paragraph-text">{paragraphText}</p>
-                <div className="card__time">
-                    <i className="card__clock"></i>
-                    <span className="card__clock-time">{time}</span>
+        <div className={classNames('trending-card', { '-notVisible': notVisible })} >
+            <img className="trending-card__background" src={image} />
+            <div className="trending-card__text-box">
+                <span className="trending-card__title">{title}</span>
+                <p className="trending-card__paragraph-text">{paragraphText}</p>
+                <div className="trending-card__time">
+                    <i className="trending-card__clock"></i>
+                    <span className="trending-card__clock-time">{time}</span>
                 </div>
             </div>
         </div>
