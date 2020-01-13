@@ -11,7 +11,7 @@ import './Featured.scss';
 const Featured = () => {
     return (
         <div className="featured">
-            <Container>
+            <Container fluid>
                 <Row>
                     <Col sm={12} md={12} xl={12}>
                         <SectionNavigation borderless title="Happening Now"/>
