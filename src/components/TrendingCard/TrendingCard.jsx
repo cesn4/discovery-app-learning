@@ -4,7 +4,6 @@ import classNames from 'classnames';
 
 import Time from '~/components/Time';
 
-import '~/assets/img/time.png';
 import './TrendingCard.scss';
 
 const TrendingCard = ({ title, time, paragraphText, notVisible, image }) => {
