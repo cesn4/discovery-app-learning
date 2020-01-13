@@ -1,5 +1,51 @@
-
 .featured-card {
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
     height: 299px;
     width: 100%;
+
+    &.-firstItem {
+        margin-bottom: 40px;
+    }
+
+    @include if-tablet {
+        height: 430px;
+    }
+
+    &__text-box {
+        color: $color-hero-text;
+        display: flex;
+        flex-direction: column;
+        font-family: $font-family-primary;
+        padding: 28px 24px;
+
+        @include if-tablet {
+            padding: 40px 40px;
+        }
+    }
+
+    &__theme {
+        font-size: $fonts-size-text;
+        font-weight: $font-weight-fat;
+        line-height: $line-height-small;
+        margin-bottom: 40px;
+
+        @include if-tablet {
+            margin-bottom: 227px;
+        }
+    }
+
+    &__title {
+        font-size: $fonts-size-h1;
+        font-weight: $font-weight-fat;
+        line-height: $line-height-medium;
+        margin-bottom: 3px;
+    }
+
+    &__paragraph {
+        font-size: $fonts-size-text;
+        line-height: $line-height-medium;
+        margin-bottom: 9px;
+    }
 }
