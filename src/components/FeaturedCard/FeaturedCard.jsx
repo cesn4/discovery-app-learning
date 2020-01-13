@@ -6,8 +6,11 @@ import Time from '~/components/Time';
 import './FeaturedCard.scss';
 
 const FeaturedCard = ({ theme, title, paragraph, time, background }) => {
+    const styleBack = {
+        backgroundImage: 'url(' + background + ')'
+    };
     return (
-        <div className="featured-card" src={background}>
+        <div className="featured-card" style={styleBack}>
             <div className="featured-card__tex-box">
                 <span className="featured-card__theme">{theme}</span>
                 <span className="featured-card__title">{title}</span>
