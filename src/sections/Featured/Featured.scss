@@ -1,7 +1,7 @@
 .featured {
     background-color: $color-header-background;
-    padding: 0px 11px;
     display: flex;
+    padding: 0px 11px;
 
     @include if-tablet {
         padding: 0px $layout-gutter-tablet;
@@ -10,4 +10,8 @@
     @include if-desktop {
         padding: 0px $layout-gutter-desktop;
     }
+
+    // &__small-cards {
+    //     display: flex;
+    // }
 }
