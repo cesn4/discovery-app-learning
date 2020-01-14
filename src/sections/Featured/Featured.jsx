@@ -25,7 +25,7 @@ const Featured = () => {
                         <FeaturedCard lastItem background={house} theme="TRAVEL" title="Large article title mobile layout" paragraph="Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit vituperatoribus duo id. Affert detraxit voluptatum vis eu, inermis eloquentiam." time="2m ago" />
                     </Col>
                     <Col sm={12} md={6} xl={4}>
-                        <SmallCard image={wall} title="Small title" time="3h ago by Worldnews"/>
+                        <SmallCard firstItem image={wall} title="Small title" time="3h ago by Worldnews"/>
                     </Col>
                 </Row>
             </Container>
