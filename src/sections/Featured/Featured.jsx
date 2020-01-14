@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-grid-system';
+import { Container, Row, Col, Hidden } from 'react-grid-system';
 
 import FeaturedCard from '~/components/FeaturedCard';
 import SectionNavigation from '~/components/SectionNavigation';
@@ -32,9 +32,11 @@ const Featured = () => {
                             <Col md={6} xl={12}>
                                 <SmallCard image={castle} title="Small title" time="4h ago by Days" />
                             </Col>
-                            <Col>
-                                <SmallCard hidden image={random} title="Small title" time="4h ago by Days" />
-                            </Col>
+                            <Hidden sm md>
+                                <Col>
+                                    <SmallCard hidden image={random} title="Small title" time="4h ago by Days" />
+                                </Col>
+                            </Hidden>
                         </Row>
                     </Col>
                 </Row>

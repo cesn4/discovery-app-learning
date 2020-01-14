@@ -2,14 +2,6 @@
     background-color: $color-knight-background;
     width: 100%;
 
-    &.-notVisible {
-        display: none;
-
-        @include if-desktop {
-            display: block;
-        }
-    }
-
     &.-firstItem {
         margin-bottom: $layout-gutter-bigger;
 
