@@ -10,14 +10,14 @@ const Footer = () => {
                 <Row>
                     <div className="footer__text">
                         <Col sm={5}>
-                        <div>
-                            <ul className="footer__list-two">
-                                <li>ABOUT</li>
-                                <li>HELP</li>
-                                <li>TERMS</li>
-                                <li>GUIDLINES</li>
-                            </ul>
-                        </div>
+                            <div>
+                                <ul className="footer__list-two">
+                                    <li>ABOUT</li>
+                                    <li>HELP</li>
+                                    <li>TERMS</li>
+                                    <li>GUIDLINES</li>
+                                </ul>
+                            </div>
                         </Col>
                         <Col sm={5}>
                             <ul className="footer__list-three">
