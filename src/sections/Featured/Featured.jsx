@@ -5,6 +5,7 @@ import FeaturedCard from '~/components/FeaturedCard';
 import SectionNavigation from '~/components/SectionNavigation';
 import SmallCard from '~/components/SmallCard';
 
+import castle from '~/assets/img/castle.jpg';
 import wall from '~/assets/img/wall.jpg';
 import house from '~/assets/img/house.jpg';
 import hand from '~/assets/img/hand.jpg';
@@ -26,6 +27,9 @@ const Featured = () => {
                     </Col>
                     <Col sm={12} md={6} xl={4}>
                         <SmallCard firstItem image={wall} title="Small title" time="3h ago by Worldnews"/>
+                    </Col>
+                    <Col sm={12} md={6} xl={4}>
+                        <SmallCard image={castle} title="Small title" time="4h ago by Days" />
                     </Col>
                 </Row>
             </Container>

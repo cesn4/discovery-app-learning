@@ -1,6 +1,7 @@
 .featured {
     background-color: $color-header-background;
     padding: 0px 11px;
+    display: flex;
 
     @include if-tablet {
         padding: 0px $layout-gutter-tablet;
