@@ -1,3 +1,25 @@
 .small-card {
-    background-color: $color-accent;
+    background-color: $color-knight-background;
+
+    &__image {
+        background-size: contain;
+        border-radius: 5px;
+        height: 180px;
+        width: 100%;
+    }
+
+    &__text {
+        color: $color-title-black;
+        font-family: $font-family-primary;
+        margin-top: 8px;
+    }
+
+    &__title {
+        font-size: $fonts-size-text;
+        line-height: $line-height-medium;
+        font-weight: $font-weight-fat;
+        margin-bottom: 3px;
+    }
+
+
 }

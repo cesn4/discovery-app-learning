@@ -5,6 +5,7 @@ import FeaturedCard from '~/components/FeaturedCard';
 import SectionNavigation from '~/components/SectionNavigation';
 import SmallCard from '~/components/SmallCard';
 
+import wall from '~/assets/img/wall.jpg';
 import house from '~/assets/img/house.jpg';
 import hand from '~/assets/img/hand.jpg';
 import './Featured.scss';
@@ -24,7 +25,7 @@ const Featured = () => {
                         <FeaturedCard lastItem background={house} theme="TRAVEL" title="Large article title mobile layout" paragraph="Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit vituperatoribus duo id. Affert detraxit voluptatum vis eu, inermis eloquentiam." time="2m ago" />
                     </Col>
                     <Col sm={12} md={6} xl={4}>
-                        <SmallCard />
+                        <SmallCard image={wall} title="Small title" time="3h ago by Worldnews"/>
                     </Col>
                 </Row>
             </Container>
