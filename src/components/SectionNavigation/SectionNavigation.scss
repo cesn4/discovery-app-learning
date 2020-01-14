@@ -1,7 +1,7 @@
 .section-navigation {
     font-family: $font-family-primary;
     height: 100px;
-    padding: 30px 11px;
+    padding: $layout-gutter-big $layout-gutter;
     width: 100%;
 
     @include if-tablet {
@@ -20,7 +20,7 @@
         border-width: 1px;
         display: flex;
         justify-content: flex-end;
-        padding-bottom: 30px;
+        padding-bottom: $layout-gutter-big;
 
         @include if-desktop {
             margin-right: 40px;
@@ -38,20 +38,17 @@
 
     &__button {
 
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 10px;
+        width: 6px;
+
         &.-left {
             background-image: url('/assets/img/arrowLeft.png');
-            background-repeat: no-repeat;
-            background-size: contain;
-            height: 10px;
             margin-right: 32px;
-            width: 6px;
         }
         &.-right {
             background-image: url('/assets/img/arrowRight.png');
-            background-repeat: no-repeat;
-            background-size: contain;
-            height: 10px;
-            width: 6px;
         }
     }
 }

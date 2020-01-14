@@ -1,0 +1,48 @@
+.background {
+    height: 388px;
+    padding: $layout-gutter-big $layout-gutter;
+    width: 100%;
+
+    @include if-tablet {
+        display: flex;
+        height: 400px;
+        padding: 73px 65px;
+    }
+
+    @include if-desktop {
+        height: 600px;
+        padding: 167px 125px 0px 125px;
+    }
+
+    &__news-box {
+        color: $color-hero-text;
+        display: flex;
+        flex-direction: column;
+        font-family: $font-family-primary;
+    }
+
+    &__title-box {
+        border-bottom: solid;
+        border-color: $color-hero-text;
+        border-width: 2px;
+        font-size: $fonts-size-h1;
+        font-weight: $font-weight-fat;
+        line-height: $line-height-big;
+        padding-bottom: $layout-gutter-big;
+        width: 100%;
+    }
+
+    &__subtitle {
+        font-size: $fonts-size-h1;
+        font-weight: $font-weight-fat;
+        line-height: $line-height-medium;
+        margin-bottom: 10px;
+        padding-top: $layout-gutter-big;
+    }
+
+    &__paragraph {
+        font-size: $fonts-size-text;
+        line-height: $line-height-medium;
+        margin-bottom: 15px;
+    }
+}
