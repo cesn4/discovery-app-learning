@@ -1,15 +1,45 @@
 import React from 'react';
+import { Container, Row, Col } from 'react-grid-system';
 
-import image from '~/assets/image.jpg'; // Sitaip gali importuot paveiksleli jsx failuose. Importuoji kaip bet kuri kita komponenta.
 import './Footer.scss';
 
 const Footer = () => {
     return (
         <footer className="footer">
-            Footer
-            {/* ir sitaip panaudoji importuota image */}
-            <img className="footer__image" src={image} alt="" />
-            <div className="footer__bgi"></div>
+            <Container fluid>
+                <Row>
+                    <div className="footer__text">
+                        <Col sm={5}>
+                        <div>
+                            <ul className="footer__list-two">
+                                <li>ABOUT</li>
+                                <li>HELP</li>
+                                <li>TERMS</li>
+                                <li>GUIDLINES</li>
+                            </ul>
+                        </div>
+                        </Col>
+                        <Col sm={5}>
+                            <ul className="footer__list-three">
+                                <li>TESTIMONIALS</li>
+                                <li>ADVERTISE</li>
+                                <li>INTEGRATIONS</li>
+                                <li>CAREERS</li>
+                            </ul>
+                        </Col>
+                    </div>
+                </Row>
+                <Row>
+                    <Col>
+                        <div className="footer__media">
+                            <img src="#" alt=""/>
+                            <img src="#" alt=""/>
+                            <img src="#" alt=""/>
+                            <img src="#" alt=""/>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
         </footer>
     );
 };
