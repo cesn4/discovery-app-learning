@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-grid-system';
 
 import FeaturedCard from '~/components/FeaturedCard';
 import SectionNavigation from '~/components/SectionNavigation';
+import SmallCard from '~/components/SmallCard';
 
 import house from '~/assets/img/house.jpg';
 import hand from '~/assets/img/hand.jpg';
@@ -21,6 +22,9 @@ const Featured = () => {
                     </Col>
                     <Col sm={12} md={12} xl={8}>
                         <FeaturedCard lastItem background={house} theme="TRAVEL" title="Large article title mobile layout" paragraph="Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit vituperatoribus duo id. Affert detraxit voluptatum vis eu, inermis eloquentiam." time="2m ago" />
+                    </Col>
+                    <Col sm={12} md={6} xl={4}>
+                        <SmallCard />
                     </Col>
                 </Row>
             </Container>
