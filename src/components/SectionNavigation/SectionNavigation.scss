@@ -22,7 +22,7 @@
         border-width: 1px;
         display: flex;
         justify-content: flex-end;
-        padding-bottom: 40px;
+        padding-bottom: $layout-gutter-bigger;
 
         @include if-desktop {
             margin-right: 60px;
@@ -47,7 +47,6 @@
     }
 
     &__button {
-
         background-repeat: no-repeat;
         background-size: contain;
         height: 10px;

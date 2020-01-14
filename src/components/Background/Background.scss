@@ -1,27 +1,17 @@
-.hero {
+.background {
+    height: 388px;
+    padding: $layout-gutter-big $layout-gutter;
+    width: 100%;
 
-    &__background {
-        background-image: url('/assets/mount.jpg');
-        background-position: center;
-        background-repeat: none;
-        background-size: cover;
+    @include if-tablet {
+        display: flex;
+        height: 400px;
+        padding: 73px 65px;
     }
 
-    &__news {
-        height: 388px;
-        padding: $layout-gutter-big $layout-gutter;
-        width: 100%;
-
-        @include if-tablet {
-            display: flex;
-            height: 400px;
-            padding: 73px 65px;
-        }
-
-        @include if-desktop {
-            height: 600px;
-            padding: 167px 125px 0px 125px;
-        }
+    @include if-desktop {
+        height: 600px;
+        padding: 167px 125px 0px 125px;
     }
 
     &__news-box {
