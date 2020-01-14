@@ -1,0 +1,8 @@
+$spacers-map: (
+    xs: "11px",
+    m: "30px"
+);
+
+@function spacer($_key) {
+    @return map-get($spacers-map, $_key);
+}
