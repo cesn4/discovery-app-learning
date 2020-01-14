@@ -8,7 +8,7 @@
 
     &__news {
         height: 388px;
-        padding: $layout-top-padding $layout-gutter;
+        padding: spacer("m") spacer("xs");
         width: 100%;
 
         @include if-tablet {
@@ -37,7 +37,7 @@
         font-size: $fonts-size-h1;
         font-weight: $font-weight-fat;
         line-height: $line-height-big;
-        padding-bottom: $layout-top-padding;
+        padding-bottom: spacer("m");
         width: 100%;
     }
 
@@ -46,7 +46,7 @@
         font-weight: $font-weight-fat;
         line-height: $line-height-medium;
         margin-bottom: 10px;
-        padding-top: $layout-top-padding;
+        padding-top: spacer("m");
     }
 
     &__paragraph {
