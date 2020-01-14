@@ -1,5 +1,10 @@
 .hero {
 
+    &__background {
+        background-image: url('/assets/mount.jpg');
+        background-size: cover;
+    }
+
     &__posts-box {
 
         @include if-desktop {
