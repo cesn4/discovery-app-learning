@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-grid-system';
+import { Container, Row, Col, Hidden } from 'react-grid-system';
 
 import TrendingCard from '~/components/TrendingCard';
 import SectionNavigation from '~/components/SectionNavigation';
@@ -23,9 +23,11 @@ const Knight = () => {
                     <Col sm={12} md={6} xl={4}>
                         <TrendingCard image={road} title="Morbi eleifend a libero" paragraphText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat." time="1h ago"/>
                     </Col>
-                    <Col sm={0} md={0} xl={4}>
-                        <TrendingCard image={sunflower} notVisible title="Morbi eleifend a libero" paragraphText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat." time="3h ago"/>
-                    </Col>
+                    <Hidden sm md>
+                        <Col xl={4}>
+                            <TrendingCard image={sunflower} title="Morbi eleifend a libero" paragraphText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat." time="3h ago"/>
+                        </Col>
+                    </Hidden>
                 </Row>
             </Container>
         </div>
