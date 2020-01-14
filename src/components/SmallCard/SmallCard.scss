@@ -18,7 +18,7 @@
         display: none;
 
         @include if-desktop {
-            display: flex;
+            display: block;
         }
     }
 
