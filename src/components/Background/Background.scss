@@ -1,10 +1,12 @@
-.hero {
+.background {
+    height: 388px;
+    padding: $layout-gutter-big $layout-gutter;
+    width: 100%;
 
-    &__background {
-        background-image: url('/assets/mount.jpg');
-        background-position: center;
-        background-repeat: none;
-        background-size: cover;
+    @include if-tablet {
+        display: flex;
+        height: 400px;
+        padding: 73px 65px;
     }
 
     &__news {
