@@ -1,0 +1,51 @@
+.small-card {
+    background-color: $color-knight-background;
+
+    @include if-desktop {
+        padding-bottom: 8px;
+    }
+    &.-firstItem {
+        border-top: solid 1px $color-header-inactive;
+        padding-top: 40px;
+
+        @include if-tablet {
+            border-top: none;
+            padding-top: 0px;
+        }
+    }
+
+    &.-hidden {
+        display: none;
+
+        @include if-desktop {
+            display: block;
+        }
+    }
+
+    &__image {
+        background-size: contain;
+        border-radius: 5px;
+        height: 180px;
+        width: 100%;
+
+        @include if-desktop {
+            height: 210px;
+            margin-bottom: 3px;
+        }
+    }
+
+    &__text {
+        color: $color-title-black;
+        font-family: $font-family-primary;
+        margin-top: 8px;
+    }
+
+    &__title {
+        font-size: $fonts-size-text;
+        font-weight: $font-weight-fat;
+        line-height: $line-height-medium;
+        margin-bottom: 3px;
+    }
+
+
+}

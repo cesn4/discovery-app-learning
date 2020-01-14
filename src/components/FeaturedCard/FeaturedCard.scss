@@ -1,0 +1,58 @@
+.featured-card {
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    height: 299px;
+    width: 100%;
+
+    &.-firstItem {
+        margin-bottom: $layout-gutter-bigger;
+    }
+    &.-lastItem {
+        margin-bottom: $layout-gutter-bigger;
+
+        @include if-desktop {
+            margin-bottom: 60px;
+        }
+    }
+
+    @include if-tablet {
+        height: 430px;
+    }
+
+    &__text-box {
+        color: $color-hero-text;
+        display: flex;
+        flex-direction: column;
+        font-family: $font-family-primary;
+        padding: 28px 24px;
+
+        @include if-tablet {
+            padding: $layout-gutter-bigger;
+        }
+    }
+
+    &__theme {
+        font-size: $fonts-size-text;
+        font-weight: $font-weight-fat;
+        line-height: $line-height-small;
+        margin-bottom: $layout-gutter-bigger;
+
+        @include if-tablet {
+            margin-bottom: 227px;
+        }
+    }
+
+    &__title {
+        font-size: $fonts-size-h1;
+        font-weight: $font-weight-fat;
+        line-height: $line-height-medium;
+        margin-bottom: 3px;
+    }
+
+    &__paragraph {
+        font-size: $fonts-size-paragraph;
+        line-height: $line-height-medium;
+        margin-bottom: 9px;
+    }
+}

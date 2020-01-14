@@ -1,0 +1,13 @@
+.featured {
+    background-color: $color-header-background;
+    display: flex;
+    padding: 0px $layout-gutter;
+
+    @include if-tablet {
+        padding: 0px $layout-gutter-tablet;
+    }
+
+    @include if-desktop {
+        padding: 0px $layout-gutter-desktop;
+    }
+}

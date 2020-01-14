@@ -24,7 +24,7 @@
     }
 
     &__photo {
-        @include size(16px);
+        @include size(30px);
         background-image: url('/assets/img/woman.png');
         background-size: cover;
         border-radius: 50%;
@@ -33,7 +33,6 @@
 
 
         @include if-tablet {
-            @include size(30px);
             margin-left: 0px;
             margin-right: 20px;
         }

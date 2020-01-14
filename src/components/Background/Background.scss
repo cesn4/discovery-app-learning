@@ -8,18 +8,18 @@
 
     &__news {
         height: 388px;
-        padding: $layout-top-padding $layout-gutter;
+        padding: $layout-gutter-big $layout-gutter;
         width: 100%;
 
         @include if-tablet {
             display: flex;
             height: 400px;
-            padding: 73px 65px;
+            padding: 73px $layout-gutter-tablet;
         }
 
         @include if-desktop {
             height: 600px;
-            padding: 167px 125px 0px 125px;
+            padding: 167px $layout-gutter-desktop 0px $layout-gutter-desktop;
         }
     }
 
@@ -37,7 +37,7 @@
         font-size: $fonts-size-h1;
         font-weight: $font-weight-fat;
         line-height: $line-height-big;
-        padding-bottom: $layout-top-padding;
+        padding-bottom: $layout-gutter-big;
         width: 100%;
     }
 
@@ -46,27 +46,12 @@
         font-weight: $font-weight-fat;
         line-height: $line-height-medium;
         margin-bottom: 10px;
-        padding-top: $layout-top-padding;
+        padding-top: $layout-gutter-big;
     }
 
     &__paragraph {
         font-size: $fonts-size-text;
         line-height: $line-height-medium;
         margin-bottom: 15px;
-    }
-
-    &__posts {
-        display: flex;
-        flex-direction: column;
-        padding: 0px 11px;
-
-        @include if-tablet {
-            flex-direction: row;
-            padding: 0px 65px;
-        }
-
-        @include if-desktop {
-            flex-direction: column;
-        }
     }
 }

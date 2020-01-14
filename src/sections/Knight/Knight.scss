@@ -1,0 +1,16 @@
+.knight {
+    background-color: $color-knight-background;
+    padding: 0px $layout-gutter 0 $layout-gutter;
+
+    @include if-tablet {
+        padding: 0px $layout-gutter-tablet 0px $layout-gutter-tablet;
+    }
+
+    @include if-desktop {
+        padding: 0px $layout-gutter-desktop 0 $layout-gutter-desktop;
+    }
+
+    &__box {
+        padding: 0px $layout-gutter;
+    }
+}

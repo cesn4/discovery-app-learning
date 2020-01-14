@@ -1,0 +1,54 @@
+.trending-card {
+    background-color: $color-knight-background;
+    width: 100%;
+
+    &.-notVisible {
+        display: none;
+
+        @include if-desktop {
+            display: block;
+        }
+    }
+
+    &.-firstItem {
+        margin-bottom: $layout-gutter-bigger;
+
+        @include if-tablet {
+            margin-bottom: 0px;
+        }
+    }
+
+    &__background {
+        background-size: contain;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        height: 154px;
+        width: 100%;
+
+        @include if-tablet {
+            height: 180px;
+        }
+    }
+
+    &__text-box {
+        background-color: $color-body;
+        font-family: $font-family-primary;
+        height: 154px;
+        padding: 25px 24px;
+    }
+
+    &__title {
+        color: $color-title-black;
+        font-size: $fonts-size-text;
+        font-weight: $font-weight-fat;
+        line-height: $line-height-small;
+    }
+
+    &__paragraph-text {
+        color: $color-header-inactive;
+        font-size: $fonts-size-paragraph;
+        line-height: $line-height-big;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+}
