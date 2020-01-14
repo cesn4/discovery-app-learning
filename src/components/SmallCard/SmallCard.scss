@@ -14,14 +14,6 @@
         }
     }
 
-    &.-hidden {
-        display: none;
-
-        @include if-desktop {
-            display: block;
-        }
-    }
-
     &__image {
         background-size: contain;
         border-radius: 5px;

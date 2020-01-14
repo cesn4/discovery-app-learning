@@ -6,9 +6,9 @@ import Time from '~/components/Time';
 
 import './SmallCard.scss';
 
-const SmallCard = ({ image, title, time, firstItem, hidden }) => {
+const SmallCard = ({ image, title, time, firstItem }) => {
     return (
-        <div className={classNames('small-card', { '-firstItem': firstItem }, { '-hidden': hidden })}>
+        <div className={classNames('small-card', { '-firstItem': firstItem })}>
             <img src={image} alt="" className="small-card__image"/>
             <div className="small-card__text">
                 <div className="small-card__title">{title}</div>
@@ -22,13 +22,11 @@ SmallCard.propTypes = {
     image: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     time: PropTypes.string.isRequired,
-    firstItem: PropTypes.bool,
-    hidden: PropTypes.bool
+    firstItem: PropTypes.bool
 };
 
 SmallCard.defaultProp = {
-    firstItem: false,
-    hidden: false
+    firstItem: false
 };
 
 export default SmallCard;

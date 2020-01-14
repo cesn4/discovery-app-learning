@@ -6,9 +6,9 @@ import Time from '~/components/Time';
 
 import './TrendingCard.scss';
 
-const TrendingCard = ({ title, time, paragraphText, notVisible, image, firstItem }) => {
+const TrendingCard = ({ title, time, paragraphText, image, firstItem }) => {
     return (
-        <div className={classNames('trending-card', { '-notVisible': notVisible }, { '-firstItem': firstItem })} >
+        <div className={classNames('trending-card', { '-firstItem': firstItem })} >
             <img className="trending-card__background" src={image} />
             <div className="trending-card__text-box">
                 <span className="trending-card__title">{title}</span>
@@ -20,7 +20,6 @@ const TrendingCard = ({ title, time, paragraphText, notVisible, image, firstItem
 };
 
 TrendingCard.propTypes = {
-    notVisible: PropTypes.bool,
     image: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     paragraphText: PropTypes.string.isRequired,
@@ -29,7 +28,6 @@ TrendingCard.propTypes = {
 };
 
 TrendingCard.defaultProp = {
-    notVisibile: false,
     firstItem: false
 };
 
