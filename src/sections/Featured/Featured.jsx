@@ -27,7 +27,7 @@ const Featured = () => {
                     <Col sm={12} md={6} xl={4} className="featured__small-cards">
                         <SmallCard firstItem image={wall} title="Small title" time="3h ago by Worldnews"/>
                         <SmallCard image={castle} title="Small title" time="4h ago by Days" />
-                        <SmallCard image={random} title="Small title" time="4h ago by Days" />
+                        <SmallCard hidden image={random} title="Small title" time="4h ago by Days" />
                     </Col>
                 </Row>
             </Container>
