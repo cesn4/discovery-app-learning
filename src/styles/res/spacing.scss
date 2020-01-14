@@ -1,6 +1,9 @@
 $spacers-map: (
-    xs: "11px",
-    m: "30px"
+    xs: 11px,
+    m: 30px,
+    l: 40px,
+    xl: 65px,
+    xxl: 125px
 );
 
 @function spacer($_key) {

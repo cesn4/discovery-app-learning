@@ -6,10 +6,10 @@
     width: 100%;
 
     &.-firstItem {
-        margin-bottom: $layout-gutter-bigger;
+        margin-bottom: spacer(l);
     }
     &.-lastItem {
-        margin-bottom: $layout-gutter-bigger;
+        margin-bottom: spacer(l);
 
         @include if-desktop {
             margin-bottom: 60px;
@@ -28,7 +28,7 @@
         padding: 28px 24px;
 
         @include if-tablet {
-            padding: $layout-gutter-bigger;
+            padding: spacer(l);
         }
     }
 
@@ -36,7 +36,7 @@
         font-size: $fonts-size-text;
         font-weight: $font-weight-fat;
         line-height: $line-height-small;
-        margin-bottom: $layout-gutter-bigger;
+        margin-bottom: spacer(l);
 
         @include if-tablet {
             margin-bottom: 227px;

@@ -3,7 +3,7 @@
     width: 100%;
 
     &.-firstItem {
-        margin-bottom: $layout-gutter-bigger;
+        margin-bottom: spacer(l);
 
         @include if-tablet {
             margin-bottom: 0px;

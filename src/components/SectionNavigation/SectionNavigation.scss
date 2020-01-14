@@ -1,17 +1,17 @@
 .section-navigation {
     font-family: $font-family-primary;
-    padding: $layout-gutter-bigger $layout-gutter;
+    padding: spacer(l) spacer(xs);
     width: 100%;
 
     @include if-tablet {
-        padding: $layout-gutter-bigger $layout-gutter-tablet;
+        padding: spacer(l) spacer(l);
     }
 
     &.-borderless {
-        padding: $layout-gutter-bigger 0px 0px 0px;
+        padding: spacer(l) 0px 0px 0px;
 
         @include if-tablet {
-            padding: $layout-gutter-bigger 0px 0px 0px;
+            padding: spacer(l) 0px 0px 0px;
         }
     }
 
@@ -22,7 +22,7 @@
         border-width: 1px;
         display: flex;
         justify-content: flex-end;
-        padding-bottom: $layout-gutter-bigger;
+        padding-bottom: spacer(l);
 
         @include if-desktop {
             margin-right: 60px;

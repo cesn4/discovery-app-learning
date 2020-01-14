@@ -1,17 +1,17 @@
 .background  {
     height: 388px;
-    padding: $layout-gutter-big $layout-gutter;
+    padding: spacer(m) spacer(xs);
     width: 100%;
 
     @include if-tablet {
         display: flex;
         height: 400px;
-        padding: 73px $layout-gutter-tablet;
+        padding: 73px spacer(xl);
     }
 
     @include if-desktop {
         height: 600px;
-        padding: 167px $layout-gutter-desktop 0px $layout-gutter-desktop;
+        padding: 167px spacer(xxl) 0px spacer(xxl);
     }
 
     &__news-box {
@@ -28,7 +28,7 @@
         font-size: $fonts-size-h1;
         font-weight: $font-weight-fat;
         line-height: $line-height-big;
-        padding-bottom: $layout-gutter-big;
+        padding-bottom: spacer(m);
         width: 100%;
     }
 
@@ -37,7 +37,7 @@
         font-weight: $font-weight-fat;
         line-height: $line-height-medium;
         margin-bottom: 10px;
-        padding-top: $layout-gutter-big;
+        padding-top: spacer(m);
     }
 
     &__paragraph {
