@@ -1,4 +1,10 @@
 .hero {
+    &__background {
+        background-image: url('/assets/mount.jpg');
+        background-position: center;
+        background-repeat: none;
+        background-size: cover;
+    }
 
     &__posts {
         display: flex;
