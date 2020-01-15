@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     font-family: $font-family-primary;
+    width: 100%;
 
     @include if-tablet {
         margin-right: $layout-gutter-bigger;
@@ -9,6 +10,19 @@
 
     @include if-desktop {
         margin-right: 60px;
+    }
+
+    &__background {
+
+        &.-trending {
+            background-size: cover;
+            border-radius: 5px;
+            height: 150px;
+
+            @include if-tablet  {
+                height: 180px;
+            }
+        }
     }
 
     &__title {

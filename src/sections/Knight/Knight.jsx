@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Hidden } from 'react-grid-system';
 
-import TrendingCard from '~/components/TrendingCard';
+import PostInfo from '~/components/PostInfo';
 import SectionNavigation from '~/components/SectionNavigation';
 
 import sunflower from '~/assets/img/sunflower.jpg';
@@ -18,14 +18,14 @@ const Knight = () => {
                         <SectionNavigation title="Trending" borderless/>
                     </Col>
                     <Col sm={12} md={6} xl={4}>
-                        <TrendingCard image={bridge} title="Dolore magna aliqua" paragraphText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat." time="2m ago" />
+                        <PostInfo trending image={bridge} subtitle="Dolore magna aliqua" primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat." time="2m ago" />
                     </Col>
                     <Col sm={12} md={6} xl={4}>
-                        <TrendingCard image={road} title="Morbi eleifend a libero" paragraphText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat." time="1h ago"/>
+                        <PostInfo trending image={road} subtitle="Morbi eleifend a libero" primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat." time="1h ago"/>
                     </Col>
                     <Hidden sm md>
                         <Col xl={4}>
-                            <TrendingCard image={sunflower} title="Morbi eleifend a libero" paragraphText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat." time="3h ago"/>
+                            <PostInfo trending image={sunflower} subtitle="Morbi eleifend a libero" primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat." time="3h ago"/>
                         </Col>
                     </Hidden>
                 </Row>
