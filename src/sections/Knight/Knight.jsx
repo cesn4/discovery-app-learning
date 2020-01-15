@@ -14,13 +14,13 @@ const Knight = () => {
         <div className="knight">
             <Container fluid className="knight__box">
                 <Row>
-                    <Col sm={12} md={12} xl={12}>
+                    <Col xs={12} md={12} xl={12}>
                         <SectionNavigation title="Trending" borderless/>
                     </Col>
-                    <Col sm={12} md={6} xl={4}>
+                    <Col xs={12} md={6} xl={4}>
                         <TrendingCard firstItem image={bridge} title="Dolore magna aliqua" paragraphText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat." time="2m ago" />
                     </Col>
-                    <Col sm={12} md={6} xl={4}>
+                    <Col xs={12} md={6} xl={4}>
                         <TrendingCard image={road} title="Morbi eleifend a libero" paragraphText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat." time="1h ago"/>
                     </Col>
                     <Hidden sm md>

@@ -1,3 +1,27 @@
 .footer {
     background-color: $color-footer-background;
+    padding: 50px spacer(xs) 35px spacer(xs);
+
+    &__columns {
+        color: $color-body;
+        font-family: $font-family-primary;
+        font-size: $fonts-size-navigation;
+        font-weight: $font-weight-fat;
+        line-height: $line-height-big;
+        list-style: none;
+        opacity: 0.5;
+    }
+
+    &__item {
+        margin-bottom: 20px;
+
+        &.-lastItem {
+            margin-bottom: 45px;
+        }
+    }
+
+    &__img {
+        margin-right: 24px;
+        @include size(16px)
+    }
 }
