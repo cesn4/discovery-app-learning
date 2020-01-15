@@ -1,5 +1,7 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-grid-system';
+import { Container, Row, Col, Hidden } from 'react-grid-system';
+
+import Logo from '~/components/Logo';
 
 import instagram from '~/assets/img/instagram.png';
 import facebook from '~/assets/img/facebook.png';
@@ -12,20 +14,35 @@ const Footer = () => {
         <footer className="footer">
             <Container fluid>
                 <Row>
-                    <Col xs={6} md={6} xl={4} >
+                    <Hidden xs>
+                        <Col md={6}>
+                            <Logo />
+                        </Col>
+                    </Hidden>
+                    <Hidden xs>
+                        <Col md={1.5}>
+                            <ul className="footer__columns">
+                                <li className="footer__item">Home</li>
+                                <li className="footer__item">Discovery</li>
+                                <li className="footer__item">Photos</li>
+                                <li className="footer__item -lastItem">Contact</li>
+                            </ul>
+                        </Col>
+                    </Hidden>
+                    <Col xs={6} md={1.5} xl={4} >
                         <ul className="footer__columns">
-                            <li className="footer__item">ABOUT</li>
-                            <li className="footer__item">HELP</li>
-                            <li className="footer__item">TERMS</li>
-                            <li className="footer__item -lastItem">GUIDLINES</li>
+                            <li className="footer__item">About</li>
+                            <li className="footer__item">Help</li>
+                            <li className="footer__item">Terms</li>
+                            <li className="footer__item -lastItem">Guidlines</li>
                         </ul>
                     </Col>
-                    <Col xs={6} md={6} xl={4} >
+                    <Col xs={6} md={3} xl={4} >
                         <ul className="footer__columns">
-                            <li className="footer__item">TESTIMONIALS</li>
-                            <li className="footer__item">ADVERTISE</li>
-                            <li className="footer__item">INTEGRATIONS</li>
-                            <li className="footer__item -lastItem">CAREERS</li>
+                            <li className="footer__item">Testimonials</li>
+                            <li className="footer__item">Advertise</li>
+                            <li className="footer__item">Integrations</li>
+                            <li className="footer__item -lastItem">Careers</li>
                         </ul>
                     </Col>
                 </Row>

@@ -2,6 +2,10 @@
     background-color: $color-footer-background;
     padding: 50px spacer(xs) 35px spacer(xs);
 
+    @include if-tablet {
+        padding: 50px spacer(l)
+    }
+
     &__columns {
         color: $color-body;
         font-family: $font-family-primary;
@@ -10,13 +14,23 @@
         line-height: $line-height-big;
         list-style: none;
         opacity: 0.5;
+
+        @include if-tablet {
+            font-size: $fonts-size-paragraph;
+        }
     }
 
     &__item {
         margin-bottom: 20px;
+        text-transform: uppercase;
 
         &.-lastItem {
             margin-bottom: 45px;
+        }
+
+        @include if-tablet {
+            margin-bottom: 3px;
+            text-transform: none;
         }
     }
 
