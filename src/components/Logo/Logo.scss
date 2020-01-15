@@ -7,15 +7,15 @@
     line-height: $line-height-medium;
     text-align: center;
 
+    &.-footer {
+        color: $color-body;
+        margin: 3px 0px;
+    }
+
     @include if-tablet {
         color: $color-accent;
         margin-left: 20px;
         margin-right: auto;
         text-align: left;
-
-        &.-footer {
-            color: $color-body;
-            margin: 0px;
-        }
     }
 }

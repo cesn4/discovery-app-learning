@@ -8,7 +8,7 @@
     &__posts-box {
 
         @include if-desktop {
-            padding-top: 50px;
+            padding-top: spacer(lm);
         }
     }
 

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import './Logo.scss';
 
-const Logo = (footer) => {
+const Logo = ({ footer }) => {
     return (
         <div className={classNames('logo', { '-footer': footer })}>LOGO</div>
     );

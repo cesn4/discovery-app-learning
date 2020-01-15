@@ -2,15 +2,16 @@
     background-color: $color-footer-background;
     color: $color-footer-input;
     font-family: $font-family-primary;
-    padding: 50px spacer(xs) 35px spacer(xs);
+    padding: spacer(lm) spacer(xs) 35px spacer(xs);
     width: 100%;
 
     @include if-tablet {
-        padding: 50px spacer(l)
+        padding: spacer(lm) spacer(l)
     }
 
     @include if-desktop {
         height: 200px;
+        padding: spacer(lm) spacer(xxl);
     }
 
     &__columns {
@@ -46,9 +47,14 @@
             justify-content: end;
             width: 100%;
         }
+
+        @include if-desktop {
+            align-items: start;
+            margin-top: 3px;
+        }
     }
 
-    &__img {
+    &__media-img {
         margin-right: 24px;
         @include size(16px)
     }
@@ -56,6 +62,10 @@
     &__input-box {
         display: flex;
         flex-direction: column;
+
+        @include if-desktop {
+            margin-top: 3px;
+        }
     }
 
     &__input-border {
@@ -66,6 +76,7 @@
         border-radius: 4px;
         display: flex;
         height: spacer(l);
+        position: relative;
     }
 
     &__input {
@@ -74,12 +85,11 @@
         border-radius: 4px;
         color: $color-footer-input;
         font-family: $font-family-primary;
-        margin-left: 20px;
+        margin: 0px 45px 0px 20px;
         width: 100%;
     }
 
     &__input-button {
-        background-color: transparent;
         border: none;
         border-radius: 4px;
         margin-top: 5px;
@@ -89,6 +99,12 @@
 
     &__button-img {
         @include size(16px);
+    }
+
+    &__button-anchor {
+        position: absolute;
+        right: 0px;
+        top: 2px;
     }
 
     &__input-line {

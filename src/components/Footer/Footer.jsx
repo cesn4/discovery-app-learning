@@ -17,7 +17,7 @@ const Footer = () => {
                 <Row>
                     <Hidden xs>
                         <Col md={6} xl={1}>
-                            <Logo />
+                            <Logo footer/>
                         </Col>
                     </Hidden>
                     <Hidden xs>
@@ -46,29 +46,27 @@ const Footer = () => {
                             <li className="footer__item -lastItem">Careers</li>
                         </ul>
                     </Col>
-                </Row>
-                <Row>
                     <Hidden xs>
-                        <Col md={6}>
+                        <Col md={6} xl={3}>
                             <div className="footer__input-box">
                                 <div className="footer__input-border">
                                     <input className="footer__input" placeholder="Email"/>
-                                    <a href="#">
-                                        <button className="footer__input-button">
+                                    <a href="#" className="footer__button-anchor">
+                                        <div className="footer__input-button">
                                             <img src={send} className="footer__button-img"/>
-                                        </button>
+                                        </div>
                                     </a>
                                 </div>
                                 <span className="footer__input-line">Stay in touch with us for the freshest products!</span>
                             </div>
                         </Col>
                     </Hidden>
-                    <Col md={6}>
+                    <Col md={6} xl={3}>
                         <div className="footer__media">
-                            <a href="#" ><img src={instagram} alt="" className="footer__img"/></a>
-                            <a href="#" ><img src={twitter} alt="" className="footer__img"/></a>
-                            <a href="#" ><img src={facebook} alt="" className="footer__img"/></a>
-                            <a href="#"><img src={web} alt="" className="footer__img"/></a>
+                            <a href="#" ><img src={instagram} alt="" className="footer__media-img"/></a>
+                            <a href="#" ><img src={twitter} alt="" className="footer__media-img"/></a>
+                            <a href="#" ><img src={facebook} alt="" className="footer__media-img"/></a>
+                            <a href="#"><img src={web} alt="" className="footer__media-img"/></a>
                         </div>
                     </Col>
                 </Row>
