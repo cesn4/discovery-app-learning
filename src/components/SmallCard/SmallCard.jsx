@@ -12,7 +12,7 @@ const SmallCard = ({ image, title, time, firstItem }) => {
             <img src={image} alt="" className="small-card__image"/>
             <div className="small-card__text">
                 <div className="small-card__title">{title}</div>
-                <Time timeText={time}/>
+                <Time text={time}/>
             </div>
         </div>
     );

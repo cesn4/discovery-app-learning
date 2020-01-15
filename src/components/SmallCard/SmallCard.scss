@@ -6,7 +6,7 @@
     }
     &.-firstItem {
         border-top: solid 1px $color-header-inactive;
-        padding-top: 40px;
+        padding-top: spaser(l);
 
         @include if-tablet {
             border-top: none;
@@ -15,7 +15,7 @@
     }
 
     &__image {
-        background-size: contain;
+        background-size: cover;
         border-radius: 5px;
         height: 180px;
         width: 100%;

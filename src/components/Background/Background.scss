@@ -24,7 +24,7 @@
     &__title-box {
         border-bottom: solid;
         border-color: $color-hero-text;
-        border-width: 2px;
+        border-width: border(m);
         font-size: $fonts-size-h1;
         font-weight: $font-weight-fat;
         line-height: $line-height-big;

@@ -16,7 +16,7 @@ const FeaturedCard = ({ theme, title, paragraph, time, background, firstItem, la
                 <span className="featured-card__theme">{theme}</span>
                 <span className="featured-card__title">{title}</span>
                 <p className="featured-card__paragraph">{paragraph}</p>
-                <Time marginless timeText={time}/>
+                <Time marginless text={time}/>
             </div>
         </div>
     );

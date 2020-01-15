@@ -5,17 +5,17 @@ import classNames from 'classnames';
 import '~/assets/img/time.png';
 import './Time.scss';
 
-const Time = ({ timeText, marginless }) => {
+const Time = ({ text, marginless }) => {
     return (
         <div className={classNames('time', { '-marginless': marginless })}>
             <i className="time__clock"></i>
-            <span className="time__clock-time">{timeText}</span>
+            <span className="time__clock-time">{text}</span>
         </div>
     );
 };
 
 Time.propTypes = {
-    timeText: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
     marginless: PropTypes.bool
 };
 

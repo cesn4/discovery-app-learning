@@ -12,7 +12,7 @@ const PostInfo = ({ title, subtitle, primaryText, time }) => {
             <span className="post-info__title">{title}</span>
             <span className="post-info__subtitle">{subtitle}</span>
             <p className="post-info__text">{primaryText}</p>
-            <Time timeText={time}/>
+            <Time text={time}/>
         </div>
     );
 };

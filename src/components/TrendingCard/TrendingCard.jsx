@@ -13,7 +13,7 @@ const TrendingCard = ({ title, time, paragraphText, image, firstItem }) => {
             <div className="trending-card__text-box">
                 <span className="trending-card__title">{title}</span>
                 <p className="trending-card__paragraph-text">{paragraphText}</p>
-                <Time marginless timeText={time}/>
+                <Time marginless text={time}/>
             </div>
         </div>
     );
