@@ -3,6 +3,7 @@ import { Container, Row, Col, Hidden } from 'react-grid-system';
 
 import Logo from '~/components/Logo';
 
+import send from '~/assets/img/send.png';
 import instagram from '~/assets/img/instagram.png';
 import facebook from '~/assets/img/facebook.png';
 import twitter from '~/assets/img/twitter.png';
@@ -47,7 +48,22 @@ const Footer = () => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col>
+                    <Hidden xs>
+                        <Col md={6}>
+                            <div className="footer__input-box">
+                                <div className="footer__input-border">
+                                    <input className="footer__input" placeholder="Email"/>
+                                    <a href="#">
+                                        <button className="footer__input-button">
+                                            <img src={send} className="footer__button-img"/>
+                                        </button>
+                                    </a>
+                                </div>
+                                <span className="footer__input-line">Stay in touch with us for the freshest products!</span>
+                            </div>
+                        </Col>
+                    </Hidden>
+                    <Col md={6}>
                         <div className="footer__media">
                             <a href="#" ><img src={instagram} alt="" className="footer__img"/></a>
                             <a href="#" ><img src={twitter} alt="" className="footer__img"/></a>

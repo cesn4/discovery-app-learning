@@ -1,5 +1,7 @@
 .footer {
     background-color: $color-footer-background;
+    color: $color-footer-input;
+    font-family: $font-family-primary;
     padding: 50px spacer(xs) 35px spacer(xs);
 
     @include if-tablet {
@@ -7,13 +9,10 @@
     }
 
     &__columns {
-        color: $color-body;
-        font-family: $font-family-primary;
         font-size: $fonts-size-navigation;
         font-weight: $font-weight-fat;
         line-height: $line-height-big;
         list-style: none;
-        opacity: 0.5;
 
         @include if-tablet {
             font-size: $fonts-size-paragraph;
@@ -34,8 +33,62 @@
         }
     }
 
+    &__media {
+        @include if-tablet {
+            align-items: flex-end;
+            display: flex;
+            height: 65px;
+            justify-content: end;
+            width: 100%;
+        }
+    }
+
     &__img {
         margin-right: 24px;
         @include size(16px)
+    }
+
+    &__input-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__input-border {
+        align-items: center;
+        background-color: $color-footer-background;
+        border: solid 1px;
+        border-color: $color-footer-input;
+        border-radius: 4px;
+        display: flex;
+        height: spacer(l);
+    }
+
+    &__input {
+        background-color: $color-footer-background;
+        border: none;
+        border-radius: 4px;
+        color: $color-footer-input;
+        font-family: $font-family-primary;
+        margin-left: 20px;
+        width: 100%;
+    }
+
+    &__input-button {
+        background-color: transparent;
+        border: none;
+        border-radius: 4px;
+        margin-top: 5px;
+        padding: 5px 17px;
+        pointer-events: none;
+    }
+
+    &__button-img {
+        @include size(16px);
+    }
+
+    &__input-line {
+        font-size: $fonts-size-navigation;
+        line-height: $line-height-big;
+        margin-top: 6px;
     }
 }
