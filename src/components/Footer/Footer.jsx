@@ -16,12 +16,12 @@ const Footer = () => {
             <Container fluid>
                 <Row>
                     <Hidden xs>
-                        <Col md={6}>
+                        <Col md={6} xl={1}>
                             <Logo />
                         </Col>
                     </Hidden>
                     <Hidden xs>
-                        <Col md={1.5}>
+                        <Col md={1.5} xl={1}>
                             <ul className="footer__columns">
                                 <li className="footer__item">Home</li>
                                 <li className="footer__item">Discovery</li>
@@ -30,7 +30,7 @@ const Footer = () => {
                             </ul>
                         </Col>
                     </Hidden>
-                    <Col xs={6} md={1.5} xl={4} >
+                    <Col xs={6} md={1.5} xl={1} >
                         <ul className="footer__columns">
                             <li className="footer__item">About</li>
                             <li className="footer__item">Help</li>
@@ -38,7 +38,7 @@ const Footer = () => {
                             <li className="footer__item -lastItem">Guidlines</li>
                         </ul>
                     </Col>
-                    <Col xs={6} md={3} xl={4} >
+                    <Col xs={6} md={3} xl={3} >
                         <ul className="footer__columns">
                             <li className="footer__item">Testimonials</li>
                             <li className="footer__item">Advertise</li>

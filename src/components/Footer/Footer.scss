@@ -3,9 +3,14 @@
     color: $color-footer-input;
     font-family: $font-family-primary;
     padding: 50px spacer(xs) 35px spacer(xs);
+    width: 100%;
 
     @include if-tablet {
         padding: 50px spacer(l)
+    }
+
+    @include if-desktop {
+        height: 200px;
     }
 
     &__columns {
