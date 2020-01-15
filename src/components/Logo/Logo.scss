@@ -9,12 +9,12 @@
 
     &.-footer {
         color: $color-body;
-        margin: 3px 0px;
+        margin: spacer(xxxs) 0;
     }
 
     @include if-tablet {
         color: $color-accent;
-        margin-left: 20px;
+        margin-left: spacer(xm);
         margin-right: auto;
         text-align: left;
     }

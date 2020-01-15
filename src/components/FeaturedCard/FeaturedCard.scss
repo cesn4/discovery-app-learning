@@ -1,8 +1,8 @@
 .featured-card {
     background-position: center;
     background-size: cover;
-    border-radius: 5px;
-    height: 299px;
+    border-radius: spacer(xxss);
+    height: 300px;
     width: 100%;
 
     &.-first-item {
@@ -12,7 +12,7 @@
         margin-bottom: spacer(l);
 
         @include if-desktop {
-            margin-bottom: 60px;
+            margin-bottom: spacer(xl);
         }
     }
 
@@ -25,7 +25,7 @@
         display: flex;
         flex-direction: column;
         font-family: $font-family-primary;
-        padding: 28px 24px;
+        padding: spacer(m) 24px;
 
         @include if-tablet {
             padding: spacer(l);
@@ -39,7 +39,7 @@
         margin-bottom: spacer(l);
 
         @include if-tablet {
-            margin-bottom: 227px;
+            margin-bottom: 230px;
         }
     }
 
@@ -47,12 +47,12 @@
         font-size: $fonts-size-h1;
         font-weight: $font-weight-fat;
         line-height: $line-height-medium;
-        margin-bottom: 3px;
+        margin-bottom: spacer(xxxs);
     }
 
     &__paragraph {
         font-size: $fonts-size-paragraph;
         line-height: $line-height-medium;
-        margin-bottom: 9px;
+        margin-bottom: spacer(xs);
     }
 }

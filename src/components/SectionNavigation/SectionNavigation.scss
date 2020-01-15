@@ -8,10 +8,10 @@
     }
 
     &.-borderless {
-        padding: spacer(l) 0px 0px 0px;
+        padding: spacer(l) 0 0 0;
 
         @include if-tablet {
-            padding: spacer(l) 0px 0px 0px;
+            padding: spacer(l) 0 0 0;
         }
     }
 
@@ -25,14 +25,14 @@
         padding-bottom: spacer(l);
 
         @include if-desktop {
-            margin-right: 60px;
+            margin-right: spacer(xl);
         }
 
         &.-borderless {
             border-bottom: none;
 
             @include if-desktop {
-                margin-right: 0px;
+                margin-right: 0;
             }
         }
     }
@@ -54,7 +54,7 @@
 
         &.-left {
             background-image: url('/assets/img/arrowLeft.png');
-            margin-right: 32px;
+            margin-right:  spacer(m);
         }
         &.-right {
             background-image: url('/assets/img/arrowRight.png');

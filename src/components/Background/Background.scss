@@ -6,12 +6,12 @@
     @include if-tablet {
         display: flex;
         height: 400px;
-        padding: 73px spacer(xl);
+        padding: 70px spacer(xl);
     }
 
     @include if-desktop {
         height: 600px;
-        padding: 167px spacer(xxl) 0px spacer(xxl);
+        padding: 170px spacer(xxl) 0 spacer(xxl);
     }
 
     &__news-box {
@@ -36,7 +36,7 @@
         font-size: $fonts-size-h1;
         font-weight: $font-weight-fat;
         line-height: $line-height-medium;
-        margin-bottom: 10px;
+        margin-bottom: spacer(xs);
         padding-top: spacer(m);
     }
 

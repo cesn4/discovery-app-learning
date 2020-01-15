@@ -6,15 +6,15 @@
         margin-bottom: spacer(l);
 
         @include if-tablet {
-            margin-bottom: 0px;
+            margin-bottom: 0;
         }
     }
 
     &__background {
         background-size: contain;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-        height: 154px;
+        border-top-left-radius: spacer(xxss);
+        border-top-right-radius: spacer(xxss);
+        height: 150px;
         width: 100%;
 
         @include if-tablet {
@@ -25,8 +25,8 @@
     &__text-box {
         background-color: $color-body;
         font-family: $font-family-primary;
-        height: 154px;
-        padding: 25px 24px;
+        height: 150px;
+        padding: 25px
     }
 
     &__title {
@@ -40,7 +40,7 @@
         color: $color-header-inactive;
         font-size: $fonts-size-paragraph;
         line-height: $line-height-big;
-        margin-bottom: 5px;
-        margin-top: 10px;
+        margin-bottom: spacer(xxss);
+        margin-top: spacer(xs);
     }
 }

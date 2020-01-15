@@ -2,41 +2,41 @@
     background-color: $color-knight-background;
 
     @include if-desktop {
-        padding-bottom: 8px;
+        padding-bottom: spacer(xxs);
     }
     &.-firstItem {
-        border-top: solid 1px $color-header-inactive;
-        padding-top: spaser(l);
+        border-top: solid border(s) $color-header-inactive;
+        padding-top: spacer(l);
 
         @include if-tablet {
             border-top: none;
-            padding-top: 0px;
+            padding-top: 0;
         }
     }
 
     &__image {
         background-size: cover;
-        border-radius: 5px;
+        border-radius: spacer(xxss);
         height: 180px;
         width: 100%;
 
         @include if-desktop {
             height: 210px;
-            margin-bottom: 3px;
+            margin-bottom: spacer(xxxs);
         }
     }
 
     &__text {
         color: $color-title-black;
         font-family: $font-family-primary;
-        margin-top: 8px;
+        margin-top: spacer(xxs);
     }
 
     &__title {
         font-size: $fonts-size-text;
         font-weight: $font-weight-fat;
         line-height: $line-height-medium;
-        margin-bottom: 3px;
+        margin-bottom: spacer(xxxs);
     }
 
 

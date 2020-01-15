@@ -2,7 +2,7 @@
     background-color: $color-footer-background;
     color: $color-footer-input;
     font-family: $font-family-primary;
-    padding: spacer(lm) spacer(xs) 35px spacer(xs);
+    padding: spacer(lm) spacer(xs) spacer(l) spacer(xs);
     width: 100%;
 
     @include if-tablet {
@@ -26,15 +26,15 @@
     }
 
     &__item {
-        margin-bottom: 20px;
+        margin-bottom: spacer(xm);
         text-transform: uppercase;
 
         &.-lastItem {
-            margin-bottom: 45px;
+            margin-bottom: spacer(l);
         }
 
         @include if-tablet {
-            margin-bottom: 3px;
+            margin-bottom: spacer(xxxs);
             text-transform: none;
         }
     }
@@ -50,7 +50,7 @@
 
         @include if-desktop {
             align-items: start;
-            margin-top: 3px;
+            margin-top: spacer(xxxs);
         }
     }
 
@@ -64,7 +64,7 @@
         flex-direction: column;
 
         @include if-desktop {
-            margin-top: 3px;
+            margin-top: spacer(xxxs);
         }
     }
 
@@ -85,15 +85,15 @@
         border-radius: 4px;
         color: $color-footer-input;
         font-family: $font-family-primary;
-        margin: 0px 45px 0px 20px;
+        margin: 0 spacer(l) 0 spacer(xm);
         width: 100%;
     }
 
     &__input-button {
         border: none;
         border-radius: 4px;
-        margin-top: 5px;
-        padding: 5px 17px;
+        margin-top: spacer(xxss);
+        padding: spacer(xxss) 17px;
         pointer-events: none;
     }
 
@@ -103,8 +103,8 @@
 
     &__button-anchor {
         position: absolute;
-        right: 0px;
-        top: 2px;
+        right: 0;
+        top: spacer(xxxs);
     }
 
     &__input-line {
