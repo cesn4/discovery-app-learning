@@ -3,6 +3,10 @@
     display: flex;
     margin-bottom: 35px;
 
+    &.-marginless {
+        margin-bottom: 0;
+    }
+
     &__clock {
         @include size(16px);
         background-image: url('/assets/img/time.png');

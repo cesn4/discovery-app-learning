@@ -5,10 +5,10 @@
     height: 299px;
     width: 100%;
 
-    &.-firstItem {
+    &.-first-item {
         margin-bottom: spacer(l);
     }
-    &.-lastItem {
+    &.-last-item {
         margin-bottom: spacer(l);
 
         @include if-desktop {

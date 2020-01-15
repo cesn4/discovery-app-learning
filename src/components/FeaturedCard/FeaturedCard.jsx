@@ -11,12 +11,12 @@ const FeaturedCard = ({ theme, title, paragraph, time, background, firstItem, la
         backgroundImage: 'url(' + background + ')'
     };
     return (
-        <div className={classNames('featured-card', { '-firstItem': firstItem }, { '-lastItem': lastItem })} style={styleBack}>
+        <div className={classNames('featured-card', { '-first-item': firstItem }, { '-last-item': lastItem })} style={styleBack}>
             <div className="featured-card__text-box">
                 <span className="featured-card__theme">{theme}</span>
                 <span className="featured-card__title">{title}</span>
                 <p className="featured-card__paragraph">{paragraph}</p>
-                <Time timeText={time}/>
+                <Time marginless timeText={time}/>
             </div>
         </div>
     );
