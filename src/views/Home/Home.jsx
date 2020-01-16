@@ -5,16 +5,18 @@ import Header from '~/components/Header';
 import Footer from '~/components/Footer';
 import Hero from '~/sections/Hero';
 
-const Home = () => {
-    return (
-        <div className="home">
-            <Sidebar />
-            <Header />
-            <Hero />
-            Home view
-            <Footer />
-        </div>
-    );
+class Home extends React.Component {
+    render () {
+        return (
+            <div className="home">
+                <Sidebar />
+                <Header />
+                <Hero />
+                Home view
+                <Footer />
+            </div>
+        );
+    };
 };
 
 export default Home;
