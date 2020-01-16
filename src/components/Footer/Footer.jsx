@@ -26,7 +26,7 @@ const Footer = () => {
                                 <li className="footer__item">Home</li>
                                 <li className="footer__item">Discovery</li>
                                 <li className="footer__item">Photos</li>
-                                <li className="footer__item -lastItem">Contact</li>
+                                <li className="footer__item">Contact</li>
                             </ul>
                         </Col>
                     </Hidden>
@@ -35,7 +35,7 @@ const Footer = () => {
                             <li className="footer__item">About</li>
                             <li className="footer__item">Help</li>
                             <li className="footer__item">Terms</li>
-                            <li className="footer__item -lastItem">Guidlines</li>
+                            <li className="footer__item">Guidlines</li>
                         </ul>
                     </Col>
                     <Col xs={6} md={3} xl={3} >
@@ -43,7 +43,7 @@ const Footer = () => {
                             <li className="footer__item">Testimonials</li>
                             <li className="footer__item">Advertise</li>
                             <li className="footer__item">Integrations</li>
-                            <li className="footer__item -lastItem">Careers</li>
+                            <li className="footer__item">Careers</li>
                         </ul>
                     </Col>
                     <Hidden xs>
