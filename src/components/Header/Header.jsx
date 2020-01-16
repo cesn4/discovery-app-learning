@@ -11,7 +11,7 @@ import './Header.scss';
 const Header = () => {
     return (
         <header className="header">
-            <div className="header__menu-icon"></div>
+            <button className="header__menu-icon"></button>
             <Logo />
             <MainNavigation />
             <div className="header__photo"></div>
