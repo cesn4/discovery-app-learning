@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './Sidebar.scss';
 
-const Sidebar = () => {
+const Sidebar = ({ drawSidebar }) => {
     return (
         <div className="sidebar">
             <div className="sidebar__text">
@@ -15,8 +16,13 @@ const Sidebar = () => {
                     <li><img src="#" className="sidebar__img"/>Profile</li>
                 </ul>
             </div>
+            <button className="sidebar__backdraw" onClick={drawSidebar}></button>
         </div>
     );
+};
+
+Sidebar.propTypes = {
+    drawSidebar: PropTypes.string.isRequired
 };
 
 export default Sidebar;

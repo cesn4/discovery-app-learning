@@ -14,7 +14,7 @@ const Home = () => {
 
     return (
         <div className="home">
-            {sidebarOpen === false ? undefined : <Sidebar />}
+            {sidebarOpen === false ? undefined : <Sidebar drawSidebar={drawerToggleClickHandler}/>}
             <Header drawSidebar={drawerToggleClickHandler}/>
             <Hero />
             Home view
