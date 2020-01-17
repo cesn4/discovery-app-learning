@@ -1,16 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
 
 import '~/assets/img/time.png';
 
 import './PostInfo.scss';
 
-const PostInfo = ({ title, subtitle, primaryText, time, trending, image }) => {
+const PostInfo = ({ title, subtitle, primaryText, time }) => {
     return (
         <div className="post-info">
-            <img className={classNames('post-info__background', { '-trending': trending })} src={image} />
-            <span className={classNames('post-info__title', { '-trending': trending })}>{title}</span>
+            { title && <span className="post-info__title">{title}</span>}
             <span className="post-info__subtitle">{subtitle}</span>
             <p className="post-info__text">{primaryText}</p>
             <div className="post-info__time">
@@ -22,16 +20,14 @@ const PostInfo = ({ title, subtitle, primaryText, time, trending, image }) => {
 };
 
 PostInfo.propTypes = {
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string,
     subtitle: PropTypes.string.isRequired,
     primaryText: PropTypes.string.isRequired,
-    time: PropTypes.string.isRequired,
-    trending: PropTypes.bool,
-    image: PropTypes.string.isRequired
+    time: PropTypes.string.isRequired
 };
 
 PostInfo.defaultProps = {
-    trending: false
+    title: undefined
 };
 
 export default PostInfo;

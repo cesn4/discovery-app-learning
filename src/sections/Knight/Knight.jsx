@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Hidden } from 'react-grid-system';
 
-import PostInfo from '~/components/PostInfo';
+import TrendingCard from '~/components/TrendingCard';
 import SectionNavigation from '~/components/SectionNavigation';
 
 import sunflower from '~/assets/img/sunflower.jpg';
@@ -14,18 +14,18 @@ const Knight = () => {
         <div className="knight">
             <Container fluid className="knight__box">
                 <Row>
-                    <Col sm={12} md={12} xl={12}>
+                    <Col xs={12} md={12} xl={12}>
                         <SectionNavigation title="Trending" borderless/>
                     </Col>
-                    <Col sm={12} md={6} xl={4}>
-                        <PostInfo trending image={bridge} subtitle="Dolore magna aliqua" primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat." time="2m ago" />
+                    <Col xs={12} md={6} xl={4}>
+                        <TrendingCard image={bridge} subtitle="Dolore magna aliqua" primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat." time="2m ago" />
                     </Col>
-                    <Col sm={12} md={6} xl={4}>
-                        <PostInfo trending image={road} subtitle="Morbi eleifend a libero" primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat." time="1h ago"/>
+                    <Col xs={12} md={6} xl={4}>
+                        <TrendingCard image={road} subtitle="Morbi eleifend a libero" primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat." time="1h ago"/>
                     </Col>
-                    <Hidden sm md>
+                    <Hidden xs md>
                         <Col xl={4}>
-                            <PostInfo trending image={sunflower} subtitle="Morbi eleifend a libero" primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat." time="3h ago"/>
+                            <TrendingCard image={sunflower} subtitle="Morbi eleifend a libero" primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat." time="3h ago"/>
                         </Col>
                     </Hidden>
                 </Row>

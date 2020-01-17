@@ -1,0 +1,13 @@
+.trending-card {
+
+    &__image {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        height: 150px;
+        width: 100%;
+
+        @include if-tablet {
+            height: 180px;
+        }
+    }
+}

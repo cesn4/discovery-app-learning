@@ -12,19 +12,6 @@
         margin-right: 60px;
     }
 
-    &__background {
-
-        &.-trending {
-            background-size: cover;
-            border-radius: 5px;
-            height: 150px;
-
-            @include if-tablet  {
-                height: 180px;
-            }
-        }
-    }
-
     &__title {
         color: $color-accent;
         font-size: $fonts-size-text;
