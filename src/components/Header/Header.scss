@@ -12,13 +12,13 @@
     }
 
     &__menu-icon {
+        background-color: inherit;
         background-image: url('/assets/img/menuIcon.png');
+        border: none;
         height: 14px;
         margin-left: 16px;
         margin-right: auto;
         width: 16px;
-        border: none;
-        background-color: inherit;
 
         @include if-tablet {
             display: none;

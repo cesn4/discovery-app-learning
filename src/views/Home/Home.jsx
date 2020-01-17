@@ -1,32 +1,26 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
 import Sidebar from '~/components/Sidebar';
 import Header from '~/components/Header';
 import Footer from '~/components/Footer';
 import Hero from '~/sections/Hero';
 
-class Home extends Component {
-    state = {
-        sidebarOpen: false
+const Home = () => {
+    const [sidebarOpen, setSidebar] = useState(false);
+
+    const drawerToggleClickHandler = () => {
+        setSidebar({ sidebarOpen: !sidebarOpen });
     };
 
-    drawerToggleClickHandler = () => {
-        this.setState((prevState) => {
-            return {sidebarOpen: !prevState.sidebarOpen};
-        });
-    };
-
-    render () {
-        return (
-            <div className="home">
-                <Sidebar />
-                <Header />
-                <Hero />
-                Home view
-                <Footer />
-            </div>
-        );
-    };
+    return (
+        <div className="home">
+            {sidebarOpen === false ? undefined : <Sidebar />}
+            <Header drawSidebar={drawerToggleClickHandler}/>
+            <Hero />
+            Home view
+            <Footer />
+        </div>
+    );
 };
 
 export default Home;
