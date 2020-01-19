@@ -16,7 +16,7 @@ const Hero = () => {
                     <Col xs={12} md={12} xl={7} className="hero__background">
                         <Background />
                     </Col>
-                    <Col xs={12} md={12} xl={5} className="hero__posts-box">
+                    <Col xs={12} md={12} xl={5}>
                         <SectionNavigation title="Discoveries" />
                         <div className="hero__posts">
                             <PostInfo title="Travel" subtitle="Article title" primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…" time="2m ago"/>
