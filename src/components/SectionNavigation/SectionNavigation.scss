@@ -1,16 +1,18 @@
 .section-navigation {
     font-family: $font-family-primary;
-    height: 100px;
-    padding: $layout-gutter-big $layout-gutter;
+    padding: $layout-gutter-bigger $layout-gutter;
     width: 100%;
 
     @include if-tablet {
-        padding: 40px 65px;
+        padding: $layout-gutter-bigger 65px;
     }
 
-    @include if-desktop {
-        height: 160px;
-        padding-top: 70px;
+    &.-borderless {
+        padding: $layout-gutter-bigger 0px 0px 0px;
+
+        @include if-tablet {
+            padding: $layout-gutter-bigger 0px 0px 0px;
+        }
     }
 
     &__title-box {
@@ -20,10 +22,18 @@
         border-width: 1px;
         display: flex;
         justify-content: flex-end;
-        padding-bottom: $layout-gutter-big;
+        padding-bottom: $layout-gutter-bigger;
 
         @include if-desktop {
-            margin-right: 40px;
+            margin-right: 60px;
+        }
+
+        &.-borderless {
+            border-bottom: none;
+
+            @include if-desktop {
+                margin-right: 0px;
+            }
         }
     }
 
@@ -37,7 +47,6 @@
     }
 
     &__button {
-
         background-repeat: no-repeat;
         background-size: contain;
         height: 10px;

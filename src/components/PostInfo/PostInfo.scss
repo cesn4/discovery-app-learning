@@ -2,9 +2,14 @@
     display: flex;
     flex-direction: column;
     font-family: $font-family-primary;
+    width: 100%;
 
     @include if-tablet {
-        margin-right: 40px;
+        margin-right: $layout-gutter-bigger;
+    }
+
+    @include if-desktop {
+        margin-right: 60px;
     }
 
     &__title {

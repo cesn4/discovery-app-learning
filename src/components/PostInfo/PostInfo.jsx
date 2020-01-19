@@ -8,7 +8,7 @@ import './PostInfo.scss';
 const PostInfo = ({ title, subtitle, primaryText, time }) => {
     return (
         <div className="post-info">
-            <span className="post-info__title">{title}</span>
+            { title && <span className="post-info__title">{title}</span>}
             <span className="post-info__subtitle">{subtitle}</span>
             <p className="post-info__text">{primaryText}</p>
             <div className="post-info__time">
@@ -20,10 +20,14 @@ const PostInfo = ({ title, subtitle, primaryText, time }) => {
 };
 
 PostInfo.propTypes = {
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string,
     subtitle: PropTypes.string.isRequired,
     primaryText: PropTypes.string.isRequired,
     time: PropTypes.string.isRequired
+};
+
+PostInfo.defaultProps = {
+    title: undefined
 };
 
 export default PostInfo;
