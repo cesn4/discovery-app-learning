@@ -18,15 +18,9 @@ const Home = () => {
         setSidebar({ sidebarOpen: false });
     };
 
-    let sidebar;
-
-    if (sidebarOpen) {
-        sidebar = <Sidebar drawSidebar={drawerToggleClickCloser}/>;
-    }
-
     return (
         <div className="home">
-            {sidebar}
+            <Sidebar isOpen={sidebarOpen} />
             <Header drawSidebar={drawerToggleClickOpener}/>
             <Hero />
             Home view

@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
 import './Sidebar.scss';
 
-const Sidebar = ({ drawSidebar }) => {
+const Sidebar = ({ drawSidebar, isOpen }) => {
     return (
-        <div className="sidebar">
+        <div className={classNames("sidebar", { 'is-open': isOpen })}>
             <div className="sidebar__text">
                 <div className="sidebar__logo">Logo</div>
                 <ul className="sidebar__nav">
@@ -22,7 +23,11 @@ const Sidebar = ({ drawSidebar }) => {
 };
 
 Sidebar.propTypes = {
-    drawSidebar: PropTypes.string.isRequired
+    isOpen: PropTypes.bool
 };
+
+Sidebar.defaultProps = {
+    isOpen: false
+}
 
 export default Sidebar;

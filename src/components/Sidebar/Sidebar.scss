@@ -1,12 +1,12 @@
 .sidebar {
     background-color: transparent;
-    display: flex;
+    display: none;
     font-family: $font-family-primary;
     height: 100vh;
     position: fixed;
     width: 100%;
     z-index: 5;
-    
+
     &__text {
         background-color: $color-header-background;
         box-shadow: 0 0 60px 0 $color-box-background;
