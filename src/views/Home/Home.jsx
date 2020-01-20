@@ -6,20 +6,20 @@ import Footer from '~/components/Footer';
 import Hero from '~/sections/Hero';
 
 const Home = () => {
-    const [sidebarOpen, setSidebar] = useState(false);
+    const [sidebarState, setSidebarState] = useState(false);
 
-    const drawerToggleClickOpener = () => {
-        setSidebar({ sidebarOpen: !sidebarOpen });
+    const sidebarOpen = () => {
+        setSidebarState(!sidebarState);
     };
 
-    const drawerToggleClickCloser = () => {
-        setSidebar({ sidebarOpen: false });
+    const sidebarClose = () => {
+        setSidebarState(false);
     };
 
     return (
         <div className="home">
-            <Sidebar isOpen={sidebarOpen} closeSidebar={drawerToggleClickCloser}/>
-            <Header drawSidebar={drawerToggleClickOpener}/>
+            <Sidebar isOpen={sidebarState} closeSidebar={sidebarClose}/>
+            <Header drawSidebar={sidebarOpen}/>
             <Hero />
             Home view
             <Footer />
