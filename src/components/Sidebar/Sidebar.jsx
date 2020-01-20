@@ -4,9 +4,9 @@ import classNames from 'classnames';
 
 import './Sidebar.scss';
 
-const Sidebar = ({ drawSidebar, isOpen }) => {
+const Sidebar = ({ closeSidebar, isOpen }) => {
     return (
-        <div className={classNames("sidebar", { 'is-open': isOpen })}>
+        <div className={classNames('sidebar', { 'is-open': isOpen })}>
             <div className="sidebar__text">
                 <div className="sidebar__logo">Logo</div>
                 <ul className="sidebar__nav">
@@ -17,17 +17,18 @@ const Sidebar = ({ drawSidebar, isOpen }) => {
                     <li><img src="#" className="sidebar__img"/>Profile</li>
                 </ul>
             </div>
-            <button className="sidebar__backdraw" onClick={drawSidebar}></button>
+            <button className="sidebar__backdraw" onClick={closeSidebar}></button>
         </div>
     );
 };
 
 Sidebar.propTypes = {
-    isOpen: PropTypes.bool
+    isOpen: PropTypes.bool,
+    closeSidebar: PropTypes.func.isRequired
 };
 
 Sidebar.defaultProps = {
     isOpen: false
-}
+};
 
 export default Sidebar;

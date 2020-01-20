@@ -9,9 +9,7 @@ const Home = () => {
     const [sidebarOpen, setSidebar] = useState(false);
 
     const drawerToggleClickOpener = () => {
-        setSidebar((prevState) => {
-            return { sidebarOpen: !prevState.sidebarOpen };
-        });
+        setSidebar({ sidebarOpen: !sidebarOpen });
     };
 
     const drawerToggleClickCloser = () => {
@@ -20,7 +18,7 @@ const Home = () => {
 
     return (
         <div className="home">
-            <Sidebar isOpen={sidebarOpen} />
+            { sidebarOpen && <Sidebar isOpen={sidebarOpen} closeSidebar={drawerToggleClickCloser}/> }
             <Header drawSidebar={drawerToggleClickOpener}/>
             <Hero />
             Home view
