@@ -1,11 +1,15 @@
 .sidebar {
     background-color: transparent;
-    display: flex;
+    display: none;
     font-family: $font-family-primary;
     height: 100vh;
     position: fixed;
     width: 100%;
     z-index: 5;
+
+    &.is-open {
+        display: flex;
+    }
 
     &__text {
         background-color: $color-header-background;

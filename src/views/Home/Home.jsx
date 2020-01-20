@@ -12,13 +12,9 @@ const Home = () => {
         setSidebar({ sidebarOpen: !sidebarOpen });
     };
 
-    const drawerToggleClickCloser = () => {
-        setSidebar({ sidebarOpen: false });
-    };
-
     return (
         <div className="home">
-            { sidebarOpen && <Sidebar isOpen={sidebarOpen} closeSidebar={drawerToggleClickCloser}/> }
+            <Sidebar isOpen={sidebarOpen} closeSidebar={drawerToggleClickOpener}/>
             <Header drawSidebar={drawerToggleClickOpener}/>
             <Hero />
             Home view
