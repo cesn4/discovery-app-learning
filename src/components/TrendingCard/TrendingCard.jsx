@@ -9,7 +9,7 @@ const TrendingCard = ({ image, subtitle, primaryText, time }) => {
     return (
         <div className="trending-card">
             <img src={image} className="trending-card__image"/>
-            <div className="trending-card__background">
+            <div className="trending-card__content">
                 <PostInfo subtitle={subtitle} primaryText={primaryText} time={time}/>
             </div>
         </div>
