@@ -8,14 +8,26 @@ import Hero from '~/sections/Hero';
 const Home = () => {
     const [sidebarOpen, setSidebar] = useState(false);
 
-    const drawerToggleClickHandler = () => {
-        setSidebar({ sidebarOpen: !sidebarOpen });
+    const drawerToggleClickOpener = () => {
+        setSidebar((prevState) => {
+            return { sidebarOpen: !prevState.sidebarOpen };
+        });
     };
+
+    const drawerToggleClickCloser = () => {
+        setSidebar({ sidebarOpen: false });
+    };
+
+    let sidebar;
+
+    if (sidebarOpen) {
+        sidebar = <Sidebar drawSidebar={drawerToggleClickCloser}/>;
+    }
 
     return (
         <div className="home">
-            {sidebarOpen === false ? undefined : <Sidebar drawSidebar={drawerToggleClickHandler}/>}
-            <Header drawSidebar={drawerToggleClickHandler}/>
+            {sidebar}
+            <Header drawSidebar={drawerToggleClickOpener}/>
             <Hero />
             Home view
             <Footer />
