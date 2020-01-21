@@ -1,0 +1,43 @@
+.small-card {
+    background-color: $color-knight-background;
+
+    @include if-desktop {
+        padding-bottom: spacer(xxs);
+    }
+    &.-firstItem {
+        border-top: solid border(s) $color-header-inactive;
+        padding-top: spacer(l);
+
+        @include if-tablet {
+            border-top: none;
+            padding-top: 0;
+        }
+    }
+
+    &__image {
+        background-size: cover;
+        border-radius: spacer(a);
+        height: 180px;
+        width: 100%;
+
+        @include if-desktop {
+            height: 210px;
+            margin-bottom: spacer(xa);
+        }
+    }
+
+    &__text {
+        color: $color-title-black;
+        font-family: $font-family-primary;
+        margin-top: spacer(xxs);
+    }
+
+    &__title {
+        font-size: $fonts-size-text;
+        font-weight: $font-weight-fat;
+        line-height: $line-height-medium;
+        margin-bottom: spacer(xa);
+    }
+
+
+}
