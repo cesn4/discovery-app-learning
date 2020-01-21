@@ -1,8 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
-
-import Time from '~/components/Time';
 
 import PostInfo from '~/components/PostInfo';
 

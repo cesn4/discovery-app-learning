@@ -21,7 +21,7 @@ const Footer = () => {
                         </Col>
                     </Hidden>
                     <Hidden xs>
-                        <Col md={1} xl={1}>
+                        <Col md={2} xl={1}>
                             <ul className="footer__columns">
                                 <li className="footer__item">Home</li>
                                 <li className="footer__item">Discovery</li>
@@ -30,7 +30,7 @@ const Footer = () => {
                             </ul>
                         </Col>
                     </Hidden>
-                    <Col xs={6} md={1} xl={1} >
+                    <Col xs={6} md={2} xl={1} >
                         <ul className="footer__columns">
                             <li className="footer__item">About</li>
                             <li className="footer__item">Help</li>
@@ -38,7 +38,7 @@ const Footer = () => {
                             <li className="footer__item">Guidlines</li>
                         </ul>
                     </Col>
-                    <Col xs={6} md={3} xl={3} >
+                    <Col xs={6} md={2} xl={3} >
                         <ul className="footer__columns">
                             <li className="footer__item">Testimonials</li>
                             <li className="footer__item">Advertise</li>
