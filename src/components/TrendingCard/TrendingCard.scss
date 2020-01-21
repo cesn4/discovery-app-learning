@@ -1,4 +1,7 @@
 .trending-card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
 
     &__image {
         background-size: cover;
@@ -9,6 +12,17 @@
 
         @include if-tablet {
             height: 180px;
+        }
+
+    }
+    &__content {
+        background-color: $color-body;
+        height: 150px;
+        padding: 25px 20px;
+        width: 100%;
+
+        @include if-tablet {
+            height: 170px;
         }
     }
 }
