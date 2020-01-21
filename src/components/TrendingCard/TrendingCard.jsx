@@ -1,8 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames';
-
-import Time from '~/components/Time';
 
 import PostInfo from '~/components/PostInfo';
 
@@ -12,7 +9,9 @@ const TrendingCard = ({ image, subtitle, primaryText, time }) => {
     return (
         <div className="trending-card">
             <img src={image} className="trending-card__image"/>
-            <PostInfo subtitle={subtitle} primaryText={primaryText} time={time}/>
+            <div className="trending-card__content">
+                <PostInfo subtitle={subtitle} primaryText={primaryText} time={time}/>
+            </div>
         </div>
     );
 };
