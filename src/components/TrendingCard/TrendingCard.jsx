@@ -4,31 +4,24 @@ import classNames from 'classnames';
 
 import Time from '~/components/Time';
 
+import PostInfo from '~/components/PostInfo';
+
 import './TrendingCard.scss';
 
-const TrendingCard = ({ title, time, paragraphText, image, firstItem }) => {
+const TrendingCard = ({ image, subtitle, primaryText, time }) => {
     return (
-        <div className={classNames('trending-card', { '-firstItem': firstItem })} >
-            <img className="trending-card__background" src={image} />
-            <div className="trending-card__text-box">
-                <span className="trending-card__title">{title}</span>
-                <p className="trending-card__paragraph-text">{paragraphText}</p>
-                <Time marginless text={time}/>
-            </div>
+        <div className="trending-card">
+            <img src={image} className="trending-card__image"/>
+            <PostInfo subtitle={subtitle} primaryText={primaryText} time={time}/>
         </div>
     );
 };
 
 TrendingCard.propTypes = {
     image: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    paragraphText: PropTypes.string.isRequired,
-    time: PropTypes.string.isRequired,
-    firstItem: PropTypes.bool
-};
-
-TrendingCard.defaultProp = {
-    firstItem: false
+    subtitle: PropTypes.string.isRequired,
+    primaryText: PropTypes.string.isRequired,
+    time: PropTypes.string.isRequired
 };
 
 export default TrendingCard;

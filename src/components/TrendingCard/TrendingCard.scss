@@ -1,46 +1,14 @@
 .trending-card {
-    background-color: $color-knight-background;
-    width: 100%;
 
-    &.-firstItem {
-        margin-bottom: spacer(l);
-
-        @include if-tablet {
-            margin-bottom: 0;
-        }
-    }
-
-    &__background {
-        background-size: contain;
-        border-top-left-radius: spacer(a);
-        border-top-right-radius: spacer(a);
+    &__image {
+        background-size: cover;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
         height: 150px;
         width: 100%;
 
         @include if-tablet {
             height: 180px;
         }
-    }
-
-    &__text-box {
-        background-color: $color-body;
-        font-family: $font-family-primary;
-        height: 150px;
-        padding: 25px
-    }
-
-    &__title {
-        color: $color-title-black;
-        font-size: $fonts-size-text;
-        font-weight: $font-weight-fat;
-        line-height: $line-height-small;
-    }
-
-    &__paragraph-text {
-        color: $color-header-inactive;
-        font-size: $fonts-size-paragraph;
-        line-height: $line-height-big;
-        margin-bottom: spacer(a);
-        margin-top: spacer(xs);
     }
 }
