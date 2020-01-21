@@ -2,6 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
+import home from '~/assets/img/home.png';
+import discover from '~/assets/img/discover.png';
+import photos from '~/assets/img/photos.png';
+import mail from '~/assets/img/mail.png';
+import woman from '~/assets/img/woman.png';
 import './Sidebar.scss';
 
 const Sidebar = ({ closeSidebar, isOpen }) => {
@@ -10,11 +15,11 @@ const Sidebar = ({ closeSidebar, isOpen }) => {
             <div className="sidebar__text">
                 <div className="sidebar__logo">Logo</div>
                 <ul className="sidebar__nav">
-                    <li><img src="#" className="sidebar__img"/>Home</li>
-                    <li><img src="#" className="sidebar__img"/>Discovery</li>
-                    <li><img src="#" className="sidebar__img"/>Photos</li>
-                    <li><img src="#" className="sidebar__img"/>Contact</li>
-                    <li><img src="#" className="sidebar__img"/>Profile</li>
+                    <div className="sidebar__nav-item-box"><img src={home} className="sidebar__img"/><li className="sidebar__nav-item -active">Home</li></div>
+                    <div className="sidebar__nav-item-box"><img src={discover} className="sidebar__img"/><li className="sidebar__nav-item">Discovery</li></div>
+                    <div className="sidebar__nav-item-box"><img src={photos} className="sidebar__img"/><li className="sidebar__nav-item">Photos</li></div>
+                    <div className="sidebar__nav-item-box"><img src={mail} className="sidebar__img"/><li className="sidebar__nav-item">Contact</li></div>
+                    <div className="sidebar__nav-item-box"><img src={woman} className="sidebar__img -round"/><li className="sidebar__nav-item">Profile</li></div>
                 </ul>
             </div>
             <button className="sidebar__backdraw" onClick={closeSidebar}></button>

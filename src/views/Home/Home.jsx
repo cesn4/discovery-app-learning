@@ -6,7 +6,7 @@ import Footer from '~/components/Footer';
 import Hero from '~/sections/Hero';
 
 const Home = () => {
-    const [sidebarState, setSidebarState] = useState(false);
+    const [sidebarState, setSidebarState] = useState(true);
 
     const sidebarOpen = () => {
         setSidebarState(!sidebarState);
