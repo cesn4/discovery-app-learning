@@ -1,0 +1,9 @@
+$borders-map: (
+    s: 1px,
+    m: 2px,
+    l: 3px
+);
+
+@function border($_key) {
+    @return map-get($borders-map, $_key);
+}

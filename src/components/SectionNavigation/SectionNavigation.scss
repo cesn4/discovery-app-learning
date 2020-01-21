@@ -1,17 +1,17 @@
 .section-navigation {
     font-family: $font-family-primary;
-    padding: $layout-gutter-bigger $layout-gutter;
+    padding: spacer(l) spacer(xs);
     width: 100%;
 
     @include if-tablet {
-        padding: $layout-gutter-bigger 65px;
+        padding: spacer(l) spacer(l);
     }
 
     &.-borderless {
-        padding: $layout-gutter-bigger 0px 0px 0px;
+        padding: spacer(l) 0 0 0;
 
         @include if-tablet {
-            padding: $layout-gutter-bigger 0px 0px 0px;
+            padding: spacer(l) 0 0 0;
         }
     }
 
@@ -19,20 +19,20 @@
         align-items: center;
         border-bottom: solid;
         border-color: $color-header-inactive;
-        border-width: 1px;
+        border-width: border(s);
         display: flex;
         justify-content: flex-end;
-        padding-bottom: $layout-gutter-bigger;
+        padding-bottom: spacer(l);
 
         @include if-desktop {
-            margin-right: 60px;
+            margin-right: spacer(xl);
         }
 
         &.-borderless {
             border-bottom: none;
 
             @include if-desktop {
-                margin-right: 0px;
+                margin-right: 0;
             }
         }
     }
@@ -54,7 +54,7 @@
 
         &.-left {
             background-image: url('/assets/img/arrowLeft.png');
-            margin-right: 32px;
+            margin-right:  spacer(m);
         }
         &.-right {
             background-image: url('/assets/img/arrowRight.png');
