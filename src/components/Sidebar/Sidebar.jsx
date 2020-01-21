@@ -15,11 +15,11 @@ const Sidebar = ({ closeSidebar, isOpen }) => {
             <div className="sidebar__text">
                 <div className="sidebar__logo">Logo</div>
                 <ul className="sidebar__nav">
-                    <div className="sidebar__nav-item-box"><img src={home} className="sidebar__img"/><li className="sidebar__nav-item -active">Home</li></div>
-                    <div className="sidebar__nav-item-box"><img src={discover} className="sidebar__img"/><li className="sidebar__nav-item">Discovery</li></div>
-                    <div className="sidebar__nav-item-box"><img src={photos} className="sidebar__img"/><li className="sidebar__nav-item">Photos</li></div>
-                    <div className="sidebar__nav-item-box"><img src={mail} className="sidebar__img"/><li className="sidebar__nav-item">Contact</li></div>
-                    <div className="sidebar__nav-item-box"><img src={woman} className="sidebar__img -round"/><li className="sidebar__nav-item">Profile</li></div>
+                    <a href="#" className="sidebar__nav-anchor"><img src={home} className="sidebar__img"/><li className="sidebar__nav-item -active">Home</li></a>
+                    <a href="#" className="sidebar__nav-anchor"><img src={discover} className="sidebar__img"/><li className="sidebar__nav-item">Discovery</li></a>
+                    <a href="#" className="sidebar__nav-anchor"><img src={photos} className="sidebar__img"/><li className="sidebar__nav-item">Photos</li></a>
+                    <a href="#" className="sidebar__nav-anchor"><img src={mail} className="sidebar__img"/><li className="sidebar__nav-item">Contact</li></a>
+                    <a href="#" className="sidebar__nav-anchor"><img src={woman} className="sidebar__img -round"/><li className="sidebar__nav-item">Profile</li></a>
                 </ul>
             </div>
             <button className="sidebar__backdraw" onClick={closeSidebar}></button>

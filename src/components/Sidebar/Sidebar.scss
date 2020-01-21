@@ -45,13 +45,15 @@
         text-transform: uppercase;
     }
 
-    &__nav-item-box {
+    &__nav-anchor {
+        color: $color-header-inactive;
         display:flex;
+        margin-bottom: 30px;
+        text-decoration: none;
     }
 
     &__nav-item {
-        margin-bottom: 30px;
-        
+
         &.-active {
             color: $color-title-black;
         }
