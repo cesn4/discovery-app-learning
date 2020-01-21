@@ -34,7 +34,7 @@
         }
 
         @include if-tablet {
-            margin-bottom: spacer(xxxs);
+            margin-bottom: spacer(xa);
             text-transform: none;
         }
     }
@@ -50,7 +50,7 @@
 
         @include if-desktop {
             align-items: start;
-            margin-top: spacer(xxxs);
+            margin-top: spacer(xa);
         }
     }
 
@@ -64,7 +64,7 @@
         flex-direction: column;
 
         @include if-desktop {
-            margin-top: spacer(xxxs);
+            margin-top: spacer(xa);
         }
     }
 
@@ -92,8 +92,8 @@
     &__input-button {
         border: none;
         border-radius: 4px;
-        margin-top: spacer(xxss);
-        padding: spacer(xxss) 17px;
+        margin-top: spacer(a);
+        padding: spacer(a) spacer(xm);
         pointer-events: none;
     }
 
@@ -104,7 +104,7 @@
     &__button-anchor {
         position: absolute;
         right: 0;
-        top: spacer(xxxs);
+        top: spacer(xa);
     }
 
     &__input-line {

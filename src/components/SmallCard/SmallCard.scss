@@ -16,13 +16,13 @@
 
     &__image {
         background-size: cover;
-        border-radius: spacer(xxss);
+        border-radius: spacer(a);
         height: 180px;
         width: 100%;
 
         @include if-desktop {
             height: 210px;
-            margin-bottom: spacer(xxxs);
+            margin-bottom: spacer(xa);
         }
     }
 
@@ -36,7 +36,7 @@
         font-size: $fonts-size-text;
         font-weight: $font-weight-fat;
         line-height: $line-height-medium;
-        margin-bottom: spacer(xxxs);
+        margin-bottom: spacer(xa);
     }
 
 
