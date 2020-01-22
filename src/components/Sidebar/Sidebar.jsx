@@ -14,15 +14,25 @@ import './Sidebar.scss';
 const Sidebar = ({ closeSidebar, isOpen }) => {
     return (
         <div className={classNames('sidebar', { 'is-open': isOpen })}>
-            <div className="sidebar__text">
+            <div className="sidebar__text-box">
                 <div className="sidebar__logo">Logo</div>
-                <ul className="sidebar__nav">
-                    <NavigationItem href={'#'} icon={home} title='Home' active />
-                    <NavigationItem href={'#'} icon={discover} title='Discovery' active />
-                    <NavigationItem href={'#'} icon={photos} title='Photos' active />
-                    <NavigationItem href={'#'} icon={mail} title='Contact' active />
-                    <NavigationItem href={'#'} icon={woman} title='Profile' active />
-                </ul>
+                <div className="sidebar__nav">
+                    <div className="sidebar__nav-item">
+                        <NavigationItem href={'#'} icon={home} title='Home' active />
+                    </div>
+                    <div className="sidebar__nav-item">
+                        <NavigationItem href={'#'} icon={discover} title='Discovery' />
+                    </div>
+                    <div className="sidebar__nav-item">
+                        <NavigationItem href={'#'} icon={photos} title='Photos' />
+                    </div>
+                    <div className="sidebar__nav-item">
+                        <NavigationItem href={'#'} icon={mail} title='Contact' />
+                    </div>
+                    <div className="sidebar__nav-item">
+                        <NavigationItem href={'#'} icon={woman} title='Profile' />
+                    </div>
+                </div>
             </div>
             <button className="sidebar__backdraw" onClick={closeSidebar}></button>
         </div>

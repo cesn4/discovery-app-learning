@@ -14,7 +14,7 @@
         transform: translateX(0);
     }
 
-    &__text {
+    &__text-box {
         background-color: $color-header-background;
         box-shadow: 0 0 60px 0 $color-box-background;
         display: flex;
@@ -37,6 +37,10 @@
         display: flex;
         flex-direction: column;
         margin-top: 70px;
+    }
+
+    &__nav-item {
+        margin-bottom: 30px;
     }
 
     &__backdraw  {
