@@ -5,7 +5,7 @@
         padding-bottom: spacer(xxs);
     }
     &.-firstItem {
-        border-top: solid border(s) theme-color("gray-chateu");
+        border-top: solid border(s) theme-color("inactive");
         padding-top: spacer(l);
 
         @include if-tablet {
@@ -27,7 +27,7 @@
     }
 
     &__text {
-        color: theme-color("shark");
+        color: theme-color("active");
         font-family: $font-family-primary;
         margin-top: spacer(xxs);
     }

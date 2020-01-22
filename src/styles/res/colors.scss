@@ -15,10 +15,10 @@ $color-iron: #cbd0d3;
 $theme-colors: (
     "accent-1": $color-light-red,
     "accent-2": $color-porcelain,
-    "shark": $color-shark,
-    "iron": $color-iron,
+    "active": $color-shark,
+    "inactive": $color-gray-chateu
+    "footer-accent": $color-iron,
     "white": $color-white,
-    "gray-chateu": $color-gray-chateu
 );
 
 @function theme-color($_key) {

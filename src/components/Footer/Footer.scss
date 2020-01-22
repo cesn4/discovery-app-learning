@@ -1,6 +1,6 @@
 .footer {
-    background-color: theme-color("gray-chateu");
-    color: theme-color("iron");
+    background-color: theme-color("inactive");
+    color: theme-color("footer-accent");
     font-family: $font-family-primary;
     padding: spacer(lm) spacer(xs) spacer(l) spacer(xs);
     width: 100%;
@@ -70,9 +70,9 @@
 
     &__input-border {
         align-items: center;
-        background-color: theme-color("gray-chateu");
+        background-color: theme-color("inactive");
         border: solid border(s);
-        border-color: theme-color("iron");
+        border-color: theme-color("footer-accent");
         border-radius: 4px;
         display: flex;
         height: spacer(l);
@@ -80,10 +80,10 @@
     }
 
     &__input {
-        background-color: theme-color("gray-chateu");
+        background-color: theme-color("inactive");
         border: none;
         border-radius: 4px;
-        color: theme-color("iron");
+        color: theme-color("footer-accent");
         font-family: $font-family-primary;
         margin: 0 spacer(l) 0 spacer(xm);
         width: 100%;

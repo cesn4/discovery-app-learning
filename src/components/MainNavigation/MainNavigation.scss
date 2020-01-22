@@ -20,7 +20,7 @@
     }
 
     &__item {
-        color: theme-color("shark");
+        color: theme-color("active");
         opacity: 0.5;
 
         &.-active { opacity: 1; }

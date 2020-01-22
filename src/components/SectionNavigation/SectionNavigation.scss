@@ -18,7 +18,7 @@
     &__title-box {
         align-items: center;
         border-bottom: solid;
-        border-color: theme-color("gray-chateu");
+        border-color: theme-color("inactive");
         border-width: border(s);
         display: flex;
         justify-content: flex-end;
@@ -38,7 +38,7 @@
     }
 
     &__title {
-        color: theme-color("shark");
+        color: theme-color("active");
         font-size: $fonts-size-h1;
         font-weight: $font-weight-fat;
         line-height: $line-height-small;
