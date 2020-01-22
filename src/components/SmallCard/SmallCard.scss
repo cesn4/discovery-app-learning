@@ -1,11 +1,11 @@
 .small-card {
-    background-color: $color-knight-background;
+    background-color: theme-color("accent-2");
 
     @include if-desktop {
         padding-bottom: spacer(xxs);
     }
     &.-firstItem {
-        border-top: solid border(s) $color-header-inactive;
+        border-top: solid border(s) theme-color("gray-chateu");
         padding-top: spacer(l);
 
         @include if-tablet {
@@ -27,7 +27,7 @@
     }
 
     &__text {
-        color: $color-title-black;
+        color: theme-color("shark");
         font-family: $font-family-primary;
         margin-top: spacer(xxs);
     }

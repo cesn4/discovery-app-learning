@@ -1,6 +1,6 @@
 .logo {
     $_logo-size: 13px;
-    color: $color-header-inactive;
+    color: theme-color("gray-chateu");
     font-family: $font-family-primary;
     font-size: $_logo-size;
     font-weight: $font-weight-fat;
@@ -8,12 +8,12 @@
     text-align: center;
 
     &.-footer {
-        color: $color-body;
+        color: theme-color("white");
         margin: spacer(xa) 0;
     }
 
     @include if-tablet {
-        color: $color-accent;
+        color: theme-color("accent-1");
         margin-left: spacer(xm);
         margin-right: auto;
         text-align: left;

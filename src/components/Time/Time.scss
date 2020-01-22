@@ -15,7 +15,7 @@
     }
 
     &__clock-time {
-        color: $color-header-inactive;
+        color: theme-color("gray-chateu");
         font-size: $fonts-size-navigation;
         font-style: italic;
         line-height: $line-height-big;

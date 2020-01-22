@@ -20,7 +20,7 @@
     }
 
     &__item {
-        color: $color-box-background;
+        color: theme-color("shark");
         opacity: 0.5;
 
         &.-active { opacity: 1; }

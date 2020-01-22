@@ -15,7 +15,7 @@
     }
 
     &__news-box {
-        color: $color-hero-text;
+        color: theme-color("white");
         display: flex;
         flex-direction: column;
         font-family: $font-family-primary;
@@ -23,7 +23,7 @@
 
     &__title-box {
         border-bottom: solid;
-        border-color: $color-hero-text;
+        border-color: theme-color("white");
         border-width: border(m);
         font-size: $fonts-size-h1;
         font-weight: $font-weight-fat;
