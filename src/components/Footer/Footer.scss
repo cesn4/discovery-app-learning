@@ -1,15 +1,115 @@
 .footer {
     background-color: $color-footer-background;
-    display: flex;
+    color: $color-footer-input;
+    font-family: $font-family-primary;
+    padding: spacer(lm) spacer(xs) spacer(l) spacer(xs);
+    width: 100%;
 
-    &__image {
-        height: 100px;
+    @include if-tablet {
+        padding: spacer(lm) spacer(l)
     }
 
-    &__bgi {
-        background-image: url('/assets/image.jpg'); // Sitaip gali importuot paveikslelius scss failuose. url() kai nenurodai http:// tai by default ten bus /src, del to uztenka nurodyt /assets/image.jpg kad pasigautu paveiksleli.
-        background-size: cover;
-        height: 100px;
-        width: 100px;
+    @include if-desktop {
+        height: 200px;
+        padding: spacer(lm) spacer(xxl);
+    }
+
+    &__columns {
+        font-size: $fonts-size-navigation;
+        font-weight: $font-weight-fat;
+        line-height: $line-height-big;
+        list-style: none;
+
+        @include if-tablet {
+            font-size: $fonts-size-paragraph;
+        }
+    }
+
+    &__item {
+        margin-bottom: spacer(xm);
+        text-transform: uppercase;
+
+        &:last-child {
+            margin-bottom: spacer(l);
+        }
+
+        @include if-tablet {
+            margin-bottom: spacer(xa);
+            text-transform: none;
+        }
+    }
+
+    &__media {
+        @include if-tablet {
+            align-items: flex-end;
+            display: flex;
+            height: 65px;
+            justify-content: end;
+            width: 100%;
+        }
+
+        @include if-desktop {
+            align-items: start;
+            margin-top: spacer(xa);
+        }
+    }
+
+    &__media-img {
+        margin-right: 24px;
+        @include size(16px)
+    }
+
+    &__input-box {
+        display: flex;
+        flex-direction: column;
+
+        @include if-desktop {
+            margin-top: spacer(xa);
+        }
+    }
+
+    &__input-border {
+        align-items: center;
+        background-color: $color-footer-background;
+        border: solid border(s);
+        border-color: $color-footer-input;
+        border-radius: 4px;
+        display: flex;
+        height: spacer(l);
+        position: relative;
+    }
+
+    &__input {
+        background-color: $color-footer-background;
+        border: none;
+        border-radius: 4px;
+        color: $color-footer-input;
+        font-family: $font-family-primary;
+        margin: 0 spacer(l) 0 spacer(xm);
+        width: 100%;
+    }
+
+    &__input-button {
+        border: none;
+        border-radius: 4px;
+        margin-top: spacer(a);
+        padding: spacer(a) spacer(xm);
+        pointer-events: none;
+    }
+
+    &__button-img {
+        @include size(16px);
+    }
+
+    &__button-anchor {
+        position: absolute;
+        right: 0;
+        top: spacer(xa);
+    }
+
+    &__input-line {
+        font-size: $fonts-size-navigation;
+        line-height: $line-height-big;
+        margin-top: 6px;
     }
 }

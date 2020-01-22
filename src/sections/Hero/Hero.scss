@@ -1,19 +1,25 @@
 .hero {
+
     &__background {
         background-image: url('/assets/mount.jpg');
-        background-position: center;
-        background-repeat: none;
         background-size: cover;
+    }
+
+    &__posts-box {
+
+        @include if-desktop {
+            padding-top: spacer(lm);
+        }
     }
 
     &__posts {
         display: flex;
         flex-direction: column;
-        padding: 0px spacer("xs");
+        padding: 0 spacer(xs);
 
         @include if-tablet {
             flex-direction: row;
-            padding: 0px 65px;
+            padding: 0 spacer(l);
         }
 
         @include if-desktop {

@@ -1,17 +1,17 @@
-.background {
+.background  {
     height: 388px;
-    padding: $layout-gutter-big $layout-gutter;
+    padding: spacer(m) spacer(xs);
     width: 100%;
 
     @include if-tablet {
         display: flex;
         height: 400px;
-        padding: 73px 65px;
+        padding: spacer(xll) spacer(xl);
     }
 
     @include if-desktop {
         height: 600px;
-        padding: 167px 125px 0px 125px;
+        padding: spacer(xxxl) spacer(xxl) 0 spacer(xxl);
     }
 
     &__news-box {
@@ -24,11 +24,11 @@
     &__title-box {
         border-bottom: solid;
         border-color: $color-hero-text;
-        border-width: 2px;
+        border-width: border(m);
         font-size: $fonts-size-h1;
         font-weight: $font-weight-fat;
         line-height: $line-height-big;
-        padding-bottom: $layout-gutter-big;
+        padding-bottom: spacer(m);
         width: 100%;
     }
 
@@ -36,13 +36,13 @@
         font-size: $fonts-size-h1;
         font-weight: $font-weight-fat;
         line-height: $line-height-medium;
-        margin-bottom: 10px;
-        padding-top: $layout-gutter-big;
+        margin-bottom: spacer(xs);
+        padding-top: spacer(m);
     }
 
     &__paragraph {
         font-size: $fonts-size-text;
         line-height: $line-height-medium;
-        margin-bottom: 15px;
+        margin-bottom: spacer(s);
     }
 }

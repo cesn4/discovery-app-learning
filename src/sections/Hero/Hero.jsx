@@ -13,10 +13,10 @@ const Hero = () => {
         <div className="hero">
             <Container fluid>
                 <Row >
-                    <Col sm={12} md={12} xl={7} className="hero__background">
+                    <Col xs={12} md={12} xl={7} className="hero__background">
                         <Background />
                     </Col>
-                    <Col sm={12} md={12} xl={5}>
+                    <Col xs={12} md={12} xl={5}>
                         <SectionNavigation title="Discoveries" />
                         <div className="hero__posts">
                             <PostInfo title="Travel" subtitle="Article title" primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…" time="2m ago"/>

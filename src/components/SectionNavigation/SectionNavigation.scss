@@ -1,29 +1,39 @@
 .section-navigation {
     font-family: $font-family-primary;
-    height: 100px;
-    padding: $layout-gutter-big $layout-gutter;
+    padding: spacer(l) spacer(xs);
     width: 100%;
 
     @include if-tablet {
-        padding: 40px 65px;
+        padding: spacer(l) spacer(l);
     }
 
-    @include if-desktop {
-        height: 160px;
-        padding-top: 70px;
+    &.-borderless {
+        padding: spacer(l) 0 0 0;
+
+        @include if-tablet {
+            padding: spacer(l) 0 0 0;
+        }
     }
 
     &__title-box {
         align-items: center;
         border-bottom: solid;
         border-color: $color-header-inactive;
-        border-width: 1px;
+        border-width: border(s);
         display: flex;
         justify-content: flex-end;
-        padding-bottom: $layout-gutter-big;
+        padding-bottom: spacer(l);
 
         @include if-desktop {
-            margin-right: 40px;
+            margin-right: spacer(xl);
+        }
+
+        &.-borderless {
+            border-bottom: none;
+
+            @include if-desktop {
+                margin-right: 0;
+            }
         }
     }
 
@@ -37,7 +47,6 @@
     }
 
     &__button {
-
         background-repeat: no-repeat;
         background-size: contain;
         height: 10px;
@@ -45,7 +54,7 @@
 
         &.-left {
             background-image: url('/assets/img/arrowLeft.png');
-            margin-right: 32px;
+            margin-right:  spacer(m);
         }
         &.-right {
             background-image: url('/assets/img/arrowRight.png');

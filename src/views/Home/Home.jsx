@@ -4,6 +4,8 @@ import Sidebar from '~/components/Sidebar';
 import Header from '~/components/Header';
 import Footer from '~/components/Footer';
 import Hero from '~/sections/Hero';
+import Knight from '~/sections/Knight';
+import Featured from '~/sections/Featured';
 
 const Home = () => {
     const [sidebarState, setSidebarState] = useState(true);
@@ -21,7 +23,8 @@ const Home = () => {
             <Sidebar isOpen={sidebarState} closeSidebar={sidebarClose}/>
             <Header drawSidebar={sidebarOpen}/>
             <Hero />
-            Home view
+            <Knight />
+            <Featured />
             <Footer />
         </div>
     );
