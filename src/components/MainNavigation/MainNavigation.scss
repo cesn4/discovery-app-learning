@@ -20,14 +20,19 @@
     }
 
     &__item {
-        color: $color-box-background;
-        opacity: 0.5;
 
+        color: $color-box-background;
+        cursor: pointer;
+        opacity: 0.5;
         &.-active { opacity: 1; }
 
         @include if-tablet {
             margin: spacer(xs);
         }
+    }
+
+    &__item:hover {
+        transform: scale(1.1);
     }
 }
 
