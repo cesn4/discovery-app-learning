@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 import './NavigationItem.scss';
 
-const NavigationItem = ({ href, icon, title }) => {
+const NavigationItem = ({ href, icon, title, active }) => {
     return (
         <div className="navigation-item">
             <a href={href} className="navigation-item__anchor">
@@ -20,10 +20,10 @@ NavigationItem.propTypes = {
     icon: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     active: PropTypes.bool
-}
+};
 
 NavigationItem.defaultProps = {
     active: false
-}
+};
 
 export default NavigationItem;

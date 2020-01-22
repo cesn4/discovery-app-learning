@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
+import NavigationItem from '~/components/NavigationItem';
+
 import home from '~/assets/img/home.png';
 import discover from '~/assets/img/discover.png';
 import photos from '~/assets/img/photos.png';
@@ -15,11 +17,11 @@ const Sidebar = ({ closeSidebar, isOpen }) => {
             <div className="sidebar__text">
                 <div className="sidebar__logo">Logo</div>
                 <ul className="sidebar__nav">
-                    <a href="#" className="sidebar__nav-anchor"><img src={home} className="sidebar__img"/><li className="sidebar__nav-item -active">Home</li></a>
-                    <a href="#" className="sidebar__nav-anchor"><img src={discover} className="sidebar__img"/><li className="sidebar__nav-item">Discovery</li></a>
-                    <a href="#" className="sidebar__nav-anchor"><img src={photos} className="sidebar__img"/><li className="sidebar__nav-item">Photos</li></a>
-                    <a href="#" className="sidebar__nav-anchor"><img src={mail} className="sidebar__img"/><li className="sidebar__nav-item">Contact</li></a>
-                    <a href="#" className="sidebar__nav-anchor"><img src={woman} className="sidebar__img -round"/><li className="sidebar__nav-item">Profile</li></a>
+                    <NavigationItem href={'#'} icon={home} title='Home' active />
+                    <NavigationItem href={'#'} icon={discover} title='Discovery' active />
+                    <NavigationItem href={'#'} icon={photos} title='Photos' active />
+                    <NavigationItem href={'#'} icon={mail} title='Contact' active />
+                    <NavigationItem href={'#'} icon={woman} title='Profile' active />
                 </ul>
             </div>
             <button className="sidebar__backdraw" onClick={closeSidebar}></button>
