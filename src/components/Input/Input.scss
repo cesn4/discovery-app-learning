@@ -19,7 +19,7 @@
         border-radius: radius(m);
         color: $color-footer-input;
         font-family: $font-family-primary;
-        margin: 0 spacer(l) 0 spacer(xm);
+        padding: spacer(xs) spacer(xm);
         width: 100%;
     }
 
@@ -42,7 +42,7 @@
     }
 
 
-    &__input-afterline {
+    &__label {
         font-size: $fonts-size-navigation;
         line-height: $line-height-big;
         margin-top: spacer(a);

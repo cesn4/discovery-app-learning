@@ -14,7 +14,7 @@ const Input = () => {
                     </div>
                 </a>
             </div>
-            <span className="input__input-afterline">Stay in touch with us for the freshest products!</span>
+            <span className="input__label">Stay in touch with us for the freshest products!</span>
         </div>
     );
 };
