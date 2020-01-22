@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
+import Logo from '~/components/Logo';
 import NavigationItem from '~/components/NavigationItem';
 
 import home from '~/assets/img/home.png';
@@ -14,7 +15,9 @@ const Sidebar = ({ closeSidebar, isOpen }) => {
     return (
         <div className={classNames('sidebar', { 'is-open': isOpen })}>
             <div className="sidebar__text-box">
-                <div className="sidebar__logo">Logo</div>
+                <div className="sidebar__logo">
+                    <Logo sidebar/>
+                </div>
                 <div className="sidebar__nav">
                     <div className="sidebar__nav-item">
                         <NavigationItem href={'#'} icon={home} title='Home' active />

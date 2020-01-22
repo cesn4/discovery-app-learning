@@ -24,15 +24,6 @@
         width: 70%;
     }
 
-    &__logo {
-        color: $color-accent;
-        font-size: $fonts-size-paragraph;
-        font-weight: $font-weight-fat;
-        line-height: $line-height-medium;
-        text-transform: uppercase;
-
-    }
-
     &__nav {
         display: flex;
         flex-direction: column;

@@ -12,6 +12,11 @@
         margin: spacer(xa) 0;
     }
 
+    &.-sidebar {
+        color: $color-accent;
+        text-align: start;
+    }
+
     @include if-tablet {
         color: $color-accent;
         margin-left: spacer(xm);
