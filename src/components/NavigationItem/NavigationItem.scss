@@ -6,25 +6,25 @@
         list-style: none;
         text-transform: uppercase;
 
-    &__nav-anchor {
-        color: $color-header-inactive;
-        display:flex;
-        text-decoration: none;
-    }
-
-    &__nav-item {
-
-        &.-active {
-            color: $color-title-black;
+        &__anchor {
+            color: $color-header-inactive;
+            display:flex;
+            text-decoration: none;
         }
-    }
 
-    &__img {
-        @include size(16px);
-        margin-right: 30px;
+        &__title {
 
-        &.-round {
-            border-radius: 50%;
+            &.-active {
+                color: $color-title-black;
+            }
         }
-    }
+
+        &__icon {
+            @include size(16px);
+            margin-right: 30px;
+
+            &.-round {
+                border-radius: 50%;
+            }
+        }
 }
