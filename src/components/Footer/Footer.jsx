@@ -2,8 +2,8 @@ import React from 'react';
 import { Container, Row, Col, Hidden } from 'react-grid-system';
 
 import Logo from '~/components/Logo';
+import Input from '~/components/Input';
 
-import send from '~/assets/img/send.png';
 import instagram from '~/assets/img/instagram.png';
 import facebook from '~/assets/img/facebook.png';
 import twitter from '~/assets/img/twitter.png';
@@ -49,15 +49,7 @@ const Footer = () => {
                     <Hidden xs>
                         <Col md={6} xl={3}>
                             <div className="footer__input-box">
-                                <div className="footer__input-border">
-                                    <input className="footer__input" placeholder="Email"/>
-                                    <a href="#" className="footer__button-anchor">
-                                        <div className="footer__input-button">
-                                            <img src={send} className="footer__button-img"/>
-                                        </div>
-                                    </a>
-                                </div>
-                                <span className="footer__input-line">Stay in touch with us for the freshest products!</span>
+                                <Input />
                             </div>
                         </Col>
                     </Hidden>

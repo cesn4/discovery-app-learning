@@ -1,0 +1,50 @@
+.input {
+    display: flex;
+    flex-direction: column;
+
+    &__box {
+        align-items: center;
+        background-color: $color-footer-background;
+        border: solid border(s);
+        border-color: $color-footer-input;
+        border-radius: radius(m);
+        display: flex;
+        height: spacer(l);
+        position: relative;
+    }
+
+    &__text {
+        background-color: $color-footer-background;
+        border: none;
+        border-radius: radius(m);
+        color: $color-footer-input;
+        font-family: $font-family-primary;
+        margin: 0 spacer(l) 0 spacer(xm);
+        width: 100%;
+    }
+
+    &__anchor {
+        position: absolute;
+        right: 0;
+        top: spacer(xa);
+    }
+
+    &__button {
+        border: none;
+        border-radius: radius(m);
+        margin-top: spacer(a);
+        padding: spacer(a) spacer(xm);
+        pointer-events: none;
+    }
+
+    &__button-img {
+        @include size(16px);
+    }
+
+
+    &__input-afterline {
+        font-size: $fonts-size-navigation;
+        line-height: $line-height-big;
+        margin-top: spacer(a);
+    }
+}

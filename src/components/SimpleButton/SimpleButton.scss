@@ -1,7 +1,7 @@
 .button {
     align-items: center;
     background-color: $color-accent;
-    border-radius: 5px;
+    border-radius: radius(l);
     color: $color-hero-text;
     display: flex;
     font-size: $fonts-size-button;
