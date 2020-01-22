@@ -1,12 +1,12 @@
 .profile-photo {
 
     &__img {
+        @include size(16px);
+        background-size: cover;
         border-radius: 50%;
-        height: 16px;
-        width: 16px;
-    }
-    &.-medium {
-        height: 30px;
-        width: 30px;
+    
+        &.-medium {
+            @include size(30px)
+        }
     }
 }

@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import ProfilePhoto from '~/components/ProfilePhoto';
 import Logo from '~/components/Logo';
 import MainNavigation from '~/components/MainNavigation';
 
 import '~/assets/img/menuIcon.png';
-import '~/assets/img/woman.png';
 
 import './Header.scss';
 
@@ -15,7 +15,9 @@ const Header = ({ drawSidebar }) => {
             <button className="header__menu-icon" onClick={drawSidebar}></button>
             <Logo />
             <MainNavigation />
-            <div className="header__photo"></div>
+            <div className="header__photo">
+                <ProfilePhoto medium />
+            </div>
         </header>
     );
 };

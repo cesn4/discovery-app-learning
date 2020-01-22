@@ -8,7 +8,7 @@ import Knight from '~/sections/Knight';
 import Featured from '~/sections/Featured';
 
 const Home = () => {
-    const [sidebarState, setSidebarState] = useState(true);
+    const [sidebarState, setSidebarState] = useState(false);
 
     const sidebarOpen = () => {
         setSidebarState(!sidebarState);
