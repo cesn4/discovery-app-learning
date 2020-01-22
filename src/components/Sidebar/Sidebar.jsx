@@ -8,7 +8,6 @@ import home from '~/assets/img/home.png';
 import discover from '~/assets/img/discover.png';
 import photos from '~/assets/img/photos.png';
 import mail from '~/assets/img/mail.png';
-import woman from '~/assets/img/woman.png';
 import './Sidebar.scss';
 
 const Sidebar = ({ closeSidebar, isOpen }) => {
@@ -30,7 +29,7 @@ const Sidebar = ({ closeSidebar, isOpen }) => {
                         <NavigationItem href={'#'} icon={mail} title='Contact' />
                     </div>
                     <div className="sidebar__nav-item">
-                        <NavigationItem href={'#'} icon={woman} title='Profile' />
+                        <NavigationItem href={'#'} title='Profile' profile />
                     </div>
                 </div>
             </div>
