@@ -1,17 +1,17 @@
 .background  {
     height: 388px;
-    padding: spacer(m) spacer(xs);
+    padding: spacer(medium-xs) spacer(small-m);
     width: 100%;
 
     @include if-tablet {
         display: flex;
         height: 400px;
-        padding: spacer(xll) spacer(xl);
+        padding: spacer(medium-xl) spacer(medium-l);
     }
 
     @include if-desktop {
         height: 600px;
-        padding: spacer(xxxl) spacer(xxl) 0 spacer(xxl);
+        padding: spacer(trojan-m) spacer(trojan-s) 0 spacer(trojan-s);
     }
 
     &__news-box {
@@ -28,7 +28,7 @@
         font-size: $fonts-size-h1;
         font-weight: $font-weight-fat;
         line-height: $line-height-big;
-        padding-bottom: spacer(m);
+        padding-bottom: spacer(medium-xs);
         width: 100%;
     }
 
@@ -36,13 +36,13 @@
         font-size: $fonts-size-h1;
         font-weight: $font-weight-fat;
         line-height: $line-height-medium;
-        margin-bottom: spacer(xs);
-        padding-top: spacer(m);
+        margin-bottom: spacer(small-m);
+        padding-top: spacer(medium-xs);
     }
 
     &__paragraph {
         font-size: $fonts-size-text;
         line-height: $line-height-medium;
-        margin-bottom: spacer(s);
+        margin-bottom: spacer(small-l);
     }
 }

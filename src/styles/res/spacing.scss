@@ -1,18 +1,18 @@
 $spacers-map: (
-    xa: 3px,
-    a: 5px,
-    xxs: 8px,
-    xs: 10px,
-    s: 15px,
-    xm: 20px,
-    n: 25px,
-    m: 30px,
-    l: 40px,
-    lm: 50px,
-    xl: 60px,
-    xll: 70px,
-    xxl: 125px,
-    xxxl: 170px
+    small-xxs: 3px,
+    small-xs: 5px,
+    small-s: 8px,
+    small-m: 10px,
+    small-l: 15px,
+    small-xl: 20px,
+    medium-xxs: 25px,
+    medium-xs: 30px,
+    medium-s: 40px,
+    medium-m: 50px,
+    medium-l: 60px,
+    medium-xl: 70px,
+    trojan-s: 125px,
+    trojan-m: 170px
 );
 
 @function spacer($_key) {
