@@ -16,7 +16,7 @@
 
     }
     &__content {
-        background-color: $color-body;
+        background-color: theme-color("white");
         height: 150px;
         padding: 25px 20px;
         width: 100%;

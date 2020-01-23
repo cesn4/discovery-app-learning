@@ -1,20 +1,21 @@
 .header {
     align-items: center;
-    background-color: $color-header-background;
+    background-color: theme-color("accent-2");
     display: flex;
     height: 44px;
     justify-content: center;
     width: 100%;
 
     @include if-tablet {
-        height: spacer(lm);
+        height: 50px;
         justify-content: flex-end;
+        padding-left: spacer(small-l);
     }
 
     &__menu-icon {
         background-image: url('/assets/img/menuIcon.png');
         height: 14px;
-        margin-left: 16px;
+        margin-left: spacer(small-l);
         margin-right: auto;
         width: 16px;
 
@@ -34,7 +35,7 @@
 
         @include if-tablet {
             margin-left: 0;
-            margin-right: spacer(xm);
+            margin-right: spacer(small-xl);
         }
     }
 }

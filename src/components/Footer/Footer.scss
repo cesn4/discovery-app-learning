@@ -1,17 +1,17 @@
 .footer {
-    background-color: $color-footer-background;
-    color: $color-footer-input;
+    background-color: theme-color("inactive");
+    color: theme-color("footer-accent");
     font-family: $font-family-primary;
-    padding: spacer(lm) spacer(xs) spacer(l) spacer(xs);
+    padding: spacer(medium-m) spacer(small-m) spacer(medium-s) spacer(small-m);
     width: 100%;
 
     @include if-tablet {
-        padding: spacer(lm) spacer(l)
+        padding: spacer(medium-m) spacer(medium-s)
     }
 
     @include if-desktop {
         height: 200px;
-        padding: spacer(lm) spacer(xxl);
+        padding: spacer(medium-m) spacer(trojan-s);
     }
 
     &__columns {
@@ -26,15 +26,15 @@
     }
 
     &__item {
-        margin-bottom: spacer(xm);
+        margin-bottom: spacer(small-xl);
         text-transform: uppercase;
 
         &:last-child {
-            margin-bottom: spacer(l);
+            margin-bottom: spacer(medium-s);
         }
 
         @include if-tablet {
-            margin-bottom: spacer(xa);
+            margin-bottom: spacer(small-xxs);
             text-transform: none;
         }
     }
@@ -50,7 +50,7 @@
 
         @include if-desktop {
             align-items: start;
-            margin-top: spacer(xa);
+            margin-top: spacer(small-xxs);
         }
     }
 
@@ -62,7 +62,7 @@
     &__input-box {
 
         @include if-desktop {
-            margin-top: spacer(xa);
+            margin-top: spacer(small-xxs);
         }
     }
 }
