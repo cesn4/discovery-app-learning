@@ -9,13 +9,13 @@
     @include if-tablet {
         height: 50px;
         justify-content: flex-end;
-        padding-left: 15px;
+        padding-left: spacer(small-l);
     }
 
     &__menu-icon {
         background-image: url('/assets/img/menuIcon.png');
         height: 14px;
-        margin-left: 16px;
+        margin-left: spacer(small-l);
         margin-right: auto;
         width: 16px;
 
