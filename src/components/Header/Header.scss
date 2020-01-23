@@ -9,6 +9,7 @@
     @include if-tablet {
         height: 50px;
         justify-content: flex-end;
+        padding-left: 15px;
     }
 
     &__menu-icon {
