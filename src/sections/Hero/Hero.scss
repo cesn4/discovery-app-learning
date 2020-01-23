@@ -8,18 +8,18 @@
     &__posts-box {
 
         @include if-desktop {
-            padding-top: spacer(lm);
+            padding-top: spacer(medium-m);
         }
     }
 
     &__posts {
         display: flex;
         flex-direction: column;
-        padding: 0 spacer(xs);
+        padding: 0 spacer(small-m);
 
         @include if-tablet {
             flex-direction: row;
-            padding: 0 spacer(l);
+            padding: 0 spacer(medium-s);
         }
 
         @include if-desktop {

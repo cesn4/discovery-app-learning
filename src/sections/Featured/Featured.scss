@@ -1,13 +1,13 @@
 .featured {
     background-color: $color-header-background;
     display: flex;
-    padding: 0 spacer(xs);
+    padding: 0 spacer(small-m);
 
     @include if-tablet {
-        padding: 0 spacer(l);
+        padding: 0 spacer(medium-s);
     }
 
     @include if-desktop {
-        padding: 0 spacer(xxl);
+        padding: 0 spacer(trojan-s);
     }
 }
