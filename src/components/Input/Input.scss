@@ -4,36 +4,36 @@
 
     &__box {
         align-items: center;
-        background-color: $color-footer-background;
+        background-color: theme-color("inactive");
         border: solid border(s);
-        border-color: $color-footer-input;
+        border-color: theme-color("footer-accent");
         border-radius: radius(m);
         display: flex;
-        height: spacer(l);
+        height: spacer(medium-s);
         position: relative;
     }
 
     &__text {
-        background-color: $color-footer-background;
+        background-color: theme-color("inactive");
         border: none;
         border-radius: radius(m);
-        color: $color-footer-input;
+        color: theme-color("footer-accent");
         font-family: $font-family-primary;
-        padding: spacer(xs) spacer(xm);
+        padding: spacer(small-m) spacer(small-xl);
         width: 100%;
     }
 
     &__anchor {
         position: absolute;
         right: 0;
-        top: spacer(xa);
+        top: spacer(small-xxs);
     }
 
     &__button {
         border: none;
         border-radius: radius(m);
-        margin-top: spacer(a);
-        padding: spacer(a) spacer(xm);
+        margin-top: spacer(small-xs);
+        padding: spacer(small-xs) spacer(small-xl);
         pointer-events: none;
     }
 
