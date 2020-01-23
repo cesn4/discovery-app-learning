@@ -8,7 +8,7 @@
     &__section-lable {
 
         @include if-desktop {
-            padding-right: spacer(medium-l);
+            padding-right: spacer(medium-xl);
         }
     }
 
@@ -31,7 +31,7 @@
 
         @include if-desktop {
             flex-direction: column;
-            padding-right: spacer(medium-l);
+            padding-right: spacer(medium-xl);
         }
     }
 }
