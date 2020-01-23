@@ -1,6 +1,6 @@
 .header {
     align-items: center;
-    background-color: $color-header-background;
+    background-color: theme-color("accent-2");
     display: flex;
     height: 44px;
     justify-content: center;
@@ -9,6 +9,7 @@
     @include if-tablet {
         height: 50px;
         justify-content: flex-end;
+        padding-left: 15px;
     }
 
     &__menu-icon {

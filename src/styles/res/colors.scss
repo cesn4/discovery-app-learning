@@ -12,15 +12,15 @@ $color-shark: #343638;
 $color-iron: #cbd0d3;
 
 // Project colors
-$color-accent: $color-light-red;
+$theme-colors: (
+    "accent-1": $color-light-red,
+    "accent-2": $color-porcelain,
+    "active": $color-shark,
+    "inactive": $color-gray-chateu,
+    "footer-accent": $color-iron,
+    "white": $color-white,
+);
 
-// Layout colors
-$color-body: $color-white;
-$color-footer-background: $color-gray-chateu;
-$color-header-background: $color-porcelain;
-$color-header-inactive: $color-gray-chateu;
-$color-box-background: $color-shark;
-$color-hero-text: $color-white;
-$color-title-black: $color-shark;
-$color-knight-background: $color-porcelain;
-$color-footer-input: $color-iron;
+@function theme-color($_key) {
+    @return map-get($theme-colors, $_key)
+}

@@ -21,7 +21,7 @@
     }
 
     &__text-box {
-        color: $color-hero-text;
+        color: theme-color("white");
         display: flex;
         flex-direction: column;
         font-family: $font-family-primary;
