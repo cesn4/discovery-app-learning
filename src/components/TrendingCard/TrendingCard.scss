@@ -5,8 +5,8 @@
 
     &__image {
         background-size: cover;
-        border-top-left-radius: 4px;
-        border-top-right-radius: 4px;
+        border-top-left-radius: radius(m);
+        border-top-right-radius: radius(m);
         height: 150px;
         width: 100%;
 

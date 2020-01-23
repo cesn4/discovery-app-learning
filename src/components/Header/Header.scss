@@ -28,7 +28,7 @@
         @include size(30px);
         background-image: url('/assets/img/woman.png');
         background-size: cover;
-        border-radius: 50%;
+        border-radius: radius(round);
         margin-left: auto;
         margin-right: 16px;
 

@@ -7,3 +7,13 @@ $borders-map: (
 @function border($_key) {
     @return map-get($borders-map, $_key);
 }
+
+$border-radius-map: (
+    m: 4px,
+    l: 5px,
+    round: 50%
+);
+
+@function radius($_key) {
+    @return map-get($border-radius-map, $_key);
+}
