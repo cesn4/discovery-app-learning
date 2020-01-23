@@ -1,17 +1,17 @@
 .section-navigation {
     font-family: $font-family-primary;
-    padding: spacer(l) spacer(xs);
+    padding: spacer(medium-s) spacer(small-m);
     width: 100%;
 
     @include if-tablet {
-        padding: spacer(l) spacer(l);
+        padding: spacer(medium-s);
     }
 
     &.-borderless {
-        padding: spacer(l) 0 0 0;
+        padding: spacer(medium-s) 0 0 0;
 
         @include if-tablet {
-            padding: spacer(l) 0 0 0;
+            padding: spacer(medium-s) 0 0 0;
         }
     }
 
@@ -22,10 +22,10 @@
         border-width: border(s);
         display: flex;
         justify-content: flex-end;
-        padding-bottom: spacer(l);
+        padding-bottom: spacer(medium-s);
 
         @include if-desktop {
-            margin-right: spacer(xl);
+            margin-right: spacer(medium-l);
         }
 
         &.-borderless {
@@ -54,7 +54,7 @@
 
         &.-left {
             background-image: url('/assets/img/arrowLeft.png');
-            margin-right:  spacer(m);
+            margin-right:  spacer(medium-xs);
         }
         &.-right {
             background-image: url('/assets/img/arrowRight.png');

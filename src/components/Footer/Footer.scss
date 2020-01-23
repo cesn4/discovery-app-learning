@@ -2,16 +2,16 @@
     background-color: theme-color("inactive");
     color: theme-color("footer-accent");
     font-family: $font-family-primary;
-    padding: spacer(lm) spacer(xs) spacer(l) spacer(xs);
+    padding: spacer(medium-m) spacer(small-m) spacer(medium-s) spacer(small-m);
     width: 100%;
 
     @include if-tablet {
-        padding: spacer(lm) spacer(l)
+        padding: spacer(medium-m) spacer(medium-s)
     }
 
     @include if-desktop {
         height: 200px;
-        padding: spacer(lm) spacer(xxl);
+        padding: spacer(medium-m) spacer(trojan-s);
     }
 
     &__columns {
@@ -26,15 +26,15 @@
     }
 
     &__item {
-        margin-bottom: spacer(xm);
+        margin-bottom: spacer(small-xl);
         text-transform: uppercase;
 
         &:last-child {
-            margin-bottom: spacer(l);
+            margin-bottom: spacer(medium-s);
         }
 
         @include if-tablet {
-            margin-bottom: spacer(xa);
+            margin-bottom: spacer(small-xxs);
             text-transform: none;
         }
     }
@@ -50,7 +50,7 @@
 
         @include if-desktop {
             align-items: start;
-            margin-top: spacer(xa);
+            margin-top: spacer(small-xxs);
         }
     }
 
@@ -64,7 +64,7 @@
         flex-direction: column;
 
         @include if-desktop {
-            margin-top: spacer(xa);
+            margin-top: spacer(small-xxs);
         }
     }
 
@@ -75,7 +75,7 @@
         border-color: theme-color("footer-accent");
         border-radius: 4px;
         display: flex;
-        height: spacer(l);
+        height: spacer(medium-s);
         position: relative;
     }
 
@@ -85,15 +85,15 @@
         border-radius: 4px;
         color: theme-color("footer-accent");
         font-family: $font-family-primary;
-        margin: 0 spacer(l) 0 spacer(xm);
+        margin: 0 spacer(medium-s) 0 spacer(small-xl);
         width: 100%;
     }
 
     &__input-button {
         border: none;
         border-radius: 4px;
-        margin-top: spacer(a);
-        padding: spacer(a) spacer(xm);
+        margin-top: spacer(small-xs);
+        padding: spacer(small-xs) spacer(small-xl);
         pointer-events: none;
     }
 
@@ -104,7 +104,7 @@
     &__button-anchor {
         position: absolute;
         right: 0;
-        top: spacer(xa);
+        top: 3px;
     }
 
     &__input-line {

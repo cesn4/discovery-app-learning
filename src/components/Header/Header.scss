@@ -7,7 +7,7 @@
     width: 100%;
 
     @include if-tablet {
-        height: spacer(lm);
+        height: 50px;
         justify-content: flex-end;
     }
 
@@ -34,7 +34,7 @@
 
         @include if-tablet {
             margin-left: 0;
-            margin-right: spacer(xm);
+            margin-right: spacer(small-xl);
         }
     }
 }
