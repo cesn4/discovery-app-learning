@@ -17,10 +17,10 @@ const Featured: FunctionComponent = () => {
         <div className="featured">
             <Container>
                 <Row>
-                    <Col xs={12} md={12} xl={12}>
+                    <Col xs={12} md={12} lg={12}>
                         <SectionNavigation borderless title="Happening Now" />
                     </Col>
-                    <Col xs={12} md={12} xl={8}>
+                    <Col xs={12} md={12} lg={8}>
                         <FeaturedCard
                             firstItem
                             background={hand}
@@ -38,9 +38,9 @@ const Featured: FunctionComponent = () => {
                             time="2m ago"
                         />
                     </Col>
-                    <Col xs={12} md={12} xl={4}>
+                    <Col xs={12} md={12} lg={4}>
                         <Row>
-                            <Col md={6} xl={12}>
+                            <Col md={6} lg={12}>
                                 <SmallCard
                                     firstItem
                                     image={wall}
@@ -48,7 +48,7 @@ const Featured: FunctionComponent = () => {
                                     time="3h ago by Worldnews"
                                 />
                             </Col>
-                            <Col md={6} xl={12}>
+                            <Col md={6} lg={12}>
                                 <SmallCard
                                     image={castle}
                                     title="Small title"

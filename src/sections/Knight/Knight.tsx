@@ -14,10 +14,10 @@ const Knight: FunctionComponent = () => {
         <div className="knight">
             <Container>
                 <Row>
-                    <Col xs={12} md={12} xl={12}>
+                    <Col xs={12} md={12} lg={12}>
                         <SectionNavigation title="Trending" borderless />
                     </Col>
-                    <Col xs={12} md={6} xl={4}>
+                    <Col xs={12} md={6} lg={4}>
                         <TrendingCard
                             image={bridge}
                             subtitle="Dolore magna aliqua"
@@ -25,7 +25,7 @@ const Knight: FunctionComponent = () => {
                             time="2m ago"
                         />
                     </Col>
-                    <Col xs={12} md={6} xl={4}>
+                    <Col xs={12} md={6} lg={4}>
                         <TrendingCard
                             image={road}
                             subtitle="Morbi eleifend a libero"
@@ -33,8 +33,8 @@ const Knight: FunctionComponent = () => {
                             time="1h ago"
                         />
                     </Col>
-                    <Hidden xs md>
-                        <Col xl={4}>
+                    <Hidden sm md>
+                        <Col lg={4}>
                             <TrendingCard
                                 image={sunflower}
                                 subtitle="Morbi eleifend a libero"
