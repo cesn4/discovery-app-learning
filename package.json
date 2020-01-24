@@ -13,6 +13,9 @@
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/preset-react": "^7.7.4",
+    "@types/node": "^13.5.0",
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
     "autoprefixer": "^9.7.3",
     "babel-loader": "^8.0.6",
     "browser-sync": "^2.26.7",
@@ -42,6 +45,7 @@
     "stylelint-order": "^4.0.0",
     "stylelint-scss": "^3.13.0",
     "stylelint-webpack-plugin": "^1.1.2",
+    "typescript": "^3.7.5",
     "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10"
   },

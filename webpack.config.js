@@ -7,7 +7,7 @@ const path = require("path");
 
 module.exports = {
     mode: "development",
-    entry: "./src/index.js",
+    entry: "./src/index.ts",
     devtool: "sourcemap", // Nurodo kad kurtu source maps, lengviau debuginti koda per chrome dev tools
     stats: "minimal", // Sitas nurodo kad console langelyje rodytu maziau info, pagrinde tik errorus
     resolve: {
@@ -22,11 +22,11 @@ module.exports = {
     module: {
         rules: [
         {
-            test: /\.(js|jsx)$/,
+            test: /\.(js|jsx|ts|tsx)$/,
             exclude: [/node_modules/],
             use: ["babel-loader", "eslint-loader"],
             resolve: {
-            extensions: [".js", ".jsx"]
+            extensions: [".js", ".jsx", ".ts", ".tsx"]
             }
         },
         {
