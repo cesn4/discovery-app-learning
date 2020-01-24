@@ -60,56 +60,9 @@
     }
 
     &__input-box {
-        display: flex;
-        flex-direction: column;
 
         @include if-desktop {
             margin-top: spacer(small-xxs);
         }
-    }
-
-    &__input-border {
-        align-items: center;
-        background-color: theme-color("inactive");
-        border: solid border(s);
-        border-color: theme-color("footer-accent");
-        border-radius: 4px;
-        display: flex;
-        height: spacer(medium-s);
-        position: relative;
-    }
-
-    &__input {
-        background-color: theme-color("inactive");
-        border: none;
-        border-radius: 4px;
-        color: theme-color("footer-accent");
-        font-family: $font-family-primary;
-        margin: 0 spacer(medium-s) 0 spacer(small-xl);
-        width: 100%;
-    }
-
-    &__input-button {
-        border: none;
-        border-radius: 4px;
-        margin-top: spacer(small-xs);
-        padding: spacer(small-xs) spacer(small-xl);
-        pointer-events: none;
-    }
-
-    &__button-img {
-        @include size(16px);
-    }
-
-    &__button-anchor {
-        position: absolute;
-        right: 0;
-        top: 3px;
-    }
-
-    &__input-line {
-        font-size: $fonts-size-navigation;
-        line-height: $line-height-big;
-        margin-top: 6px;
     }
 }
