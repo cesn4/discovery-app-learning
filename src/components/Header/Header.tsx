@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
 import Logo from '~/components/Logo';
 import MainNavigation from '~/components/MainNavigation';
@@ -8,7 +8,7 @@ import '~/assets/img/woman.png';
 
 import './Header.scss';
 
-const Header = () => {
+const Header: FunctionComponent = () => {
     return (
         <header className="header">
             <div className="header__menu-icon"></div>
