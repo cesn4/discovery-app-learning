@@ -6,7 +6,7 @@
     @include if-tablet {
         display: flex;
         height: 400px;
-        padding: spacer(medium-xl) spacer(medium-s);
+        padding: spacer(medium-xl) spacer(medium-l);
     }
 
     @include if-desktop {
