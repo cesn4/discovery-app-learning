@@ -17,7 +17,7 @@ const Footer: FunctionComponent = () => {
                 <Row>
                     <Hidden sm>
                         <Col md={6} lg={1}>
-                            <Logo footer />
+                            <Logo light />
                         </Col>
                     </Hidden>
                     <Hidden sm>

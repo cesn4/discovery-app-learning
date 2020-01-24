@@ -3,15 +3,14 @@ import classNames from 'classnames';
 
 import './Logo.scss';
 
-const Logo: FunctionComponent<LogoProps> = ({ footer = false }: LogoProps) => {
-    //TODO: pakeisti sita propsa, footer i light
+const Logo: FunctionComponent<LogoProps> = ({ light = false }: LogoProps) => {
     return (
-        <div className={classNames('logo', { '-footer': footer })}>LOGO</div>
+        <div className={classNames('logo', { '-light': light })}>LOGO</div>
     );
 };
 
 interface LogoProps {
-    footer?: boolean;
+    light?: boolean;
 }
 
 export default Logo;
