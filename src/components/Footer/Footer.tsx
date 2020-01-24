@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { Container, Row, Col, Hidden } from 'react-grid-system';
 
 import Logo from '~/components/Logo';
