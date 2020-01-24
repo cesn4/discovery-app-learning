@@ -11,7 +11,7 @@ import './Hero.scss';
 const Hero: FunctionComponent = () => {
     return (
         <div className="hero">
-            <Container fluid>
+            <Container>
                 <Row>
                     <Col xs={12} md={12} xl={7} className="hero__background">
                         <Background />

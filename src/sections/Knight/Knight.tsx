@@ -12,7 +12,7 @@ import './Knight.scss';
 const Knight: FunctionComponent = () => {
     return (
         <div className="knight">
-            <Container fluid className="knight__box">
+            <Container>
                 <Row>
                     <Col xs={12} md={12} xl={12}>
                         <SectionNavigation title="Trending" borderless />

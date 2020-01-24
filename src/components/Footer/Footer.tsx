@@ -13,7 +13,7 @@ import './Footer.scss';
 const Footer: FunctionComponent = () => {
     return (
         <footer className="footer">
-            <Container fluid>
+            <Container>
                 <Row>
                     <Hidden xs>
                         <Col md={6} xl={1}>
