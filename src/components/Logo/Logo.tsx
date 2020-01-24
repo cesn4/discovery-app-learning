@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import classNames from 'classnames';
 
 import './Logo.scss';
 
-const Logo = ({ footer = false }: LogoProps) => { //TODO: pakeisti sita propsa, footer i light
+const Logo: FunctionComponent<LogoProps> = ({ footer = false }: LogoProps) => {
+    //TODO: pakeisti sita propsa, footer i light
     return (
         <div className={classNames('logo', { '-footer': footer })}>LOGO</div>
     );

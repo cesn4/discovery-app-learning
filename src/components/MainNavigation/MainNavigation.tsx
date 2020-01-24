@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
 import './MainNavigation.scss';
 
-const MainNavigation = () => {
+const MainNavigation: FunctionComponent = () => {
     return (
         <div className="menu">
             <ul className="menu__navigation">

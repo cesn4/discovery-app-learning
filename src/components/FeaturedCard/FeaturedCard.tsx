@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import classNames from 'classnames';
 
 import Time from '~/components/Time';
 
 import './FeaturedCard.scss';
 
-const FeaturedCard = ({
+const FeaturedCard: FunctionComponent<FeaturedCardProps> = ({
     theme,
     title,
     paragraph,

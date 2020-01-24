@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import { Container, Row, Col, Hidden } from 'react-grid-system';
 
 import Logo from '~/components/Logo';
@@ -10,14 +10,14 @@ import twitter from '~/assets/img/twitter.png';
 import web from '~/assets/img/web.png';
 import './Footer.scss';
 
-const Footer = () => {
+const Footer: FunctionComponent = () => {
     return (
         <footer className="footer">
             <Container fluid>
                 <Row>
                     <Hidden xs>
                         <Col md={6} xl={1}>
-                            <Logo footer/>
+                            <Logo footer />
                         </Col>
                     </Hidden>
                     <Hidden xs>
@@ -30,7 +30,7 @@ const Footer = () => {
                             </ul>
                         </Col>
                     </Hidden>
-                    <Col xs={6} md={2} xl={1} >
+                    <Col xs={6} md={2} xl={1}>
                         <ul className="footer__columns">
                             <li className="footer__item">About</li>
                             <li className="footer__item">Help</li>
@@ -38,7 +38,7 @@ const Footer = () => {
                             <li className="footer__item">Guidlines</li>
                         </ul>
                     </Col>
-                    <Col xs={6} md={2} xl={3} >
+                    <Col xs={6} md={2} xl={3}>
                         <ul className="footer__columns">
                             <li className="footer__item">Testimonials</li>
                             <li className="footer__item">Advertise</li>
@@ -55,10 +55,34 @@ const Footer = () => {
                     </Hidden>
                     <Col md={6} xl={3}>
                         <div className="footer__media">
-                            <a href="#" ><img src={instagram} alt="" className="footer__media-img"/></a>
-                            <a href="#" ><img src={twitter} alt="" className="footer__media-img"/></a>
-                            <a href="#" ><img src={facebook} alt="" className="footer__media-img"/></a>
-                            <a href="#"><img src={web} alt="" className="footer__media-img"/></a>
+                            <a href="#">
+                                <img
+                                    src={instagram}
+                                    alt=""
+                                    className="footer__media-img"
+                                />
+                            </a>
+                            <a href="#">
+                                <img
+                                    src={twitter}
+                                    alt=""
+                                    className="footer__media-img"
+                                />
+                            </a>
+                            <a href="#">
+                                <img
+                                    src={facebook}
+                                    alt=""
+                                    className="footer__media-img"
+                                />
+                            </a>
+                            <a href="#">
+                                <img
+                                    src={web}
+                                    alt=""
+                                    className="footer__media-img"
+                                />
+                            </a>
                         </div>
                     </Col>
                 </Row>

@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import classNames from 'classnames';
 
 import Time from '~/components/Time';
 
 import './SmallCard.scss';
 
-const SmallCard = ({ image, title, time, firstItem = false }: SmallCardProps) => {
+const SmallCard: FunctionComponent<SmallCardProps> = ({
+    image,
+    title,
+    time,
+    firstItem = false,
+}: SmallCardProps) => {
     return (
         <div className={classNames('small-card', { '-firstItem': firstItem })}>
             <img src={image} alt="" className="small-card__image" />

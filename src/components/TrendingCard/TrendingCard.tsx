@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
 import PostInfo from '~/components/PostInfo';
 
 import './TrendingCard.scss';
 
-const TrendingCard = ({ image, subtitle, primaryText, time }: TrendingCard) => {
+const TrendingCard: FunctionComponent<TrendingCardProps> = ({
+    image,
+    subtitle,
+    primaryText,
+    time,
+}: TrendingCardProps) => {
     return (
         <div className="trending-card">
             <img src={image} className="trending-card__image" />
@@ -19,7 +24,7 @@ const TrendingCard = ({ image, subtitle, primaryText, time }: TrendingCard) => {
     );
 };
 
-interface TrendingCard {
+interface TrendingCardProps {
     image: string;
     subtitle: string;
     primaryText: string;

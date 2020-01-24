@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
 import './SimpleButton.scss';
 
-const SimpleButton = ({ title, href = '#' }: SimpleButtonProps) => {
+const SimpleButton: FunctionComponent<SimpleButtonProps> = ({
+    title,
+    href = '#',
+}: SimpleButtonProps) => {
     return (
         <a href={href} className="button">
             {title}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 // react-router-dom reikalingas kad galetum kurt 'virtualius' puslapius, va linkas su detalesnem instrukcijom
 // https://reacttraining.com/react-router/web/example/basic
 import {
@@ -9,7 +9,7 @@ import {
 
 import Home from '~/views/Home';
 
-const App = () => {
+const App: FunctionComponent = () => {
     return (
         <Router>
             <Switch>

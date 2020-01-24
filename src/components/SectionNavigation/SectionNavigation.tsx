@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import classNames from 'classnames';
 
 import '~/assets/img/arrowLeft.png';
@@ -7,9 +7,9 @@ import '~/assets/img/time.png';
 
 import './SectionNavigation.scss';
 
-const SectionNavigation = ({
+const SectionNavigation: FunctionComponent<SectionNavigationProps> = ({
     title,
-    borderless = false
+    borderless = false,
 }: SectionNavigationProps) => {
     return (
         <div
