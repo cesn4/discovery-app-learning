@@ -19,6 +19,7 @@ module.exports = {
         react: {
             version: 'detect',
         },
+        '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
     rules: {
         semi: ['error', 'always'],
@@ -28,6 +29,6 @@ module.exports = {
         'no-unused-vars': [
             'error',
             { vars: 'all', args: 'after-used', ignoreRestSiblings: false },
-        ]
+        ],
     },
 };
