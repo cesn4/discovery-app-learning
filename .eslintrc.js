@@ -4,8 +4,8 @@ module.exports = {
         es6: true
     },
     extends: [
-        'plugin:react/recommended',
-        'standard'
+        'plugin:@typescript-eslint/recommended',
+        'plugin:react/recommended'
     ],
     parserOptions: {
         ecmaFeatures: {
@@ -15,6 +15,7 @@ module.exports = {
         sourceType: 'module'
     },
     plugins: [
+        '@typescript-eslint',
         'react'
     ],
     settings: {
