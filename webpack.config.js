@@ -22,12 +22,14 @@ module.exports = {
     module: {
         rules: [
         {
-            test: /\.(js|jsx|ts|tsx)$/,
+            test: /\.(js|jsx)$/,
             exclude: [/node_modules/],
             use: ["babel-loader", "eslint-loader"],
-            resolve: {
-            extensions: [".js", ".jsx", ".ts", ".tsx"]
-            }
+        },
+        {
+            test: /\.(ts|tsx)$/,
+            exclude: [/node_modules/],
+            use: ["ts-loader", "eslint-loader"],
         },
         {
             test: /\.css$/i,
