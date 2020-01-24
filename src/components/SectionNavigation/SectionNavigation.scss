@@ -11,7 +11,7 @@
     }
 
     &.-borderless {
-        padding-top: spacer(medium-s) 0 0 0;
+        padding: spacer(medium-s) 0 0 0;
 
         @include if-tablet {
             padding: spacer(medium-s) 0 0 0;
