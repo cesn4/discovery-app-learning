@@ -1,21 +1,16 @@
 import React from 'react';
 import classNames from 'classnames';
-import PropTypes from 'prop-types';
 
 import './Logo.scss';
 
-const Logo = ({ footer }) => {
+const Logo = ({ footer = false }: LogoProps) => { //TODO: pakeisti sita propsa, footer i light
     return (
         <div className={classNames('logo', { '-footer': footer })}>LOGO</div>
     );
 };
 
-Logo.propTypes = {
-    footer: PropTypes.bool
-};
-
-Logo.defaultProps = {
-    footer: false
-};
+interface LogoProps {
+    footer?: boolean;
+}
 
 export default Logo;

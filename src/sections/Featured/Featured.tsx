@@ -9,7 +9,7 @@ import castle from '~/assets/img/castle.jpg';
 import wall from '~/assets/img/wall.jpg';
 import house from '~/assets/img/house.jpg';
 import hand from '~/assets/img/hand.jpg';
-import random from '~/assets/img/random.jpg';
+import random from 'src/assets/img/random.jpg';
 import './Featured.scss';
 
 const Featured = () => {
