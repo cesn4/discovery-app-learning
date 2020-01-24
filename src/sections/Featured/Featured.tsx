@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { Container, Row, Col, Hidden } from 'react-grid-system';
 
 import FeaturedCard from '~/components/FeaturedCard';
