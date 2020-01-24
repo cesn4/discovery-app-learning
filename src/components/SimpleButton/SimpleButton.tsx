@@ -1,21 +1,18 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 
 import './SimpleButton.scss';
 
-const SimpleButton = ({ title, href }) => {
+const SimpleButton = ({ title, href = '#' }: SimpleButtonProps) => {
     return (
-        <a href={href} className="button">{title}</a>
+        <a href={href} className="button">
+            {title}
+        </a>
     );
 };
 
-SimpleButton.propTypes = {
-    href: PropTypes.string,
-    title: PropTypes.string.isRequired
-};
-
-SimpleButton.defaultProps = {
-    href: '#'
-};
+interface SimpleButtonProps {
+    href?: string;
+    title: string;
+}
 
 export default SimpleButton;
