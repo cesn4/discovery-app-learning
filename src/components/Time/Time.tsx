@@ -1,11 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { FunctionComponent } from 'react';
 import classNames from 'classnames';
 
 import '~/assets/img/time.png';
 import './Time.scss';
 
-const Time = ({ text, marginless }) => {
+const Time: FunctionComponent<TimeProps> = ({ text, marginless = false }: TimeProps) => {
     return (
         <div className={classNames('time', { '-marginless': marginless })}>
             <i className="time__clock"></i>
@@ -14,13 +13,9 @@ const Time = ({ text, marginless }) => {
     );
 };
 
-Time.propTypes = {
-    text: PropTypes.string.isRequired,
-    marginless: PropTypes.bool
-};
-
-Time.defaultProps = {
-    marginless: false
+interface TimeProps {
+    text: string;
+    marginless?: boolean;
 };
 
 export default Time;

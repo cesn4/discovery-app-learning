@@ -1,5 +1,4 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { FunctionComponent } from 'react';
 
 import ProfilePhoto from '~/components/ProfilePhoto';
 import Logo from '~/components/Logo';
@@ -9,7 +8,7 @@ import '~/assets/img/menuIcon.png';
 
 import './Header.scss';
 
-const Header = ({ drawSidebar }) => {
+const Header: FunctionComponent<HeaderProps> = ({ drawSidebar }:HeaderProps) => {
     return (
         <header className="header">
             <button className="header__menu-icon" onClick={drawSidebar}></button>
@@ -22,8 +21,8 @@ const Header = ({ drawSidebar }) => {
     );
 };
 
-Header.propTypes = {
-    drawSidebar: PropTypes.string.isRequired
-};
+interface HeaderProps {
+    drawSidebar: string;
+}
 
 export default Header;

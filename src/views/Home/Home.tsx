@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { FunctionComponent, useState } from 'react';
 
 import Sidebar from '~/components/Sidebar';
 import Header from '~/components/Header';
@@ -7,7 +7,7 @@ import Hero from '~/sections/Hero';
 import Knight from '~/sections/Knight';
 import Featured from '~/sections/Featured';
 
-const Home = () => {
+const Home: FunctionComponent = () => {
     const [sidebarState, setSidebarState] = useState(false);
 
     const sidebarOpen = () => {
@@ -17,7 +17,6 @@ const Home = () => {
     const sidebarClose = () => {
         setSidebarState(false);
     };
-
     return (
         <div className="home">
             <Sidebar isOpen={sidebarState} closeSidebar={sidebarClose}/>

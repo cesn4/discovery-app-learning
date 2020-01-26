@@ -1,17 +1,17 @@
 .footer {
-    background-color: $color-footer-background;
-    color: $color-footer-input;
+    background-color: theme-color("inactive");
+    color: theme-color("footer-accent");
     font-family: $font-family-primary;
-    padding: spacer(lm) spacer(xs) spacer(l) spacer(xs);
+    padding: spacer(medium-m) spacer(small-m) spacer(medium-s) spacer(small-m);
     width: 100%;
 
     @include if-tablet {
-        padding: spacer(lm) spacer(l)
+        padding: spacer(medium-m) spacer(medium-s)
     }
 
     @include if-desktop {
         height: 200px;
-        padding: spacer(lm) spacer(xxl);
+        padding: spacer(medium-m) spacer(trojan-s);
     }
 
     &__columns {
@@ -26,15 +26,15 @@
     }
 
     &__item {
-        margin-bottom: spacer(xm);
+        margin-bottom: spacer(small-xl);
         text-transform: uppercase;
 
         &:last-child {
-            margin-bottom: spacer(l);
+            margin-bottom: spacer(medium-s);
         }
 
         @include if-tablet {
-            margin-bottom: spacer(xa);
+            margin-bottom: spacer(small-xxs);
             text-transform: none;
         }
     }
@@ -50,7 +50,7 @@
 
         @include if-desktop {
             align-items: start;
-            margin-top: spacer(xa);
+            margin-top: spacer(small-xxs);
         }
     }
 
@@ -60,56 +60,9 @@
     }
 
     &__input-box {
-        display: flex;
-        flex-direction: column;
 
         @include if-desktop {
-            margin-top: spacer(xa);
+            margin-top: spacer(small-xxs);
         }
-    }
-
-    &__input-border {
-        align-items: center;
-        background-color: $color-footer-background;
-        border: solid border(s);
-        border-color: $color-footer-input;
-        border-radius: 4px;
-        display: flex;
-        height: spacer(l);
-        position: relative;
-    }
-
-    &__input {
-        background-color: $color-footer-background;
-        border: none;
-        border-radius: 4px;
-        color: $color-footer-input;
-        font-family: $font-family-primary;
-        margin: 0 spacer(l) 0 spacer(xm);
-        width: 100%;
-    }
-
-    &__input-button {
-        border: none;
-        border-radius: 4px;
-        margin-top: spacer(a);
-        padding: spacer(a) spacer(xm);
-        pointer-events: none;
-    }
-
-    &__button-img {
-        @include size(16px);
-    }
-
-    &__button-anchor {
-        position: absolute;
-        right: 0;
-        top: spacer(xa);
-    }
-
-    &__input-line {
-        font-size: $fonts-size-navigation;
-        line-height: $line-height-big;
-        margin-top: 6px;
     }
 }

@@ -1,12 +1,12 @@
 .button {
     align-items: center;
-    background-color: $color-accent;
-    border-radius: 5px;
-    color: $color-hero-text;
+    background-color: theme-color("accent-1");
+    border-radius: radius(l);
+    color: theme-color("white");
     display: flex;
     font-size: $fonts-size-button;
     font-weight: $font-weight-fat;
-    height: spacer(l);
+    height: spacer(medium-s);
     justify-content: center;
     line-height: $line-height-big;
     text-align: center;
