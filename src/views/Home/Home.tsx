@@ -10,11 +10,11 @@ import Featured from '~/sections/Featured';
 const Home: FunctionComponent = () => {
     const [sidebarState, setSidebarState] = useState(false);
 
-    const sidebarOpen = () => {
+    const sidebarOpen: VoidFunction = () => {
         setSidebarState(!sidebarState);
     };
 
-    const sidebarClose = () => {
+    const sidebarClose: VoidFunction = () => {
         setSidebarState(false);
     };
     return (

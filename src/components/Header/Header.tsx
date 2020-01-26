@@ -11,7 +11,7 @@ import './Header.scss';
 const Header: FunctionComponent<HeaderProps> = ({ drawSidebar }: HeaderProps) => {
     return (
         <header className="header">
-            <button className="header__menu-icon" onClick={() => {drawSidebar();}}></button>
+            <button className="header__menu-icon" onClick={drawSidebar}></button>
             <Logo />
             <MainNavigation />
             <div className="header__photo">
@@ -22,7 +22,7 @@ const Header: FunctionComponent<HeaderProps> = ({ drawSidebar }: HeaderProps) =>
 };
 
 interface HeaderProps {
-    drawSidebar: Function;
+    drawSidebar: VoidFunction;
 }
 
 export default Header;

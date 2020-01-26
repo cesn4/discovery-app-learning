@@ -38,13 +38,13 @@ const Sidebar: FunctionComponent<SidebarProps> = ({
                     </div>
                 </div>
             </div>
-            <button className="sidebar__backdraw" onClick= {() => {closeSidebar();}}></button>
+            <button className="sidebar__backdraw" onClick={closeSidebar}></button>
         </div>
     );
 };
 
 interface SidebarProps {
-    closeSidebar: Function;
+    closeSidebar: VoidFunction;
     isOpen: boolean;
 }
 export default Sidebar;
