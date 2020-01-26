@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from 'react';
+import { Container, Row, Col } from 'react-grid-system';
 
 import ProfilePhoto from '~/components/ProfilePhoto';
 import Logo from '~/components/Logo';
@@ -10,14 +11,22 @@ import './Header.scss';
 
 const Header: FunctionComponent<HeaderProps> = ({ drawSidebar, homeButton }: HeaderProps) => {
     return (
-        <header className="header">
-            <button className="header__menu-icon" onClick={drawSidebar}></button>
-            <Logo />
-            <MainNavigation homeButton={homeButton} />
-            <div className="header__photo">
-                <ProfilePhoto medium />
-            </div>
-        </header>
+        <div className="header">
+            <Container>
+                <Row>
+                    <Col>
+                        <header className="header__box">
+                            <button className="header__menu-icon" onClick={drawSidebar}></button>
+                            <Logo />
+                            <MainNavigation homeButton={homeButton} />
+                            <div className="header__photo">
+                                <ProfilePhoto medium />
+                            </div>
+                        </header>
+                    </Col>
+                </Row>
+            </Container>
+        </div>
     );
 };
 

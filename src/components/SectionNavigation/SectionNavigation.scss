@@ -1,10 +1,13 @@
 .section-navigation {
     font-family: $font-family-primary;
-    padding: spacer(medium-s) spacer(small-m);
+    padding: spacer(medium-s) spacer(small-m) 0 spacer(small-m);
     width: 100%;
 
     @include if-tablet {
-        padding: spacer(medium-s);
+        padding: spacer(medium-s) spacer(medium-s) 0 spacer(medium-s);
+    }
+    @include if-desktop {
+        padding-right: 0;
     }
 
     &.-borderless {
@@ -23,10 +26,6 @@
         display: flex;
         justify-content: flex-end;
         padding-bottom: spacer(medium-s);
-
-        @include if-desktop {
-            margin-right: spacer(medium-l);
-        }
 
         &.-borderless {
             border-bottom: none;

@@ -11,13 +11,15 @@ import './Hero.scss';
 const Hero: FunctionComponent = () => {
     return (
         <div className="hero">
-            <Container fluid>
+            <Container>
                 <Row>
-                    <Col xs={12} md={12} xl={7} className="hero__background">
+                    <Col xs={12} md={12} lg={7} className="hero__background">
                         <Background />
                     </Col>
-                    <Col xs={12} md={12} xl={5}>
-                        <SectionNavigation title="Discoveries" />
+                    <Col xs={12} md={12} lg={5}>
+                        <div className="hero__section-lable">
+                            <SectionNavigation title="Discoveries" />
+                        </div>
                         <div className="hero__posts">
                             <PostInfo
                                 title="Travel"

@@ -1,17 +1,23 @@
 .header {
-    align-items: center;
     background-color: theme-color("accent-2");
-    display: flex;
-    height: 44px;
-    justify-content: center;
     position: relative;
-    width: 100%;
     z-index: index(half-modal);
 
     @include if-tablet {
-        height: 50px;
-        justify-content: flex-end;
-        padding-left: spacer(small-l);
+        padding: 0 spacer(small-xs);
+    }
+
+    &__box {
+        align-items: center;
+        display: flex;
+        height: 44px;
+        justify-content: center;
+        width: 100%;
+
+        @include if-tablet {
+            height: 50px;
+            justify-content: flex-end;
+        }
     }
 
     &__menu-icon {
@@ -19,7 +25,6 @@
         background-image: url('/assets/img/menuIcon.png');
         border: none;
         height: 14px;
-        margin-left: spacer(small-l);
         margin-right: auto;
         width: 16px;
 
@@ -30,13 +35,11 @@
 
     &__photo {
         margin-left: auto;
-        margin-right: spacer(small-l);
         margin-top: 4px;
 
 
         @include if-tablet {
             margin-left: 0;
-            margin-right: spacer(small-xl);
         }
     }
 }

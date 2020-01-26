@@ -5,6 +5,13 @@
         background-size: cover;
     }
 
+    &__section-lable {
+
+        @include if-desktop {
+            padding-right: spacer(medium-xl);
+        }
+    }
+
     &__posts-box {
 
         @include if-desktop {
@@ -15,15 +22,16 @@
     &__posts {
         display: flex;
         flex-direction: column;
-        padding: 0 spacer(small-m);
+        padding: spacer(medium-s) spacer(small-m) 0 spacer(small-m);
 
         @include if-tablet {
             flex-direction: row;
-            padding: 0 spacer(medium-s);
+            padding: spacer(medium-s) spacer(medium-s) 0 spacer(medium-s);
         }
 
         @include if-desktop {
             flex-direction: column;
+            padding-right: spacer(medium-xl);
         }
     }
 }

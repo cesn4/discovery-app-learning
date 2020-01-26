@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom';
 
 import Home from '~/views/Home';
+import '~/config/layout';
 
 const App: FunctionComponent = () => {
     return (
