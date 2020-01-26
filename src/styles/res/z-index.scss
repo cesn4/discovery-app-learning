@@ -1,0 +1,10 @@
+$index-man: (
+    ground-floor: 0,
+    first-floor: 5,
+    second-floor: 100,
+    third-floor: 200
+);
+
+@function index($_key) {
+    @return map-get($index-map, $_key);
+}
