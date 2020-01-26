@@ -4,7 +4,9 @@
     display: flex;
     height: 44px;
     justify-content: center;
+    position: relative;
     width: 100%;
+    z-index: index(half-modal);
 
     @include if-tablet {
         height: 50px;

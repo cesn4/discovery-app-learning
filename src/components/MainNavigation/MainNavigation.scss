@@ -22,11 +22,15 @@
     &__item {
         color: theme-color("active");
         opacity: 0.5;
-
         &.-active { opacity: 1; }
 
         @include if-tablet {
             margin: spacer(small-m);
+        }
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
         }
     }
 }

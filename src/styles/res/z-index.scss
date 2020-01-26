@@ -1,0 +1,10 @@
+$index-map: (
+    content: 0,
+    emphasized: 5,
+    half-modal: 100,
+    modal: 200
+);
+
+@function index($_key) {
+    @return map-get($index-map, $_key);
+}
