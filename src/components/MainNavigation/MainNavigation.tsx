@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react';
 
 import './MainNavigation.scss';
 
-const MainNavigation: FunctionComponent = () => {
+const MainNavigation: FunctionComponent<MainNavigationProps> = ({ homeButton }: MainNavigationProps) => {
     return (
         <div className="menu">
             <ul className="menu__navigation">
@@ -15,8 +15,8 @@ const MainNavigation: FunctionComponent = () => {
     );
 };
 
-MainNavigation.propTypes = {
-    homeButton: PropTypes.string.isRequired
+interface MainNavigationProps {
+    homeButton: VoidFunction;
 };
 
 export default MainNavigation;

@@ -1,6 +1,6 @@
 .dropdown-menu {
     @include size(200px);
-    background-color: $color-header-background;
+    background-color: theme-color("accent-2");
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     position: absolute;
@@ -15,6 +15,14 @@
     }
 
     &__nav {
-        margin-left: 20px;
+        margin-left: spacer(small-xl);
+    }
+
+    &__nav-item {
+        padding-bottom: spacer(small-m);
+    }
+
+    &__nav-item:first-child {
+        padding-top: spacer(small-m);
     }
 }

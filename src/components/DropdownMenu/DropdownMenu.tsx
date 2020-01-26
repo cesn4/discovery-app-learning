@@ -1,42 +1,40 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import classNames from 'classnames';
-import PropTypes from 'prop-types';
+
+import NavigationItem from '~/components/NavigationItem';
 
 import './DropdownMenu.scss';
 
-const DropdownMenu = ({ isOpen }) => {
+const DropdownMenu: FunctionComponent<DropDownMenuProps> = ({ isOpen= false }: DropDownMenuProps) => {
     return (
         <div className={classNames('dropdown-menu', { '-isOpen': isOpen })}>
             <div className="dropdown-menu__nav">
                 <div className="dropdown-menu__nav-item">
-                    <span>WORLD NEWS</span>
+                    <NavigationItem href="#" title="World News"/>
                 </div>
                 <div className="dropdown-menu__nav-item">
-                    <span>TRAVEL</span>
+                    <NavigationItem href="#" title="Travel"/>
                 </div>
                 <div className="dropdown-menu__nav-item">
-                    <span>TECHNOLOGY</span>
+                    <NavigationItem href="#" title="Technology"/>
                 </div>
                 <div className="dropdown-menu__nav-item">
-                    <span>CITY</span>
+                    <NavigationItem href="#" title="City"/>
                 </div>
                 <div className="dropdown-menu__nav-item">
-                    <span>CULTURE</span>
+                    <NavigationItem href="#" title="Culture"/>
                 </div>
                 <div className="dropdown-menu__nav-item">
-                    <span>MORE...</span>
+                    <NavigationItem href="#" title="More..."/>
                 </div>
             </div>
         </div>
     );
 };
 
-DropdownMenu.propTypes = {
-    isOpen: PropTypes.bool
+interface DropDownMenuProps {
+    isOpen: boolean;
 };
 
-DropdownMenu.defaultProps = {
-    isOpen: false
-};
 
 export default DropdownMenu;
