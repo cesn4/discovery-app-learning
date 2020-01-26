@@ -1,12 +1,17 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { FunctionComponent } from 'react';
 import classNames from 'classnames';
 
 import ProfilePhoto from '~/components/ProfilePhoto';
 
 import './NavigationItem.scss';
 
-const NavigationItem = ({ href, icon, title, active, profile }) => {
+const NavigationItem: FunctionComponent<NavigationItemProps> = ({
+    href,
+    icon,
+    title,
+    active = false,
+    profile = false
+}: NavigationItemProps) => {
     return (
         <div className="navigation-item">
             <a href={href} className="navigation-item__anchor">
@@ -20,17 +25,12 @@ const NavigationItem = ({ href, icon, title, active, profile }) => {
     );
 };
 
-NavigationItem.propTypes = {
-    href: PropTypes.string.isRequired,
-    icon: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    active: PropTypes.bool,
-    profile: PropTypes.bool
-};
-
-NavigationItem.defaultProps = {
-    active: false,
-    profile: false
+interface NavigationItemProps {
+    href: string;
+    icon?: string;
+    title: string;
+    active?: boolean;
+    profile?: boolean;
 };
 
 export default NavigationItem;

@@ -15,23 +15,23 @@
     }
 
     &__text-box {
-        background-color: $color-header-background;
-        box-shadow: 0 0 60px 0 $color-box-background;
+        background-color: theme-color("accent-2");
+        box-shadow: 0 0 60px 0 theme-color("active");
         display: flex;
         flex-direction: column;
         height: 100vh;
-        padding: spacer(l);
+        padding: spacer(medium-s);
         width: 70%;
     }
 
     &__nav {
         display: flex;
         flex-direction: column;
-        margin-top: spacer(xll);
+        margin-top: spacer(medium-xl);
     }
 
     &__nav-item {
-        margin-bottom: spacer(m);
+        margin-bottom: spacer(medium-xs);
     }
 
     &__backdraw  {

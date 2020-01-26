@@ -8,7 +8,7 @@ import '~/assets/img/menuIcon.png';
 
 import './Header.scss';
 
-const Header: FunctionComponent<HeaderProps> = ({ drawSidebar }:HeaderProps) => {
+const Header: FunctionComponent<HeaderProps> = ({ drawSidebar }: HeaderProps) => {
     return (
         <header className="header">
             <button className="header__menu-icon" onClick={drawSidebar}></button>

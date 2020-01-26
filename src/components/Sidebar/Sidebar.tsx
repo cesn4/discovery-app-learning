@@ -1,5 +1,4 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { FunctionComponent } from 'react';
 import classNames from 'classnames';
 
 import Logo from '~/components/Logo';
@@ -11,12 +10,15 @@ import photos from '~/assets/img/photos.png';
 import mail from '~/assets/img/mail.png';
 import './Sidebar.scss';
 
-const Sidebar = ({ closeSidebar, isOpen }) => {
+const Sidebar: FunctionComponent<SidebarProps> = ({
+    closeSidebar,
+    isOpen = false
+}: SidebarProps ) => {
     return (
         <div className={classNames('sidebar', { 'is-open': isOpen })}>
             <div className="sidebar__text-box">
                 <div className="sidebar__logo">
-                    <Logo sidebar/>
+                    <Logo accent/>
                 </div>
                 <div className="sidebar__nav">
                     <div className="sidebar__nav-item">
@@ -36,18 +38,13 @@ const Sidebar = ({ closeSidebar, isOpen }) => {
                     </div>
                 </div>
             </div>
-            <button className="sidebar__backdraw" onClick={closeSidebar}></button>
+            <button className="sidebar__backdraw" onClick= {() => {closeSidebar}}></button>
         </div>
     );
 };
 
-Sidebar.propTypes = {
-    isOpen: PropTypes.bool,
-    closeSidebar: PropTypes.func.isRequired
-};
-
-Sidebar.defaultProps = {
-    isOpen: false
-};
-
+interface SidebarProps {
+    closeSidebar: Function;
+    isOpen: boolean;
+}
 export default Sidebar;

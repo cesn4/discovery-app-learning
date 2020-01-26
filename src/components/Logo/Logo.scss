@@ -7,13 +7,13 @@
     line-height: $line-height-medium;
     text-align: center;
 
-    &.-footer {
+    &.-light {
         color: theme-color("white");
         margin: spacer(xa) 0;
     }
 
-    &.-sidebar {
-        color: $color-accent;
+    &.-accent {
+        color: theme-color("accent-1");
         text-align: start;
     }
 

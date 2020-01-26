@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 import classNames from 'classnames';
-import PropTypes from 'prop-types';
 
 import woman from '~/assets/img/woman.png';
 import './ProfilePhoto.scss';
 
-const ProfilePhoto = ({ medium }) => {
+const ProfilePhoto: FunctionComponent<ProfilePhotoProps> = ({ medium = false }: ProfilePhotoProps) => {
     return (
         <div className="profile-photo">
             <img src={woman} className={classNames('profile-photo__img', { '-medium': medium })} />
@@ -13,12 +12,8 @@ const ProfilePhoto = ({ medium }) => {
     );
 };
 
-ProfilePhoto.propTypes = {
-    medium: PropTypes.bool
-};
-
-ProfilePhoto.defaultProps = {
-    medium: false
-};
+interface ProfilePhotoProps {
+    medium?: boolean;
+}
 
 export default ProfilePhoto;
