@@ -20,14 +20,12 @@
     }
 
     &__item {
-
-        color: $color-box-background;
-        cursor: pointer;
+        color: theme-color("active");
         opacity: 0.5;
         &.-active { opacity: 1; }
 
         @include if-tablet {
-            margin: spacer(xs);
+            margin: spacer(small-m);
         }
     }
 

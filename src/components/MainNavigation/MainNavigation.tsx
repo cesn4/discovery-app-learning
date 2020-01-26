@@ -1,9 +1,8 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { FunctionComponent } from 'react';
 
 import './MainNavigation.scss';
 
-const MainNavigation = ({ homeButton }) => {
+const MainNavigation: FunctionComponent = () => {
     return (
         <div className="menu">
             <ul className="menu__navigation">

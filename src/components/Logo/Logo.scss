@@ -1,19 +1,24 @@
 .logo {
     $_logo-size: 13px;
-    color: $color-header-inactive;
+    color: theme-color("inactive");
     font-family: $font-family-primary;
     font-size: $_logo-size;
     font-weight: $font-weight-fat;
     line-height: $line-height-medium;
     text-align: center;
 
-    &.-footer {
-        color: $color-body;
+    &.-light {
+        color: theme-color("white");
         margin: spacer(xa) 0;
     }
 
+    &.-accent {
+        color: theme-color("accent-1");
+        text-align: start;
+    }
+
     @include if-tablet {
-        color: $color-accent;
+        color: theme-color("accent-1");
         margin-left: spacer(xm);
         margin-right: auto;
         text-align: left;

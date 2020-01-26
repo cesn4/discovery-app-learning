@@ -1,11 +1,11 @@
 .small-card {
-    background-color: $color-knight-background;
+    background-color: theme-color("accent-2");
 
     @include if-desktop {
-        padding-bottom: spacer(xxs);
+        padding-bottom: spacer(small-s);
     }
     &.-firstItem {
-        border-top: solid border(s) $color-header-inactive;
+        border-top: solid border(s) theme-color("inactive");
         padding-top: spacer(l);
 
         @include if-tablet {
@@ -16,27 +16,27 @@
 
     &__image {
         background-size: cover;
-        border-radius: spacer(a);
+        border-radius: radius(m);
         height: 180px;
         width: 100%;
 
         @include if-desktop {
             height: 210px;
-            margin-bottom: spacer(xa);
+            margin-bottom: spacer(small-xxs);
         }
     }
 
     &__text {
-        color: $color-title-black;
+        color: theme-color("active");
         font-family: $font-family-primary;
-        margin-top: spacer(xxs);
+        margin-top: spacer(small-s);
     }
 
     &__title {
         font-size: $fonts-size-text;
         font-weight: $font-weight-fat;
         line-height: $line-height-medium;
-        margin-bottom: spacer(xa);
+        margin-bottom: spacer(small-xxs);
     }
 
 
