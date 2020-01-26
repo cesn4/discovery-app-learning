@@ -12,6 +12,11 @@
         margin: spacer(xa) 0;
     }
 
+    &.-accent {
+        color: theme-color("accent-1");
+        text-align: start;
+    }
+
     @include if-tablet {
         color: theme-color("accent-1");
         margin-left: spacer(xm);
