@@ -7,7 +7,7 @@
     transform: translateX(-100%);
     transition: transform 0.3s ease-out;
     width: 100%;
-    z-index: index(first-floor);
+    z-index: index(modal);
 
     &.is-open {
         display: flex;

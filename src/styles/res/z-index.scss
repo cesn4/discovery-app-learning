@@ -1,8 +1,8 @@
 $index-map: (
-    ground-floor: 0,
-    first-floor: 5,
-    second-floor: 100,
-    third-floor: 200
+    content: 0,
+    emphasized: 5,
+    half-modal: 100,
+    modal: 200
 );
 
 @function index($_key) {
