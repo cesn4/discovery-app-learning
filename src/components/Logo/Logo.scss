@@ -7,9 +7,14 @@
     line-height: $line-height-medium;
     text-align: center;
 
-    &.-footer {
+    &.-light {
         color: theme-color("white");
         margin: spacer(xa) 0;
+    }
+
+    &.-accent {
+        color: theme-color("accent-1");
+        text-align: start;
     }
 
     @include if-tablet {

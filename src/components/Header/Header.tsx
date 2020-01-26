@@ -1,22 +1,28 @@
 import React, { FunctionComponent } from 'react';
 
+import ProfilePhoto from '~/components/ProfilePhoto';
 import Logo from '~/components/Logo';
 import MainNavigation from '~/components/MainNavigation';
 
 import '~/assets/img/menuIcon.png';
-import '~/assets/img/woman.png';
 
 import './Header.scss';
 
-const Header: FunctionComponent = () => {
+const Header: FunctionComponent<HeaderProps> = ({ drawSidebar }: HeaderProps) => {
     return (
         <header className="header">
-            <div className="header__menu-icon"></div>
+            <button className="header__menu-icon" onClick={drawSidebar}></button>
             <Logo />
             <MainNavigation />
-            <div className="header__photo"></div>
+            <div className="header__photo">
+                <ProfilePhoto medium />
+            </div>
         </header>
     );
 };
+
+interface HeaderProps {
+    drawSidebar: VoidFunction;
+}
 
 export default Header;

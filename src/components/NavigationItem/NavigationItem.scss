@@ -1,0 +1,30 @@
+.navigation-item {
+    color: theme-color("inactive");
+    font-size: $fonts-size-navigation;
+    font-weight: $font-weight-fat;
+    line-height: $line-height-big;
+    list-style: none;
+    text-transform: uppercase;
+
+    &__anchor {
+        color: theme-color("inactive");
+        display:flex;
+        text-decoration: none;
+    }
+
+    &__title {
+
+        &.-active {
+            color: theme-color("active");
+        }
+    }
+
+    &__icon {
+        @include size(16px);
+        margin-right: spacer(medium-xs);
+
+        &.-round {
+            border-radius: 50%;
+        }
+    }
+}
