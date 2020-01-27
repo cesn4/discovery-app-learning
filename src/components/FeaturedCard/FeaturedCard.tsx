@@ -14,7 +14,7 @@ const FeaturedCard: FunctionComponent<FeaturedCardProps> = ({
     firstItem = false,
     lastItem = false,
 }: FeaturedCardProps) => {
-    const styleBackground = {
+    const styleBackground: { backgroundImage: string } = {
         backgroundImage: 'url(' + background + ')',
     };
     return (
