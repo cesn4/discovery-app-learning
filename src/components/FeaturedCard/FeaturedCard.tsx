@@ -14,7 +14,7 @@ const FeaturedCard: FunctionComponent<FeaturedCardProps> = ({
     firstItem = false,
     lastItem = false,
 }: FeaturedCardProps) => {
-    const styleBackground: { backgroundImage: string } = {
+    const styleBackground: FeaturedCardBackgroundObject = {
         backgroundImage: 'url(' + background + ')',
     };
     return (
@@ -44,6 +44,10 @@ interface FeaturedCardProps {
     background: string;
     firstItem?: boolean;
     lastItem?: boolean;
+}
+
+interface FeaturedCardBackgroundObject {
+    backgroundImage: string;
 }
 
 export default FeaturedCard;
