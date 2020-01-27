@@ -8,7 +8,7 @@ const MenuItem: FunctionComponent<MenuItemProps> = ({ lable, active= false, drop
     return (
         <div className="menu-item">
             <div className={classNames('menu-item__lable', { '-active': active })}>{lable}</div>
-            {dropdownMenu && <div className={classNames('menu-tem__dropdown', { '-dropdown-menu': dropdownMenu })}>
+            {dropdownMenu && <div className={classNames('menu-item__dropdown', { '-dropdown-menu': dropdownMenu })}>
                 <DropdownMenu />
             </div>}
         </div>

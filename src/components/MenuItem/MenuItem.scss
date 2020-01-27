@@ -6,6 +6,15 @@
     position: relative;
     text-transform: uppercase;
 
+    &__dropdown {
+        display: none;
+        left: -20px;
+        opacity: 0;
+        padding-top: 15px;
+        position: absolute;
+        transition: opacity display 0.6s ease-out;
+    }
+
     &__lable {
         color: theme-color("inactive");
         transition: color 0.3s ease;
@@ -16,6 +25,13 @@
         }
         &.-active {
             color: theme-color("active");
+        }
+    }
+
+    &:hover {
+        .menu-item__dropdown {
+            display: flex;
+            opacity: 1;
         }
     }
 }
