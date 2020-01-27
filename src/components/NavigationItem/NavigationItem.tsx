@@ -7,7 +7,7 @@ import './NavigationItem.scss';
 
 const NavigationItem: FunctionComponent<NavigationItemProps> = ({
     href,
-    icon,
+    icon = undefined,
     title,
     active = false,
     profile = false

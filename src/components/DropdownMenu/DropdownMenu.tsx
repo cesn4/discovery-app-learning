@@ -33,7 +33,7 @@ const DropdownMenu: FunctionComponent<DropDownMenuProps> = ({ isOpen= false }: D
 };
 
 interface DropDownMenuProps {
-    isOpen: boolean;
+    isOpen?: boolean;
 };
 
 
