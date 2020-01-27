@@ -1,22 +1,28 @@
 import React, { FunctionComponent } from 'react';
 
+import MenuItem from '~/components/MenuItem';
+
 import './MainNavigation.scss';
 
-const MainNavigation: FunctionComponent<MainNavigationProps> = ({ homeButton }: MainNavigationProps) => {
+const MainNavigation: FunctionComponent = () => {
     return (
         <div className="menu">
-            <ul className="menu__navigation">
-                <li onClick={homeButton} className="menu__item -active">Home</li>
-                <li className="menu__item">Discovery</li>
-                <li className="menu__item">Photos</li>
-                <li className="menu__item">Contact</li>
-            </ul>
+            <div className="menu__navigation">
+                <div className="menu__item">
+                    <MenuItem lable="Home" active/>
+                </div>
+                <div className="menu__item">
+                    <MenuItem lable="Discovery" />
+                </div>
+                <div className="menu__item">
+                    <MenuItem lable="Photos" />
+                </div>
+                <div className="menu__item">
+                    <MenuItem lable="Contacs"/>
+                </div>
+            </div>
         </div>
     );
-};
-
-interface MainNavigationProps {
-    homeButton: VoidFunction;
 };
 
 export default MainNavigation;

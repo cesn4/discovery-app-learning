@@ -1,6 +1,5 @@
 import React, { FunctionComponent, useState } from 'react';
 
-import DropDownMenu from '~/components/DropdownMenu';
 import Sidebar from '~/components/Sidebar';
 import Header from '~/components/Header';
 import Footer from '~/components/Footer';
@@ -19,21 +18,13 @@ const Home: FunctionComponent = () => {
     const sidebarClose: VoidFunction = () => {
         setSidebarState(false);
     };
-    //DropDownMenu muscles
-    const [dropDownMenuState, setDropDownMenuState] = useState(false);
-
-    const dropDownMenuHandler: VoidFunction = () => {
-        setDropDownMenuState(!dropDownMenuState);
-    };
 
     return (
         <div className="home">
             <Sidebar isOpen={sidebarState} closeSidebar={sidebarClose} />
             <Header
                 drawSidebar={sidebarOpen}
-                homeButton={dropDownMenuHandler}
             />
-            <DropDownMenu isOpen={dropDownMenuState} />
             <Hero />
             <Knight />
             <Featured />

@@ -2,9 +2,11 @@
     background-color: theme-color("accent-2");
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    font-family: $font-family-primary;
     position: absolute;
     right: 168px;
-    transform: translateY(-100%);
+    // transform: translateY(-100%);
+    display: none;
     transition: transform 0.3s ease-out;
     width: 200px;
     z-index: index(emphasized);
