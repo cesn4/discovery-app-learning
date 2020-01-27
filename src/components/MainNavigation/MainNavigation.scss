@@ -1,5 +1,7 @@
 .menu {
     display: none;
+    position: relative;
+    z-index: index(half-modal);
 
     @include if-tablet {
         display: flex;

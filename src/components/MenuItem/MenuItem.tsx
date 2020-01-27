@@ -4,11 +4,13 @@ import classNames from 'classnames';
 import DropdownMenu from '~/components/DropdownMenu';
 import './MenuItem.scss';
 
-const MenuItem: FunctionComponent<MenuItemProps> = ({ lable, active= false }: MenuItemProps) => {
+const MenuItem: FunctionComponent<MenuItemProps> = ({ lable, active= false, dropdownMenu= false }: MenuItemProps) => {
     return (
         <div className="menu-item">
             <div className={classNames('menu-item__lable', { '-active': active })}>{lable}</div>
-            <DropdownMenu />
+            {dropdownMenu && <div className={classNames('menu-tem__dropdown', { '-dropdown-menu': dropdownMenu })}>
+                <DropdownMenu />
+            </div>}
         </div>
     );
 };
@@ -16,6 +18,7 @@ const MenuItem: FunctionComponent<MenuItemProps> = ({ lable, active= false }: Me
 interface MenuItemProps {
     lable: string;
     active?: boolean;
+    dropdownMenu?: boolean;
 };
 
 export default MenuItem;

@@ -9,7 +9,7 @@ const MainNavigation: FunctionComponent = () => {
         <div className="menu">
             <div className="menu__navigation">
                 <div className="menu__item">
-                    <MenuItem lable="Home" active/>
+                    <MenuItem lable="Home" active dropdownMenu/>
                 </div>
                 <div className="menu__item">
                     <MenuItem lable="Discovery" />

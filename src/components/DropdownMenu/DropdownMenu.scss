@@ -6,10 +6,8 @@
     position: absolute;
     right: 168px;
     // transform: translateY(-100%);
-    display: none;
     transition: transform 0.3s ease-out;
     width: 200px;
-    z-index: index(emphasized);
 
     &.-isOpen {
         display: flex;
