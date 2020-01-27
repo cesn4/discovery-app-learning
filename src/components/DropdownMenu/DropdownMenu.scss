@@ -5,11 +5,6 @@
     font-family: $font-family-primary;
     width: 200px;
 
-    &.-isOpen {
-        display: flex;
-        transform: translateY(0);
-    }
-
     &__nav {
         margin-left: spacer(small-xl);
     }

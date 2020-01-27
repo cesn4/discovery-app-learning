@@ -1,13 +1,12 @@
 import React, { FunctionComponent } from 'react';
-import classNames from 'classnames';
 
 import NavigationItem from '~/components/NavigationItem';
 
 import './DropdownMenu.scss';
 
-const DropdownMenu: FunctionComponent<DropDownMenuProps> = ({ isOpen= false }: DropDownMenuProps) => {
+const DropdownMenu: FunctionComponent = () => {
     return (
-        <div className={classNames('dropdown-menu', { '-isOpen': isOpen })}>
+        <div className='dropdown-menu' >
             <div className="dropdown-menu__nav">
                 <div className="dropdown-menu__nav-item">
                     <NavigationItem href="#" title="World News"/>
@@ -31,10 +30,5 @@ const DropdownMenu: FunctionComponent<DropDownMenuProps> = ({ isOpen= false }: D
         </div>
     );
 };
-
-interface DropDownMenuProps {
-    isOpen?: boolean;
-};
-
 
 export default DropdownMenu;
