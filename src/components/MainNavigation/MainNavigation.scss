@@ -20,18 +20,20 @@
     }
 
     &__item {
-        color: theme-color("active");
-        opacity: 0.5;
-        &.-active { opacity: 1; }
+        color: theme-color("inactive");
+        transition: color 0.3s ease;
 
         @include if-tablet {
             margin: spacer(small-m);
         }
 
         &:hover {
+            color: theme-color("accent-1");
             cursor: pointer;
-            transform: scale(1.1);
+            opacity: 1;
         }
+
+        &.-active { color: theme-color("active"); }
     }
 }
 
