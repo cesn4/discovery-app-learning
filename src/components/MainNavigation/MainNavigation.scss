@@ -30,7 +30,6 @@
         &:hover {
             color: theme-color("accent-1");
             cursor: pointer;
-            opacity: 1;
         }
 
         &.-active { color: theme-color("active"); }
