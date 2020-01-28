@@ -9,7 +9,7 @@
 
         @include if-tablet {
             display: flex;
-            margin-right: 29px;
+            margin-right: spacer(medium-xs);
         }
     }
 

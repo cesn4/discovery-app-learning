@@ -15,7 +15,7 @@ const MenuItem: FunctionComponent<MenuItemProps> = ({ label, active= false, drop
     );
 };
 
-interface MenuItemProps {
+export interface MenuItemProps {
     label: string;
     active?: boolean;
     dropdownMenu?: boolean;

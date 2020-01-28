@@ -9,7 +9,7 @@
     &__dropdown {
         left: -20px;
         opacity: 0;
-        padding-top: 15px;
+        padding-top: spacer(small-l);
         position: absolute;
         transition: opacity 400ms, visibility 400ms;
         visibility: hidden;
