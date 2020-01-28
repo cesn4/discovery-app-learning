@@ -8,43 +8,43 @@ import home from '~/assets/img/home.png';
 import discover from '~/assets/img/discover.png';
 import photos from '~/assets/img/photos.png';
 import mail from '~/assets/img/mail.png';
-import './Sidebar.scss';
+import './SidebarMenu.scss';
 
-const Sidebar: FunctionComponent<SidebarProps> = ({
+const SidebarMenu: FunctionComponent<SidebarMenuProps> = ({
     closeSidebar,
     isOpen = false
-}: SidebarProps ) => {
+}: SidebarMenuProps ) => {
     return (
-        <div className={classNames('sidebar', { 'is-open': isOpen })}>
-            <div className="sidebar__text-box">
-                <div className="sidebar__logo">
+        <div className={classNames('sidebar-menu', { 'is-open': isOpen })}>
+            <div className="sidebar-menu__text-box">
+                <div className="sidebar-menu__logo">
                     <Logo accent/>
                 </div>
-                <div className="sidebar__nav">
-                    <div className="sidebar__nav-item">
+                <div className="sidebar-menu__nav">
+                    <div className="sidebar-menu__nav-item">
                         <NavigationItem href={'#'} icon={home} title='Home' active />
                     </div>
-                    <div className="sidebar__nav-item">
+                    <div className="sidebar-menu__nav-item">
                         <NavigationItem href={'#'} icon={discover} title='Discovery' />
                     </div>
-                    <div className="sidebar__nav-item">
+                    <div className="sidebar-menu__nav-item">
                         <NavigationItem href={'#'} icon={photos} title='Photos' />
                     </div>
-                    <div className="sidebar__nav-item">
+                    <div className="sidebar-menu__nav-item">
                         <NavigationItem href={'#'} icon={mail} title='Contact' />
                     </div>
-                    <div className="sidebar__nav-item">
+                    <div className="sidebar-menu__nav-item">
                         <NavigationItem href={'#'} title='Profile' profile />
                     </div>
                 </div>
             </div>
-            <button className="sidebar__backdraw" onClick={closeSidebar}></button>
+            <button className="sidebar-menu__backdraw" onClick={closeSidebar}></button>
         </div>
     );
 };
 
-interface SidebarProps {
+interface SidebarMenuProps {
     closeSidebar: VoidFunction;
     isOpen: boolean;
 }
-export default Sidebar;
+export default SidebarMenu;

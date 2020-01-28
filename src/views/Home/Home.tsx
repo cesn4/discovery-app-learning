@@ -28,7 +28,7 @@ const Home: FunctionComponent = () => {
 
     return (
         <div className="home">
-            <Sidebar isOpen={sidebarState} closeSidebar={sidebarClose} />
+            <Sidebar />
             <Header
                 drawSidebar={sidebarOpen}
                 homeButton={dropDownMenuHandler}
