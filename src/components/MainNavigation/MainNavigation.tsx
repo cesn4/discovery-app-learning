@@ -1,7 +1,6 @@
 import React, { FunctionComponent, ReactChild } from 'react';
 
-import { MenuItemProps } from '~/components/MenuItem/MenuItem.tsx';
-import MenuItem from '~/components/MenuItem';
+import MenuItem, { MenuItemProps } from '~/components/MenuItem/MenuItem.tsx';
 
 import './MainNavigation.scss';
 
