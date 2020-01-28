@@ -10,7 +10,7 @@ const MainNavigation: FunctionComponent = () => {
     const renderList: Array<ReactChild> = list.map((item, index) => {
         return (
             <div key={index.toString()} className="menu__item">
-                <MenuItem lable={item}/>
+                <MenuItem label={item}/>
             </div>);
     });
     return (
