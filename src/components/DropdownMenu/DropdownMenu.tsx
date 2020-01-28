@@ -1,11 +1,10 @@
 import React, { FunctionComponent, ReactChild } from 'react';
-import classNames from 'classnames';
 
 import NavigationItem from '~/components/NavigationItem';
 
 import './DropdownMenu.scss';
 
-const DropdownMenu: FunctionComponent<DropDownMenuProps> = ({ isOpen= false }: DropDownMenuProps) => {
+const DropdownMenu: FunctionComponent = () => {
     const hardcodedList: Array<string> = ["World News", "Travel", "Technology", "City", "Culture", "More..."];
     const renderList: Array<ReactChild> = hardcodedList.map((item, index) => {
         return (
@@ -16,7 +15,7 @@ const DropdownMenu: FunctionComponent<DropDownMenuProps> = ({ isOpen= false }: D
     });
 
     return (
-        <div className={classNames('dropdown-menu', { '-isOpen': isOpen })}>
+        <div className='dropdown-menu'>
             <div className="dropdown-menu__nav">{renderList}</div>
         </div>
     );

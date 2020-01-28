@@ -8,23 +8,15 @@ const MainNavigation: FunctionComponent = () => {
 
     const list: Array<string> = ["Home", "Discovery", "Photos", "Contacts"];
     const renderList: Array<ReactChild> = list.map((item, index) => {
-        return (<MenuItem key={index.toString()} lable={item}/>);
+        return (
+            <div key={index.toString()} className="menu__item">
+                <MenuItem lable={item}/>
+            </div>);
     });
     return (
         <div className="menu">
             <div className="menu__navigation">
-                <div className="menu__item">
-                    <MenuItem lable="Home" active dropdownMenu/>
-                </div>
-                <div className="menu__item">
-                    {renderList[1]}
-                </div>
-                <div className="menu__item">
-                    {renderList[2]}
-                </div>
-                <div className="menu__item">
-                    {renderList[3]}
-                </div>
+                {renderList}
             </div>
         </div>
     );
