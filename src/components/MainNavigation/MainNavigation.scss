@@ -18,6 +18,13 @@
         @include if-tablet {
             margin: spacer(small-m);
         }
+
+        &:hover {
+            color: theme-color("accent-1");
+            cursor: pointer;
+        }
+
+        &.-active { color: theme-color("active"); }
     }
 }
 
