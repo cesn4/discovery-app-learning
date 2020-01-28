@@ -1,8 +1,16 @@
-import { useState } from 'react';
+import React, { FunctionComponent } from 'react';
 
-export const [sidebarState, setSidebarState] = useState(false);
+import './SidebarLauncher.scss';
+import '~/assets/img/menuIcon.png';
 
-export const sidebarHandler: VoidFunction = () => {
-    setSidebarState(!sidebarState);
+const SidebarLauncher: FunctionComponent<SidebarLauncherProps> = ({ openSidebar }: SidebarLauncherProps) => {
+    return (
+        <div className="sidebar-launcher" onClick={openSidebar}></div>
+    );
 };
 
+interface SidebarLauncherProps {
+    openSidebar: VoidFunction;
+};
+
+export default SidebarLauncher;
