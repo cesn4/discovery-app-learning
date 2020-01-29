@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "dev": "webpack --watch"
+    "dev": "webpack --watch",
+    "lint:fix": "eslint src/**/*.tsx src/**/*.ts --fix"
   },
   "keywords": [],
   "author": "",
@@ -28,10 +29,12 @@
     "css-loader": "^3.4.0",
     "cssnano": "^4.1.10",
     "eslint": "^6.8.0",
+    "eslint-cli": "^1.1.1",
     "eslint-config-standard": "^14.1.0",
     "eslint-loader": "^3.0.3",
     "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-standard": "^4.0.1",
@@ -41,6 +44,7 @@
     "node-sass": "^4.13.1",
     "path": "^0.12.7",
     "postcss-loader": "^3.0.0",
+    "prettier": "1.19.1",
     "resolve-url-loader": "^3.1.1",
     "sass-loader": "^8.0.0",
     "source-map-loader": "^0.2.4",
