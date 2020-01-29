@@ -14,7 +14,7 @@ const Sidebar: FunctionComponent = () => {
 
     return (
         <div className="sidebar">
-            <SidebarLauncher openSidebar={sidebarHandler}/>
+            <SidebarLauncher onClick={sidebarHandler}/>
             <div className="sidebar__menu">
                 <SidebarMenu isOpen={sidebarState} closeSidebar={sidebarHandler}/>
             </div>

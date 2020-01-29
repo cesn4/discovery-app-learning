@@ -3,14 +3,14 @@ import React, { FunctionComponent } from 'react';
 import './SidebarLauncher.scss';
 import '~/assets/img/menuIcon.png';
 
-const SidebarLauncher: FunctionComponent<SidebarLauncherProps> = ({ openSidebar }: SidebarLauncherProps) => {
+const SidebarLauncher: FunctionComponent<SidebarLauncherProps> = ({ onClick }: SidebarLauncherProps) => {
     return (
-        <div className="sidebar-launcher" onClick={openSidebar}></div>
+        <div className="sidebar-launcher" onClick={onClick}></div>
     );
 };
 
 interface SidebarLauncherProps {
-    openSidebar: VoidFunction;
+    onClick: VoidFunction;
 };
 
 export default SidebarLauncher;

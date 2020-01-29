@@ -45,6 +45,6 @@ const SidebarMenu: FunctionComponent<SidebarMenuProps> = ({
 
 interface SidebarMenuProps {
     closeSidebar: VoidFunction;
-    isOpen: boolean;
+    isOpen?: boolean;
 }
 export default SidebarMenu;
