@@ -5,6 +5,16 @@
     margin-right: spacer(small-m);
     width: 100%;
 
+    &.-space {
+        height: 240px;
+        justify-content: space-between;
+
+        @include if-tablet {
+            height: 350px;
+        }
+
+    }
+
     @include if-tablet {
         margin-right: spacer(medium-s);
     }
@@ -20,6 +30,10 @@
         line-height: $line-height-small;
         margin-bottom:  spacer(small-xl);
         text-transform: uppercase;
+
+        &.-white {
+            color: theme-color("white")
+        }
     }
 
     &__subtitle {
@@ -28,6 +42,15 @@
         font-weight: $font-weight-fat;
         line-height: $line-height-small;
         margin-bottom: spacer(small-s);
+
+        &.-white {
+            color: theme-color("white");
+            font-size: $fonts-size-h1;
+        }
+
+        &.-space {
+            margin-top: auto;
+        }
     }
 
     &__text {
@@ -35,5 +58,10 @@
         font-size: $fonts-size-text;
         line-height: $line-height-medium;
         margin-bottom: spacer(small-s);
+
+        &.-white {
+            margin-top: spacer(small-s);
+            color: theme-color("white")
+        }
     }
 }

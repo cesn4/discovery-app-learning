@@ -21,38 +21,10 @@
     }
 
     &__text-box {
-        color: theme-color("white");
-        display: flex;
-        flex-direction: column;
-        font-family: $font-family-primary;
         padding: spacer(medium-xs) spacer(medium-xxs);
 
         @include if-tablet {
             padding: spacer(medium-s);
         }
-    }
-
-    &__theme {
-        font-size: $fonts-size-text;
-        font-weight: $font-weight-fat;
-        line-height: $line-height-small;
-        margin-bottom: spacer(medium-s);
-
-        @include if-tablet {
-            margin-bottom: 230px;
-        }
-    }
-
-    &__title {
-        font-size: $fonts-size-h1;
-        font-weight: $font-weight-fat;
-        line-height: $line-height-medium;
-        margin-bottom: spacer(small-xxs);
-    }
-
-    &__paragraph {
-        font-size: $fonts-size-paragraph;
-        line-height: $line-height-medium;
-        margin-bottom: spacer(small-m);
     }
 }
