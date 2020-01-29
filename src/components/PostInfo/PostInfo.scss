@@ -60,8 +60,8 @@
         margin-bottom: spacer(small-s);
 
         &.-white {
+            color: theme-color("white");
             margin-top: spacer(small-s);
-            color: theme-color("white")
         }
     }
 }
