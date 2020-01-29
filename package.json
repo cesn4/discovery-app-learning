@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "dev": "webpack --watch",
-    "lint:fix": "eslint src/**/*.tsx src/**/*.ts --fix"
+    "dev": "webpack --watch"
   },
   "keywords": [],
   "author": "",
