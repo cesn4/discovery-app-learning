@@ -36,6 +36,7 @@ module.exports = {
                 arrowParameter: false,
                 variableDeclaration: true,
             },
-        ]
+        ],
+        'space-infix-ops': ['error', { int32Hint: false }],
     },
 };
