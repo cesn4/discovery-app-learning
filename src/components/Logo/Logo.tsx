@@ -3,9 +3,20 @@ import classNames from 'classnames';
 
 import './Logo.scss';
 
-const Logo: FunctionComponent<LogoProps> = ({ light = false, accent = false }: LogoProps) => {
+const Logo: FunctionComponent<LogoProps> = ({
+    light = false,
+    accent = false,
+}: LogoProps) => {
     return (
-        <div className={classNames('logo', { '-light': light }, { '-accent': accent })}>LOGO</div>
+        <div
+            className={classNames(
+                'logo',
+                { '-light': light },
+                { '-accent': accent }
+            )}
+        >
+            LOGO
+        </div>
     );
 };
 
