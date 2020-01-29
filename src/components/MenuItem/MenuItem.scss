@@ -1,4 +1,5 @@
 .menu-item {
+    $_parent: &;
     font-family: $font-family-primary;
     font-size: $fonts-size-navigation;
     font-weight: $font-weight-fat;
@@ -7,7 +8,7 @@
     text-transform: uppercase;
 
     &__dropdown {
-        left: -20px;
+        left: spacer(negative-m);
         opacity: 0;
         padding-top: spacer(small-l);
         position: absolute;
@@ -15,7 +16,7 @@
         visibility: hidden;
     }
 
-    &__lable {
+    &__label {
         color: theme-color("inactive");
         transition: color 0.3s ease;
 
@@ -29,7 +30,7 @@
     }
 
     &:hover {
-        .menu-item__dropdown {
+        #{$_parent}__dropdown {
             opacity: 1;
             visibility: visible;
         }
