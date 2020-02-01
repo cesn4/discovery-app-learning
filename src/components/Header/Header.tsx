@@ -10,7 +10,9 @@ import '~/assets/img/menuIcon.png';
 
 import './Header.scss';
 
-const Header: FunctionComponent<HeaderProps> = ({ homeButton }: HeaderProps) => {
+const Header: FunctionComponent<HeaderProps> = ({
+    homeButton,
+}: HeaderProps) => {
     return (
         <div className="header">
             <Container>

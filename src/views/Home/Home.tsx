@@ -17,9 +17,7 @@ const Home: FunctionComponent = () => {
 
     return (
         <div className="home">
-            <Header
-                homeButton={dropDownMenuHandler}
-            />
+            <Header homeButton={dropDownMenuHandler} />
             <DropDownMenu isOpen={dropDownMenuState} />
             <Hero />
             <Knight />
