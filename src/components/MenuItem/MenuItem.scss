@@ -1,0 +1,38 @@
+.menu-item {
+    $_parent: &;
+    font-family: $font-family-primary;
+    font-size: $fonts-size-navigation;
+    font-weight: $font-weight-fat;
+    line-height: $line-height-big;
+    position: relative;
+    text-transform: uppercase;
+
+    &__dropdown {
+        left: - spacer(small-xl);
+        opacity: 0;
+        padding-top: spacer(small-l);
+        position: absolute;
+        transition: opacity 400ms, visibility 400ms;
+        visibility: hidden;
+    }
+
+    &__label {
+        color: theme-color("inactive");
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: theme-color("accent-1");
+            cursor: pointer;
+        }
+        &.-active {
+            color: theme-color("active");
+        }
+    }
+
+    &:hover {
+        #{$_parent}__dropdown {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

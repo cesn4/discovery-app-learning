@@ -1,26 +1,37 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, ReactChild } from 'react';
+
+import MenuItem, { MenuItemProps } from '~/components/MenuItem/MenuItem';
 
 import './MainNavigation.scss';
 
-const MainNavigation: FunctionComponent<MainNavigationProps> = ({
-    homeButton,
-}: MainNavigationProps) => {
+const MainNavigation: FunctionComponent = () => {
+    const list: Array<MenuItemProps> = [
+        { label: 'Home', active: true, dropdownMenu: true },
+        { label: 'Discovery' },
+        { label: 'Photos' },
+        { label: 'Contacts' },
+    ];
+    const renderList: Array<ReactChild> = list.map(
+        (
+            { label, active = false, dropdownMenu = false }: MenuItemProps,
+            index
+        ) => {
+            return (
+                <div key={index.toString()} className="menu__item">
+                    <MenuItem
+                        label={label}
+                        active={active}
+                        dropdownMenu={dropdownMenu}
+                    />
+                </div>
+            );
+        }
+    );
     return (
         <div className="menu">
-            <ul className="menu__navigation">
-                <li onClick={homeButton} className="menu__item -active">
-                    Home
-                </li>
-                <li className="menu__item">Discovery</li>
-                <li className="menu__item">Photos</li>
-                <li className="menu__item">Contact</li>
-            </ul>
+            <div className="menu__navigation">{renderList}</div>
         </div>
     );
 };
-
-interface MainNavigationProps {
-    homeButton: VoidFunction;
-}
 
 export default MainNavigation;
