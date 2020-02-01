@@ -35,6 +35,6 @@ const Header: FunctionComponent<HeaderProps> = ({ homeButton }: HeaderProps) => 
 
 interface HeaderProps {
     homeButton: VoidFunction;
-};
+}
 
 export default Header;
