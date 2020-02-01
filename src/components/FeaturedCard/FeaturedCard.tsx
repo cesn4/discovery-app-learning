@@ -30,7 +30,7 @@ const FeaturedCard: FunctionComponent<FeaturedCardProps> = ({
                 <span className="featured-card__theme">{theme}</span>
                 <span className="featured-card__title">{title}</span>
                 <p className="featured-card__paragraph">{paragraph}</p>
-                <Time marginless text={time} />
+                <Time text={time} />
             </div>
         </div>
     );

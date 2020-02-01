@@ -10,4 +10,14 @@
     @include if-desktop {
         padding: 0 spacer(trojan-s);
     }
+    &__navigation {
+        padding-top: spacer(medium-s);
+        @include if-tablet {
+            padding-top: 0;
+        }
+    }
+
+    &__small-card {
+        padding-bottom: spacer(small-xl);
+    }
 }

@@ -1,7 +1,6 @@
 .trending-card {
     display: flex;
     flex-direction: column;
-    margin-bottom: 40px;
 
     &__image {
         border-top-left-radius: radius(m);
@@ -17,12 +16,7 @@
     }
     &__content {
         background-color: theme-color("white");
-        height: 150px;
-        padding: 25px 20px;
+        padding: spacer(medium-xxs) spacer(small-xl);
         width: 100%;
-
-        @include if-tablet {
-            height: 170px;
-        }
     }
 }

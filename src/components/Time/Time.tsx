@@ -1,15 +1,11 @@
 import React, { FunctionComponent } from 'react';
-import classNames from 'classnames';
 
 import '~/assets/img/time.png';
 import './Time.scss';
 
-const Time: FunctionComponent<TimeProps> = ({
-    text,
-    marginless = false,
-}: TimeProps) => {
+const Time: FunctionComponent<TimeProps> = ({ text }: TimeProps) => {
     return (
-        <div className={classNames('time', { '-marginless': marginless })}>
+        <div className="time">
             <i className="time__clock"></i>
             <span className="time__clock-time">{text}</span>
         </div>
@@ -18,7 +14,6 @@ const Time: FunctionComponent<TimeProps> = ({
 
 interface TimeProps {
     text: string;
-    marginless?: boolean;
 }
 
 export default Time;
