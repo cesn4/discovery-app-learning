@@ -2,7 +2,7 @@ import React, { FunctionComponent, useState } from 'react';
 
 import './Sidebar.scss';
 
-import SidebarMenu from '~/components/Sidebar/componenets/SidebarMenu';
+import SidebarMenu from './componenets/SidebarMenu';
 import SidebarLauncher from './componenets/SidebarLauncher';
 
 const Sidebar: FunctionComponent = () => {

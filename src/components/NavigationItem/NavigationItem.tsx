@@ -25,8 +25,8 @@ const NavigationItem: FunctionComponent<NavigationItemProps> = ({
     );
 };
 
-interface NavigationItemProps {
-    href: string;
+export interface NavigationItemProps {
+    href?: string;
     icon?: string;
     title: string;
     active?: boolean;
