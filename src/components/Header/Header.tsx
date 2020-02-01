@@ -9,7 +9,9 @@ import '~/assets/img/menuIcon.png';
 
 import './Header.scss';
 
-const Header: FunctionComponent<HeaderProps> = ({ drawSidebar }: HeaderProps) => {
+const Header: FunctionComponent<HeaderProps> = ({
+    drawSidebar,
+}: HeaderProps) => {
     return (
         <div className="header">
             <Container>
@@ -35,6 +37,6 @@ const Header: FunctionComponent<HeaderProps> = ({ drawSidebar }: HeaderProps) =>
 
 interface HeaderProps {
     drawSidebar: VoidFunction;
-};
+}
 
 export default Header;
