@@ -19,7 +19,10 @@ const Featured: FunctionComponent = () => {
                 <Row>
                     <Col xs={12} md={12} lg={12}>
                         <div className="featured__navigation">
-                            <SectionNavigation borderless title="Happening Now" />
+                            <SectionNavigation
+                                borderless
+                                title="Happening Now"
+                            />
                         </div>
                     </Col>
                     <Col xs={12} md={12} lg={8}>

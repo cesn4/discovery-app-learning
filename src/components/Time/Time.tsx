@@ -5,7 +5,7 @@ import './Time.scss';
 
 const Time: FunctionComponent<TimeProps> = ({ text }: TimeProps) => {
     return (
-        <div className='time'>
+        <div className="time">
             <i className="time__clock"></i>
             <span className="time__clock-time">{text}</span>
         </div>
