@@ -10,11 +10,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "husky": {
-    "hooks": {
-      "prepare-commit-msg": "prefix-commit-message"
-    }
-  },
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/preset-react": "^7.7.4",
