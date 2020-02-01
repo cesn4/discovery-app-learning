@@ -1,11 +1,7 @@
-import React, { FunctionComponent } from "react";
+import React, { FunctionComponent } from 'react';
 // react-router-dom reikalingas kad galetum kurt 'virtualius' puslapius, va linkas su detalesnem instrukcijom
 // https://reacttraining.com/react-router/web/example/basic
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route
-} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Home from '~/views/Home';
 import '~/config/layout';

@@ -16,7 +16,10 @@ const Header: FunctionComponent<HeaderProps> = ({ drawSidebar }: HeaderProps) =>
                 <Row>
                     <Col>
                         <header className="header__box">
-                            <button className="header__menu-icon" onClick={drawSidebar}></button>
+                            <button
+                                className="header__menu-icon"
+                                onClick={drawSidebar}
+                            ></button>
                             <Logo />
                             <MainNavigation />
                             <div className="header__photo">
