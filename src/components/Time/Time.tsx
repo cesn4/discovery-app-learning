@@ -14,6 +14,6 @@ const Time: FunctionComponent<TimeProps> = ({ text }: TimeProps) => {
 
 interface TimeProps {
     text: string;
-};
+}
 
 export default Time;

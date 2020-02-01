@@ -5,8 +5,17 @@ import NavigationItem from '~/components/NavigationItem';
 
 import './DropdownMenu.scss';
 
-const DropdownMenu: FunctionComponent<DropDownMenuProps> = ({ isOpen= false }: DropDownMenuProps) => {
-    const hardcodedList: Array<string> = ["World News", "Travel", "Technology", "City", "Culture", "More..."];
+const DropdownMenu: FunctionComponent<DropDownMenuProps> = ({
+    isOpen = false,
+}: DropDownMenuProps) => {
+    const hardcodedList: Array<string> = [
+        'World News',
+        'Travel',
+        'Technology',
+        'City',
+        'Culture',
+        'More...',
+    ];
     const renderList: Array<ReactChild> = hardcodedList.map((item, index) => {
         return (
             <div key={index.toString()} className="dropdown-menu__nav-item">
@@ -24,7 +33,6 @@ const DropdownMenu: FunctionComponent<DropDownMenuProps> = ({ isOpen= false }: D
 
 interface DropDownMenuProps {
     isOpen?: boolean;
-};
-
+}
 
 export default DropdownMenu;
