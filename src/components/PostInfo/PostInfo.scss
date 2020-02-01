@@ -46,9 +46,9 @@
             font-size: $fonts-size-h1;
         }
 
-        // &.-space {
-        //     //margin-top: auto;
-        // }
+        &.-space {
+            margin-top: auto;
+        }
     }
 
     &__text {

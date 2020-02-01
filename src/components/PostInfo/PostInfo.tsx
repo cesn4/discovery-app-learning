@@ -11,17 +11,39 @@ const PostInfo: FunctionComponent<PostInfoProps> = ({
     subtitle,
     primaryText,
     time,
-    white= false,
-    space= false
+    white = false,
+    space = false,
 }: PostInfoProps) => {
     return (
         <div className={classNames('post-info', { '-space': space })}>
             <div className="post-info__title-box">
-                {title && <span className={classNames('post-info__title', { '-white': white })}>{title}</span>}
+                {title && (
+                    <span
+                        className={classNames('post-info__title', {
+                            '-white': white,
+                        })}
+                    >
+                        {title}
+                    </span>
+                )}
             </div>
             <div className="post-info__content-box">
-                <span className={classNames('post-info__subtitle', { '-white': white }, { '-space': space })}>{subtitle}</span>
-                <p className={classNames('post-info__text', { '-white': white })}>{primaryText}</p>
+                <span
+                    className={classNames(
+                        'post-info__subtitle',
+                        { '-white': white },
+                        { '-space': space }
+                    )}
+                >
+                    {subtitle}
+                </span>
+                <p
+                    className={classNames('post-info__text', {
+                        '-white': white,
+                    })}
+                >
+                    {primaryText}
+                </p>
                 <Time text={time} />
             </div>
         </div>
