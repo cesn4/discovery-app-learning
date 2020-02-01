@@ -38,7 +38,7 @@ const SidebarMenu: FunctionComponent<SidebarMenuProps> = ({
                     </div>
                 </div>
             </div>
-            <button className="sidebar-menu__backdraw" onClick={closeSidebar}></button>
+            <button className={classNames('sidebar-menu__backdraw', {'-isOpen': isOpen })} onClick={closeSidebar}></button>
         </div>
     );
 };

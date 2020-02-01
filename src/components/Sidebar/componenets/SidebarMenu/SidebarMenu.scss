@@ -35,9 +35,14 @@
     }
 
     &__backdraw  {
+        display: none;
         background-color: transparent;
         border: none;
         height: 100vh;
         width: 30%;
+
+        &.-isOpen {
+            display: flex;
+        }
     }
 }
