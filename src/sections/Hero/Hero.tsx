@@ -21,18 +21,22 @@ const Hero: FunctionComponent = () => {
                             <SectionNavigation title="Discoveries" />
                         </div>
                         <div className="hero__posts">
-                            <PostInfo
-                                title="Travel"
-                                subtitle="Article title"
-                                primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…"
-                                time="2m ago"
-                            />
-                            <PostInfo
-                                title="Technology"
-                                subtitle="Article title"
-                                primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…"
-                                time="1h ago"
-                            />
+                            <div className="hero__first-post">
+                                <PostInfo
+                                    title="Travel"
+                                    subtitle="Article title"
+                                    primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…"
+                                    time="2m ago"
+                                />
+                            </div>
+                            <div className="hero__second-post">
+                                <PostInfo
+                                    title="Technology"
+                                    subtitle="Article title"
+                                    primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…"
+                                    time="1h ago"
+                                />
+                            </div>
                         </div>
                     </Col>
                 </Row>

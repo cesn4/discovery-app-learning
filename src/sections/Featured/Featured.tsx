@@ -18,7 +18,12 @@ const Featured: FunctionComponent = () => {
             <Container>
                 <Row>
                     <Col xs={12} md={12} lg={12}>
-                        <SectionNavigation borderless title="Happening Now" />
+                        <div className="featured__navigation">
+                            <SectionNavigation
+                                borderless
+                                title="Happening Now"
+                            />
+                        </div>
                     </Col>
                     <Col xs={12} md={12} lg={8}>
                         <FeaturedCard
@@ -41,27 +46,33 @@ const Featured: FunctionComponent = () => {
                     <Col xs={12} md={12} lg={4}>
                         <Row>
                             <Col md={6} lg={12}>
-                                <SmallCard
-                                    firstItem
-                                    image={wall}
-                                    title="Small title"
-                                    time="3h ago by Worldnews"
-                                />
+                                <div className="featured__small-card">
+                                    <SmallCard
+                                        firstItem
+                                        image={wall}
+                                        title="Small title"
+                                        time="3h ago by Worldnews"
+                                    />
+                                </div>
                             </Col>
                             <Col md={6} lg={12}>
-                                <SmallCard
-                                    image={castle}
-                                    title="Small title"
-                                    time="4h ago by Days"
-                                />
-                            </Col>
-                            <Hidden sm md>
-                                <Col>
+                                <div className="featured__small-card">
                                     <SmallCard
-                                        image={random}
+                                        image={castle}
                                         title="Small title"
                                         time="4h ago by Days"
                                     />
+                                </div>
+                            </Col>
+                            <Hidden sm md>
+                                <Col>
+                                    <div className="featured__small-card">
+                                        <SmallCard
+                                            image={random}
+                                            title="Small title"
+                                            time="4h ago by Days"
+                                        />
+                                    </div>
                                 </Col>
                             </Hidden>
                         </Row>

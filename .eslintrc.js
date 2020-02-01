@@ -14,7 +14,7 @@ module.exports = {
         ecmaVersion: 2018,
         sourceType: 'module',
     },
-    plugins: ['@typescript-eslint', 'react'],
+    plugins: ['@typescript-eslint', 'react', 'prettier'],
     settings: {
         react: {
             version: 'detect',
@@ -36,6 +36,8 @@ module.exports = {
                 arrowParameter: false,
                 variableDeclaration: true,
             },
-        ]
+        ],
+        'space-infix-ops': ['error', { int32Hint: false }],
+        'prettier/prettier': 'error',
     },
 };

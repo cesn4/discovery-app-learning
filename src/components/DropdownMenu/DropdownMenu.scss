@@ -2,17 +2,8 @@
     background-color: theme-color("accent-2");
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    position: absolute;
-    right: 168px;
-    transform: translateY(-100%);
-    transition: transform 0.3s ease-out;
+    font-family: $font-family-primary;
     width: 200px;
-    z-index: index(emphasized);
-
-    &.-isOpen {
-        display: flex;
-        transform: translateY(0);
-    }
 
     &__nav {
         margin-left: spacer(small-xl);

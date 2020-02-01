@@ -1,11 +1,6 @@
 .time {
     align-items: center;
     display: flex;
-    margin-bottom: 35px;
-
-    &.-marginless {
-        margin-bottom: 0;
-    }
 
     &__clock {
         @include size(16px);

@@ -12,33 +12,53 @@ import './Sidebar.scss';
 
 const Sidebar: FunctionComponent<SidebarProps> = ({
     closeSidebar,
-    isOpen = false
-}: SidebarProps ) => {
+    isOpen = false,
+}: SidebarProps) => {
     return (
         <div className={classNames('sidebar', { 'is-open': isOpen })}>
             <div className="sidebar__text-box">
                 <div className="sidebar__logo">
-                    <Logo accent/>
+                    <Logo accent />
                 </div>
                 <div className="sidebar__nav">
                     <div className="sidebar__nav-item">
-                        <NavigationItem href={'#'} icon={home} title='Home' active />
+                        <NavigationItem
+                            href={'#'}
+                            icon={home}
+                            title="Home"
+                            active
+                        />
                     </div>
                     <div className="sidebar__nav-item">
-                        <NavigationItem href={'#'} icon={discover} title='Discovery' />
+                        <NavigationItem
+                            href={'#'}
+                            icon={discover}
+                            title="Discovery"
+                        />
                     </div>
                     <div className="sidebar__nav-item">
-                        <NavigationItem href={'#'} icon={photos} title='Photos' />
+                        <NavigationItem
+                            href={'#'}
+                            icon={photos}
+                            title="Photos"
+                        />
                     </div>
                     <div className="sidebar__nav-item">
-                        <NavigationItem href={'#'} icon={mail} title='Contact' />
+                        <NavigationItem
+                            href={'#'}
+                            icon={mail}
+                            title="Contact"
+                        />
                     </div>
                     <div className="sidebar__nav-item">
-                        <NavigationItem href={'#'} title='Profile' profile />
+                        <NavigationItem href={'#'} title="Profile" profile />
                     </div>
                 </div>
             </div>
-            <button className="sidebar__backdraw" onClick={closeSidebar}></button>
+            <button
+                className="sidebar__backdraw"
+                onClick={closeSidebar}
+            ></button>
         </div>
     );
 };

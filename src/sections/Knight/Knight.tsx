@@ -15,7 +15,9 @@ const Knight: FunctionComponent = () => {
             <Container>
                 <Row>
                     <Col xs={12} md={12} lg={12}>
-                        <SectionNavigation title="Trending" borderless />
+                        <div className="knight__navigation">
+                            <SectionNavigation title="Trending" borderless />
+                        </div>
                     </Col>
                     <Col xs={12} md={6} lg={4}>
                         <TrendingCard
