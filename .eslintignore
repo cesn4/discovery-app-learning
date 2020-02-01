@@ -1,3 +1,7 @@
 /dist/
 /node_modules/
 *.config.js
+
+/src/
+declarations/
+assets.d./ts

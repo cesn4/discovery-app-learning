@@ -22,8 +22,7 @@ const Home: FunctionComponent = () => {
     return (
         <div className="home">
             <Sidebar isOpen={sidebarState} closeSidebar={sidebarClose} />
-            <Header drawSidebar={sidebarOpen}
-            />
+            <Header drawSidebar={sidebarOpen} />
             <Hero />
             <Knight />
             <Featured />
