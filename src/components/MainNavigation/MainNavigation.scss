@@ -1,9 +1,5 @@
 .menu {
     display: none;
-    font-family: $font-family-primary;
-    font-size: $fonts-size-navigation;
-    font-weight: $font-weight-fat;
-    line-height: $line-height-big;
 
     @include if-tablet {
         display: flex;
@@ -13,15 +9,11 @@
 
         @include if-tablet {
             display: flex;
-            list-style: none;
-            margin-right: 29px;
-            text-transform: uppercase;
+            margin-right: spacer(medium-xs);
         }
     }
 
     &__item {
-        color: theme-color("inactive");
-        transition: color 0.3s ease;
 
         @include if-tablet {
             margin: spacer(small-m);

@@ -22,16 +22,37 @@
     &__posts {
         display: flex;
         flex-direction: column;
-        padding: spacer(medium-s) spacer(small-m) 0 spacer(small-m);
+        padding: spacer(medium-s) spacer(small-m);
 
         @include if-tablet {
             flex-direction: row;
-            padding: spacer(medium-s) spacer(medium-s) 0 spacer(medium-s);
+            padding: spacer(medium-s) spacer(medium-s);
         }
 
         @include if-desktop {
             flex-direction: column;
             padding-right: spacer(medium-xl);
+        }
+    }
+
+    &__first-post {
+        padding-bottom: spacer(medium-s);
+
+        @include if-tablet {
+            padding-bottom: 0;
+        }
+
+        @include if-desktop {
+            padding-bottom: spacer(medium-s);
+        }
+    }
+
+    &__second-post {
+        @include if-tablet {
+            padding-left: spacer(small-xl);
+        }
+        @include if-desktop {
+            padding-left: 0;
         }
     }
 }
