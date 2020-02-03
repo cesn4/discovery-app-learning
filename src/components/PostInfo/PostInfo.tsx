@@ -12,7 +12,6 @@ const PostInfo: FunctionComponent<PostInfoProps> = ({
     primaryText,
     time,
     white = false,
-    space = false,
 }: PostInfoProps) => {
     return (
         <div className={classNames('post-info', { '-white': white })}>
@@ -26,11 +25,9 @@ const PostInfo: FunctionComponent<PostInfoProps> = ({
                 </span>
             )}
             <span
-                className={classNames(
-                    'post-info__subtitle',
-                    { '-white': white },
-                    { '-space': space }
-                )}
+                className={classNames('post-info__subtitle', {
+                    '-white': white,
+                })}
             >
                 {subtitle}
             </span>
@@ -52,7 +49,6 @@ interface PostInfoProps {
     primaryText: string;
     time: string;
     white?: boolean;
-    space?: boolean;
 }
 
 export default PostInfo;
