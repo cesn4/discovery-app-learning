@@ -4,14 +4,6 @@
     font-family: $font-family-primary;
     width: 100%;
 
-    &.-white {
-        height: 240px;
-
-        @include if-tablet {
-            height: 350px;
-        }
-    }
-
     &__title {
         color: theme-color("accent-1");
         font-size: $fonts-size-text;
@@ -21,8 +13,15 @@
         text-transform: uppercase;
 
         &.-white {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
             color: theme-color("white");
             margin-bottom: auto;
+
+            // @include if-tablet {
+            //     margin-bottom: 200px;
+            // }
         }
     }
 

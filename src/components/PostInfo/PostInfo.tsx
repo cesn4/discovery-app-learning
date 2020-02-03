@@ -24,30 +24,34 @@ const PostInfo: FunctionComponent<PostInfoProps> = ({
                     {title}
                 </span>
             )}
-            <span
-                className={classNames('post-info__subtitle', {
-                    '-white': white,
-                })}
-            >
-                {subtitle}
-            </span>
-            <p
-                className={classNames('post-info__text', {
-                    '-white': white,
-                })}
-            >
-                {primaryText}
-            </p>
-            <Time text={time} />
+            {subtitle && (
+                <span
+                    className={classNames('post-info__subtitle', {
+                        '-white': white,
+                    })}
+                >
+                    {subtitle}
+                </span>
+            )}
+            {primaryText && (
+                <p
+                    className={classNames('post-info__text', {
+                        '-white': white,
+                    })}
+                >
+                    {primaryText}
+                </p>
+            )}
+            {time && <Time text={time} />}
         </div>
     );
 };
 
 interface PostInfoProps {
     title?: string;
-    subtitle: string;
-    primaryText: string;
-    time: string;
+    subtitle?: string;
+    primaryText?: string;
+    time?: string;
     white?: boolean;
 }
 

@@ -22,9 +22,11 @@
 
     &__text-box {
         padding: spacer(medium-xs) spacer(medium-xxs);
+        height: 300px;
 
         @include if-tablet {
             padding: spacer(medium-s);
+            height: 430px;
         }
     }
 }
