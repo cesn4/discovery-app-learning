@@ -18,11 +18,12 @@
         background-size: cover;
         border-radius: radius(m);
         height: 180px;
+        margin-bottom: spacer(small-m);
         width: 100%;
 
         @include if-desktop {
             height: 210px;
-            margin-bottom: spacer(small-xxs);
+            margin-bottom: spacer(small-l);
         }
     }
 
