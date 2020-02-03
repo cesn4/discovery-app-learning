@@ -4,21 +4,12 @@
     font-family: $font-family-primary;
     width: 100%;
 
-    &.-space {
+    &.-white {
         height: 240px;
 
         @include if-tablet {
             height: 350px;
         }
-
-    }
-
-    @include if-tablet {
-        margin-right: spacer(medium-s);
-    }
-
-    @include if-desktop {
-        margin-right: spacer(medium-l);
     }
 
     &__title {
@@ -30,7 +21,8 @@
         text-transform: uppercase;
 
         &.-white {
-            color: theme-color("white")
+            color: theme-color("white");
+            margin-bottom: auto;
         }
     }
 
@@ -45,10 +37,6 @@
             color: theme-color("white");
             font-size: $fonts-size-h1;
         }
-
-        &.-space {
-            margin-top: auto;
-        }
     }
 
     &__text {
@@ -59,7 +47,6 @@
 
         &.-white {
             color: theme-color("white");
-            margin-top: spacer(small-s);
         }
     }
 }

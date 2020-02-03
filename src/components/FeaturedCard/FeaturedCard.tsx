@@ -29,7 +29,6 @@ const FeaturedCard: FunctionComponent<FeaturedCardProps> = ({
             <div className="featured-card__text-box">
                 <PostInfo
                     white
-                    space
                     title={theme}
                     subtitle={title}
                     primaryText={paragraph}
