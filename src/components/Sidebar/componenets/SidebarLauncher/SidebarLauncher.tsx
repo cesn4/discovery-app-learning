@@ -6,7 +6,7 @@ import '~/assets/img/menuIcon.png';
 const SidebarLauncher: FunctionComponent<SidebarLauncherProps> = ({
     onClick,
 }: SidebarLauncherProps) => {
-    return <div className="sidebar-launcher" onClick={onClick}></div>;
+    return <button className="sidebar-launcher" onClick={onClick}></button>;
 };
 
 interface SidebarLauncherProps {
