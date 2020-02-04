@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import classNames from 'classnames';
 
-import Time from '~/components/Time';
+import PostInfo from '~/components/PostInfo';
 
 import './FeaturedCard.scss';
 
@@ -27,10 +27,13 @@ const FeaturedCard: FunctionComponent<FeaturedCardProps> = ({
             style={styleBackground}
         >
             <div className="featured-card__text-box">
-                <span className="featured-card__theme">{theme}</span>
-                <span className="featured-card__title">{title}</span>
-                <p className="featured-card__paragraph">{paragraph}</p>
-                <Time text={time} />
+                <PostInfo
+                    white
+                    title={theme}
+                    subtitle={title}
+                    primaryText={paragraph}
+                    time={time}
+                />
             </div>
         </div>
     );

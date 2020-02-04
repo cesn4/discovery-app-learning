@@ -4,6 +4,10 @@
     font-family: $font-family-primary;
     width: 100%;
 
+    &.-white {
+        height: 100%;
+    }
+
     &__title {
         color: theme-color("accent-1");
         font-size: $fonts-size-text;
@@ -11,6 +15,11 @@
         line-height: $line-height-small;
         margin-bottom:  spacer(small-xl);
         text-transform: uppercase;
+
+        &.-white {
+            color: theme-color("white");
+            margin-bottom: auto;
+        }
     }
 
     &__subtitle {
@@ -19,6 +28,11 @@
         font-weight: $font-weight-fat;
         line-height: $line-height-small;
         margin-bottom: spacer(small-s);
+
+        &.-white {
+            color: theme-color("white");
+            font-size: $fonts-size-h1;
+        }
     }
 
     &__text {
@@ -26,5 +40,9 @@
         font-size: $fonts-size-text;
         line-height: $line-height-medium;
         margin-bottom: spacer(small-s);
+
+        &.-white {
+            color: theme-color("white");
+        }
     }
 }
