@@ -1,0 +1,7 @@
+.sidebar-launcher {
+    @include size(16px);
+    background-color: inherit;
+    background-image: url('/assets/img/menuIcon.png');
+    background-size: cover;
+    border-style: none;
+}

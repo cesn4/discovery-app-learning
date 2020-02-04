@@ -20,13 +20,8 @@
         }
     }
 
-    &__menu-icon {
-        background-color: inherit;
-        background-image: url('/assets/img/menuIcon.png');
-        border: none;
-        height: 14px;
+    &__sidebar {
         margin-right: auto;
-        width: 16px;
 
         @include if-tablet {
             display: none;

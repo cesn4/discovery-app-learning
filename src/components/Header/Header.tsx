@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 
+import Sidebar from '~/components/Sidebar';
 import ProfilePhoto from '~/components/ProfilePhoto';
 import Logo from '~/components/Logo';
 import MainNavigation from '~/components/MainNavigation';
@@ -9,19 +10,16 @@ import '~/assets/img/menuIcon.png';
 
 import './Header.scss';
 
-const Header: FunctionComponent<HeaderProps> = ({
-    drawSidebar,
-}: HeaderProps) => {
+const Header: FunctionComponent = () => {
     return (
         <div className="header">
             <Container>
                 <Row>
                     <Col>
                         <header className="header__box">
-                            <button
-                                className="header__menu-icon"
-                                onClick={drawSidebar}
-                            ></button>
+                            <div className="header__sidebar">
+                                <Sidebar />
+                            </div>
                             <Logo />
                             <MainNavigation />
                             <div className="header__photo">
@@ -34,9 +32,5 @@ const Header: FunctionComponent<HeaderProps> = ({
         </div>
     );
 };
-
-interface HeaderProps {
-    drawSidebar: VoidFunction;
-}
 
 export default Header;

@@ -1,0 +1,48 @@
+.sidebar-menu {
+    background-color: transparent;
+    display: flex;
+    font-family: $font-family-primary;
+    height: 100vh;
+    position: fixed;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+    width: 100%;
+    z-index: index(modal);
+
+    &.is-open {
+        display: flex;
+        transform: translateX(0);
+    }
+
+    &__text-box {
+        background-color: theme-color("accent-2");
+        box-shadow: 0 0 60px 0 theme-color("active");
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        padding: spacer(medium-s);
+        width: 70%;
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        margin-top: spacer(medium-xl);
+    }
+
+    &__nav-item {
+        margin-bottom: spacer(medium-xs);
+    }
+
+    &__backdraw  {
+        background-color: transparent;
+        border: none;
+        display: none;
+        height: 100vh;
+        width: 30%;
+
+        &.-isOpen {
+            display: flex;
+        }
+    }
+}
