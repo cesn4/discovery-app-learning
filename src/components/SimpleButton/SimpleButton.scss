@@ -9,7 +9,49 @@
     height: spacer(medium-s);
     justify-content: center;
     line-height: $line-height-big;
+    overflow: hidden;
+    position: relative;
     text-align: center;
     text-decoration: none;
+    transition: 0.5s;
     width: 150px;
+    z-index: index(content);
+
+    &:hover {
+        font-size: $fonts-size-paragraph;
+    }
+
+    &__effect {
+        background-color: theme-color("accent-active");
+        border-radius: radius(round);
+        height: 100%;
+        left: calc((var(--n) - 1) * 25%);
+        position: absolute;
+        transition: 0.5s;
+        transition-delay: calc((var(--n) - 1) * 0.1s);
+        width: 25%;
+        z-index: index(underground);
+
+
+        &:nth-child(1) {
+            --n: 1;
+            transform: translateX(-150%);
+        }
+        &:nth-child(2) {
+            --n: 2;
+            transform: translateY(-150%);
+        }
+        &:nth-child(3) {
+            --n: 3;
+            transform: translateY(150%);
+        }
+        &:nth-child(4) {
+            --n: 4;
+            transform: translateX(150%);
+        }
+    }
+
+    &:hover span {
+        transform: translateY(0) translateX(0) scale(3);
+    }
 }

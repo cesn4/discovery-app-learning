@@ -1,0 +1,24 @@
+.media {
+    @include if-tablet {
+        align-items: flex-end;
+        display: flex;
+        height: 65px;
+        justify-content: end;
+        width: 100%;
+    }
+
+    @include if-desktop {
+        align-items: start;
+        margin-top: spacer(small-xxs);
+    }
+
+    &__img {
+        margin-right: 24px;
+        @include size(16px);
+        transition: 0.3s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
