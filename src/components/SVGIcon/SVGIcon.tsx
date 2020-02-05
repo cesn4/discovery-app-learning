@@ -1,8 +1,8 @@
-import React, { FunctionComponent, ReactChild } from 'react';
+import React, { FunctionComponent } from 'react';
 
 import './SVGIcon.scss';
 
-const getPath: HTMLBodyElement = (name: string) => {
+const getPath: SVGElement = (name: string) => {
     switch (name) {
         case 'instagram':
             return (
