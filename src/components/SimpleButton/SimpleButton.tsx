@@ -8,7 +8,7 @@ const SimpleButton: FunctionComponent<SimpleButtonProps> = ({
 }: SimpleButtonProps) => {
     return (
         <a href={href} className="button">
-            {title}
+            <div className="button__title">{title}</div>
             <span className="button__effect"></span>
             <span className="button__effect"></span>
             <span className="button__effect"></span>

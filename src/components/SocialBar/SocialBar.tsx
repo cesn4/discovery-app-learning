@@ -5,7 +5,7 @@ import facebook from '~/assets/img/facebook.png';
 import twitter from '~/assets/img/twitter.png';
 import web from '~/assets/img/web.png';
 
-import './Media.scss';
+import './SocialBar.scss';
 
 const Media: FunctionComponent = () => {
     return (

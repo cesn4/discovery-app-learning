@@ -4,7 +4,7 @@ import { Container, Row, Col, Hidden } from 'react-grid-system';
 import Logo from '~/components/Logo';
 import Input from '~/components/Input';
 import FooterList from '~/components/FooterList';
-import Media from '~/components/Media';
+import Media from '~/components/SocialBar';
 
 import './Footer.scss';
 
