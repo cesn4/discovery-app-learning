@@ -21,27 +21,33 @@ const Footer: FunctionComponent = () => {
                     <Hidden sm>
                         <Col md={2} lg={1}>
                             <FooterList
-                                first="Home"
-                                second="Discovery"
-                                third="Photos"
-                                fourth="Contact"
+                                list={[
+                                    { label: 'Home' },
+                                    { label: 'Discovery' },
+                                    { label: 'Photos' },
+                                    { label: 'Contact' },
+                                ]}
                             />
                         </Col>
                     </Hidden>
                     <Col xs={6} md={2} lg={1}>
                         <FooterList
-                            first="About"
-                            second="Help"
-                            third="Terms"
-                            fourth="Guidlines"
+                            list={[
+                                { label: 'About' },
+                                { label: 'Help' },
+                                { label: 'Terms' },
+                                { label: 'Guidlines' },
+                            ]}
                         />
                     </Col>
                     <Col xs={6} md={2} lg={3}>
                         <FooterList
-                            first="Testimonials"
-                            second="Advertise"
-                            third="Integrations"
-                            fourth="Careers"
+                            list={[
+                                { label: 'Testimonials' },
+                                { label: 'Advertise' },
+                                { label: 'Integrations' },
+                                { label: 'Careers' },
+                            ]}
                         />
                     </Col>
                     <Hidden sm>
