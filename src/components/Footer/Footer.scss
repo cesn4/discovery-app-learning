@@ -40,6 +40,7 @@
     }
 
     &__media {
+
         @include if-tablet {
             align-items: flex-end;
             display: flex;

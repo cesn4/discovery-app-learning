@@ -3,8 +3,8 @@ import { Container, Row, Col, Hidden } from 'react-grid-system';
 
 import Logo from '~/components/Logo';
 import Input from '~/components/Input';
+import SVGIcon from '~/components/SVGIcon';
 
-import instagram from '~/assets/img/instagram.png';
 import facebook from '~/assets/img/facebook.png';
 import twitter from '~/assets/img/twitter.png';
 import web from '~/assets/img/web.png';
@@ -56,11 +56,7 @@ const Footer: FunctionComponent = () => {
                     <Col md={6} lg={3}>
                         <div className="footer__media">
                             <a href="#">
-                                <img
-                                    src={instagram}
-                                    alt=""
-                                    className="footer__media-img"
-                                />
+                                <SVGIcon name="instagram" />
                             </a>
                             <a href="#">
                                 <img

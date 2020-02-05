@@ -1,8 +1,13 @@
-.icon {
-    fill: theme-color("white");
-    transition: all 0.3s ease-out;
+.svg-icon {
+    @include size(16px);
+    display: flex;
 
     &:hover {
-        transform: scale(1.2);
+        transform: scale(1.5);
+    }
+    
+
+    &__image {
+        fill: theme-color("white");
     }
 }
