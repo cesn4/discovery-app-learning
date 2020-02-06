@@ -1,0 +1,12 @@
+.svg-icon {
+    @include size(16px);
+    display: flex;
+
+    &:hover {
+        transform: scale(1.5);
+    }
+
+    &__image {
+        fill: theme-color("white");
+    }
+}
