@@ -5,7 +5,6 @@ import SectionNavigation from '~/components/SectionNavigation';
 import PostInfo from '~/components/PostInfo';
 import Background from '~/components/Background';
 
-import '~/assets/mount.jpg';
 import './Hero.scss';
 
 const Hero: FunctionComponent = () => {
@@ -13,7 +12,7 @@ const Hero: FunctionComponent = () => {
         <div className="hero">
             <Container>
                 <Row>
-                    <Col xs={12} md={12} lg={7} className="hero__background">
+                    <Col xs={12} md={12} lg={7}>
                         <Background />
                     </Col>
                     <Col xs={12} md={12} lg={5}>
