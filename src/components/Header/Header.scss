@@ -2,9 +2,10 @@
     background-color: theme-color("accent-2");
     position: relative;
     z-index: index(half-modal);
+    padding: 0 spacer(small-l);
 
     @include if-tablet {
-        padding: 0 spacer(small-xs);
+        padding: 0 spacer(small-xl);
     }
 
     &__box {

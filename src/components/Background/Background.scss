@@ -2,6 +2,8 @@
     height: 388px;
     padding: spacer(medium-xs) spacer(small-m);
     width: 100%;
+    background-image: url('/assets/mount.jpg');
+    background-size: cover;
 
     @include if-tablet {
         display: flex;

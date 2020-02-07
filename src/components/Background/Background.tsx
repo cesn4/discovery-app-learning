@@ -2,6 +2,7 @@ import React, { FunctionComponent } from 'react';
 
 import SimpleButton from '~/components/SimpleButton';
 
+import '~/assets/mount.jpg';
 import './Background.scss';
 
 const Background: FunctionComponent = () => {
