@@ -26,27 +26,29 @@ const Featured: FunctionComponent = () => {
                         </div>
                     </Col>
                     <Col xs={12} md={12} lg={8}>
-                        <FeaturedCard
-                            firstItem
-                            background={hand}
-                            theme="CITY"
-                            title="Large article title mobile layout"
-                            paragraph="Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit vituperatoribus duo id. Affert detraxit voluptatum vis eu, inermis eloquentiam."
-                            time="2m ago"
-                        />
-                        <FeaturedCard
-                            lastItem
-                            background={house}
-                            theme="TRAVEL"
-                            title="Large article title mobile layout"
-                            paragraph="Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit vituperatoribus duo id. Affert detraxit voluptatum vis eu, inermis eloquentiam."
-                            time="2m ago"
-                        />
+                        <div className="featured__cards">
+                            <FeaturedCard
+                                firstItem
+                                background={hand}
+                                theme="CITY"
+                                title="Large article title mobile layout"
+                                paragraph="Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit vituperatoribus duo id. Affert detraxit voluptatum vis eu, inermis eloquentiam."
+                                time="2m ago"
+                            />
+                            <FeaturedCard
+                                lastItem
+                                background={house}
+                                theme="TRAVEL"
+                                title="Large article title mobile layout"
+                                paragraph="Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit vituperatoribus duo id. Affert detraxit voluptatum vis eu, inermis eloquentiam."
+                                time="2m ago"
+                            />
+                        </div>
                     </Col>
                     <Col xs={12} md={12} lg={4}>
                         <Row>
                             <Col md={6} lg={12}>
-                                <div className="featured__small-card">
+                                <div className="featured__small-card -first">
                                     <SmallCard
                                         firstItem
                                         image={wall}
@@ -56,7 +58,7 @@ const Featured: FunctionComponent = () => {
                                 </div>
                             </Col>
                             <Col md={6} lg={12}>
-                                <div className="featured__small-card">
+                                <div className="featured__small-card -second">
                                     <SmallCard
                                         image={castle}
                                         title="Small title"
@@ -66,7 +68,7 @@ const Featured: FunctionComponent = () => {
                             </Col>
                             <Hidden sm md>
                                 <Col>
-                                    <div className="featured__small-card">
+                                    <div className="featured__small-card -third">
                                         <SmallCard
                                             image={random}
                                             title="Small title"
