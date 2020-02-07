@@ -1,32 +1,29 @@
 .hero {
 
-    // &__background {
-    //     background-image: url('/assets/mount.jpg');
-    //     background-size: cover;
-    // }
-
     &__section-lable {
 
-        @include if-desktop {
-            padding-right: spacer(medium-xl);
+        border-bottom: solid;
+        border-color: theme-color("inactive");
+        border-width: border(s);
+        margin: 0 spacer(medium-xxs);
+        padding: spacer(medium-s) 0;
+
+        @include if-tablet {
+            margin: 0 spacer(medium-xl);
         }
-    }
-
-    &__posts-box {
-
         @include if-desktop {
-            padding-top: spacer(medium-m);
+            padding-top: spacer(medium-xl);
         }
     }
 
     &__posts {
         display: flex;
         flex-direction: column;
-        padding: spacer(medium-s) spacer(small-m);
+        padding: spacer(medium-s) spacer(medium-xxs);
 
         @include if-tablet {
             flex-direction: row;
-            padding: spacer(medium-s) spacer(medium-s);
+            padding: spacer(medium-s) spacer(medium-xl);
         }
 
         @include if-desktop {
