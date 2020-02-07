@@ -1,10 +1,10 @@
 /* eslint-disable indent */
 import React, { FunctionComponent, ReactChild } from 'react';
 
-import SVGInstagram from './SVGImages/SVGInstagram';
-import SVGFacebook from './SVGImages/SVGFacebook';
-import SVGTwitter from './SVGImages/SVGTwitter';
-import SVGWeb from './SVGImages/SVGWeb';
+import { SVGInstagram } from './assets';
+import { SVGFacebook } from './assets/SVGFacebook';
+import { SVGTwitter } from './assets/SVGTwitter';
+import { SVGWeb } from './assets/SVGWeb';
 
 const SVGIcon: FunctionComponent<SVGIconProps> = ({ name }: SVGIconProps) => {
     const getPath: FunctionComponent<ReactChild> = () => {

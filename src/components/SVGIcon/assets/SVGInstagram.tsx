@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from 'react';
 
-import './SVGInstagram.scss';
+import './AssetStyle.scss';
 
-const SVGInstagram: FunctionComponent = () => {
+export const SVGInstagram: FunctionComponent = () => {
     return (
         <div>
             <svg
@@ -22,5 +22,3 @@ const SVGInstagram: FunctionComponent = () => {
         </div>
     );
 };
-
-export default SVGInstagram;

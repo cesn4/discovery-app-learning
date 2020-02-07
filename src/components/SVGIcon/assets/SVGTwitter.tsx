@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from 'react';
 
-import './SVGTwitter.scss';
+import './AssetStyle.scss';
 
-const SVGTwitter: FunctionComponent = () => {
+export const SVGTwitter: FunctionComponent = () => {
     return (
         <div>
             <svg
@@ -30,5 +30,3 @@ const SVGTwitter: FunctionComponent = () => {
         </div>
     );
 };
-
-export default SVGTwitter;

@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from 'react';
 
-import './SVGWeb.scss';
+import './AssetStyle.scss';
 
-const SVGWeb: FunctionComponent = () => {
+export const SVGWeb: FunctionComponent = () => {
     return (
         <div>
             <svg
@@ -26,4 +26,3 @@ const SVGWeb: FunctionComponent = () => {
     );
 };
 
-export default SVGWeb;

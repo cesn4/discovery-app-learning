@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from 'react';
 
-import './Facebook.scss';
+import './AssetStyle.scss';
 
-const SVGFacebook: FunctionComponent = () => {
+export const SVGFacebook: FunctionComponent = () => {
     return (
         <div>
             <svg
@@ -30,5 +30,3 @@ const SVGFacebook: FunctionComponent = () => {
         </div>
     );
 };
-
-export default SVGFacebook;
