@@ -4,7 +4,7 @@
     padding: 0 spacer(medium-xxs);
 
     @include if-tablet {
-        padding: 0 spacer(medium-s);
+        padding: 0 spacer(medium-xl);
     }
 
     @include if-desktop {

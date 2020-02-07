@@ -2,11 +2,11 @@
     background-color: theme-color("inactive");
     color: theme-color("footer-accent");
     font-family: $font-family-primary;
-    padding: spacer(medium-m) spacer(small-m) spacer(medium-s) spacer(small-m);
+    padding: spacer(medium-m) spacer(medium-xxs) spacer(medium-s) spacer(medium-xxs);
     width: 100%;
 
     @include if-tablet {
-        padding: spacer(medium-m) spacer(medium-s)
+        padding: spacer(medium-m) spacer(medium-xl)
     }
 
     @include if-desktop {
