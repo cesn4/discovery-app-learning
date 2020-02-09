@@ -6,6 +6,7 @@
 // Color pallette
 $color-white: #fff; // Grynasias spalvas irgi verta apsirasyt (white ir black) nes kartais ju atspalvis nera visiskai baltas arba juodas
 $color-light-red: #fa6980;
+$color-light-red-active: #f05c74;
 $color-gray-chateu: #a6adb4;
 $color-porcelain: #f6f8f9;
 $color-shark: #343638;
@@ -14,6 +15,7 @@ $color-iron: #cbd0d3;
 // Project colors
 $theme-colors: (
     "accent-1": $color-light-red,
+    "accent-active": $color-light-red-active,
     "accent-2": $color-porcelain,
     "active": $color-shark,
     "inactive": $color-gray-chateu,
