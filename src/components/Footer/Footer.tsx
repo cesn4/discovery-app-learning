@@ -4,7 +4,7 @@ import { Container, Row, Col, Hidden } from 'react-grid-system';
 import Logo from '~/components/Logo';
 import Input from '~/components/Input';
 import FooterList from '~/components/FooterList';
-import Media from '~/components/SocialBar';
+import SocialBar from '~/components/SocialBar';
 
 import './Footer.scss';
 
@@ -58,7 +58,7 @@ const Footer: FunctionComponent = () => {
                         </Col>
                     </Hidden>
                     <Col md={6} lg={3}>
-                        <Media />
+                        <SocialBar />
                     </Col>
                 </Row>
             </Container>
