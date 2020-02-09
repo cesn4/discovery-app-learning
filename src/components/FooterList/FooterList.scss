@@ -1,0 +1,36 @@
+.footer-list {
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        font-size: $fonts-size-navigation;
+        font-weight: $font-weight-fat;
+        line-height: $line-height-big;
+        list-style: none;
+
+        @include if-tablet {
+            font-size: $fonts-size-paragraph;
+        }
+    }
+
+    &__item {
+        color: theme-color("footer-accent");
+        margin-bottom: spacer(small-xl);
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: 0.3s;
+
+        &:last-child {
+            margin-bottom: spacer(medium-s);
+        }
+
+        @include if-tablet {
+            margin-bottom: spacer(small-xxs);
+            text-transform: none;
+        }
+
+        &:hover {
+            color: theme-color("white");
+        }
+    }
+}
