@@ -1,14 +1,16 @@
 .featured {
     background-color: theme-color("accent-2");
-    display: flex;
-    padding: 0 spacer(medium-xxs);
 
-    @include if-tablet {
-        padding: 0 spacer(medium-xl);
-    }
+    &__box {
+        padding: 0 spacer(medium-xxs);
 
-    @include if-desktop {
-        padding: 0 spacer(trojan-s);
+        @include if-tablet {
+            padding: 0 spacer(medium-xl);
+        }
+
+        @include if-desktop {
+            padding: 0 spacer(trojan-s);
+        }
     }
 
     &__navigation {

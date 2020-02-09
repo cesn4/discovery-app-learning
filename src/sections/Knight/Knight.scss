@@ -1,17 +1,16 @@
 .knight {
     background-color: theme-color("accent-2");
-    padding: 0 spacer(medium-xxs);
-
-    @include if-tablet {
-        padding: 0 spacer(medium-xl);
-    }
-
-    @include if-desktop {
-        padding: 0 spacer(trojan-s);
-    }
 
     &__box {
-        padding: 0 spacer(small-m);
+        padding: 0 spacer(medium-xxs);
+
+        @include if-tablet {
+            padding: 0 spacer(medium-xl);
+        }
+
+        @include if-desktop {
+            padding: 0 spacer(trojan-s);
+        }
     }
 
     &__navigation {
