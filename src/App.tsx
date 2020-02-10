@@ -3,6 +3,8 @@ import React, { FunctionComponent } from 'react';
 // https://reacttraining.com/react-router/web/example/basic
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+import { Routes } from './types';
+import Story from '~/views/Story';
 import Home from '~/views/Home';
 import '~/config/layout';
 
@@ -10,10 +12,11 @@ const App: FunctionComponent = () => {
     return (
         <Router>
             <Switch>
-                {/* Eilute po apacia nurodo kad pagrindinis route (http://localhost:3000) atidarys Home view komponenta */}
-                {/* Jeigu path parasytum <Route exact path="/home"> tokiu atveju reiktu narsyklej suvest http://localhost:3000/home */}
-                <Route exact path="/">
+                <Route exact path={Routes.home}>
                     <Home />
+                </Route>
+                <Route exact path={Routes.story}>
+                    <Story />
                 </Route>
             </Switch>
         </Router>

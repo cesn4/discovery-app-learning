@@ -29,30 +29,30 @@
         border-radius: radius(round);
         height: 100%;
         position: absolute;
+        transition: transform 0.6s ease;
         width: 25%;
         z-index: index(underground);
-        transition: transform 0.6s ease;
 
 
         &:nth-child(2) {
-            transition-delay: 0.1s;
             left: 0;
             transform: translateX(-150%);
+            transition-delay: 0.1s;
         }
         &:nth-child(3) {
-            transition-delay: 0.3s;
             left: 50px;
             transform: translateY(-150%);
+            transition-delay: 0.3s;
         }
         &:nth-child(4) {
-            transition-delay: 0.2s;
             left: 75px;
             transform: translateY(150%);
+            transition-delay: 0.2s;
         }
         &:nth-child(5) {
-            transition-delay: 0.1s;
             left: 100px;
             transform: translateX(150%);
+            transition-delay: 0.1s;
         }
     }
 
