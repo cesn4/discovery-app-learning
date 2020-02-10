@@ -1,7 +1,8 @@
 .social-bar {
+    display: flex;
+
     @include if-tablet {
         align-items: flex-end;
-        display: flex;
         height: 65px;
         justify-content: end;
         width: 100%;
