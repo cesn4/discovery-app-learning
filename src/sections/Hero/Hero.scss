@@ -1,4 +1,9 @@
 .hero {
+    &__post-box {
+        @include if-desktop {
+            padding-right: 53px;
+        }
+    }
 
     &__section-lable {
 
