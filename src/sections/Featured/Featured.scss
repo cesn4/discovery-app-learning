@@ -1,23 +1,46 @@
 .featured {
     background-color: theme-color("accent-2");
-    display: flex;
-    padding: 0 spacer(small-m);
 
-    @include if-tablet {
-        padding: 0 spacer(medium-s);
-    }
+    &__box {
+        padding: 0 spacer(medium-xxs);
 
-    @include if-desktop {
-        padding: 0 spacer(trojan-s);
-    }
-    &__navigation {
-        padding-top: spacer(medium-s);
         @include if-tablet {
-            padding-top: 0;
+            padding: 0 spacer(medium-xl);
+        }
+
+        @include if-desktop {
+            padding: 0 spacer(trojan-s);
+        }
+    }
+
+    &__navigation {
+        padding: spacer(medium-s) 0;
+    }
+
+    &__cards {
+        @include if-desktop {
+            padding-right: spacer(medium-xs);
         }
     }
 
     &__small-card {
         padding-bottom: spacer(small-xl);
+
+        &.-first {
+            @include if-tablet {
+                padding-right: spacer(small-xl)
+            }
+            @include if-desktop {
+                padding-right: 0;
+            }
+        }
+        &.-second {
+            @include if-tablet {
+                padding-left: spacer(small-xl)
+            }
+            @include if-desktop {
+                padding-left: 0;
+            }
+        }
     }
 }

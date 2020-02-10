@@ -1,39 +1,11 @@
 .section-navigation {
     font-family: $font-family-primary;
-    padding: spacer(medium-s) spacer(small-m) 0 spacer(small-m);
     width: 100%;
-
-    @include if-tablet {
-        padding: spacer(medium-s) spacer(medium-s) 0 spacer(medium-s);
-    }
-    @include if-desktop {
-        padding-right: 0;
-    }
-
-    &.-borderless {
-        padding: 0;
-
-        @include if-tablet {
-            padding: spacer(medium-s) 0 0 0;
-        }
-    }
 
     &__title-box {
         align-items: center;
-        border-bottom: solid;
-        border-color: theme-color("inactive");
-        border-width: border(s);
         display: flex;
         justify-content: flex-end;
-        padding-bottom: spacer(medium-s);
-
-        &.-borderless {
-            border-bottom: none;
-
-            @include if-desktop {
-                margin-right: 0;
-            }
-        }
     }
 
     &__title {
