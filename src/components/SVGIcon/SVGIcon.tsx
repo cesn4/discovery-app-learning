@@ -1,31 +1,47 @@
+/* eslint-disable @typescript-eslint/typedef */
 /* eslint-disable indent */
-import React, { FunctionComponent, ReactChild } from 'react';
+import React, { FunctionComponent, ElementType } from 'react';
 
-import { SVGInstagram } from './assets';
-import { SVGFacebook } from './assets/SVGFacebook';
-import { SVGTwitter } from './assets/SVGTwitter';
-import { SVGWeb } from './assets/SVGWeb';
+import SVGInstagram from './assets/SVGInstagram';
+import SVGFacebook from './assets/SVGFacebook';
+import SVGTwitter from './assets/SVGTwitter';
+import SVGWeb from './assets/SVGWeb';
 
-const SVGIcon: FunctionComponent<SVGIconProps> = ({ name }: SVGIconProps) => {
-    const getPath: FunctionComponent<ReactChild> = () => {
+const SVGIcon: FunctionComponent<SVGIconProps> = ({
+    name,
+    color = '#fffff',
+    size = 16,
+}: SVGIconProps) => {
+    const className = 'icon';
+    const iconProps = { color, size };
+
+    const renderIcon: ElementType = (name: IconType) => {
         switch (name) {
             case 'instagram':
-                return <SVGInstagram />;
+                return <SVGInstagram {...iconProps} />;
             case 'facebook':
-                return <SVGFacebook />;
+                return <SVGFacebook {...iconProps} />;
             case 'twitter':
-                return <SVGTwitter />;
+                return <SVGTwitter {...iconProps} />;
             case 'web':
-                return <SVGWeb />;
+                return <SVGWeb {...iconProps} />;
             default:
                 return <path />;
         }
     };
-    return <div>{getPath(name)}</div>;
+    return (
+        <div className={`${className} ${className}--${name}`}>
+            {renderIcon(name)}
+        </div>
+    );
 };
 
 interface SVGIconProps {
-    name: 'instagram' | 'web' | 'facebook' | 'twitter';
+    name?: IconType;
+    color?: string;
+    size?: number;
 }
+
+export type IconType = 'instagram' | 'web' | 'facebook' | 'twitter';
 
 export default SVGIcon;
