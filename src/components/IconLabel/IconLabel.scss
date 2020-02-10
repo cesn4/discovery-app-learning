@@ -1,12 +1,20 @@
 .icon-label {
-    color: theme-color("white");
     display: flex;
+
+    &__anchor {
+        align-items: center;
+        color: theme-color("white");
+        display: flex;
+        text-decoration: none;
+        transition: transform 0.3s ease-out;
+    }
 
     &__label {
         font-family: $font-family-primary;
         font-size: $fonts-size-text;
         font-weight: $font-weight-fat;
         line-height: $line-height-medium;
+        padding-left: 12px;
         text-transform: uppercase;
     }
 }

@@ -6,6 +6,7 @@ import SVGInstagram from './assets/SVGInstagram';
 import SVGFacebook from './assets/SVGFacebook';
 import SVGTwitter from './assets/SVGTwitter';
 import SVGWeb from './assets/SVGWeb';
+import SVGTopic from './assets/SVGTopic';
 
 import './SVGIcon.scss';
 
@@ -27,6 +28,8 @@ const SVGIcon: FunctionComponent<SVGIconProps> = ({
                 return <SVGTwitter {...iconProps} />;
             case 'web':
                 return <SVGWeb {...iconProps} />;
+            case 'topic':
+                return <SVGTopic {...iconProps} />;
             default:
                 return <path />;
         }
@@ -40,6 +43,6 @@ interface SVGIconProps {
     size?: number;
 }
 
-export type IconType = 'instagram' | 'web' | 'facebook' | 'twitter';
+export type IconType = 'instagram' | 'web' | 'facebook' | 'twitter' | 'topic';
 
 export default SVGIcon;

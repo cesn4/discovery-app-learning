@@ -23,10 +23,10 @@ const StoryHero: FunctionComponent = () => {
                     <Col>
                         <div className={`${className}__icon-box`}>
                             <div className={`${className}__icon-label`}>
-                                <IconLabel label="TRAVELGUIDE" />
+                                <IconLabel label="TRAVELGUIDE" name="web" />
                             </div>
                             <div className={`${className}__icon-label`}>
-                                <IconLabel label="WORLD NEWS" />
+                                <IconLabel label="WORLD NEWS" name="web" />
                             </div>
                         </div>
                     </Col>
