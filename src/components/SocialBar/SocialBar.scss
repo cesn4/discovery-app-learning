@@ -1,4 +1,4 @@
-.media {
+.social-bar {
     @include if-tablet {
         align-items: flex-end;
         display: flex;
@@ -12,13 +12,11 @@
         margin-top: spacer(small-xxs);
     }
 
-    &__img {
-        margin-right: 24px;
-        @include size(16px);
-        transition: 0.3s;
+    &__icon {
+        margin-right: spacer(medium-xs);
 
-        &:hover {
-            transform: scale(1.2);
+        &:last-child {
+            margin-right: 0;
         }
     }
 }
