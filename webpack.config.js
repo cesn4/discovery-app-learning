@@ -19,7 +19,6 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "bundle.[hash].js",
-        publicPath: '/'
     },
     module: {
         rules: [
@@ -77,15 +76,6 @@ module.exports = {
             ]
         }
         ]
-    },
-    devServer: {
-        contentBase: 'app/ui/www',
-        devtool: 'eval',
-        hot: true,
-        inline: true,
-        port: 3000,
-        outputPath: buildPath,
-        historyApiFallback: true,
     },
     plugins: [
         new HtmlWebpackPlugin({
