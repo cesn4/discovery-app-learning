@@ -2,4 +2,26 @@
     background-image: url('/assets/img/jungle.jpg');
     background-size: cover;
     width: 100%;
+
+    &__title {
+        color: theme-color("white");
+        font-family: $font-family-primary;
+        font-size: $font-size-max;
+        font-weight: $font-weight-fat;
+        line-height: $line-height-medium;
+        margin-bottom: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    &__icon-box {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__icon-label {
+        &:first-child {
+            margin-right: 40px;
+        }
+    }
 }
