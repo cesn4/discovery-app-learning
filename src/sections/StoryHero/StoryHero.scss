@@ -9,7 +9,7 @@
         font-size: $font-size-max;
         font-weight: $font-weight-fat;
         line-height: $line-height-medium;
-        margin-bottom: 20px;
+        margin-bottom: spacer(small-xl);
         text-align: center;
         text-transform: uppercase;
     }
@@ -17,11 +17,12 @@
     &__icon-box {
         display: flex;
         justify-content: center;
+        margin-bottom: spacer(medium-l);
     }
 
     &__icon-label {
         &:first-child {
-            margin-right: 40px;
+            margin-right: spacer(medium-s);
         }
     }
 }

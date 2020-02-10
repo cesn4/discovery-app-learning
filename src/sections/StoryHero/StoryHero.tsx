@@ -26,7 +26,7 @@ const StoryHero: FunctionComponent = () => {
                                 <IconLabel label="TRAVELGUIDE" name="web" />
                             </div>
                             <div className={`${className}__icon-label`}>
-                                <IconLabel label="WORLD NEWS" name="web" />
+                                <IconLabel label="WORLD NEWS" name="topic" />
                             </div>
                         </div>
                     </Col>
