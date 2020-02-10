@@ -18,51 +18,6 @@
 
     }
 
-    &__columns {
-        font-size: $fonts-size-navigation;
-        font-weight: $font-weight-fat;
-        line-height: $line-height-big;
-        list-style: none;
-
-        @include if-tablet {
-            font-size: $fonts-size-paragraph;
-        }
-    }
-
-    &__item {
-        margin-bottom: spacer(small-xl);
-        text-transform: uppercase;
-
-        &:last-child {
-            margin-bottom: spacer(medium-s);
-        }
-
-        @include if-tablet {
-            margin-bottom: spacer(small-xxs);
-            text-transform: none;
-        }
-    }
-
-    &__media {
-        @include if-tablet {
-            align-items: flex-end;
-            display: flex;
-            height: 65px;
-            justify-content: end;
-            width: 100%;
-        }
-
-        @include if-desktop {
-            align-items: start;
-            margin-top: spacer(small-xxs);
-        }
-    }
-
-    &__media-img {
-        margin-right: 24px;
-        @include size(16px)
-    }
-
     &__input-box {
 
         @include if-desktop {
