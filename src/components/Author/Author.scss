@@ -1,0 +1,9 @@
+.author {
+
+    &__image {
+        @include size(32px);
+        border-radius: radius(round);
+        object-fit: cover;
+
+    }
+}

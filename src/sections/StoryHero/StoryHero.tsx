@@ -2,9 +2,11 @@ import React, { FunctionComponent } from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 
 import IconLabel from '~/components/IconLabel';
+import Author from '~/components/Author';
 
 import './StoryHero.scss';
 
+import AuthorPhoto from '~/assets/img/author.jpg';
 import '~/assets/img/jungle.jpg';
 
 const StoryHero: FunctionComponent = () => {
@@ -29,6 +31,11 @@ const StoryHero: FunctionComponent = () => {
                                 <IconLabel label="WORLD NEWS" name="topic" />
                             </div>
                         </div>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <Author image={AuthorPhoto} />
                     </Col>
                 </Row>
             </Container>
