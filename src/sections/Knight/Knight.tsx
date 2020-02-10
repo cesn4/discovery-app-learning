@@ -13,39 +13,47 @@ const Knight: FunctionComponent = () => {
     return (
         <div className="knight">
             <Container>
-                <Row>
-                    <Col xs={12} md={12} lg={12}>
-                        <div className="knight__navigation">
-                            <SectionNavigation title="Trending" borderless />
-                        </div>
-                    </Col>
-                    <Col xs={12} md={6} lg={4}>
-                        <TrendingCard
-                            image={bridge}
-                            subtitle="Dolore magna aliqua"
-                            primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat."
-                            time="2m ago"
-                        />
-                    </Col>
-                    <Col xs={12} md={6} lg={4}>
-                        <TrendingCard
-                            image={road}
-                            subtitle="Morbi eleifend a libero"
-                            primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat."
-                            time="1h ago"
-                        />
-                    </Col>
-                    <Hidden sm md>
-                        <Col lg={4}>
-                            <TrendingCard
-                                image={sunflower}
-                                subtitle="Morbi eleifend a libero"
-                                primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat."
-                                time="3h ago"
-                            />
+                <div className="knight__box">
+                    <Row>
+                        <Col xs={12} md={12} lg={12}>
+                            <div className="knight__navigation">
+                                <SectionNavigation title="Trending" />
+                            </div>
                         </Col>
-                    </Hidden>
-                </Row>
+                        <Col xs={12} md={6} lg={4}>
+                            <div className="knight__trending-card -first">
+                                <TrendingCard
+                                    image={bridge}
+                                    subtitle="Dolore magna aliqua"
+                                    primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat."
+                                    time="2m ago"
+                                />
+                            </div>
+                        </Col>
+                        <Col xs={12} md={6} lg={4}>
+                            <div className="knight__trending-card -second">
+                                <TrendingCard
+                                    image={road}
+                                    subtitle="Morbi eleifend a libero"
+                                    primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat."
+                                    time="1h ago"
+                                />
+                            </div>
+                        </Col>
+                        <Hidden sm md>
+                            <Col lg={4}>
+                                <div className="knight__trending-card -third">
+                                    <TrendingCard
+                                        image={sunflower}
+                                        subtitle="Morbi eleifend a libero"
+                                        primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat."
+                                        time="3h ago"
+                                    />
+                                </div>
+                            </Col>
+                        </Hidden>
+                    </Row>
+                </div>
             </Container>
         </div>
     );

@@ -15,7 +15,7 @@ const Header: FunctionComponent = () => {
         <div className="header">
             <Container>
                 <Row>
-                    <Col>
+                    <Col lg={12} xl={8}>
                         <header className="header__box">
                             <div className="header__sidebar">
                                 <Sidebar />
