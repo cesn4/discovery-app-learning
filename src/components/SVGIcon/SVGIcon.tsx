@@ -7,9 +7,11 @@ import SVGFacebook from './assets/SVGFacebook';
 import SVGTwitter from './assets/SVGTwitter';
 import SVGWeb from './assets/SVGWeb';
 
+import './SVGIcon.scss';
+
 const SVGIcon: FunctionComponent<SVGIconProps> = ({
     name,
-    color = '#fffff',
+    color = '#fff',
     size = 16,
 }: SVGIconProps) => {
     const className = 'icon';
@@ -29,11 +31,7 @@ const SVGIcon: FunctionComponent<SVGIconProps> = ({
                 return <path />;
         }
     };
-    return (
-        <div className={`${className} ${className}--${name}`}>
-            {renderIcon(name)}
-        </div>
-    );
+    return <div className={className}>{renderIcon(name)}</div>;
 };
 
 interface SVGIconProps {

@@ -1,7 +1,5 @@
 import React, { FunctionComponent } from 'react';
 
-import './AssetStyle.scss';
-
 const SVGInstagram: FunctionComponent<SVGInstagramProps> = ({
     color,
     size,

@@ -1,7 +1,5 @@
 import React, { FunctionComponent } from 'react';
 
-import './AssetStyle.scss';
-
 export const SVGWeb: FunctionComponent<SVGWebProps> = ({
     color,
     size,
