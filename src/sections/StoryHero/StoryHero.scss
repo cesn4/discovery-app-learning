@@ -10,6 +10,10 @@
             padding-left: spacer(medium-s);
             padding-right: spacer(medium-s);
         }
+
+        @include if-desktop {
+            padding: 240px spacer(medium-m) spacer(medium-m) spacer(medium-m);
+        }
     }
 
     &__title {
@@ -21,6 +25,10 @@
         margin-bottom: spacer(small-xl);
         text-align: center;
         text-transform: uppercase;
+
+        @include if-desktop {
+            font-size: $font-size-maxima;
+        }
     }
 
     &__icon-box {
