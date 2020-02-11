@@ -11,6 +11,7 @@ $color-gray-chateu: #a6adb4;
 $color-porcelain: #f6f8f9;
 $color-shark: #343638;
 $color-iron: #cbd0d3;
+$color-transperant: rgba(166,173,180, 0.1);
 
 // Project colors
 $theme-colors: (
@@ -21,6 +22,7 @@ $theme-colors: (
     "inactive": $color-gray-chateu,
     "footer-accent": $color-iron,
     "white": $color-white,
+    "border": $color-transperant,
 );
 
 @function theme-color($_key) {

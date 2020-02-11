@@ -7,6 +7,10 @@
         border-radius: radius(round);
         object-fit: cover;
 
+        &.-big {
+            @include size (40px)
+        }
+
         @include if-tablet {
             @include size(40px);
         }
@@ -20,6 +24,13 @@
         font-weight: $font-weight-fat;
         line-height: $line-height-small;
         margin-left: spacer(small-xl);
+
+        &.-big {
+            color: theme-color("active");
+            display: flex;
+            font-size: $fonts-size-h1;
+
+        }
 
         @include if-tablet {
             display: flex;
