@@ -39,7 +39,13 @@
         }
     }
 
-    &__next-story {
-        padding-left: spacer(medium-s);
+    &__bottom-row {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        @include if-tablet {
+            align-items: flex-end;
+        }
     }
 }

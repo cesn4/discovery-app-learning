@@ -1,17 +1,44 @@
 .next-story {
+    display: flex;
+
+    @include if-tablet {
+        border-color: theme-color("inactive");
+        border-radius: radius(l);
+        border-style: dashed;
+        border-width: border(m);
+        padding: spacer(small-xl);
+    }
 
     &__anchor {
         align-items: center;
         display: flex;
-        text-decoration: none;
-    }
-
-    &__label {
-        color: theme-color("accent-1");
         font-family: $font-family-primary;
         font-size: $fonts-size-text;
         font-weight: $font-weight-fat;
         line-height: $line-height-medium;
+        text-decoration: none;
+
+    }
+
+    &__text-box {
         margin-right: spacer(small-xl);
+
+        @include if-tablet {
+            margin-right: spacer(medium-l);
+        }
+    }
+
+    &__label {
+        color: theme-color("accent-1");
+        margin-right: spacer(small-xl);
+    }
+
+    &__subtitle {
+        color: theme-color("white");
+        display: none;
+
+        @include if-tablet {
+            display: flex;
+        }
     }
 }

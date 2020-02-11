@@ -38,16 +38,14 @@ const StoryHero: FunctionComponent = () => {
                             </div>
                         </Col>
                     </Row>
-                    <Row align="center">
-                        <Col xs={6}>
-                            <Author
-                                image={AuthorPhoto}
-                                name="by Steven Voorhees"
-                            />
-                        </Col>
-                        <Col xs={6}>
-                            <div className={`${className}__next-story`}>
-                                <NextStory />
+                    <Row>
+                        <Col>
+                            <div className={`${className}__bottom-row`}>
+                                <Author
+                                    image={AuthorPhoto}
+                                    name="by Steven Voorhees"
+                                />
+                                <NextStory subtitle="Morbi eleifend a libero" />
                             </div>
                         </Col>
                     </Row>
