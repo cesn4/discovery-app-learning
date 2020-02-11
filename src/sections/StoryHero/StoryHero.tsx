@@ -6,6 +6,7 @@ import Author from '~/components/Author';
 
 import './StoryHero.scss';
 
+import NextStory from '~/components/NextStory';
 import AuthorPhoto from '~/assets/img/author.jpg';
 import '~/assets/img/jungle.jpg';
 
@@ -36,6 +37,9 @@ const StoryHero: FunctionComponent = () => {
                 <Row>
                     <Col>
                         <Author image={AuthorPhoto} />
+                    </Col>
+                    <Col>
+                        <NextStory />
                     </Col>
                 </Row>
             </Container>

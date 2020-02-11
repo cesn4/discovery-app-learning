@@ -7,6 +7,7 @@ import SVGFacebook from './assets/SVGFacebook';
 import SVGTwitter from './assets/SVGTwitter';
 import SVGWeb from './assets/SVGWeb';
 import SVGTopic from './assets/SVGTopic';
+import SVGRightArrow from './assets/SVGRightArrow';
 
 import './SVGIcon.scss';
 
@@ -30,6 +31,8 @@ const SVGIcon: FunctionComponent<SVGIconProps> = ({
                 return <SVGWeb {...iconProps} />;
             case 'topic':
                 return <SVGTopic {...iconProps} />;
+            case 'rightArrow':
+                return <SVGRightArrow color={color} />;
             default:
                 return <path />;
         }
@@ -43,6 +46,12 @@ interface SVGIconProps {
     size?: number;
 }
 
-export type IconType = 'instagram' | 'web' | 'facebook' | 'twitter' | 'topic';
+export type IconType =
+    | 'instagram'
+    | 'web'
+    | 'facebook'
+    | 'twitter'
+    | 'topic'
+    | 'rightArrow';
 
 export default SVGIcon;

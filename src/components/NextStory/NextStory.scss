@@ -1,0 +1,17 @@
+.next-story {
+
+    &__anchor {
+        align-items: center;
+        display: flex;
+        text-decoration: none;
+    }
+
+    &__label {
+        color: theme-color("accent-1");
+        font-family: $font-family-primary;
+        font-size: $fonts-size-text;
+        font-weight: $font-weight-fat;
+        line-height: $line-height-medium;
+        margin-right: spacer(small-xl);
+    }
+}
