@@ -6,6 +6,7 @@ import './NextStory.scss';
 
 const NextStory: FunctionComponent<NextStoryProps> = ({
     subtitle,
+    paragraph,
 }: NextStoryProps) => {
     // eslint-disable-next-line @typescript-eslint/typedef
     const className = 'next-story';
@@ -18,12 +19,14 @@ const NextStory: FunctionComponent<NextStoryProps> = ({
                 </div>
                 <SVGIcon name="rightArrow" />
             </a>
+            <span className={`${className}__paragraph`}>{paragraph}</span>
         </div>
     );
 };
 
 interface NextStoryProps {
     subtitle: string;
+    paragraph: string;
 }
 
 export default NextStory;

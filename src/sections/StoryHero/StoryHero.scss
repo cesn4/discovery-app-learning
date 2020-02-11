@@ -1,10 +1,10 @@
 .story-hero {
-    background-image: url('/assets/img/jungle.jpg');
-    background-size: cover;
-    width: 100%;
 
     &__box {
+        background-image: url('/assets/img/jungle.jpg');
+        background-size: cover;
         padding: spacer(trojan-s) spacer(medium-xxs) spacer(medium-s) spacer(medium-xxs);
+        width: 100%;
 
         @include if-tablet {
             padding-left: spacer(medium-s);

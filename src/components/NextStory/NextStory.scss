@@ -1,5 +1,6 @@
 .next-story {
     display: flex;
+    flex-direction: column;
 
     @include if-tablet {
         border-color: theme-color("inactive");
@@ -7,6 +8,11 @@
         border-style: dashed;
         border-width: border(m);
         padding: spacer(small-xl);
+        width: 284px;
+    }
+
+    @include if-desktop {
+        width: 360px;
     }
 
     &__anchor {
@@ -26,6 +32,10 @@
         @include if-tablet {
             margin-right: spacer(medium-l);
         }
+
+        @include if-desktop {
+            margin-right: auto;
+        }
     }
 
     &__label {
@@ -38,6 +48,18 @@
         display: none;
 
         @include if-tablet {
+            display: flex;
+        }
+    }
+
+    &__paragraph {
+        color: theme-color("white");
+        display: none;
+        font-family: $font-family-primary;
+        font-size: $fonts-size-text;
+        line-height: $line-height-medium;
+
+        @include if-desktop {
             display: flex;
         }
     }

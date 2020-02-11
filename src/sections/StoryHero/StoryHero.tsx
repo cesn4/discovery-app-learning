@@ -45,7 +45,10 @@ const StoryHero: FunctionComponent = () => {
                                     image={AuthorPhoto}
                                     name="by Steven Voorhees"
                                 />
-                                <NextStory subtitle="Morbi eleifend a libero" />
+                                <NextStory
+                                    subtitle="Morbi eleifend a libero"
+                                    paragraph="Quisque viverra interdum velit, et cursus magna sagittis in. In dui dui."
+                                />
                             </div>
                         </Col>
                     </Row>
