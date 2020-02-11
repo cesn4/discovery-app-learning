@@ -1,9 +1,28 @@
 .author {
+    align-items: center;
+    display: flex;
 
     &__image {
         @include size(32px);
         border-radius: radius(round);
         object-fit: cover;
 
+        @include if-tablet {
+            @include size(40px);
+        }
+    }
+
+    &__author-name {
+        color: theme-color("white");
+        display: none;
+        font-family: $font-family-primary;
+        font-size: $fonts-size-text;
+        font-weight: $font-weight-fat;
+        line-height: $line-height-small;
+        margin-left: spacer(small-xl);
+
+        @include if-tablet {
+            display: flex;
+        }
     }
 }

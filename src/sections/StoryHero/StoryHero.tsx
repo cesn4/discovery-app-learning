@@ -40,7 +40,10 @@ const StoryHero: FunctionComponent = () => {
                     </Row>
                     <Row align="center">
                         <Col xs={6}>
-                            <Author image={AuthorPhoto} />
+                            <Author
+                                image={AuthorPhoto}
+                                name="by Steven Voorhees"
+                            />
                         </Col>
                         <Col xs={6}>
                             <div className={`${className}__next-story`}>
