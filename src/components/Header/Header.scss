@@ -3,20 +3,18 @@
     position: relative;
     z-index: index(half-modal);
 
-    @include if-tablet {
-        padding: 0 spacer(small-xs);
-    }
-
     &__box {
         align-items: center;
         display: flex;
         height: 44px;
         justify-content: center;
+        padding: 0 spacer(small-l);
         width: 100%;
 
         @include if-tablet {
             height: 50px;
             justify-content: flex-end;
+            padding: 0 spacer(small-xl);
         }
     }
 

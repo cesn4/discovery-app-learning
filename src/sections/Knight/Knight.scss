@@ -1,24 +1,45 @@
 .knight {
     background-color: theme-color("accent-2");
-    padding: 0 spacer(small-m);
-
-    @include if-tablet {
-        padding: 0 spacer(medium-s);
-    }
-
-    @include if-desktop {
-        padding: 0 spacer(trojan-s);
-    }
 
     &__box {
-        padding: 0 spacer(small-m);
+        padding: 0 spacer(medium-xxs);
+
+        @include if-tablet {
+            padding: 0 spacer(medium-xl);
+        }
+
+        @include if-desktop {
+            padding: 0 spacer(trojan-s);
+        }
     }
 
     &__navigation {
-        padding-top: spacer(medium-s);
+        padding: spacer(medium-s) 0;
+    }
 
-        @include if-tablet {
-            padding-top: 0;
+    &__trending-card {
+
+        &.-first {
+            padding-bottom: spacer(medium-s);
+
+            @include if-tablet {
+                padding-bottom: 0;
+                padding-right: spacer(small-xl);
+            }
+        }
+
+        &.-second {
+            @include if-tablet {
+                padding-left: spacer(small-xl);
+            }
+
+            @include if-desktop {
+                padding: 0 spacer(small-m);
+            }
+        }
+
+        &.-third {
+            padding-left: spacer(small-xl);
         }
     }
 }

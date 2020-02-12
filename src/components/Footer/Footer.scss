@@ -1,17 +1,21 @@
 .footer {
     background-color: theme-color("inactive");
-    color: theme-color("footer-accent");
-    font-family: $font-family-primary;
-    padding: spacer(medium-m) spacer(small-m) spacer(medium-s) spacer(small-m);
-    width: 100%;
 
-    @include if-tablet {
-        padding: spacer(medium-m) spacer(medium-s)
-    }
+    &__box {
+        color: theme-color("footer-accent");
+        font-family: $font-family-primary;
+        padding: spacer(medium-m) spacer(medium-xxs) spacer(medium-s) spacer(medium-xxs);
+        width: 100%;
 
-    @include if-desktop {
-        height: 200px;
-        padding: spacer(medium-m) spacer(trojan-s);
+        @include if-tablet {
+            padding: spacer(medium-m) spacer(medium-xl)
+        }
+
+        @include if-desktop {
+            height: 200px;
+            padding: spacer(medium-m) spacer(trojan-s);
+        }
+
     }
 
     &__input-box {
