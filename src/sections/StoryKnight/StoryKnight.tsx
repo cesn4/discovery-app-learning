@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 
+import Video from '~/components/Video';
 import Article from '~/components/Article';
 import AuthorPost from '~/components/AuthorPost';
 
@@ -41,6 +42,9 @@ const StoryKnight: FunctionComponent = () => {
                                     time="2m ago"
                                     image={AuthorPhoto}
                                 />
+                            </div>
+                            <div className={`${className}__video`}>
+                                <Video url="https://www.youtube.com/watch?v=6lt2JfJdGSY" />
                             </div>
                         </Col>
                     </Row>
