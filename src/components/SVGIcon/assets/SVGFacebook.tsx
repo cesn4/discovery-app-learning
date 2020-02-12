@@ -1,9 +1,10 @@
 import React, { FunctionComponent } from 'react';
+import { SVGImageProps } from '~/types/Icon';
 
-export const SVGFacebook: FunctionComponent<SVGFacebookProps> = ({
+const SVGFacebook: FunctionComponent<SVGImageProps> = ({
     color,
     size,
-}: SVGFacebookProps) => {
+}: SVGImageProps) => {
     return (
         <div>
             <svg
@@ -31,10 +32,5 @@ export const SVGFacebook: FunctionComponent<SVGFacebookProps> = ({
         </div>
     );
 };
-
-interface SVGFacebookProps {
-    color: string;
-    size: number;
-}
 
 export default SVGFacebook;

@@ -1,9 +1,10 @@
 import React, { FunctionComponent } from 'react';
+import { SVGImageProps } from '~/types/Icon';
 
-export const SVGWeb: FunctionComponent<SVGWebProps> = ({
+export const SVGWeb: FunctionComponent<SVGImageProps> = ({
     color,
     size,
-}: SVGWebProps) => {
+}: SVGImageProps) => {
     return (
         <div>
             <svg
@@ -25,10 +26,5 @@ export const SVGWeb: FunctionComponent<SVGWebProps> = ({
         </div>
     );
 };
-
-interface SVGWebProps {
-    color: string;
-    size: number;
-}
 
 export default SVGWeb;

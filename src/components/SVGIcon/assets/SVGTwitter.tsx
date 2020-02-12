@@ -1,9 +1,10 @@
 import React, { FunctionComponent } from 'react';
+import { SVGImageProps } from '~/types/Icon';
 
-const SVGTwitter: FunctionComponent<SVGTwitterProps> = ({
+const SVGTwitter: FunctionComponent<SVGImageProps> = ({
     color,
     size,
-}: SVGTwitterProps) => {
+}: SVGImageProps) => {
     return (
         <div>
             <svg
@@ -25,10 +26,5 @@ const SVGTwitter: FunctionComponent<SVGTwitterProps> = ({
         </div>
     );
 };
-
-interface SVGTwitterProps {
-    color: string;
-    size: number;
-}
 
 export default SVGTwitter;
