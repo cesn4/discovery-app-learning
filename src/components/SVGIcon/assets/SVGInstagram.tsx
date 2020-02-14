@@ -25,7 +25,7 @@ const SVGInstagram: FunctionComponent<SVGInstagramProps> = ({
 };
 
 interface SVGInstagramProps {
-    color: string;
+    color?: string;
     size: number;
 }
 

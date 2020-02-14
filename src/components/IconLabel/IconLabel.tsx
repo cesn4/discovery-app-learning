@@ -15,7 +15,7 @@ const IconLabel: FunctionComponent<IconLabelProps> = ({
     return (
         <div className={className}>
             <a href="#/story" className={`${className}__anchor`}>
-                <SVGIcon name={name} />
+                <SVGIcon name={name} className={`${className}__icon`} />
                 <span className={`${className}__label`}>{label}</span>
             </a>
         </div>

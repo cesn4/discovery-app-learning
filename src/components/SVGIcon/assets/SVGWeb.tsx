@@ -25,7 +25,7 @@ export const SVGWeb: FunctionComponent<SVGWebProps> = ({
 };
 
 interface SVGWebProps {
-    color: string;
+    color?: string;
     size: number;
 }
 

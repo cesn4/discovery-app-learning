@@ -1,12 +1,30 @@
 .icon-label {
     display: flex;
+    $_parent: &;
 
     &__anchor {
         align-items: center;
         color: theme-color("white");
         display: flex;
         text-decoration: none;
-        transition: transform 0.3s ease-out;
+
+        &:hover {
+            #{$_parent}__icon  {
+                fill: theme-color("accent-1")
+            }
+            #{$_parent}__label  {
+                color: theme-color("accent-1")
+            }
+        }
+
+        &:active {
+            #{$_parent}__icon  {
+                fill: lighten(theme-color("accent-1"), 5%)
+            }
+            #{$_parent}__label  {
+                color: lighten(theme-color("accent-1"), 5%)
+            }
+        }
     }
 
     &__label {
@@ -16,5 +34,6 @@
         line-height: $line-height-medium;
         padding-left: spacer(small-m);
         text-transform: uppercase;
+        transition: color 0.3s ease-out;
     }
 }

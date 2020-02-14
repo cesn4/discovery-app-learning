@@ -31,7 +31,7 @@ export const SVGFacebook: FunctionComponent<SVGFacebookProps> = ({
 };
 
 interface SVGFacebookProps {
-    color: string;
+    color?: string;
     size: number;
 }
 

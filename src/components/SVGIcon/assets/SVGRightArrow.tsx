@@ -22,7 +22,7 @@ const SVGRightArrow: FunctionComponent<SVGRightArrowProps> = ({
 };
 
 interface SVGRightArrowProps {
-    color: string;
+    color?: string;
 }
 
 export default SVGRightArrow;

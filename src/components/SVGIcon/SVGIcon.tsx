@@ -10,11 +10,12 @@ import SVGWeb from './assets/SVGWeb';
 import SVGTopic from './assets/SVGTopic';
 import SVGRightArrow from './assets/SVGRightArrow';
 
+import '~/components/IconLabel/IconLabel.scss';
 import './SVGIcon.scss';
 
 const SVGIcon: FunctionComponent<SVGIconProps> = ({
     name,
-    color = '#fff',
+    color,
     size = 16,
     className,
 }: SVGIconProps) => {

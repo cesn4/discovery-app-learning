@@ -25,7 +25,7 @@ const SVGTopic: FunctionComponent<SVGTopicProps> = ({
 };
 
 interface SVGTopicProps {
-    color: string;
+    color?: string;
     size: number;
 }
 

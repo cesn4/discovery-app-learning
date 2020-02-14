@@ -25,7 +25,7 @@ const SVGTwitter: FunctionComponent<SVGTwitterProps> = ({
 };
 
 interface SVGTwitterProps {
-    color: string;
+    color?: string;
     size: number;
 }
 
