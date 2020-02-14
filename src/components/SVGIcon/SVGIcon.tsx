@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/typedef */
 /* eslint-disable indent */
 import React, { FunctionComponent, ElementType } from 'react';
+import classNames from 'classnames';
 
 import SVGInstagram from './assets/SVGInstagram';
 import SVGFacebook from './assets/SVGFacebook';
@@ -15,8 +16,8 @@ const SVGIcon: FunctionComponent<SVGIconProps> = ({
     name,
     color = '#fff',
     size = 16,
+    className,
 }: SVGIconProps) => {
-    const className = 'icon';
     const iconProps = { color, size };
 
     const renderIcon: ElementType = (name: IconType) => {
@@ -37,13 +38,16 @@ const SVGIcon: FunctionComponent<SVGIconProps> = ({
                 return <path />;
         }
     };
-    return <div className={className}>{renderIcon(name)}</div>;
+    return (
+        <div className={classNames('icon', className)}>{renderIcon(name)}</div>
+    );
 };
 
 interface SVGIconProps {
     name?: IconType;
     color?: string;
     size?: number;
+    className?: string;
 }
 
 export type IconType =

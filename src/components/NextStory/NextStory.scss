@@ -30,6 +30,14 @@
         &:hover {
             background-color: theme-color("active-trans");
             padding: 0 10px;
+
+            #{$_parent}__icon {
+                transform: scale(1.5);
+            }
+        }
+
+        &:active {
+            background-color: lighten(theme-color("border"), 50%);
         }
 
     }

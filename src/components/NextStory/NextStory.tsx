@@ -17,7 +17,7 @@ const NextStory: FunctionComponent<NextStoryProps> = ({
                     <span className={`${className}__label`}>NEXT STORY</span>
                     <span className={`${className}__subtitle`}>{subtitle}</span>
                 </div>
-                <SVGIcon name="rightArrow" />
+                <SVGIcon name="rightArrow" className={`${className}__icon`} />
             </a>
             <span className={`${className}__paragraph`}>{paragraph}</span>
         </div>
