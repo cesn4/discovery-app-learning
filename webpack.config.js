@@ -8,11 +8,11 @@ const path = require("path");
 module.exports = {
     mode: "development",
     entry: "./src/index.tsx",
-    devtool: "sourcemap", // Nurodo kad kurtu source maps, lengviau debuginti koda per chrome dev tools
-    stats: "minimal", // Sitas nurodo kad console langelyje rodytu maziau info, pagrinde tik errorus
+    devtool: "sourcemap",
+    stats: "minimal",
     resolve: {
         alias: {
-            "~": path.resolve(__dirname, "src") // nustatymas kad ~ reiskia src direktorija
+            "~": path.resolve(__dirname, "src")
         },
         extensions: [".js", ".ts", ".tsx", ".scss",]
     },
