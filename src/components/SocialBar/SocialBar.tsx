@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 
-import SVGIcon from '~/components/SVGIcon';
+import Icon from '~/components/Icons';
 
 import './SocialBar.scss';
 
@@ -8,16 +8,16 @@ const SocialBar: FunctionComponent = () => {
     return (
         <div className="social-bar">
             <a href="#" className="social-bar__icon">
-                <SVGIcon name="instagram" />
+                <Icon name="instagram" />
             </a>
             <a href="#" className="social-bar__icon">
-                <SVGIcon name="twitter" />
+                <Icon name="twitter" />
             </a>
             <a href="#" className="social-bar__icon">
-                <SVGIcon name="facebook" />
+                <Icon name="facebook" />
             </a>
             <a href="#" className="social-bar__icon">
-                <SVGIcon name="web" />
+                <Icon name="web" />
             </a>
         </div>
     );

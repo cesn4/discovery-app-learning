@@ -18,7 +18,7 @@
         margin-bottom: spacer(small-xl);
         text-decoration: none;
         text-transform: uppercase;
-        transition: 0.3s;
+        transition: cta-transition(all);
 
         &:last-child {
             margin-bottom: spacer(medium-s);

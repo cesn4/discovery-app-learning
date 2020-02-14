@@ -7,13 +7,13 @@ import SVGFacebook from './assets/SVGFacebook';
 import SVGTwitter from './assets/SVGTwitter';
 import SVGWeb from './assets/SVGWeb';
 
-import './SVGIcon.scss';
+import './Icon.scss';
 
-const SVGIcon: FunctionComponent<SVGIconProps> = ({
+const Icon: FunctionComponent<IconProps> = ({
     name,
     color = '#fff',
     size = 16,
-}: SVGIconProps) => {
+}: IconProps) => {
     const className = 'icon';
     const iconProps = { color, size };
 
@@ -34,7 +34,7 @@ const SVGIcon: FunctionComponent<SVGIconProps> = ({
     return <div className={className}>{renderIcon(name)}</div>;
 };
 
-interface SVGIconProps {
+interface IconProps {
     name?: IconType;
     color?: string;
     size?: number;
@@ -42,4 +42,4 @@ interface SVGIconProps {
 
 export type IconType = 'instagram' | 'web' | 'facebook' | 'twitter';
 
-export default SVGIcon;
+export default Icon;

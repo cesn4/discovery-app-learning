@@ -10,7 +10,7 @@
         color: theme-color("inactive");
         display:flex;
         text-decoration: none;
-        transition: all 0.3s ease-out;
+        transition: cta-transition(color, transform);
 
         &:hover {
             color: theme-color("active");

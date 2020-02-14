@@ -1,5 +1,5 @@
 .icon {
-    transition: transform 0.3s ease-out;
+    transition: cta-transition(transform);
 
     &:hover {
         transform: scale(1.8);
