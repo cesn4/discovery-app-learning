@@ -3,11 +3,11 @@ import React, { FunctionComponent, ReactChild } from 'react';
 import Header from '~/components/Header';
 import Footer from '~/components/Footer';
 
-const HomeLayout: FunctionComponent<HomeLayoutProps> = ({
+const ClassicLayout: FunctionComponent<ClassicLayoutProps> = ({
     content,
-}: HomeLayoutProps) => {
+}: ClassicLayoutProps) => {
     // eslint-disable-next-line @typescript-eslint/typedef
-    const className = 'home-layout';
+    const className = 'classic-layout';
     return (
         <div className={className}>
             <Header />
@@ -17,8 +17,8 @@ const HomeLayout: FunctionComponent<HomeLayoutProps> = ({
     );
 };
 
-interface HomeLayoutProps {
+interface ClassicLayoutProps {
     content?: ReactChild;
 }
 
-export default HomeLayout;
+export default ClassicLayout;

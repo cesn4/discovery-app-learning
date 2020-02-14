@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 
-import HomeLayout from '~/layouts/HomeLayout';
+import ClassicLayout from '~/layouts/ClassicLayout';
 import Hero from '~/sections/Hero';
 import Knight from '~/sections/Knight';
 import Featured from '~/sections/Featured';
@@ -8,7 +8,7 @@ import Featured from '~/sections/Featured';
 const Home: FunctionComponent = () => {
     return (
         <div className="home">
-            <HomeLayout
+            <ClassicLayout
                 content={
                     <div>
                         <Hero />
