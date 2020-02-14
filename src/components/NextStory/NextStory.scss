@@ -1,4 +1,5 @@
 .next-story {
+    $_parent: &;
     display: flex;
     flex-direction: column;
 
@@ -17,12 +18,19 @@
 
     &__anchor {
         align-items: center;
+        border-radius: radius(l);
         display: flex;
         font-family: $font-family-primary;
         font-size: $fonts-size-text;
         font-weight: $font-weight-fat;
         line-height: $line-height-medium;
         text-decoration: none;
+        transition: all 0.5s ease;
+
+        &:hover {
+            background-color: theme-color("active-trans");
+            padding: 0 10px;
+        }
 
     }
 
