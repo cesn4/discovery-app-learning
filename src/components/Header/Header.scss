@@ -1,6 +1,7 @@
 .header {
     background-color: theme-color("accent-2");
-    position: relative;
+    position: fixed;
+    width: 100%;
     z-index: index(half-modal);
 
     &__box {
