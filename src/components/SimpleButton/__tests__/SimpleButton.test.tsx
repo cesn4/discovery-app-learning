@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Time from '../Time';
+import SimpleButton from '../SimpleButton';
 
 describe('Time component', () => {
     it('Should render text prop', () => {
         const testTest = 'Test text';
-        const wrapper = shallow(<Time text={testTest} />);
-        expect(wrapper.find('.time__clock-time').text()).toEqual(testTest);
+        const wrapper = shallow(<SimpleButton title={testTest} />);
+        expect(wrapper.find('.button__title').text()).toEqual(testTest);
     });
 });
