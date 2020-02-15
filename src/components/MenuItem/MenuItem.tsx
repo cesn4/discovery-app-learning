@@ -7,7 +7,7 @@ import './MenuItem.scss';
 const MenuItem: FunctionComponent<MenuItemProps> = ({
     label,
     active = false,
-    dropdownMenu = false,
+    dropdownMenu,
 }: MenuItemProps) => {
     return (
         <div className="menu-item">
@@ -18,15 +18,9 @@ const MenuItem: FunctionComponent<MenuItemProps> = ({
             >
                 {label}
             </div>
-            {dropdownMenu && (
-                <div
-                    className={classNames('menu-item__dropdown', {
-                        '-dropdown-menu': dropdownMenu,
-                    })}
-                >
-                    <DropdownMenu />
-                </div>
-            )}
+            <div className="menu-item__dropdown">
+                <DropdownMenu dropdownMenu={dropdownMenu} />
+            </div>
         </div>
     );
 };
@@ -34,7 +28,7 @@ const MenuItem: FunctionComponent<MenuItemProps> = ({
 export interface MenuItemProps {
     label: string;
     active?: boolean;
-    dropdownMenu?: boolean;
+    dropdownMenu?: Array<string> | undefined;
 }
 
 export default MenuItem;
