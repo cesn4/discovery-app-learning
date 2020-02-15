@@ -84,9 +84,10 @@ module.exports = {
         }),
         new CleanWebpackPlugin(),
         new BrowserSyncPlugin({
-        host: "localhost",
-        port: 3000,
-        server: { baseDir: ["dist"] }
+            host: "localhost",
+            port: 3000,
+            server: { baseDir: ["dist"] },
+            notify: false
         }),
         new MiniCssExtractPlugin({
         filename: "styles.min.[hash].css"
