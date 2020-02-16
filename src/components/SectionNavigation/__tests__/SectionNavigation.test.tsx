@@ -3,6 +3,7 @@ import { shallow } from 'enzyme';
 import SectionNavigation from '../SectionNavigation';
 
 const testTest = 'Test text';
+const borderlessClass = '-borderless';
 
 describe('SectionNavigation component', () => {
     it('Should render title', () => {
@@ -17,24 +18,24 @@ describe('SectionNavigation component', () => {
             <SectionNavigation title={testTest} borderless />
         );
         expect(
-            wrapper.find('.section-navigation').hasClass('-borderless')
+            wrapper.find('.section-navigation').hasClass(borderlessClass)
         ).toBeTruthy();
         expect(
             wrapper
                 .find('.section-navigation__title-box')
-                .hasClass('-borderless')
+                .hasClass(borderlessClass)
         ).toBeTruthy();
     });
 
     it('Should render with border', () => {
         const wrapper = shallow(<SectionNavigation title={testTest} />);
         expect(
-            wrapper.find('.section-navigation').hasClass('-borderless')
+            wrapper.find('.section-navigation').hasClass(borderlessClass)
         ).toBeFalsy();
         expect(
             wrapper
                 .find('.section-navigation__title-box')
-                .hasClass('-borderless')
+                .hasClass(borderlessClass)
         ).toBeFalsy();
     });
 });
