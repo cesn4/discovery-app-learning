@@ -11,7 +11,7 @@
     "backstop:test": "backstop test",
     "backstop:approve": "backstop approve",
     "backstop:reference": "backstop reference",
-    "test:all": "jest"
+    "test:all": "jest && backstop test"
   },
   "husky": {
     "hooks": {
