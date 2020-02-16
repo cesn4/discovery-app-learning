@@ -8,7 +8,6 @@ const Author: FunctionComponent<AuthorProps> = ({
     name,
     big = undefined,
 }: AuthorProps) => {
-    // eslint-disable-next-line @typescript-eslint/typedef
     const className = 'author';
     return (
         <div className={className}>

@@ -8,7 +8,6 @@ const Article: FunctionComponent<ArticleProps> = ({
     title,
     content,
 }: ArticleProps) => {
-    // eslint-disable-next-line @typescript-eslint/typedef
     const className = 'article';
     return (
         <div className={className}>

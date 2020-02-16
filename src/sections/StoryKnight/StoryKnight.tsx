@@ -9,7 +9,6 @@ import AuthorPhoto from '~/assets/img/author.jpg';
 import './StoryKNight.scss';
 
 const StoryKnight: FunctionComponent = () => {
-    // eslint-disable-next-line @typescript-eslint/typedef
     const className = 'story-knight';
     return (
         <div className={className}>

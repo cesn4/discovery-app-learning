@@ -11,7 +11,6 @@ import AuthorPhoto from '~/assets/img/author.jpg';
 import '~/assets/img/jungle.jpg';
 
 const StoryHero: FunctionComponent = () => {
-    // eslint-disable-next-line @typescript-eslint/typedef
     const className = 'story-hero';
 
     return (

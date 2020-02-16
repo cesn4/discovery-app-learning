@@ -9,7 +9,6 @@ const IconLabel: FunctionComponent<IconLabelProps> = ({
     label,
     name,
 }: IconLabelProps) => {
-    // eslint-disable-next-line @typescript-eslint/typedef
     const className = 'icon-label';
 
     return (

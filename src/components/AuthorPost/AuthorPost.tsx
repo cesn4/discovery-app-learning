@@ -11,7 +11,6 @@ const AuthorPost: FunctionComponent<AuthorPostProps> = ({
     post,
     time,
 }: AuthorPostProps) => {
-    // eslint-disable-next-line @typescript-eslint/typedef
     const className = 'author-post';
     return (
         <div className={className}>

@@ -8,7 +8,6 @@ const NextStory: FunctionComponent<NextStoryProps> = ({
     subtitle,
     paragraph,
 }: NextStoryProps) => {
-    // eslint-disable-next-line @typescript-eslint/typedef
     const className = 'next-story';
     return (
         <div className={className}>

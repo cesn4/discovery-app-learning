@@ -4,7 +4,6 @@ import ReactPlayer from 'react-player';
 import './Video.scss';
 
 const Video: FunctionComponent<VideoProps> = ({ url }: VideoProps) => {
-    // eslint-disable-next-line @typescript-eslint/typedef
     const className = 'video';
 
     return (
