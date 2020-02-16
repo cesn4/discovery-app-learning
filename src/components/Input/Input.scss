@@ -41,7 +41,7 @@
 
 
     &__label {
-        font-size: $fonts-size-navigation;
+        font-size: font-size("navigation");
         line-height: $line-height-big;
         margin-top: spacer(a);
     }

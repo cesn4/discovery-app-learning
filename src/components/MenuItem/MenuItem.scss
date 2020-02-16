@@ -1,7 +1,7 @@
 .menu-item {
     $_parent: &;
     font-family: $font-family-primary;
-    font-size: $fonts-size-navigation;
+    font-size: font-size("navigation");
     font-weight: $font-weight-fat;
     line-height: $line-height-big;
     position: relative;

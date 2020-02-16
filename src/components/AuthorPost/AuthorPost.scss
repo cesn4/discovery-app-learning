@@ -5,7 +5,7 @@
     &__post {
         color: theme-color("active");
         font-family: $font-family-primary;
-        font-size: $fonts-size-text;
+        font-size: font-size("text");
         font-style: italic;
         line-height: $line-height-big;
         margin: spacer(small-xl) 0;

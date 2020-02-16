@@ -21,7 +21,7 @@
         border-radius: radius(l);
         display: flex;
         font-family: $font-family-primary;
-        font-size: $fonts-size-text;
+        font-size: font-size("text");
         font-weight: $font-weight-fat;
         line-height: $line-height-medium;
         text-decoration: none;
@@ -71,7 +71,7 @@
         color: theme-color("white");
         display: none;
         font-family: $font-family-primary;
-        font-size: $fonts-size-text;
+        font-size: font-size("text");
         line-height: $line-height-medium;
 
         @include if-desktop {

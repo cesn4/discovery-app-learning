@@ -20,7 +20,7 @@
         color: theme-color("white");
         display: none;
         font-family: $font-family-primary;
-        font-size: $fonts-size-text;
+        font-size: font-size("text");
         font-weight: $font-weight-fat;
         line-height: $line-height-small;
         margin-left: spacer(small-xl);
@@ -28,7 +28,7 @@
         &.-big {
             color: theme-color("active");
             display: flex;
-            font-size: $fonts-size-h1;
+            font-size: font-size("h1");
 
         }
 

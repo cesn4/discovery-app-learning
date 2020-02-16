@@ -29,7 +29,7 @@
 
     &__label {
         font-family: $font-family-primary;
-        font-size: $fonts-size-text;
+        font-size: font-size("text");
         font-weight: $font-weight-fat;
         line-height: $line-height-medium;
         padding-left: spacer(small-m);
