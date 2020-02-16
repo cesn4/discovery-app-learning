@@ -23,7 +23,6 @@ module.exports = {
     },
     rules: {
         semi: ['error', 'always'],
-        indent: ['error', 4],
         'react/jsx-uses-react': 'error',
         'react/jsx-uses-vars': 'error',
         'no-unused-vars': [

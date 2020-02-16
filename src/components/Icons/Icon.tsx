@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/typedef */
-/* eslint-disable indent */
 import React, { FunctionComponent, ElementType } from 'react';
 
 import SVGInstagram from './assets/SVGInstagram';
