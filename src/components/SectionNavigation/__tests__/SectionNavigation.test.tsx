@@ -21,7 +21,9 @@ describe('SectionNavigation component', () => {
             wrapper.find('.section-navigation').hasClass(borderlessClass)
         ).toBeTruthy();
         expect(
-            wrapper.find('.section-navigation__title-box').hasClass('james')
+            wrapper
+                .find('.section-navigation__title-box')
+                .hasClass(borderlessClass)
         ).toBeTruthy();
     });
 
