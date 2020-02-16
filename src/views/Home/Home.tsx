@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, Fragment } from 'react';
 
 import ClassicLayout from '~/layouts/ClassicLayout';
 import Hero from '~/sections/Hero';
@@ -10,11 +10,11 @@ const Home: FunctionComponent = () => {
         <div className="home">
             <ClassicLayout
                 content={
-                    <div>
+                    <Fragment>
                         <Hero />
                         <Knight />
                         <Featured />
-                    </div>
+                    </Fragment>
                 }
             />
         </div>

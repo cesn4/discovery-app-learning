@@ -6,7 +6,6 @@ import Footer from '~/components/Footer';
 const ClassicLayout: FunctionComponent<ClassicLayoutProps> = ({
     content,
 }: ClassicLayoutProps) => {
-    // eslint-disable-next-line @typescript-eslint/typedef
     const className = 'classic-layout';
     return (
         <div className={className}>
