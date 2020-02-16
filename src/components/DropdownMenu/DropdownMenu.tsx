@@ -9,21 +9,27 @@ const DropdownMenu: FunctionComponent<DropdownMenuProps> = ({
 }: DropdownMenuProps) => {
     const hardcodedList: Array<string> | undefined = dropdownMenu;
 
-    const renderList: Array<ReactChild> | null = hardcodedList.map(
-        (item, index) => {
-            return (
-                <div key={index.toString()} className="dropdown-menu__nav-item">
-                    <NavigationItem href="#" title={item} />
-                </div>
-            );
-        }
-    );
-
-    return (
-        <div className="dropdown-menu">
-            <div className="dropdown-menu__nav">{renderList}</div>
-        </div>
-    );
+    if (hardcodedList === undefined) {
+        return null;
+    } else {
+        const renderList: Array<ReactChild> = hardcodedList.map(
+            (item, index) => {
+                return (
+                    <div
+                        key={index.toString()}
+                        className="dropdown-menu__nav-item"
+                    >
+                        <NavigationItem href="#" title={item} />
+                    </div>
+                );
+            }
+        );
+        return (
+            <div className="dropdown-menu">
+                <div className="dropdown-menu__nav">{renderList}</div>
+            </div>
+        );
+    }
 };
 
 interface DropdownMenuProps {
