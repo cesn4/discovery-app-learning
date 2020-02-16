@@ -12,7 +12,9 @@ $spacers-map: (
     medium-l: 60px,
     medium-xl: 70px,
     trojan-s: 125px,
-    trojan-m: 170px
+    trojan-m: 170px,
+    header-s: 44px,
+    header-m: 50px,
 );
 
 @function spacer($_key) {

@@ -7,13 +7,13 @@
     &__box {
         align-items: center;
         display: flex;
-        height: 44px;
+        height: spacer(header-s);
         justify-content: center;
         padding: 0 spacer(small-l);
         width: 100%;
 
         @include if-tablet {
-            height: 50px;
+            height: spacer(header-m);
             justify-content: flex-end;
             padding: 0 spacer(small-xl);
         }
