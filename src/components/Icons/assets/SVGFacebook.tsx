@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import SVGIconProps from '~/types';
+import { SVGIconProps } from '~/types';
 
 const SVGFacebook: FunctionComponent<SVGIconProps> = ({
     color,

@@ -10,7 +10,8 @@
         color: theme-color("inactive");
         display:flex;
         text-decoration: none;
-        transition: cta-transition(color, transform);
+        $_item-transition-list: transform, color;
+        transition: cta-transition($_item-transition-list);
 
         &:hover {
             color: theme-color("active");
