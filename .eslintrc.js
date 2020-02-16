@@ -30,13 +30,6 @@ module.exports = {
             'error',
             { vars: 'all', args: 'after-used', ignoreRestSiblings: false },
         ],
-        '@typescript-eslint/typedef': [
-            'error',
-            {
-                arrowParameter: false,
-                variableDeclaration: true,
-            },
-        ],
         'space-infix-ops': ['error', { int32Hint: false }],
         'prettier/prettier': 'error',
     },
