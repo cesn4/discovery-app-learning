@@ -1,11 +1,11 @@
 import React, { FunctionComponent } from 'react';
 
-import ClassicLayout from '~/layouts/ClassicLayout';
+import PageLayout from '~/layouts/PageLayout';
 
 const Story: FunctionComponent = () => {
     return (
         <div className="story">
-            <ClassicLayout />
+            <PageLayout />
         </div>
     );
 };

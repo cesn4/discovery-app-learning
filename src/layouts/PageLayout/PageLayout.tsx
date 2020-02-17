@@ -3,10 +3,10 @@ import React, { FunctionComponent, ReactChild } from 'react';
 import Header from '~/components/Header';
 import Footer from '~/components/Footer';
 
-const ClassicLayout: FunctionComponent<ClassicLayoutProps> = ({
+const PageLayout: FunctionComponent<PageLayoutProps> = ({
     content,
-}: ClassicLayoutProps) => {
-    const className = 'classic-layout';
+}: PageLayoutProps) => {
+    const className = 'page-layout';
     return (
         <div className={className}>
             <Header />
@@ -16,8 +16,8 @@ const ClassicLayout: FunctionComponent<ClassicLayoutProps> = ({
     );
 };
 
-interface ClassicLayoutProps {
+interface PageLayoutProps {
     content?: ReactChild;
 }
 
-export default ClassicLayout;
+export default PageLayout;
