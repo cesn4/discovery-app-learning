@@ -30,7 +30,7 @@
         line-height: $line-height-big;
 
         @include if-tablet {
-            margin-bottom: 30px;
+            margin-bottom: spacer(medium-xs);
         }
     }
 
@@ -39,7 +39,7 @@
         border-width: border(m);
         color: rgba(theme-color("inactive"), 0.2);
         display: none;
-        padding-top: 30px;
+        padding-top: spacer(medium-xs);
 
         @include if-tablet {
             display: flex;
