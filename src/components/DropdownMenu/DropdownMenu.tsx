@@ -7,29 +7,21 @@ import './DropdownMenu.scss';
 const DropdownMenu: FunctionComponent<DropdownMenuProps> = ({
     dropdownMenu,
 }: DropdownMenuProps) => {
-    const hardcodedList: Array<string> | undefined = dropdownMenu;
-
-    if (hardcodedList === undefined) {
+    if (!dropdownMenu) {
         return null;
-    } else {
-        const renderList: Array<ReactChild> = hardcodedList.map(
-            (item, index) => {
-                return (
-                    <div
-                        key={index.toString()}
-                        className="dropdown-menu__nav-item"
-                    >
-                        <NavigationItem href="#" title={item} />
-                    </div>
-                );
-            }
-        );
+    }
+    const renderList: Array<ReactChild> = dropdownMenu.map((item, index) => {
         return (
-            <div className="dropdown-menu">
-                <div className="dropdown-menu__nav">{renderList}</div>
+            <div key={index.toString()} className="dropdown-menu__nav-item">
+                <NavigationItem href="#" title={item} />
             </div>
         );
-    }
+    });
+    return (
+        <div className="dropdown-menu">
+            <div className="dropdown-menu__nav">{renderList}</div>
+        </div>
+    );
 };
 
 interface DropdownMenuProps {

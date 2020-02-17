@@ -7,7 +7,7 @@ import './MenuItem.scss';
 const MenuItem: FunctionComponent<MenuItemProps> = ({
     label,
     active = false,
-    dropdownMenu,
+    dropdownMenu = undefined,
 }: MenuItemProps) => {
     return (
         <div className="menu-item">
@@ -18,9 +18,11 @@ const MenuItem: FunctionComponent<MenuItemProps> = ({
             >
                 {label}
             </div>
-            <div className="menu-item__dropdown">
-                <DropdownMenu dropdownMenu={dropdownMenu} />
-            </div>
+            {dropdownMenu && (
+                <div className="menu-item__dropdown">
+                    <DropdownMenu dropdownMenu={dropdownMenu} />
+                </div>
+            )}
         </div>
     );
 };
