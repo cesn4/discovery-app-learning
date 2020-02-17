@@ -28,7 +28,7 @@
         transition: all 0.5s ease;
 
         &:hover {
-            background-color: theme-color("active-trans");
+            background-color: rgba(theme-color("inactive"), 0.2);
             padding: 0 10px;
 
             #{$_parent}__icon {
@@ -37,7 +37,7 @@
         }
 
         &:active {
-            background-color: lighten(theme-color("border"), 50%);
+            background-color: lighten(rgba(theme-color("accent-1"), 0.2), 70%);
         }
 
     }

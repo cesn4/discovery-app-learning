@@ -37,7 +37,7 @@
     &__post-info {
         border-top: dashed;
         border-width: border(m);
-        color: theme-color("border");
+        color: rgba(theme-color("inactive"), 0.2);
         display: none;
         padding-top: 30px;
 

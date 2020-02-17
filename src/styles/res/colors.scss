@@ -5,8 +5,6 @@ $color-gray-chateu: #a6adb4;
 $color-porcelain: #f6f8f9;
 $color-shark: #343638;
 $color-iron: #cbd0d3;
-$color-light-red-transperant: rgba(166,173,180, 0.1);
-$color-shark-transperant: rgba(254, 254, 255, 0.2);
 
 
 // Project colors
@@ -15,11 +13,9 @@ $theme-colors: (
     "accent-active": $color-light-red-active,
     "accent-2": $color-porcelain,
     "active": $color-shark,
-    "active-trans": $color-shark-transperant,
     "inactive": $color-gray-chateu,
     "footer-accent": $color-iron,
     "white": $color-white,
-    "border": $color-light-red-transperant,
 );
 
 @function theme-color($_key) {

@@ -17,14 +17,14 @@
     &__article {
 
         @include if-desktop {
-            border-right: solid border(m) theme-color("border");
+            border-right: solid border(m) rgba(theme-color("inactive"), 0.1);
             margin-right: spacer(medium-m);
             padding-right: spacer(medium-m);
         }
     }
 
     &__separator {
-        background-color: theme-color("border");
+        background-color: rgba(theme-color("inactive"), 0.1);
         height: border(m);
         margin: spacer(medium-s) 0;
         width: 100%;
