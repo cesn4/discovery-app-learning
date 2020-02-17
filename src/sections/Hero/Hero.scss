@@ -1,9 +1,9 @@
 .hero {
 
-    padding-top: spacer(header-s);
+    padding-top: spacer(medium-s);
 
     @include if-tablet {
-        padding-top: spacer(header-m);
+        padding-top: spacer(medium-m);
     }
 
     &__post-box {
