@@ -26,7 +26,7 @@ const Icon: FunctionComponent<IconProps> = ({
             case 'web':
                 return <SVGWeb {...iconProps} />;
             default:
-                return <path />;
+                return null;
         }
     };
     return <div className={className}>{renderIcon(name)}</div>;
