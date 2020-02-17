@@ -3,12 +3,11 @@ import { Container, Row, Col } from 'react-grid-system';
 
 import IconLabel from '~/components/IconLabel';
 import Author from '~/components/Author';
-
-import './StoryHero.scss';
-
 import NextStory from '~/components/NextStory';
 import AuthorPhoto from '~/assets/img/author.jpg';
+
 import '~/assets/img/jungle.jpg';
+import './StoryHero.scss';
 
 const StoryHero: FunctionComponent = () => {
     const className = 'story-hero';
