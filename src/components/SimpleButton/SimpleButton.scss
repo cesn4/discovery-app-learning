@@ -4,7 +4,7 @@
     border-radius: radius(l);
     color: theme-color("white");
     display: flex;
-    font-size: $fonts-size-button;
+    font-size: font-size("button");
     font-weight: $font-weight-fat;
     height: spacer(medium-s);
     justify-content: center;

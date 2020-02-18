@@ -1,0 +1,39 @@
+.icon-label {
+    $_parent: &;
+    display: flex;
+
+    &__anchor {
+        align-items: center;
+        color: theme-color("white");
+        display: flex;
+        text-decoration: none;
+
+        &:hover {
+            #{$_parent}__icon  {
+                fill: theme-color("accent-1")
+            }
+            #{$_parent}__label  {
+                color: theme-color("accent-1")
+            }
+        }
+
+        &:active {
+            #{$_parent}__icon  {
+                fill: lighten(theme-color("accent-1"), 5%)
+            }
+            #{$_parent}__label  {
+                color: lighten(theme-color("accent-1"), 5%)
+            }
+        }
+    }
+
+    &__label {
+        font-family: $font-family-primary;
+        font-size: font-size("text");
+        font-weight: $font-weight-fat;
+        line-height: $line-height-medium;
+        padding-left: spacer(small-m);
+        text-transform: uppercase;
+        transition: color 0.3s ease-out;
+    }
+}

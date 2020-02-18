@@ -1,0 +1,39 @@
+.author {
+    align-items: center;
+    display: flex;
+
+    &__image {
+        @include size(32px);
+        border-radius: radius(round);
+        object-fit: cover;
+
+        &.-big {
+            @include size (40px)
+        }
+
+        @include if-tablet {
+            @include size(40px);
+        }
+    }
+
+    &__author-name {
+        color: theme-color("white");
+        display: none;
+        font-family: $font-family-primary;
+        font-size: font-size("text");
+        font-weight: $font-weight-fat;
+        line-height: $line-height-small;
+        margin-left: spacer(small-xl);
+
+        &.-big {
+            color: theme-color("active");
+            display: flex;
+            font-size: font-size("h1");
+
+        }
+
+        @include if-tablet {
+            display: flex;
+        }
+    }
+}

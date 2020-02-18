@@ -1,3 +1,5 @@
 .icon {
-    transition: cta-transition(transform);
+    $_item-transition-list: transform, fill;
+    fill: theme-color("white");
+    transition: cta-transition($_item-transition-list);
 }

@@ -1,0 +1,58 @@
+.story-hero {
+
+    &__box {
+        background-image: url('/assets/img/jungle.jpg');
+        background-size: cover;
+        padding: spacer(trojan-s) spacer(medium-xxs) spacer(medium-s) spacer(medium-xxs);
+        width: 100%;
+
+        @include if-tablet {
+            padding: 0 spacer(medium-s);
+        }
+
+        @include if-desktop {
+            padding: 240px spacer(medium-m) spacer(medium-m) spacer(medium-m);
+        }
+    }
+
+    &__title {
+        color: theme-color("white");
+        font-family: $font-family-primary;
+        font-size: font-size("heading");
+        font-weight: $font-weight-fat;
+        line-height: $line-height-medium;
+        margin-bottom: spacer(small-xl);
+        text-align: center;
+        text-transform: uppercase;
+
+        @include if-desktop {
+            font-size: font-size('large-heading');
+        }
+    }
+
+    &__icon-box {
+        display: flex;
+        justify-content: center;
+        margin-bottom: spacer(medium-l);
+
+        @include if-tablet {
+            margin-bottom: 110px;
+        }
+    }
+
+    &__icon-label {
+        &:first-child {
+            margin-right: spacer(medium-s);
+        }
+    }
+
+    &__bottom-row {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        @include if-tablet {
+            align-items: flex-end;
+        }
+    }
+}

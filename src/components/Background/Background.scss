@@ -27,7 +27,7 @@
         border-bottom: solid;
         border-color: theme-color("white");
         border-width: border(m);
-        font-size: $fonts-size-h1;
+        font-size: font-size("h1");
         font-weight: $font-weight-fat;
         line-height: $line-height-big;
         padding-bottom: spacer(medium-xs);
@@ -35,7 +35,7 @@
     }
 
     &__subtitle {
-        font-size: $fonts-size-h1;
+        font-size: font-size("h1");
         font-weight: $font-weight-fat;
         line-height: $line-height-medium;
         margin-bottom: spacer(small-m);
@@ -43,7 +43,7 @@
     }
 
     &__paragraph {
-        font-size: $fonts-size-text;
+        font-size: font-size("text");
         line-height: $line-height-medium;
         margin-bottom: spacer(small-l);
     }

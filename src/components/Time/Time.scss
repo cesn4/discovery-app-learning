@@ -11,7 +11,7 @@
 
     &__clock-time {
         color: theme-color("inactive");
-        font-size: $fonts-size-navigation;
+        font-size: font-size("navigation");
         font-style: italic;
         line-height: $line-height-big;
     }

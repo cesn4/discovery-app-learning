@@ -1,0 +1,13 @@
+.author-post {
+    display: flex;
+    flex-direction: column;
+
+    &__post {
+        color: theme-color("active");
+        font-family: $font-family-primary;
+        font-size: font-size("text");
+        font-style: italic;
+        line-height: $line-height-big;
+        margin: spacer(small-xl) 0;
+    }
+}

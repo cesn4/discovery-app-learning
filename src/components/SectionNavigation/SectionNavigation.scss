@@ -10,7 +10,7 @@
 
     &__title {
         color: theme-color("active");
-        font-size: $fonts-size-h1;
+        font-size: font-size("h1");
         font-weight: $font-weight-fat;
         line-height: $line-height-small;
         margin-right: auto;

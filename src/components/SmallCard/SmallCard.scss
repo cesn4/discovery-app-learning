@@ -34,7 +34,7 @@
     }
 
     &__title {
-        font-size: $fonts-size-text;
+        font-size: font-size("text");
         font-weight: $font-weight-fat;
         line-height: $line-height-medium;
         margin-bottom: spacer(small-xxs);

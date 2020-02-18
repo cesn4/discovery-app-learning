@@ -10,7 +10,7 @@
 
     &__title {
         color: theme-color("accent-1");
-        font-size: $fonts-size-text;
+        font-size: font-size("text");
         font-weight: $font-weight-fat;
         line-height: $line-height-small;
         margin-bottom:  spacer(small-xl);
@@ -24,20 +24,20 @@
 
     &__subtitle {
         color: theme-color("active");
-        font-size: $fonts-size-text;
+        font-size: font-size("text");
         font-weight: $font-weight-fat;
         line-height: $line-height-small;
         margin-bottom: spacer(small-s);
 
         &.-white {
             color: theme-color("white");
-            font-size: $fonts-size-h1;
+            font-size: font-size("h1");
         }
     }
 
     &__text {
         color: theme-color("inactive");
-        font-size: $fonts-size-text;
+        font-size: font-size("text");
         line-height: $line-height-medium;
         margin-bottom: spacer(small-s);
 
