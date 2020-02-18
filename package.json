@@ -13,7 +13,6 @@
   },
   "husky": {
     "hooks": {
-      "prepare-commit-msg": "prefix-commit-message",
       "pre-push": "npm run backstop:test"
     }
   },
