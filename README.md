@@ -32,6 +32,9 @@ import { shallow } from 'enzyme';
 import SmallCard, { SmallCardProps } from '../SmallCard';
 
 const happyProps: SmallCardProps = {
+    image: 'image',
+    time: 'time',
+    title: 'title',
     firstItem: false,
 };
 
