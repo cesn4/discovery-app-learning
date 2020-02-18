@@ -21,4 +21,24 @@ open `discovery-app-learning` folder `npm install` then `npm run dev` for develo
 3. If you see that everything changed that you wanted to, run `npm run backstop:approve` and then try to push it again, it should push properly and give you a 0 fail visual output.
 
 ### Unit Tests
-[Jest](https://jestjs.io/en/) is used as a primary testing engine.
+[Jest](https://jestjs.io/en/) is used as a primary testing engine. [Enzyme](https://airbnb.io/enzyme/) is also added as testing extension, and will be mosty used for its `import { shallow } from 'enzyme';` module to render react components.
+
+#### Writing tests:
+1. Inside the folder of `/component` | `/container` | `/view` create a directory `__tests__` and inside of it create a test file containing the name of the component `ComponentName.test.tsx`;
+2. Inside that fille eg.:
+```
+import React from 'react';
+import { shallow } from 'enzyme';
+import SmallCard, { SmallCardProps } from '../SmallCard';
+
+const happyProps: SmallCardProps = {
+    firstItem: false,
+};
+
+describe('SmallCard component', () => {
+    it('Should not have firstItem', () => {
+        const wrapper = shallow(<SmallCard {...happyProps} />);
+        expect(wrapper.find('.small-card').hasClass('-firstItem')).toBeFalsy();
+    });
+});
+```
