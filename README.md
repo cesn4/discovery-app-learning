@@ -24,7 +24,7 @@ open `discovery-app-learning` folder `npm install` then `npm run dev` for develo
 [Jest](https://jestjs.io/en/) is used as a primary testing engine. [Enzyme](https://airbnb.io/enzyme/) is also added as testing extension, and will be mosty used for its `import { shallow } from 'enzyme';` module to render react components.
 
 #### Writing tests:
-1. Inside the folder of `/component` | `/container` | `/view` create a directory `__tests__` and inside of it create a test file containing the name of the component `ComponentName.test.tsx`;
+1. Inside the folder of `/component` | `/container` | `/view` | `...` create a directory `__tests__` and inside of it create a test file containing the name of the component `ComponentName.test.(tsx | ts)`;
 2. Inside that fille eg.:
 ```
 import React from 'react';
@@ -42,3 +42,4 @@ describe('SmallCard component', () => {
     });
 });
 ```
+3. Tests should be written for every prop in the component.
