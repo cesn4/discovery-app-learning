@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 
-import '~/assets/img/time.png';
+import '../../assets/img/time.png';
 import './Time.scss';
 
 const Time: FunctionComponent<TimeProps> = ({ text }: TimeProps) => {
