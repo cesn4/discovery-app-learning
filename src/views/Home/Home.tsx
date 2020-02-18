@@ -1,7 +1,6 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, Fragment } from 'react';
 
-import Header from '~/components/Header';
-import Footer from '~/components/Footer';
+import PageLayout from '~/layouts/PageLayout';
 import Hero from '~/sections/Hero';
 import Knight from '~/sections/Knight';
 import Featured from '~/sections/Featured';
@@ -9,11 +8,15 @@ import Featured from '~/sections/Featured';
 const Home: FunctionComponent = () => {
     return (
         <div className="home">
-            <Header />
-            <Hero />
-            <Knight />
-            <Featured />
-            <Footer />
+            <PageLayout
+                content={
+                    <Fragment>
+                        <Hero />
+                        <Knight />
+                        <Featured />
+                    </Fragment>
+                }
+            />
         </div>
     );
 };

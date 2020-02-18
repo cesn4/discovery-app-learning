@@ -1,16 +1,11 @@
-// colors.scss gera praktika pradzioj apsirasyt visa spalvu palete su spalvos pavadinimu,
-// o zemiau faile apsirasyt spalva su konkreciu uznaudojimu ir panaudot ta spalvos kintamaji
-
-// Grynu spalvu pavadinimus gali isgaut cia http://chir.ag/projects/name-that-color/ copy + paste spalvos hex koda ir gausi pavadinima
-
-// Color pallette
-$color-white: #fff; // Grynasias spalvas irgi verta apsirasyt (white ir black) nes kartais ju atspalvis nera visiskai baltas arba juodas
+$color-white: #fff;
 $color-light-red: #fa6980;
 $color-light-red-active: #f05c74;
 $color-gray-chateu: #a6adb4;
 $color-porcelain: #f6f8f9;
 $color-shark: #343638;
 $color-iron: #cbd0d3;
+
 
 // Project colors
 $theme-colors: (

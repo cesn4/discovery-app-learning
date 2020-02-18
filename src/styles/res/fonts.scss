@@ -1,10 +1,19 @@
 $font-family-primary: 'Public Sans', arial, sans-serif;
 
-$fonts-size-h1: px-to-rem(24px);
-$fonts-size-text: px-to-rem(16px);
-$fonts-size-button: px-to-rem(11px);
-$fonts-size-navigation: px-to-rem(11px);
-$fonts-size-paragraph: px-to-rem(13px);
+
+$font-size-map: (
+    "large-heading": px-to-rem(50px),
+    "heading": px-to-rem(33px),
+    "h1": px-to-rem(24px),
+    "text": px-to-rem(16px),
+    "button": px-to-rem(11px),
+    "navigation": px-to-rem(11px),
+    "paragraph": px-to-rem(13px),
+);
+
+@function font-size($_key) {
+    @return map-get($font-size-map, $_key);
+}
 
 $line-height-small: 1;
 $line-height-medium: 1.5;

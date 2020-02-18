@@ -3,13 +3,13 @@
     &__column {
         display: flex;
         flex-direction: column;
-        font-size: $fonts-size-navigation;
+        font-size: font-size("navigation");
         font-weight: $font-weight-fat;
         line-height: $line-height-big;
         list-style: none;
 
         @include if-tablet {
-            font-size: $fonts-size-paragraph;
+            font-size: font-size("paragraph");
         }
     }
 
@@ -18,7 +18,7 @@
         margin-bottom: spacer(small-xl);
         text-decoration: none;
         text-transform: uppercase;
-        transition: 0.3s;
+        transition: cta-transition(color);
 
         &:last-child {
             margin-bottom: spacer(medium-s);

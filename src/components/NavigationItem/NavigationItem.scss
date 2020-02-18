@@ -1,16 +1,17 @@
 .navigation-item {
     color: theme-color("inactive");
-    font-size: $fonts-size-navigation;
+    font-size: font-size("navigation");
     font-weight: $font-weight-fat;
     line-height: $line-height-big;
     list-style: none;
     text-transform: uppercase;
 
     &__anchor {
+        $_item-transition-list: transform, color;
         color: theme-color("inactive");
         display:flex;
         text-decoration: none;
-        transition: all 0.3s ease-out;
+        transition: cta-transition($_item-transition-list);
 
         &:hover {
             color: theme-color("active");

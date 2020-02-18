@@ -1,0 +1,16 @@
+.video {
+    border-radius: border(l);
+    display: flex;
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+    width: 100%;
+
+    &__react-player {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}

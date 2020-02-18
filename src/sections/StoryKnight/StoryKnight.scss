@@ -1,0 +1,51 @@
+.story-knight {
+    background-color: theme-color("acent-2");
+    display: flex;
+    width: 100%;
+
+    &__box {
+        padding: spacer(medium-s) spacer(medium-xxs);
+
+        @include if-tablet {
+            padding: spacer(medium-xl);
+        }
+
+        @include if-desktop {
+            padding: 100px 140px;
+        }
+    }
+    &__article {
+
+        @include if-desktop {
+            border-right: solid border(m) rgba(theme-color("inactive"), 0.1);
+            margin-right: spacer(medium-m);
+            padding-right: spacer(medium-m);
+        }
+    }
+
+    &__separator {
+        background-color: rgba(theme-color("inactive"), 0.1);
+        height: border(m);
+        margin: spacer(medium-s) 0;
+        width: 100%;
+
+        @include if-tablet {
+            margin: spacer(medium-xl) 0;
+        }
+
+        @include if-desktop {
+            display: none;
+        }
+    }
+
+    &__author-posts {
+
+        &:first-child {
+            margin-bottom: spacer(medium-s);
+        }
+    }
+
+    &__video {
+        margin-top: spacer(medium-s);
+    }
+}

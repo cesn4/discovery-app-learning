@@ -1,7 +1,7 @@
 .menu-item {
     $_parent: &;
     font-family: $font-family-primary;
-    font-size: $fonts-size-navigation;
+    font-size: font-size("navigation");
     font-weight: $font-weight-fat;
     line-height: $line-height-big;
     position: relative;
@@ -18,7 +18,7 @@
 
     &__label {
         color: theme-color("inactive");
-        transition: color 0.3s ease;
+        transition: cta-transition(color);
 
         &:hover {
             color: theme-color("accent-1");

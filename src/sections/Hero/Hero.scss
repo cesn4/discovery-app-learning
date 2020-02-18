@@ -1,4 +1,11 @@
 .hero {
+
+    padding-top: spacer(medium-s);
+
+    @include if-tablet {
+        padding-top: spacer(medium-m);
+    }
+
     &__post-box {
         @include if-desktop {
             padding-right: 53px;
