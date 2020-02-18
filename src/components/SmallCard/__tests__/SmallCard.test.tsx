@@ -9,7 +9,7 @@ const happyProps: SmallCardProps = {
     firstItem: false,
 };
 
-describe('Time component', () => {
+describe('SmallCard component', () => {
     it('Should not have firstItem', () => {
         const wrapper = shallow(<SmallCard {...happyProps} />);
         expect(wrapper.find('.small-card').hasClass('-firstItem')).toBeFalsy();
