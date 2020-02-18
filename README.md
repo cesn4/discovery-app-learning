@@ -29,19 +29,13 @@ open `discovery-app-learning` folder `npm install` then `npm run dev` for develo
 ```
 import React from 'react';
 import { shallow } from 'enzyme';
-import SmallCard, { SmallCardProps } from '../SmallCard';
+import Time from '../Time';
 
-const happyProps: SmallCardProps = {
-    image: 'image',
-    time: 'time',
-    title: 'title',
-    firstItem: false,
-};
-
-describe('SmallCard component', () => {
-    it('Should not have firstItem', () => {
-        const wrapper = shallow(<SmallCard {...happyProps} />);
-        expect(wrapper.find('.small-card').hasClass('-firstItem')).toBeFalsy();
+describe('Time component', () => {
+    it('Should render text', () => {
+        const testTest = 'Test text';
+        const wrapper = shallow(<Time text={testTest} />);
+        expect(wrapper.find('.time__clock-time').text()).toEqual(testTest);
     });
 });
 ```
