@@ -6,14 +6,25 @@ import './MainNavigation.scss';
 
 const MainNavigation: FunctionComponent = () => {
     const list: Array<MenuItemProps> = [
-        { label: 'Home', active: true, dropdownMenu: true },
+        {
+            label: 'Home',
+            active: true,
+            dropdownMenu: [
+                'World News',
+                'Travel',
+                'Technology',
+                'City',
+                'Culture',
+                'More...',
+            ],
+        },
         { label: 'Discovery' },
         { label: 'Photos' },
         { label: 'Contacts' },
     ];
     const renderList: Array<ReactChild> = list.map(
         (
-            { label, active = false, dropdownMenu = false }: MenuItemProps,
+            { label, active = false, dropdownMenu = undefined }: MenuItemProps,
             index
         ) => {
             return (
