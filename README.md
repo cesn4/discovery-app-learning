@@ -39,4 +39,5 @@ describe('Time component', () => {
     });
 });
 ```
-3. Tests should be written for every prop in the component.
+3. Test file should contain one `describe` statment with component name in the description. And `it` statement for each prop or case you are trying to test, also with appropriate description of what are you testing.
+4. Tests should be written for every prop in the component.
