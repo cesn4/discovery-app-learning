@@ -1,5 +1,5 @@
 interface SVGIconProps {
-    color: string;
+    color?: string;
     size: number;
 }
 
