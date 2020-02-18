@@ -8,8 +8,7 @@ import SVGWeb from './assets/SVGWeb';
 import SVGTopic from './assets/SVGTopic';
 import SVGRightArrow from './assets/SVGRightArrow';
 
-import '~/components/IconLabel/IconLabel.scss';
-import './SVGIcon.scss';
+import './Icon.scss';
 
 const Icon: FunctionComponent<IconProps> = ({
     name,

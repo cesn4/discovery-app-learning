@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 
-import SVGIcon from '~/components/SVGIcon';
+import Icon from '~/components/Icons';
 
 import './NextStory.scss';
 
@@ -16,7 +16,7 @@ const NextStory: FunctionComponent<NextStoryProps> = ({
                     <span className={`${className}__label`}>NEXT STORY</span>
                     <span className={`${className}__subtitle`}>{subtitle}</span>
                 </div>
-                <SVGIcon name="rightArrow" className={`${className}__icon`} />
+                <Icon name="rightArrow" className={`${className}__icon`} />
             </a>
             <span className={`${className}__paragraph`}>{paragraph}</span>
         </div>
