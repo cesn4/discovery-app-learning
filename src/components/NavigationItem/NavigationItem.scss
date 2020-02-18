@@ -7,10 +7,11 @@
     text-transform: uppercase;
 
     &__anchor {
+        $_item-transition-list: transform, color;
         color: theme-color("inactive");
         display:flex;
         text-decoration: none;
-        transition: all 0.3s ease-out;
+        transition: cta-transition($_item-transition-list);
 
         &:hover {
             color: theme-color("active");
