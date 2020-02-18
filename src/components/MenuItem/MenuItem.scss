@@ -18,7 +18,7 @@
 
     &__label {
         color: theme-color("inactive");
-        transition: color 0.3s ease;
+        transition: cta-transition(color);
 
         &:hover {
             color: theme-color("accent-1");

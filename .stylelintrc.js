@@ -3,12 +3,17 @@ module.exports = {
     plugins: [
         'stylelint-order',
         'stylelint-scss',
-        'stylelint-declaration-use-variable'
+        'stylelint-declaration-use-variable',
     ],
     rules: {
         'color-no-invalid-hex': true,
-        'indentation': 4,
+        indentation: 4,
         'color-named': 'never',
+        'order/order': [
+            'dollar-variables',
+            'declarations',
+            'rules',
+        ],
         'order/properties-alphabetical-order': true,
         'block-closing-brace-newline-after': 'always',
         'selector-max-empty-lines': 0,
@@ -20,6 +25,6 @@ module.exports = {
         'selector-pseudo-element-case': 'lower',
         'property-case': 'lower',
         'scss/selector-no-redundant-nesting-selector': true,
-        'sh-waqar/declaration-use-variable': [['color']],
-    }
-}
+        'sh-waqar/declaration-use-variable': [['color', 'font-size']],
+    },
+};

@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/typedef */
-/* eslint-disable indent */
 import React, { FunctionComponent, ElementType } from 'react';
 import classNames from 'classnames';
 
@@ -13,12 +11,12 @@ import SVGRightArrow from './assets/SVGRightArrow';
 import '~/components/IconLabel/IconLabel.scss';
 import './SVGIcon.scss';
 
-const SVGIcon: FunctionComponent<SVGIconProps> = ({
+const Icon: FunctionComponent<IconProps> = ({
     name,
     color,
     size = 16,
     className,
-}: SVGIconProps) => {
+}: IconProps) => {
     const iconProps = { color, size };
 
     const renderIcon: ElementType = (name: IconType) => {
@@ -36,7 +34,7 @@ const SVGIcon: FunctionComponent<SVGIconProps> = ({
             case 'rightArrow':
                 return <SVGRightArrow color={color} />;
             default:
-                return <path />;
+                return null;
         }
     };
     return (
@@ -44,7 +42,7 @@ const SVGIcon: FunctionComponent<SVGIconProps> = ({
     );
 };
 
-interface SVGIconProps {
+interface IconProps {
     name?: IconType;
     color?: string;
     size?: number;
@@ -59,4 +57,4 @@ export type IconType =
     | 'topic'
     | 'rightArrow';
 
-export default SVGIcon;
+export default Icon;

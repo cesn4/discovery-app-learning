@@ -17,7 +17,7 @@
     z-index: index(content);
 
     &__title {
-        transition: trnasform 0.3s ease;
+        transition: cta-transition(transform);
 
         &:hover {
             transform: scale(1.1);
