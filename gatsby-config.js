@@ -1,3 +1,5 @@
+// Gatsby config needed for docz
+
 module.exports = {
     plugins: [
         {
