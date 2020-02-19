@@ -3,15 +3,15 @@
     &__box {
         background-image: url('/assets/img/jungle.jpg');
         background-size: cover;
-        padding: spacer(trojan-m) spacer(medium-xxs) spacer(medium-s) spacer(medium-xxs);
+        padding: 140px spacer(medium-xxs) spacer(medium-s) spacer(medium-xxs);
         width: 100%;
 
         @include if-tablet {
-            padding: spacer(trojan-m) spacer(medium-s) spacer(medium-s) spacer(medium-s);
+            padding: 110px spacer(medium-s) spacer(medium-s) spacer(medium-s);
         }
 
         @include if-desktop {
-            padding: 240px spacer(medium-m) spacer(medium-m) spacer(medium-m);
+            padding: 230px spacer(medium-m) spacer(medium-m) spacer(medium-m);
         }
     }
 
