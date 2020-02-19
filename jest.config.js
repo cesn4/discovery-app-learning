@@ -4,6 +4,7 @@
 module.exports = {
     clearMocks: true,
     coverageDirectory: 'coverage',
+    coveragePathIgnorePattern: ["/.docz/","/node_modules/"],
     moduleFileExtensions: ['js', 'json', 'jsx', 'ts', 'tsx', 'node'],
     testMatch: [
         '**/__tests__/**/*.[jt]s?(x)',
