@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-declare module "@/styles/export/colors.scss" {
+declare module "~/styles/export/colors.scss" {
     const value: Colors;
     export = value;
 }
