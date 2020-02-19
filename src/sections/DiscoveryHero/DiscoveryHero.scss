@@ -1,7 +1,12 @@
 .discovery-hero {
     width: 100%;
 
+    &__box {
+        background-image: url('/assets/img/DiscoveryMountain.jpg');
+        background-size: cover;
+    }
+
     &__content {
-        padding: 90px 20px;
+        padding: 90px spacer(small-xs);
     }
 }
