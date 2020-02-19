@@ -5,6 +5,8 @@ import DiscoveryTitle from '~/components/DiscoveryTitle';
 
 import Dude from '~/assets/img/dude.jpg';
 
+import './DiscoveryHero.scss';
+
 const DiscoveryHero: FunctionComponent = () => {
     const className = 'discovery-hero';
     return (
@@ -13,11 +15,13 @@ const DiscoveryHero: FunctionComponent = () => {
                 <div className={`${className}__box`}>
                     <Row>
                         <Col>
-                            <DiscoveryTitle
-                                title="DISCOVERY"
-                                subtitle="Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto vidit."
-                                image={Dude}
-                            />
+                            <div className={`${className}__content`}>
+                                <DiscoveryTitle
+                                    title="DISCOVERY"
+                                    subtitle="Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto vidit."
+                                    image={Dude}
+                                />
+                            </div>
                         </Col>
                     </Row>
                 </div>
