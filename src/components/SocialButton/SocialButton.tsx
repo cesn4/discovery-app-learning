@@ -1,37 +1,41 @@
-import React, { FunctionComponent } from 'react';
-
-import { IconType } from '~/components/Icons/Icon';
+import React, { FunctionComponent, useState } from 'react';
 
 import Icon from '~/components/Icons';
 
+import { IconType } from '~/components/Icons/Icon';
+import Colors from '~/styles/export/colors.scss';
+
 const SocialButton: FunctionComponent<SocialButtonProps> = ({
-    onMouseEnter,
-    onMouseLeave,
-    color,
     name,
     href = '#',
 }: SocialButtonProps) => {
     const className = 'social-button';
+    const [iconColor, setIconColor] = useState(Colors.white);
+
+    const onMouseEnterHandler = (): void => {
+        setIconColor(Colors.accent);
+    };
+
+    const onMouseLeaveHandler = (): void => {
+        setIconColor(Colors.white);
+    };
 
     return (
         <div className={className}>
             <a
                 href={href}
-                onMouseEnter={onMouseEnter}
-                onMouseLeave={onMouseLeave}
+                onMouseEnter={onMouseEnterHandler}
+                onMouseLeave={onMouseLeaveHandler}
             >
-                <Icon name={name} color={color} />
+                <Icon name={name} color={iconColor} />
             </a>
         </div>
     );
 };
 
-interface SocialButtonProps {
+export interface SocialButtonProps {
     name: IconType;
     href?: string;
-    color?: string;
-    onMouseEnter?: () => void;
-    onMouseLeave?: () => void;
 }
 
 export default SocialButton;

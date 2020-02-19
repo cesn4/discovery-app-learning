@@ -1,57 +1,34 @@
-import React, { FunctionComponent, useState } from 'react';
+import React, { FunctionComponent, ReactChild } from 'react';
 
-import Icon from '~/components/Icons';
+import SocialButton from '~/components/SocialButton';
+import { IconType } from '~/components/Icons/Icon';
 
-import Colors from '~/styles/export/colors.scss';
 import './SocialBar.scss';
 
 const SocialBar: FunctionComponent = () => {
-    const [iconColor, setIconColor] = useState(Colors.white);
+    const className = 'social-bar';
+    const list: Array<SocialBarProps> = [
+        { name: 'instagram' },
+        { name: 'facebook' },
+        { name: 'twitter' },
+        { name: 'web' },
+    ];
 
-    const onMouseEnterHandler = (): void => {
-        setIconColor(Colors.accent);
-    };
-
-    const onMouseLeaveHandler = (): void => {
-        setIconColor(Colors.white);
-    };
-
-    return (
-        <div className="social-bar">
-            <a
-                href="#"
-                className="social-bar__icon"
-                onMouseEnter={onMouseEnterHandler}
-                onMouseLeave={onMouseLeaveHandler}
-            >
-                <Icon name="instagram" color={iconColor} />
-            </a>
-            <a
-                href="#"
-                className="social-bar__icon"
-                onMouseEnter={onMouseEnterHandler}
-                onMouseLeave={onMouseLeaveHandler}
-            >
-                <Icon name="twitter" color={iconColor} />
-            </a>
-            <a
-                href="#"
-                className="social-bar__icon"
-                onMouseEnter={onMouseEnterHandler}
-                onMouseLeave={onMouseLeaveHandler}
-            >
-                <Icon name="facebook" color={iconColor} />
-            </a>
-            <a
-                href="#"
-                className="social-bar__icon"
-                onMouseEnter={onMouseEnterHandler}
-                onMouseLeave={onMouseLeaveHandler}
-            >
-                <Icon name="web" color={iconColor} />
-            </a>
-        </div>
+    const renderList: Array<ReactChild> = list.map(
+        ({ href, name }: SocialBarProps, index) => {
+            return (
+                <div key={index.toString()} className={`${className}__icon`}>
+                    <SocialButton name={name} href={href} />
+                </div>
+            );
+        }
     );
+    return <div className={className}>{renderList}</div>;
 };
+
+interface SocialBarProps {
+    href?: string;
+    name: IconType;
+}
 
 export default SocialBar;
