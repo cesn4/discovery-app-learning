@@ -1,5 +1,6 @@
 // eslint-disable-next-line prettier/prettier
 export enum Routes {
     home = "/",
-    story = "/story"
+    story = "/story",
+    discovery = "/discovery"
 }
