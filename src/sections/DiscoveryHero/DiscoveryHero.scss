@@ -16,5 +16,11 @@
         @include if-tablet {
             padding: 110px 170px;
         }
+
+        @include if-desktop {
+            border-bottom-left-radius: radius(m);
+            border-top-left-radius: radius(m);
+            padding: 150px 110px;
+        }
     }
 }

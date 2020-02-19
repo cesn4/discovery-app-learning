@@ -15,7 +15,7 @@ const DiscoveryHero: FunctionComponent = () => {
             <Container>
                 <div className={`${className}__box`}>
                     <Row>
-                        <Col>
+                        <Col xs={12} md={12} lg={6}>
                             <div className={`${className}__content`}>
                                 <DiscoveryTitle
                                     title="DISCOVERY"
