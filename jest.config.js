@@ -7,8 +7,8 @@ module.exports = {
     coveragePathIgnorePatterns: ["/.docz/","/node_modules/"],
     moduleFileExtensions: ['js', 'json', 'jsx', 'ts', 'tsx', 'node'],
     testMatch: [
-        'src/**/__tests__/**/*.[jt]s?(x)',
-        'src/**/?(*.)+(spec|test).[tj]s?(x)',
+        '**/__tests__/**/*.[jt]s?(x)',
+        '**/?(*.)+(spec|test).[tj]s?(x)',
     ],
     moduleNameMapper: {
         '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
