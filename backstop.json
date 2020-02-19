@@ -51,7 +51,7 @@
       "referenceUrl": "http://localhost:3000/#/story",
       "readyEvent": "",
       "readySelector": "",
-      "delay": 500,
+      "delay": 10,
       "hideSelectors": [],
       "removeSelectors": [],
       "hoverSelector": "",
