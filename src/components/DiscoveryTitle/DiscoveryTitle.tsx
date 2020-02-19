@@ -2,6 +2,8 @@ import React, { FunctionComponent } from 'react';
 
 import Author from '~/components/Author';
 
+import './DiscoveryTitle.scss';
+
 const DiscoveryTitle: FunctionComponent<DsicoveryTitleProps> = ({
     title,
     subtitle,
@@ -14,7 +16,7 @@ const DiscoveryTitle: FunctionComponent<DsicoveryTitleProps> = ({
             <div className={`${className}__separator`}></div>
             <p className={`${className}__subtitle`}>{subtitle}</p>
             <div className={`${className}__author-img`}>
-                <Author image={image} />
+                <Author big image={image} />
             </div>
         </div>
     );
