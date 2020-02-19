@@ -21,15 +21,15 @@ const Icon: FunctionComponent<IconProps> = ({
     const renderIcon: ElementType = (name: IconType) => {
         switch (name) {
             case 'instagram':
-                return <SVGInstagram {...iconProps} />;
+                return <SVGInstagram {...iconProps} color={color} />;
             case 'facebook':
-                return <SVGFacebook {...iconProps} />;
+                return <SVGFacebook {...iconProps} color={color} />;
             case 'twitter':
-                return <SVGTwitter {...iconProps} />;
+                return <SVGTwitter {...iconProps} color={color} />;
             case 'web':
-                return <SVGWeb {...iconProps} />;
+                return <SVGWeb {...iconProps} color={color} />;
             case 'topic':
-                return <SVGTopic {...iconProps} />;
+                return <SVGTopic {...iconProps} color={color} />;
             case 'rightArrow':
                 return <SVGRightArrow color={color} />;
             default:
