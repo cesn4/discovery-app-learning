@@ -1,0 +1,10 @@
+.page-layout {
+
+    &__content {
+        padding-top: spacer(medium-s);
+
+        @include if-tablet {
+            padding-top: spacer(medium-m);
+        }
+    }
+}
