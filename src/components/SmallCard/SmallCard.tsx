@@ -19,7 +19,7 @@ const SmallCard: FunctionComponent<SmallCardProps> = ({
     );
 };
 
-interface SmallCardProps {
+export interface SmallCardProps {
     image: string;
     title: string;
     time: string;
