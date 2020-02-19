@@ -15,7 +15,6 @@
   },
   "husky": {
     "hooks": {
-      "prepare-commit-msg": "prefix-commit-message",
       "pre-push": "npm run test:all"
     }
   },
@@ -66,7 +65,6 @@
     "node-sass": "^4.13.1",
     "path": "^0.12.7",
     "postcss-loader": "^3.0.0",
-    "prefix-commit-message": "^1.1.0",
     "prettier": "1.19.1",
     "resolve-url-loader": "^3.1.1",
     "sass-loader": "^8.0.0",
