@@ -1,13 +1,12 @@
 import React, { FunctionComponent, ReactChild } from 'react';
 
-import SocialButton from '~/components/SocialButton';
-import { IconType } from '~/components/Icons/Icon';
+import SocialButton, { SocialButtonProps } from '~/components/SocialButton';
 
 import './SocialBar.scss';
 
 const SocialBar: FunctionComponent = () => {
     const className = 'social-bar';
-    const list: Array<SocialBarProps> = [
+    const list: Array<SocialButtonProps> = [
         { name: 'instagram' },
         { name: 'facebook' },
         { name: 'twitter' },
@@ -15,7 +14,7 @@ const SocialBar: FunctionComponent = () => {
     ];
 
     const renderList: Array<ReactChild> = list.map(
-        ({ href, name }: SocialBarProps, index) => {
+        ({ href, name }: SocialButtonProps, index) => {
             return (
                 <div key={index.toString()} className={`${className}__icon`}>
                     <SocialButton name={name} href={href} />
@@ -25,10 +24,5 @@ const SocialBar: FunctionComponent = () => {
     );
     return <div className={className}>{renderList}</div>;
 };
-
-interface SocialBarProps {
-    href?: string;
-    name: IconType;
-}
 
 export default SocialBar;
