@@ -1,23 +1,53 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, useState } from 'react';
 
 import Icon from '~/components/Icons';
 
 import './SocialBar.scss';
 
 const SocialBar: FunctionComponent = () => {
+    const [iconColor, setIconColor] = useState(Colors.white);
+
+    const onMouseEnterHandler = (): void => {
+        setIconColor(Colors.accent);
+    };
+
+    const onMouseLeaveHandler = (): void => {
+        setIconColor(Color.white);
+    };
+
     return (
         <div className="social-bar">
-            <a href="#" className="social-bar__icon">
-                <Icon name="instagram" />
+            <a
+                href="#"
+                className="social-bar__icon"
+                onMouseEnter={onMouseEnterHandler}
+                onMouseLeave={onMouseLeaveHandler}
+            >
+                <Icon name="instagram" color={iconColor} />
             </a>
-            <a href="#" className="social-bar__icon">
-                <Icon name="twitter" />
+            <a
+                href="#"
+                className="social-bar__icon"
+                onMouseEnter={onMouseEnterHandler}
+                onMouseLeave={onMouseLeaveHandler}
+            >
+                <Icon name="twitter" color={iconColor} />
             </a>
-            <a href="#" className="social-bar__icon">
-                <Icon name="facebook" />
+            <a
+                href="#"
+                className="social-bar__icon"
+                onMouseEnter={onMouseEnterHandler}
+                onMouseLeave={onMouseLeaveHandler}
+            >
+                <Icon name="facebook" color={iconColor} />
             </a>
-            <a href="#" className="social-bar__icon">
-                <Icon name="web" />
+            <a
+                href="#"
+                className="social-bar__icon"
+                onMouseEnter={onMouseEnterHandler}
+                onMouseLeave={onMouseLeaveHandler}
+            >
+                <Icon name="web" color={iconColor} />
             </a>
         </div>
     );
