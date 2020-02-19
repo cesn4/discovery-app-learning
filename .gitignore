@@ -24,5 +24,4 @@ yarn-debug.log*
 yarn-error.log*
 
 # Backstop data
-backstop_data/*
-!backstop_data/bitmaps_reference
+backstop_data/
