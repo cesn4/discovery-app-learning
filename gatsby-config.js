@@ -7,5 +7,11 @@ module.exports = {
             },
         },
         'gatsby-plugin-sass',
+        {
+            resolve: `gatsby-plugin-sass-resources`,
+            options: {
+                resources: ['../src/styles/res/_index.scss'],
+            },
+        },
     ],
 };
