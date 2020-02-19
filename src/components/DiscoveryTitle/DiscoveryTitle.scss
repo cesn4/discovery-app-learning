@@ -4,11 +4,12 @@
     display: flex;
     flex-direction: column;
     font-family: $font-family-primary;
+    font-weight: $font-weight-fat;
+
 
 
     &__title {
         font-size: font-size("heading");
-        font-weight: $font-weight-fat;
         line-height: $line-height-medium;
         text-align: center;
     }

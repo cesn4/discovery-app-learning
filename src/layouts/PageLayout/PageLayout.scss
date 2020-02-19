@@ -1,4 +1,6 @@
 .page-layout {
+    display: flex;
+    flex-direction: column;
 
     &__content {
         padding-top: spacer(medium-s);
