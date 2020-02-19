@@ -36,6 +36,6 @@ describe('SmallCard component', () => {
 
     it('Should render PostInfo time', () => {
         const wrapper = shallow(<SmallCard {...happyProps} />);
-        expect(wrapper.find(PostInfo).prop('time')).toEqual('timeProp');
+        expect(wrapper.find(PostInfo).prop('time')).toEqual(timeProp);
     });
 });
