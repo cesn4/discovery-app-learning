@@ -12,9 +12,9 @@
 
     &__text {
         background-color: theme-color("inactive");
+        border: solid border(s);
         border-color: theme-color("footer-accent");
         border-radius: radius(m);
-        border: solid border(s);
         color: theme-color("footer-accent");
         font-family: $font-family-primary;
         outline: none;
