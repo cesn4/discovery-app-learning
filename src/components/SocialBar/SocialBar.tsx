@@ -2,6 +2,7 @@ import React, { FunctionComponent, useState } from 'react';
 
 import Icon from '~/components/Icons';
 
+import Colors from '~/styles/export/colors.scss';
 import './SocialBar.scss';
 
 const SocialBar: FunctionComponent = () => {
@@ -12,7 +13,7 @@ const SocialBar: FunctionComponent = () => {
     };
 
     const onMouseLeaveHandler = (): void => {
-        setIconColor(Color.white);
+        setIconColor(Colors.white);
     };
 
     return (
