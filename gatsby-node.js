@@ -1,3 +1,5 @@
+// Gatsby config needed for docz
+
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const path = require('path');
 
