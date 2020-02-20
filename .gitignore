@@ -28,3 +28,6 @@ backstop_data/
 
 # docz
 .docz/
+
+# vscode settings
+.vscode/
