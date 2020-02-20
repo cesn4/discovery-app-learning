@@ -2,6 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import AuthorPost, { AuthorPostProps } from '../AuthorPost';
 import Author from '~/components/Author';
+import Time from '~/components/Time';
 
 const authorTest = 'Name';
 const testImage = '~/assets/image.jpg';
@@ -16,13 +17,18 @@ const happyProps: AuthorPostProps = {
 };
 
 describe('AuthorPost component', () => {
-    it('Should render image', () => {
+    it('Should render Author component', () => {
         const wrapper = shallow(<AuthorPost {...happyProps} />);
-        expect(wrapper.find('img').prop('src')).toEqual(testImage);
+        expect(wrapper.find(Author)).toBeTruthy();
     });
 
-    it('Should render Author name', () => {
+    it('Should render Time component', () => {
         const wrapper = shallow(<AuthorPost {...happyProps} />);
-        expect(wrapper.find('.author__author-name')).toEqual(authorTest);
+        expect(wrapper.find(Time)).toBeTruthy();
+    });
+
+    it('Should render Author post', () => {
+        const wrapper = shallow(<AuthorPost {...happyProps} />);
+        expect(wrapper.find('author__author-post')).toEqual(postTest);
     });
 });

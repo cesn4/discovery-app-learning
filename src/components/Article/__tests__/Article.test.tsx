@@ -8,7 +8,7 @@ const contentTest = 'Content test';
 const HappyProps: ArticleProps = {
     title: titleTest,
     content: contentTest,
-}
+};
 
 describe('Article', () => {
     it('Should render text', () => {
