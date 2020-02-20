@@ -1,1 +1,1 @@
-export { default } from './IconLabel';
+export { default, IconLabelProps } from './IconLabel';
