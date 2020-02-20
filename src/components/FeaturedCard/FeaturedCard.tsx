@@ -39,7 +39,7 @@ const FeaturedCard: FunctionComponent<FeaturedCardProps> = ({
     );
 };
 
-interface FeaturedCardProps {
+export interface FeaturedCardProps {
     time: string;
     theme: string;
     title: string;
@@ -49,7 +49,7 @@ interface FeaturedCardProps {
     lastItem?: boolean;
 }
 
-interface FeaturedCardBackgroundObject {
+export interface FeaturedCardBackgroundObject {
     backgroundImage: string;
 }
 
