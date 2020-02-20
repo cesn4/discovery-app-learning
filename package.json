@@ -12,9 +12,7 @@
     "backstop:approve": "backstop approve",
     "backstop:reference": "backstop reference",
     "test:all": "jest && backstop test",
-    "docz:dev": "docz dev --typescript",
-    "docz:build": "docz build",
-    "docz:serve": "docz build && docz serve"
+    "docz": "docz dev --typescript"
   },
   "husky": {
     "hooks": {
