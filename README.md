@@ -41,3 +41,30 @@ describe('Time component', () => {
 ```
 3. Test file should contain one `describe` statment with component name in the description. And `it` statement for each prop or case you are trying to test, also with appropriate description of what are you testing.
 4. Tests should be written for every prop in the component.
+
+# Component documentation:
+### Docz
+[docz](https://docz.site/) is setup to document components, to create a documentation on a component, do the following:
+1. Inside a component folder create a file with component name and an `.mdx` extension: `ComponentName.mdx`
+2. Example of the file content:
+```
+---
+name: Time
+menu: Components
+---
+
+import { Playground, Props } from 'docz'
+import Time from './Time'
+
+# Simple Component
+<Props of={Time} />
+
+
+## Basic usage
+
+<Playground>
+    <Time text="random text" />
+</Playground>
+```
+3. run `npm run docz` to see it in action.
+    - Also you can edit mdx files while `npm run docz` is running, however, if you create a new mdx file, you might need to relaunch the command to take effect.
