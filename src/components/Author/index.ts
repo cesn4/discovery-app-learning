@@ -1,1 +1,1 @@
-export { default } from './Author';
+export { default, AuthorProps } from './Author';
