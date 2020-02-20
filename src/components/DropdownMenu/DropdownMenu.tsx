@@ -24,7 +24,7 @@ const DropdownMenu: FunctionComponent<DropdownMenuProps> = ({
     );
 };
 
-interface DropdownMenuProps {
+export interface DropdownMenuProps {
     dropdownMenu?: Array<string> | undefined;
 }
 
