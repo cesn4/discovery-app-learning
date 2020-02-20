@@ -29,6 +29,6 @@ describe('AuthorPost component', () => {
 
     it('Should render Author post', () => {
         const wrapper = shallow(<AuthorPost {...happyProps} />);
-        expect(wrapper.find('author__author-post')).toEqual(postTest);
+        expect(wrapper.find('.author-post__post').text()).toEqual(postTest);
     });
 });

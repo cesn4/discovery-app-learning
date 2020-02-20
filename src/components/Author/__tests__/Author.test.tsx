@@ -30,6 +30,6 @@ describe('Author component', () => {
 
     it('Should render Author name', () => {
         const wrapper = shallow(<Author {...happyProps} />);
-        expect(wrapper.find('.author__author-name')).toEqual(authorTest);
+        expect(wrapper.find('.author__author-name').text()).toEqual(authorTest);
     });
 });
