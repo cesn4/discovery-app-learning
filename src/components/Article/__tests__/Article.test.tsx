@@ -10,7 +10,7 @@ const HappyProps: ArticleProps = {
     content: contentTest,
 }
 
-describe('Should render ttitle', () => {
+describe('Article', () => {
     it('Should render text', () => {
         const wrapper = shallow(<Article {...HappyProps} />);
         expect(wrapper.find('.article__title').text()).toEqual(titleTest);

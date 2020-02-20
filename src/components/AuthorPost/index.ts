@@ -1,1 +1,1 @@
-export { default } from './AuthorPost';
+export { default, AuthorPostProps } from './AuthorPost';

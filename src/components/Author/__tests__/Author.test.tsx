@@ -10,7 +10,7 @@ const happyProps: AuthorProps = {
     name: authorTest,
 };
 
-describe('SmallCard component', () => {
+describe('Author component', () => {
     it('Should not have big if big prop is not passed', () => {
         const wrapper = shallow(<Author {...happyProps} />);
         expect(wrapper.find('.author__image').hasClass('-big')).toBeFalsy();
