@@ -13,7 +13,7 @@ import './Icon.scss';
 
 const Icon: FunctionComponent<IconProps> = ({
     name,
-    color,
+    color = '#999',
     size = 16,
     className,
 }: IconProps) => {
