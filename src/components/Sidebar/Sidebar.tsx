@@ -2,8 +2,8 @@ import React, { FunctionComponent, useState } from 'react';
 
 import './Sidebar.scss';
 
-import SidebarMenu from './componenets/SidebarMenu';
-import SidebarLauncher from './componenets/SidebarLauncher';
+import SidebarMenu from './components/SidebarMenu';
+import SidebarLauncher from './components/SidebarLauncher';
 
 const Sidebar: FunctionComponent = () => {
     const [sidebarState, setSidebarState] = useState(false);
