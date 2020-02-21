@@ -1,1 +1,1 @@
-export { default } from './TrendingCard';
+export { default, TrendingCardProps } from './TrendingCard';
