@@ -1,1 +1,1 @@
-export { default } from './NextStory';
+export { default, NextStoryProps } from './NextStory';

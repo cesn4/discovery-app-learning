@@ -23,7 +23,7 @@ const NextStory: FunctionComponent<NextStoryProps> = ({
     );
 };
 
-interface NextStoryProps {
+export interface NextStoryProps {
     subtitle: string;
     paragraph: string;
 }
