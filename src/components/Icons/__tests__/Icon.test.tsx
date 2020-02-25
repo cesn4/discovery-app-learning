@@ -1,7 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import Icon, { IconProps } from '../Icon';
-import SVGFacebook from '~/components/Icons/assets/SVGFacebook';
 
 const testName = 'facebook';
 const testColor = '#fff';
@@ -18,16 +17,11 @@ const HappyProps: IconProps = {
 describe('Icon', () => {
     it('Should render Icon component', () => {
         const wrapper = shallow(<Icon {...HappyProps} />);
-        expect(wrapper.find('.icon')).toBeTruthy();
+        expect(wrapper.find('.icon').text()).toBeTruthy();
     });
 
     it('Should have className', () => {
         const wrapper = shallow(<Icon {...HappyProps} />);
         expect(wrapper.find('.icon').hasClass(testClassName)).toBeTruthy();
-    });
-
-    it('Should render Icon', () => {
-        const wrapper = shallow(<Icon {...HappyProps} />);
-        expect(wrapper.find('.icon').text()).toContain(SVGFacebook);
     });
 });

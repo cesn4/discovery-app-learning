@@ -17,15 +17,15 @@ const HappyProps: NavigationItemProps = {
 describe('NavigationItem component', () => {
     it('Should not have ProfilePhoto if Profile prop is not passed', () => {
         const wrapper = shallow(<NavigationItem {...HappyProps} />);
-        expect(wrapper.find('.navigation-item__icon')).not.toContain(
-            ProfilePhoto
-        );
+        expect(
+            wrapper.find('.navigation-item__icon').hasClass('-profile')
+        ).toBeFalsy();
     });
 
     it('Should have ProfilePhoto if Profile prop is passed', () => {
         const wrapper = shallow(<NavigationItem {...HappyProps} profile />);
         expect(
-            wrapper.find('.navigation-item').hasClass('-profile')
+            wrapper.find('[prop-test="propTest"]').hasClass('-profile')
         ).toBeTruthy();
     });
 

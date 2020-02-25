@@ -2,8 +2,6 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import MenuItem from '../MenuItem';
 
-import DropdownMenu from '~/components/DropdownMenu';
-
 const labelTest = 'Label Test';
 
 describe('MenuItem component', () => {
@@ -21,6 +19,6 @@ describe('MenuItem component', () => {
 
     it('Should not have DropdownMenu if dropdownMenu prop is not passed', () => {
         const wrapper = shallow(<MenuItem label={labelTest} />);
-        expect(wrapper.find('.menu-item')).not.toContain(DropdownMenu);
+        expect(wrapper.find('.menu-item').prop('dropdownMenu')).toBeFalsy();
     });
 });

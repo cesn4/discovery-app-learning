@@ -50,8 +50,8 @@ describe('PostInfo component', () => {
         expect(wrapper.find('.post-info__text').hasClass('-white')).toBeFalsy();
     });
 
-    it('Should not have Time component if Time props is not passed', () => {
+    it('Should not render Time component if Time text prop is not passed', () => {
         const wrapper = shallow(<PostInfo {...HappyProps} />);
-        expect(wrapper.find('.post-info')).not.toContain(Time);
+        expect(wrapper.find('.post-info').prop('text')).toBeFalsy();
     });
 });

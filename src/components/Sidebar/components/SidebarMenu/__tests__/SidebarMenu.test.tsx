@@ -12,6 +12,13 @@ describe('SidebarMenu component', () => {
         expect(wrapper.find('.sidebar-menu').hasClass('is-open')).toBeFalsy();
     });
 
+    it('Should have isOpen if isOpen prop is passed', () => {
+        const wrapper = shallow(
+            <SidebarMenu closeSidebar={testHandler} isOpen />
+        );
+        expect(wrapper.find('.sidebar-menu').hasClass('is-open')).toBeTruthy();
+    });
+
     it('Should not have isOpen if isOpen prop is not passed', () => {
         const wrapper = shallow(<SidebarMenu closeSidebar={testHandler} />);
         expect(
