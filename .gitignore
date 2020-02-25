@@ -25,3 +25,9 @@ yarn-error.log*
 
 # Backstop data
 backstop_data/
+
+# docz
+.docz/
+
+# vscode settings
+.vscode/

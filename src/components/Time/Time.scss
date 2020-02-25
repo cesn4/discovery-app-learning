@@ -3,9 +3,6 @@
     display: flex;
 
     &__clock {
-        @include size(16px);
-        background-image: url('/assets/img/time.png');
-        background-size: contain;
         margin-right: spacer(small-m);
     }
 
