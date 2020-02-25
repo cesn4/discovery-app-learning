@@ -20,6 +20,7 @@
         align-items: center;
         border-radius: radius(l);
         display: flex;
+        flex-direction: column;
         font-family: $font-family-primary;
         font-size: font-size("text");
         font-weight: $font-weight-fat;
@@ -37,19 +38,20 @@
         }
 
         &:active {
-            background-color: lighten(rgba(theme-color("accent-1"), 0.2), 70%);
+            background-color: rgba(theme-color("accent-1"), 0.2);
         }
+    }
 
+    &__box {
+        align-items: center;
+        display: flex;
+        width: 100%;
     }
 
     &__text-box {
         margin-right: spacer(small-xl);
 
         @include if-tablet {
-            margin-right: spacer(medium-l);
-        }
-
-        @include if-desktop {
             margin-right: auto;
         }
     }
@@ -61,6 +63,7 @@
     &__subtitle {
         color: theme-color("white");
         display: none;
+        font-size: font-size("paragraph");
 
         @include if-tablet {
             display: flex;

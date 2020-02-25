@@ -12,13 +12,19 @@ const NextStory: FunctionComponent<NextStoryProps> = ({
     return (
         <div className={className}>
             <a href="#/story" className={`${className}__anchor`}>
-                <div className={`${className}__text-box`}>
-                    <span className={`${className}__label`}>NEXT STORY</span>
-                    <span className={`${className}__subtitle`}>{subtitle}</span>
+                <div className={`${className}__box`}>
+                    <div className={`${className}__text-box`}>
+                        <span className={`${className}__label`}>
+                            NEXT STORY
+                        </span>
+                        <span className={`${className}__subtitle`}>
+                            {subtitle}
+                        </span>
+                    </div>
+                    <Icon name="rightArrow" className={`${className}__icon`} />
                 </div>
-                <Icon name="rightArrow" className={`${className}__icon`} />
+                <span className={`${className}__paragraph`}>{paragraph}</span>
             </a>
-            <span className={`${className}__paragraph`}>{paragraph}</span>
         </div>
     );
 };

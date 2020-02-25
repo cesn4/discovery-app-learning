@@ -1,0 +1,8 @@
+.page-layout__content {
+
+    padding-top: spacer(medium-s);
+
+    @include if-tablet {
+        padding-top: spacer(medium-m);
+    }
+}
