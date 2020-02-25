@@ -22,6 +22,13 @@ describe('NavigationItem component', () => {
         );
     });
 
+    it('Should have ProfilePhoto if Profile prop is passed', () => {
+        const wrapper = shallow(<NavigationItem {...HappyProps} profile />);
+        expect(
+            wrapper.find('.navigation-item').hasClass('-profile')
+        ).toBeTruthy();
+    });
+
     it('Should render Icon', () => {
         const wrapper = shallow(<NavigationItem {...HappyProps} />);
         expect(wrapper.find('img').prop('src')).toEqual(testIcon);

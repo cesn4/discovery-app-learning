@@ -16,7 +16,7 @@ const HappyProps: IconProps = {
 };
 
 describe('Icon', () => {
-    it('Should render text', () => {
+    it('Should render Icon component', () => {
         const wrapper = shallow(<Icon {...HappyProps} />);
         expect(wrapper.find('.icon')).toBeTruthy();
     });
@@ -28,6 +28,6 @@ describe('Icon', () => {
 
     it('Should render Icon', () => {
         const wrapper = shallow(<Icon {...HappyProps} />);
-        expect(wrapper.find(SVGFacebook)).toBeTruthy();
+        expect(wrapper.find('.icon').text()).toContain(SVGFacebook);
     });
 });

@@ -8,7 +8,7 @@ const primaryProp = 'Primary Text';
 const testImage = '~/assets/image.jpg';
 const testTime = 'Test time';
 
-const happyProps: TrendingCardProps = {
+const HappyProps: TrendingCardProps = {
     image: testImage,
     subtitle: subtitleProp,
     primaryText: primaryProp,
@@ -17,12 +17,12 @@ const happyProps: TrendingCardProps = {
 
 describe('TrendingCard component', () => {
     it('Should render image', () => {
-        const wrapper = shallow(<TrendingCard {...happyProps} />);
+        const wrapper = shallow(<TrendingCard {...HappyProps} />);
         expect(wrapper.find('img').prop('src')).toEqual(testImage);
     });
 
     it('Should render PostInfo component', () => {
-        const wrapper = shallow(<TrendingCard {...happyProps} />);
+        const wrapper = shallow(<TrendingCard {...HappyProps} />);
         expect(wrapper.find(PostInfo)).toBeTruthy();
     });
 });
