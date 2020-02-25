@@ -1,15 +1,14 @@
-import React, { FunctionComponent, useState } from 'react';
-
-import Icon from '~/components/Icons';
+import React, { FunctionComponent, useState, Fragment } from 'react';
 
 import { IconType } from '~/components/Icons/Icon';
+import Icon from '~/components/Icons';
+
 import Colors from '~/styles/export/colors.scss';
 
 const SocialButton: FunctionComponent<SocialButtonProps> = ({
     name,
     href = '#',
 }: SocialButtonProps) => {
-    const className = 'social-button';
     const [iconColor, setIconColor] = useState(Colors.white);
 
     const onMouseEnterHandler = (): void => {
@@ -21,7 +20,7 @@ const SocialButton: FunctionComponent<SocialButtonProps> = ({
     };
 
     return (
-        <div className={className}>
+        <Fragment>
             <a
                 href={href}
                 onMouseEnter={onMouseEnterHandler}
@@ -29,7 +28,7 @@ const SocialButton: FunctionComponent<SocialButtonProps> = ({
             >
                 <Icon name={name} color={iconColor} />
             </a>
-        </div>
+        </Fragment>
     );
 };
 
