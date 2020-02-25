@@ -2,6 +2,7 @@ import React, { FunctionComponent } from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 
 import DiscoveryTitle from '~/components/DiscoveryTitle';
+import DiscoverySearch from '~/components/DiscoverySearch';
 
 import Dude from '~/assets/img/dude.jpg';
 
@@ -23,6 +24,9 @@ const DiscoveryHero: FunctionComponent = () => {
                                     image={Dude}
                                 />
                             </div>
+                        </Col>
+                        <Col xs={12} md={12} lg={6}>
+                            <DiscoverySearch />
                         </Col>
                     </Row>
                 </div>
