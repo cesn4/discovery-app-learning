@@ -1,0 +1,2351 @@
+{
+  "config": {
+    "title": "Discovery App Learning",
+    "description": "My awesome app using docz",
+    "menu": [],
+    "version": "1.0.0",
+    "repository": null,
+    "native": false,
+    "themeConfig": {},
+    "separator": "-"
+  },
+  "props": [
+    {
+      "key": "src/App.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "App",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/index.tsx",
+      "value": []
+    },
+    {
+      "key": "src/types/Icon.ts",
+      "value": []
+    },
+    {
+      "key": "src/types/index.ts",
+      "value": []
+    },
+    {
+      "key": "src/types/Routes.ts",
+      "value": []
+    },
+    {
+      "key": "src/components/Article/Article.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Article",
+          "methods": [],
+          "props": {
+            "title": {
+              "defaultValue": null,
+              "description": "",
+              "name": "title",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "content": {
+              "defaultValue": null,
+              "description": "",
+              "name": "content",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/Article/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Article",
+          "methods": [],
+          "props": {
+            "title": {
+              "defaultValue": null,
+              "description": "",
+              "name": "title",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "content": {
+              "defaultValue": null,
+              "description": "",
+              "name": "content",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/Author/Author.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Author",
+          "methods": [],
+          "props": {
+            "image": {
+              "defaultValue": null,
+              "description": "",
+              "name": "image",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "name": {
+              "defaultValue": null,
+              "description": "",
+              "name": "name",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "big": {
+              "defaultValue": null,
+              "description": "",
+              "name": "big",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/Author/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Author",
+          "methods": [],
+          "props": {
+            "image": {
+              "defaultValue": null,
+              "description": "",
+              "name": "image",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "name": {
+              "defaultValue": null,
+              "description": "",
+              "name": "name",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "big": {
+              "defaultValue": null,
+              "description": "",
+              "name": "big",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/AuthorPost/AuthorPost.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "AuthorPost",
+          "methods": [],
+          "props": {
+            "name": {
+              "defaultValue": null,
+              "description": "",
+              "name": "name",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "image": {
+              "defaultValue": null,
+              "description": "",
+              "name": "image",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "post": {
+              "defaultValue": null,
+              "description": "",
+              "name": "post",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "time": {
+              "defaultValue": null,
+              "description": "",
+              "name": "time",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/AuthorPost/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "AuthorPost",
+          "methods": [],
+          "props": {
+            "name": {
+              "defaultValue": null,
+              "description": "",
+              "name": "name",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "image": {
+              "defaultValue": null,
+              "description": "",
+              "name": "image",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "post": {
+              "defaultValue": null,
+              "description": "",
+              "name": "post",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "time": {
+              "defaultValue": null,
+              "description": "",
+              "name": "time",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/Background/Background.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Background",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/components/Background/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Background",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/components/DropdownMenu/DropdownMenu.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "DropdownMenu",
+          "methods": [],
+          "props": {
+            "dropdownMenu": {
+              "defaultValue": null,
+              "description": "",
+              "name": "dropdownMenu",
+              "required": false,
+              "type": {
+                "name": "string[] | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/DropdownMenu/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "DropdownMenu",
+          "methods": [],
+          "props": {
+            "dropdownMenu": {
+              "defaultValue": null,
+              "description": "",
+              "name": "dropdownMenu",
+              "required": false,
+              "type": {
+                "name": "string[] | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/FeaturedCard/FeaturedCard.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "FeaturedCard",
+          "methods": [],
+          "props": {
+            "time": {
+              "defaultValue": null,
+              "description": "",
+              "name": "time",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "theme": {
+              "defaultValue": null,
+              "description": "",
+              "name": "theme",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "title": {
+              "defaultValue": null,
+              "description": "",
+              "name": "title",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "paragraph": {
+              "defaultValue": null,
+              "description": "",
+              "name": "paragraph",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "background": {
+              "defaultValue": null,
+              "description": "",
+              "name": "background",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "firstItem": {
+              "defaultValue": null,
+              "description": "",
+              "name": "firstItem",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            },
+            "lastItem": {
+              "defaultValue": null,
+              "description": "",
+              "name": "lastItem",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/FeaturedCard/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "FeaturedCard",
+          "methods": [],
+          "props": {
+            "time": {
+              "defaultValue": null,
+              "description": "",
+              "name": "time",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "theme": {
+              "defaultValue": null,
+              "description": "",
+              "name": "theme",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "title": {
+              "defaultValue": null,
+              "description": "",
+              "name": "title",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "paragraph": {
+              "defaultValue": null,
+              "description": "",
+              "name": "paragraph",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "background": {
+              "defaultValue": null,
+              "description": "",
+              "name": "background",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "firstItem": {
+              "defaultValue": null,
+              "description": "",
+              "name": "firstItem",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            },
+            "lastItem": {
+              "defaultValue": null,
+              "description": "",
+              "name": "lastItem",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/Footer/Footer.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Footer",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/components/Footer/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Footer",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/components/FooterList/FooterList.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "FooterList",
+          "methods": [],
+          "props": {
+            "list": {
+              "defaultValue": null,
+              "description": "",
+              "name": "list",
+              "required": true,
+              "type": {
+                "name": "FooterList[]"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/FooterList/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "FooterList",
+          "methods": [],
+          "props": {
+            "list": {
+              "defaultValue": null,
+              "description": "",
+              "name": "list",
+              "required": true,
+              "type": {
+                "name": "FooterList[]"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/Header/Header.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Header",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/components/Header/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Header",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/components/IconLabel/IconLabel.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "IconLabel",
+          "methods": [],
+          "props": {
+            "label": {
+              "defaultValue": null,
+              "description": "",
+              "name": "label",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "name": {
+              "defaultValue": null,
+              "description": "",
+              "name": "name",
+              "required": true,
+              "type": {
+                "name": "IconType"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/IconLabel/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "IconLabel",
+          "methods": [],
+          "props": {
+            "label": {
+              "defaultValue": null,
+              "description": "",
+              "name": "label",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "name": {
+              "defaultValue": null,
+              "description": "",
+              "name": "name",
+              "required": true,
+              "type": {
+                "name": "IconType"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/Icons/Icon.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Icon",
+          "methods": [],
+          "props": {
+            "name": {
+              "defaultValue": null,
+              "description": "",
+              "name": "name",
+              "required": false,
+              "type": {
+                "name": "\"instagram\" | \"web\" | \"facebook\" | \"twitter\" | \"topic\" | \"rightArrow\" | undefined"
+              }
+            },
+            "color": {
+              "defaultValue": null,
+              "description": "",
+              "name": "color",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "size": {
+              "defaultValue": null,
+              "description": "",
+              "name": "size",
+              "required": false,
+              "type": {
+                "name": "number | undefined"
+              }
+            },
+            "className": {
+              "defaultValue": null,
+              "description": "",
+              "name": "className",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/Icons/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Icons",
+          "methods": [],
+          "props": {
+            "name": {
+              "defaultValue": null,
+              "description": "",
+              "name": "name",
+              "required": false,
+              "type": {
+                "name": "\"instagram\" | \"web\" | \"facebook\" | \"twitter\" | \"topic\" | \"rightArrow\" | undefined"
+              }
+            },
+            "color": {
+              "defaultValue": null,
+              "description": "",
+              "name": "color",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "size": {
+              "defaultValue": null,
+              "description": "",
+              "name": "size",
+              "required": false,
+              "type": {
+                "name": "number | undefined"
+              }
+            },
+            "className": {
+              "defaultValue": null,
+              "description": "",
+              "name": "className",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/Input/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Input",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/components/Input/Input.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Input",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/components/Logo/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Logo",
+          "methods": [],
+          "props": {
+            "light": {
+              "defaultValue": null,
+              "description": "",
+              "name": "light",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            },
+            "accent": {
+              "defaultValue": null,
+              "description": "",
+              "name": "accent",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/Logo/Logo.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Logo",
+          "methods": [],
+          "props": {
+            "light": {
+              "defaultValue": null,
+              "description": "",
+              "name": "light",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            },
+            "accent": {
+              "defaultValue": null,
+              "description": "",
+              "name": "accent",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/MainNavigation/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "MainNavigation",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/components/MainNavigation/MainNavigation.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "MainNavigation",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/components/MenuItem/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "MenuItem",
+          "methods": [],
+          "props": {
+            "label": {
+              "defaultValue": null,
+              "description": "",
+              "name": "label",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "active": {
+              "defaultValue": null,
+              "description": "",
+              "name": "active",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            },
+            "dropdownMenu": {
+              "defaultValue": null,
+              "description": "",
+              "name": "dropdownMenu",
+              "required": false,
+              "type": {
+                "name": "string[] | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/MenuItem/MenuItem.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "MenuItem",
+          "methods": [],
+          "props": {
+            "label": {
+              "defaultValue": null,
+              "description": "",
+              "name": "label",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "active": {
+              "defaultValue": null,
+              "description": "",
+              "name": "active",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            },
+            "dropdownMenu": {
+              "defaultValue": null,
+              "description": "",
+              "name": "dropdownMenu",
+              "required": false,
+              "type": {
+                "name": "string[] | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/NavigationItem/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "NavigationItem",
+          "methods": [],
+          "props": {
+            "href": {
+              "defaultValue": null,
+              "description": "",
+              "name": "href",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "icon": {
+              "defaultValue": null,
+              "description": "",
+              "name": "icon",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "title": {
+              "defaultValue": null,
+              "description": "",
+              "name": "title",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "active": {
+              "defaultValue": null,
+              "description": "",
+              "name": "active",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            },
+            "profile": {
+              "defaultValue": null,
+              "description": "",
+              "name": "profile",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/NavigationItem/NavigationItem.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "NavigationItem",
+          "methods": [],
+          "props": {
+            "href": {
+              "defaultValue": null,
+              "description": "",
+              "name": "href",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "icon": {
+              "defaultValue": null,
+              "description": "",
+              "name": "icon",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "title": {
+              "defaultValue": null,
+              "description": "",
+              "name": "title",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "active": {
+              "defaultValue": null,
+              "description": "",
+              "name": "active",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            },
+            "profile": {
+              "defaultValue": null,
+              "description": "",
+              "name": "profile",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/NextStory/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "NextStory",
+          "methods": [],
+          "props": {
+            "subtitle": {
+              "defaultValue": null,
+              "description": "",
+              "name": "subtitle",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "paragraph": {
+              "defaultValue": null,
+              "description": "",
+              "name": "paragraph",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/NextStory/NextStory.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "NextStory",
+          "methods": [],
+          "props": {
+            "subtitle": {
+              "defaultValue": null,
+              "description": "",
+              "name": "subtitle",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "paragraph": {
+              "defaultValue": null,
+              "description": "",
+              "name": "paragraph",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/PostInfo/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "PostInfo",
+          "methods": [],
+          "props": {
+            "title": {
+              "defaultValue": null,
+              "description": "",
+              "name": "title",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "subtitle": {
+              "defaultValue": null,
+              "description": "",
+              "name": "subtitle",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "primaryText": {
+              "defaultValue": null,
+              "description": "",
+              "name": "primaryText",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "time": {
+              "defaultValue": null,
+              "description": "",
+              "name": "time",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "white": {
+              "defaultValue": null,
+              "description": "",
+              "name": "white",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/PostInfo/PostInfo.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "PostInfo",
+          "methods": [],
+          "props": {
+            "title": {
+              "defaultValue": null,
+              "description": "",
+              "name": "title",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "subtitle": {
+              "defaultValue": null,
+              "description": "",
+              "name": "subtitle",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "primaryText": {
+              "defaultValue": null,
+              "description": "",
+              "name": "primaryText",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "time": {
+              "defaultValue": null,
+              "description": "",
+              "name": "time",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "white": {
+              "defaultValue": null,
+              "description": "",
+              "name": "white",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/ProfilePhoto/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "ProfilePhoto",
+          "methods": [],
+          "props": {
+            "medium": {
+              "defaultValue": null,
+              "description": "",
+              "name": "medium",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/ProfilePhoto/ProfilePhoto.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "ProfilePhoto",
+          "methods": [],
+          "props": {
+            "medium": {
+              "defaultValue": null,
+              "description": "",
+              "name": "medium",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/SectionNavigation/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "SectionNavigation",
+          "methods": [],
+          "props": {
+            "title": {
+              "defaultValue": null,
+              "description": "",
+              "name": "title",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "borderless": {
+              "defaultValue": null,
+              "description": "",
+              "name": "borderless",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/SectionNavigation/SectionNavigation.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "SectionNavigation",
+          "methods": [],
+          "props": {
+            "title": {
+              "defaultValue": null,
+              "description": "",
+              "name": "title",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "borderless": {
+              "defaultValue": null,
+              "description": "",
+              "name": "borderless",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/Sidebar/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Sidebar",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/components/Sidebar/Sidebar.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Sidebar",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/components/SimpleButton/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "SimpleButton",
+          "methods": [],
+          "props": {
+            "href": {
+              "defaultValue": null,
+              "description": "",
+              "name": "href",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "title": {
+              "defaultValue": null,
+              "description": "",
+              "name": "title",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/SimpleButton/SimpleButton.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "SimpleButton",
+          "methods": [],
+          "props": {
+            "href": {
+              "defaultValue": null,
+              "description": "",
+              "name": "href",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "title": {
+              "defaultValue": null,
+              "description": "",
+              "name": "title",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/SmallCard/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "SmallCard",
+          "methods": [],
+          "props": {
+            "image": {
+              "defaultValue": null,
+              "description": "",
+              "name": "image",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "title": {
+              "defaultValue": null,
+              "description": "",
+              "name": "title",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "time": {
+              "defaultValue": null,
+              "description": "",
+              "name": "time",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "firstItem": {
+              "defaultValue": null,
+              "description": "",
+              "name": "firstItem",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/SmallCard/SmallCard.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "SmallCard",
+          "methods": [],
+          "props": {
+            "image": {
+              "defaultValue": null,
+              "description": "",
+              "name": "image",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "title": {
+              "defaultValue": null,
+              "description": "",
+              "name": "title",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "time": {
+              "defaultValue": null,
+              "description": "",
+              "name": "time",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "firstItem": {
+              "defaultValue": null,
+              "description": "",
+              "name": "firstItem",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/SocialBar/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "SocialBar",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/components/SocialBar/SocialBar.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "SocialBar",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/components/Time/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Time",
+          "methods": [],
+          "props": {
+            "text": {
+              "defaultValue": null,
+              "description": "",
+              "name": "text",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/Time/Time.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Time",
+          "methods": [],
+          "props": {
+            "text": {
+              "defaultValue": null,
+              "description": "",
+              "name": "text",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/TrendingCard/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "TrendingCard",
+          "methods": [],
+          "props": {
+            "image": {
+              "defaultValue": null,
+              "description": "",
+              "name": "image",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "subtitle": {
+              "defaultValue": null,
+              "description": "",
+              "name": "subtitle",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "primaryText": {
+              "defaultValue": null,
+              "description": "",
+              "name": "primaryText",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "time": {
+              "defaultValue": null,
+              "description": "",
+              "name": "time",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/TrendingCard/TrendingCard.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "TrendingCard",
+          "methods": [],
+          "props": {
+            "image": {
+              "defaultValue": null,
+              "description": "",
+              "name": "image",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "subtitle": {
+              "defaultValue": null,
+              "description": "",
+              "name": "subtitle",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "primaryText": {
+              "defaultValue": null,
+              "description": "",
+              "name": "primaryText",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            },
+            "time": {
+              "defaultValue": null,
+              "description": "",
+              "name": "time",
+              "required": true,
+              "type": {
+                "name": "string"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/Video/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Video",
+          "methods": [],
+          "props": {
+            "url": {
+              "defaultValue": null,
+              "description": "",
+              "name": "url",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/Video/Video.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Video",
+          "methods": [],
+          "props": {
+            "url": {
+              "defaultValue": null,
+              "description": "",
+              "name": "url",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/layouts/PageLayout/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "PageLayout",
+          "methods": [],
+          "props": {
+            "content": {
+              "defaultValue": null,
+              "description": "",
+              "name": "content",
+              "required": false,
+              "type": {
+                "name": "string | number | ReactElement<any, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<any, any, any>)> | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/layouts/PageLayout/PageLayout.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "PageLayout",
+          "methods": [],
+          "props": {
+            "content": {
+              "defaultValue": null,
+              "description": "",
+              "name": "content",
+              "required": false,
+              "type": {
+                "name": "string | number | ReactElement<any, string | ((props: any) => ReactElement<any, string | ... | (new (props: any) => Component<any, any, any>)> | null) | (new (props: any) => Component<any, any, any>)> | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/sections/Featured/Featured.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Featured",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/sections/Featured/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Featured",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/sections/Hero/Hero.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Hero",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/sections/Hero/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Hero",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/sections/Knight/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Knight",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/sections/Knight/Knight.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Knight",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/sections/StoryHero/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "StoryHero",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/sections/StoryHero/StoryHero.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "StoryHero",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/sections/StoryKnight/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "StoryKnight",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/sections/StoryKnight/StoryKnight.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "StoryKnight",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/views/Discovery/Discovery.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Discovery",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/views/Discovery/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Discovery",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/views/Home/Home.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Home",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/views/Home/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Home",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/views/Story/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Story",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/views/Story/Story.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Story",
+          "methods": [],
+          "props": {}
+        }
+      ]
+    },
+    {
+      "key": "src/components/Icons/assets/SVGFacebook.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "SVGFacebook",
+          "methods": [],
+          "props": {
+            "color": {
+              "defaultValue": null,
+              "description": "",
+              "name": "color",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "size": {
+              "defaultValue": null,
+              "description": "",
+              "name": "size",
+              "required": true,
+              "type": {
+                "name": "number"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/Icons/assets/SVGInstagram.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "SVGInstagram",
+          "methods": [],
+          "props": {
+            "color": {
+              "defaultValue": null,
+              "description": "",
+              "name": "color",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "size": {
+              "defaultValue": null,
+              "description": "",
+              "name": "size",
+              "required": true,
+              "type": {
+                "name": "number"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/Icons/assets/SVGRightArrow.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "SVGRightArrow",
+          "methods": [],
+          "props": {
+            "color": {
+              "defaultValue": null,
+              "description": "",
+              "name": "color",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/Icons/assets/SVGTopic.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "SVGTopic",
+          "methods": [],
+          "props": {
+            "color": {
+              "defaultValue": null,
+              "description": "",
+              "name": "color",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "size": {
+              "defaultValue": null,
+              "description": "",
+              "name": "size",
+              "required": true,
+              "type": {
+                "name": "number"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/Icons/assets/SVGTwitter.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "SVGTwitter",
+          "methods": [],
+          "props": {
+            "color": {
+              "defaultValue": null,
+              "description": "",
+              "name": "color",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "size": {
+              "defaultValue": null,
+              "description": "",
+              "name": "size",
+              "required": true,
+              "type": {
+                "name": "number"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/Icons/assets/SVGWeb.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "SVGWeb",
+          "methods": [],
+          "props": {
+            "color": {
+              "defaultValue": null,
+              "description": "",
+              "name": "color",
+              "required": false,
+              "type": {
+                "name": "string | undefined"
+              }
+            },
+            "size": {
+              "defaultValue": null,
+              "description": "",
+              "name": "size",
+              "required": true,
+              "type": {
+                "name": "number"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/Sidebar/componenets/SidebarLauncher/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "SidebarLauncher",
+          "methods": [],
+          "props": {
+            "onClick": {
+              "defaultValue": null,
+              "description": "",
+              "name": "onClick",
+              "required": true,
+              "type": {
+                "name": "VoidFunction"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/Sidebar/componenets/SidebarLauncher/SidebarLauncher.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "SidebarLauncher",
+          "methods": [],
+          "props": {
+            "onClick": {
+              "defaultValue": null,
+              "description": "",
+              "name": "onClick",
+              "required": true,
+              "type": {
+                "name": "VoidFunction"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/Sidebar/componenets/SidebarMenu/index.ts",
+      "value": [
+        {
+          "description": "",
+          "displayName": "SidebarMenu",
+          "methods": [],
+          "props": {
+            "closeSidebar": {
+              "defaultValue": null,
+              "description": "",
+              "name": "closeSidebar",
+              "required": true,
+              "type": {
+                "name": "VoidFunction"
+              }
+            },
+            "isOpen": {
+              "defaultValue": null,
+              "description": "",
+              "name": "isOpen",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/Sidebar/componenets/SidebarMenu/SidebarMenu.tsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "SidebarMenu",
+          "methods": [],
+          "props": {
+            "closeSidebar": {
+              "defaultValue": null,
+              "description": "",
+              "name": "closeSidebar",
+              "required": true,
+              "type": {
+                "name": "VoidFunction"
+              }
+            },
+            "isOpen": {
+              "defaultValue": null,
+              "description": "",
+              "name": "isOpen",
+              "required": false,
+              "type": {
+                "name": "boolean | undefined"
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "key": "README.md",
+      "value": {
+        "id": "04c6e90faac2675aa89e2176d2eec7d8",
+        "filepath": "README.md",
+        "fullpath": "C:\\Users\\cesn4\\Documents\\Projects\\discovery-app-learning\\README.md",
+        "link": "",
+        "slug": "readme",
+        "route": "/readme",
+        "name": "Readme",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "discovery-learning-app",
+            "depth": 1,
+            "value": "Discovery learning APP"
+          },
+          {
+            "slug": "structure",
+            "depth": 1,
+            "value": "Structure"
+          },
+          {
+            "slug": "run-the-project",
+            "depth": 1,
+            "value": "Run the project"
+          },
+          {
+            "slug": "testing",
+            "depth": 1,
+            "value": "Testing"
+          },
+          {
+            "slug": "backstop",
+            "depth": 3,
+            "value": "Backstop"
+          },
+          {
+            "slug": "unit-tests",
+            "depth": 3,
+            "value": "Unit Tests"
+          },
+          {
+            "slug": "writing-tests",
+            "depth": 4,
+            "value": "Writing tests:"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/AuthorPost/AuthorPost.mdx",
+      "value": {
+        "name": "AuthorPost",
+        "menu": "Components",
+        "id": "43161cf2b11fb8a06c1e3fe9266d67a2",
+        "filepath": "src/components/AuthorPost/AuthorPost.mdx",
+        "fullpath": "C:\\Users\\cesn4\\Documents\\Projects\\discovery-app-learning\\src\\components\\AuthorPost\\AuthorPost.mdx",
+        "link": "",
+        "slug": "src-components-author-post-author-post",
+        "route": "/src-components-author-post-author-post",
+        "headings": [
+          {
+            "slug": "authorpost-component",
+            "depth": 1,
+            "value": "AuthorPost Component"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/IconLabel/IconLabel.mdx",
+      "value": {
+        "name": "IconLabel",
+        "menu": "Components",
+        "id": "8911a5a4efa1ba07dec79fa0911f9e2d",
+        "filepath": "src/components/IconLabel/IconLabel.mdx",
+        "fullpath": "C:\\Users\\cesn4\\Documents\\Projects\\discovery-app-learning\\src\\components\\IconLabel\\IconLabel.mdx",
+        "link": "",
+        "slug": "src-components-icon-label-icon-label",
+        "route": "/src-components-icon-label-icon-label",
+        "headings": [
+          {
+            "slug": "iconlabel-component",
+            "depth": 1,
+            "value": "IconLabel Component"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/Icons/Icon.mdx",
+      "value": {
+        "name": "Icon",
+        "menu": "Components",
+        "id": "c23351408057b8ec29a0168e728620f6",
+        "filepath": "src/components/Icons/Icon.mdx",
+        "fullpath": "C:\\Users\\cesn4\\Documents\\Projects\\discovery-app-learning\\src\\components\\Icons\\Icon.mdx",
+        "link": "",
+        "slug": "src-components-icons-icon",
+        "route": "/src-components-icons-icon",
+        "headings": [
+          {
+            "slug": "icon-component",
+            "depth": 1,
+            "value": "Icon Component"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/NextStory/NextStory.mdx",
+      "value": {
+        "name": "NextStory",
+        "menu": "Components",
+        "id": "b0f039acdb40fa17a2a991a1b15df089",
+        "filepath": "src/components/NextStory/NextStory.mdx",
+        "fullpath": "C:\\Users\\cesn4\\Documents\\Projects\\discovery-app-learning\\src\\components\\NextStory\\NextStory.mdx",
+        "link": "",
+        "slug": "src-components-next-story-next-story",
+        "route": "/src-components-next-story-next-story",
+        "headings": [
+          {
+            "slug": "nextstory-component",
+            "depth": 1,
+            "value": "NextStory Component"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/components/Time/Time.mdx",
+      "value": {
+        "name": "Time",
+        "menu": "Components",
+        "id": "58089125bddd5b89f3c50cb10b7d4228",
+        "filepath": "src/components/Time/Time.mdx",
+        "fullpath": "C:\\Users\\cesn4\\Documents\\Projects\\discovery-app-learning\\src\\components\\Time\\Time.mdx",
+        "link": "",
+        "slug": "src-components-time-time",
+        "route": "/src-components-time-time",
+        "headings": [
+          {
+            "slug": "simple-component",
+            "depth": 1,
+            "value": "Simple Component"
+          },
+          {
+            "slug": "basic-usage",
+            "depth": 2,
+            "value": "Basic usage"
+          }
+        ]
+      }
+    }
+  ]
+}
