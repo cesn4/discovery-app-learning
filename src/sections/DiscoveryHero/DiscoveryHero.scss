@@ -1,14 +1,19 @@
 .discovery-hero {
+    background-color: theme-color("accent-2");
     width: 100%;
 
     &__box {
-        background-color: theme-color("accent-2");
+
+        @include if-tablet {
+            padding: 0 80px;
+        }
         @include if-desktop {
             padding: 0 140px;
         }
     }
 
     &__content {
+        height: 100%;
         background-image: url('/assets/img/DiscoveryMountain.jpg');
         background-size: cover;
         padding: 90px spacer(small-xl);
@@ -27,5 +32,13 @@
     &__search {
         background-color: theme-color("white");
         padding: spacer(medium-s) spacer(medium-xxs);
+
+        @include if-tablet {
+            padding: 90px 80px;
+        }
+
+        @include if-tablet {
+            padding: 150px 110px;
+        }
     }
 }
