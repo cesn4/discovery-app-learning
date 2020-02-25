@@ -1,4 +1,12 @@
 .discovery-search {
     background-color: theme-color("white");
-    padding: 40px 20px;
+    padding: spacer(medium-s) spacer(medium-xxs);
+
+    &__input-dropdown {
+        margin-bottom: spacer(medium-s);
+    }
+
+    &__button {
+        margin-top: spacer(medium-s);
+    }
 }

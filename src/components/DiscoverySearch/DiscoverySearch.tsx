@@ -14,7 +14,7 @@ const DiscoverySearch: FunctionComponent = () => {
                 <InputDropdown />
             </div>
             <div className={`${className}__input`}>
-                <Input />
+                <Input search label="Enter the first keywords" />
             </div>
             <div className={`${className}__button`}>
                 <SimpleButton title="SEARCH" />

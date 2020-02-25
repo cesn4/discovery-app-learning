@@ -54,7 +54,7 @@ const Footer: FunctionComponent = () => {
                         <Hidden sm>
                             <Col md={6} lg={3}>
                                 <div className="footer__input-box">
-                                    <Input />
+                                    <Input label="Stay in touch with us for the freshest products!" />
                                 </div>
                             </Col>
                         </Hidden>
