@@ -26,7 +26,9 @@ const DiscoveryHero: FunctionComponent = () => {
                             </div>
                         </Col>
                         <Col xs={12} md={12} lg={6}>
-                            <DiscoverySearch />
+                            <div className={`${className}__search`}>
+                                <DiscoverySearch />
+                            </div>
                         </Col>
                     </Row>
                 </div>

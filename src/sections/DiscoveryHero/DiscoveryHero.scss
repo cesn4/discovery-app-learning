@@ -23,4 +23,9 @@
             padding: 150px 110px;
         }
     }
+
+    &__search {
+        background-color: theme-color("white");
+        padding: spacer(medium-s) spacer(medium-xxs);
+    }
 }
