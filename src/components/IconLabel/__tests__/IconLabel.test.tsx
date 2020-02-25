@@ -4,10 +4,11 @@ import IconLabel, { IconLabelProps } from '../IconLabel';
 import Icon from '~/components/Icons';
 
 const labelTest = 'Test label';
+const nameTest = 'facebook';
 
 const HappyProps: IconLabelProps = {
     label: labelTest,
-    name: 'facebook',
+    name: nameTest,
 };
 
 describe('IconLabel component', () => {
@@ -18,6 +19,6 @@ describe('IconLabel component', () => {
 
     it('Should render Icon componenet', () => {
         const wrapper = shallow(<IconLabel {...HappyProps} />);
-        expect(wrapper.find(Icon)).toBeTruthy();
+        expect(wrapper.find(Icon).prop('name')).toEqual(nameTest);
     });
 });

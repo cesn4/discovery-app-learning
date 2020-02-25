@@ -26,28 +26,30 @@ describe('PostInfo component', () => {
         expect(wrapper.find('.post-info__text').text()).toEqual(testString);
     });
 
-    it('Should not have white if white prop is not passed', () => {
+    it('Should not have white if white props is not passed', () => {
         const wrapper = shallow(<PostInfo {...HappyProps} />);
         expect(wrapper.find('.post-info').hasClass('-white')).toBeFalsy();
-    });
-
-    it('Should not have white if white prop is not passed', () => {
-        const wrapper = shallow(<PostInfo {...HappyProps} />);
         expect(
             wrapper.find('.post-info__title').hasClass('-white')
         ).toBeFalsy();
-    });
-
-    it('Should not have white if white prop is not passed', () => {
-        const wrapper = shallow(<PostInfo {...HappyProps} />);
         expect(
             wrapper.find('.post-info__subtitle').hasClass('-white')
         ).toBeFalsy();
+        expect(wrapper.find('.post-info__text').hasClass('-white')).toBeFalsy();
     });
 
-    it('Should not have white if white prop is not passed', () => {
-        const wrapper = shallow(<PostInfo {...HappyProps} />);
-        expect(wrapper.find('.post-info__text').hasClass('-white')).toBeFalsy();
+    it('Should have white if white props is passed', () => {
+        const wrapper = shallow(<PostInfo {...HappyProps} white />);
+        expect(wrapper.find('.post-info').hasClass('-white')).toBeTruthy();
+        expect(
+            wrapper.find('.post-info__title').hasClass('-white')
+        ).toBeTruthy();
+        expect(
+            wrapper.find('.post-info__subtitle').hasClass('-white')
+        ).toBeTruthy();
+        expect(
+            wrapper.find('.post-info__text').hasClass('-white')
+        ).toBeTruthy();
     });
 
     it('Should not render Time component if Time text prop is not passed', () => {

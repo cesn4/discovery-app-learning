@@ -47,4 +47,11 @@ describe('NavigationItem component', () => {
             wrapper.find('.navigation-item__title').hasClass('-active')
         ).toBeFalsy();
     });
+
+    it('Should have active if active prop is passed', () => {
+        const wrapper = shallow(<NavigationItem {...HappyProps} active />);
+        expect(
+            wrapper.find('.navigation-item__title').hasClass('-active')
+        ).toBeTruthy();
+    });
 });

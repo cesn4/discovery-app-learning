@@ -9,4 +9,11 @@ describe('ProfilePhoto component', () => {
             wrapper.find('.profile-photo__img').hasClass('-medium')
         ).toBeFalsy();
     });
+
+    it('Should have medium if medium prop is passed', () => {
+        const wrapper = shallow(<ProfilePhoto medium />);
+        expect(
+            wrapper.find('.profile-photo__img').hasClass('-medium')
+        ).toBeTruthy();
+    });
 });

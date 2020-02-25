@@ -23,6 +23,6 @@ describe('TrendingCard component', () => {
 
     it('Should render PostInfo component', () => {
         const wrapper = shallow(<TrendingCard {...HappyProps} />);
-        expect(wrapper.find(PostInfo)).toBeTruthy();
+        expect(wrapper.find('.trending-card__content').text()).toBeTruthy();
     });
 });
