@@ -17,6 +17,7 @@ const DiscoverySearch: FunctionComponent = () => {
                 <Input search label="Enter the first keywords" />
             </div>
             <div className={`${className}__button`}>
+                {/* TODO re-do hover */}
                 <SimpleButton title="SEARCH" />
             </div>
         </div>

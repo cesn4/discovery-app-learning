@@ -4,6 +4,7 @@
     border-radius: radius(l);
     color: theme-color("white");
     display: flex;
+    font-family: $font-family-primary;
     font-size: font-size("button");
     font-weight: $font-weight-fat;
     height: spacer(medium-s);

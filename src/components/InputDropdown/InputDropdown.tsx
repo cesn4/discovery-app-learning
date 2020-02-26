@@ -13,6 +13,7 @@ const InputDropdown: FunctionComponent = () => {
     return (
         <div className={className}>
             <span className={`${className}__label`}>Select date</span>
+            {/* TODO change font family */}
             <Select options={options}></Select>
         </div>
     );
