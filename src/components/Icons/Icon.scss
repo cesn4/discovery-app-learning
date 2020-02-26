@@ -1,4 +1,5 @@
 .icon {
+    display: flex;
     $_item-transition-list: transform, fill;
     fill: theme-color("white");
     transition: cta-transition($_item-transition-list);

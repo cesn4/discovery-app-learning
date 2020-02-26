@@ -7,7 +7,7 @@ const Discovery: FunctionComponent = () => {
     const className = 'discovery';
     return (
         <div className={className}>
-            <PageLayout content={<ExtraNavigation />} />
+            <PageLayout content={<ExtraNavigation label="Discovery" />} />
         </div>
     );
 };
