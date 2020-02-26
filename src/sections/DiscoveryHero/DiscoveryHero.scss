@@ -1,8 +1,8 @@
 .discovery-hero {
     width: 100%;
+    background-color: theme-color("accent-2");
 
     &__box {
-        background-color: theme-color("accent-2");
         @include if-desktop {
             padding: 0 140px;
         }
