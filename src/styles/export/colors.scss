@@ -1,0 +1,8 @@
+@import '../res/colors.scss';
+
+/*stylelint-disable */
+:export {
+    white: thme-color("white");
+    accent: theme-color("accent-1");
+}
+/* stylelint-enable */

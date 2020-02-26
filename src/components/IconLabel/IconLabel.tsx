@@ -21,7 +21,7 @@ const IconLabel: FunctionComponent<IconLabelProps> = ({
     );
 };
 
-interface IconLabelProps {
+export interface IconLabelProps {
     label: string;
     name: IconType;
 }

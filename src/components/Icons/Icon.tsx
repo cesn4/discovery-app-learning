@@ -32,7 +32,7 @@ const Icon: FunctionComponent<IconProps> = ({
             case 'topic':
                 return <SVGTopic {...iconProps} />;
             case 'rightArrow':
-                return <SVGRightArrow color={color} />;
+                return <SVGRightArrow {...iconProps} />;
             case 'time':
                 return <SVGTime {...iconProps} />;
             default:
@@ -44,7 +44,7 @@ const Icon: FunctionComponent<IconProps> = ({
     );
 };
 
-interface IconProps {
+export interface IconProps {
     name?: IconType;
     color?: string;
     size?: number;

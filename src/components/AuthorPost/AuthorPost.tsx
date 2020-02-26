@@ -21,7 +21,7 @@ const AuthorPost: FunctionComponent<AuthorPostProps> = ({
     );
 };
 
-interface AuthorPostProps {
+export interface AuthorPostProps {
     name: string;
     image: string;
     post: string;

@@ -59,7 +59,9 @@ const Footer: FunctionComponent = () => {
                             </Col>
                         </Hidden>
                         <Col md={6} lg={3}>
-                            <SocialBar />
+                            <div className="footer__social-bar">
+                                <SocialBar />
+                            </div>
                         </Col>
                     </Row>
                 </div>

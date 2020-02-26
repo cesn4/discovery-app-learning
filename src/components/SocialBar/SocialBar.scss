@@ -1,18 +1,6 @@
 .social-bar {
     display: flex;
 
-    @include if-tablet {
-        align-items: flex-end;
-        height: 65px;
-        justify-content: end;
-        width: 100%;
-    }
-
-    @include if-desktop {
-        align-items: start;
-        margin-top: spacer(small-xxs);
-    }
-
     &__icon {
         margin-right: spacer(medium-xs);
 

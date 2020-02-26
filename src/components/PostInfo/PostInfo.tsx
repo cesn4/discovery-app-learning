@@ -47,7 +47,7 @@ const PostInfo: FunctionComponent<PostInfoProps> = ({
     );
 };
 
-interface PostInfoProps {
+export interface PostInfoProps {
     title?: string;
     subtitle?: string;
     primaryText?: string;

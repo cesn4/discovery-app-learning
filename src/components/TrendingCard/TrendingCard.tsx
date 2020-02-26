@@ -24,7 +24,7 @@ const TrendingCard: FunctionComponent<TrendingCardProps> = ({
     );
 };
 
-interface TrendingCardProps {
+export interface TrendingCardProps {
     image: string;
     subtitle: string;
     primaryText: string;

@@ -62,7 +62,6 @@
         @include size(16px);
     }
 
-
     &__label {
         font-size: font-size("navigation");
         line-height: $line-height-big;
@@ -76,4 +75,8 @@
             margin: 0 0 10px 0;
         }
     }
+}
+
+::placeholder {
+    color: theme-color("footer-accent");
 }
