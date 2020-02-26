@@ -25,7 +25,7 @@ const Article: FunctionComponent<ArticleProps> = ({
     );
 };
 
-interface ArticleProps {
+export interface ArticleProps {
     title: string;
     content?: string;
 }

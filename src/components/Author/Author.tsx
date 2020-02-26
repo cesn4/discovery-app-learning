@@ -26,7 +26,7 @@ const Author: FunctionComponent<AuthorProps> = ({
     );
 };
 
-interface AuthorProps {
+export interface AuthorProps {
     image: string;
     name?: string;
     big?: boolean;
