@@ -6,9 +6,17 @@
 
     &__box {
 
+        &.-notes {
+            display: flex;
+        }
+
         @include if-tablet {
             column-count: 2;
             column-gap: spacer(medium-s);
+
+            &.-notes {
+                display: block;
+            }
         }
 
         @include if-desktop {
@@ -31,6 +39,10 @@
 
         @include if-tablet {
             margin-bottom: spacer(medium-xs);
+
+            &.-notes {
+                margin-bottom: spacer(small-xl);
+            }
         }
     }
 
@@ -41,6 +53,10 @@
         display: none;
         padding-top: spacer(medium-xs);
 
+        &.-notes {
+            border: none;
+            padding-top: 0;
+        }
         @include if-tablet {
             display: flex;
         }

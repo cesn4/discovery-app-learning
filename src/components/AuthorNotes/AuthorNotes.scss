@@ -2,12 +2,15 @@
     background-color: theme-color("accent-2");
     display: flex;
     flex-direction: column;
-    padding: 0 spacer(medium-xxs);
 
     &__title-box {
         display: flex;
         flex-direction: column;
         margin-bottom: spacer(medium-xxs);
+
+        @include if-tablet {
+            margin-right: 53%;
+        }
     }
 
     &__title {

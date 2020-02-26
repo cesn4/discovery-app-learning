@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 
 import Author from '~/components/Author';
-import AuthorPost from '~/components/AuthorPost';
+import Article from '../Article';
 
 import './AuthorNotes.scss';
 
@@ -18,7 +18,7 @@ const AuthorNotes: FunctionComponent<AuthorNotesProps> = ({
                 <Author image={image} big />
                 <span className={`${className}__title`}>{title}</span>
             </div>
-            <AuthorPost post={post} time={time} note />
+            <Article content={post} time={time} notes />
         </div>
     );
 };
