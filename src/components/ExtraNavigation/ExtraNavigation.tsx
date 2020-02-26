@@ -1,13 +1,18 @@
 import React, { FunctionComponent } from 'react';
 
 import './ExtraNavigation.scss';
+import Icon from '../Icons';
 
 const ExtraNavigation: FunctionComponent = () => {
     const className = 'extra-navigation';
     return (
         <div className={className}>
-            <div className={`${className}__back-box`}></div>
-            <div className={`${className}__filter-box`}></div>
+            <a href="#" className={`${className}__back-box`}>
+                <Icon name="back" size={16} color="#343638" />
+            </a>
+            <a href="#" className={`${className}__filter-box`}>
+                <Icon name="filter" size={16} color="#343638" />
+            </a>
         </div>
     );
 };
