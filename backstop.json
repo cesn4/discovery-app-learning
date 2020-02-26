@@ -62,7 +62,7 @@
       "expect": 0,
       "misMatchThreshold" : 0.1,
       "requireSameDimensions": true
-    }
+    },
     {
       "label": "Discovery View",
       "cookiePath": "backstop_data/engine_scripts/cookies.json",
