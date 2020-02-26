@@ -27,7 +27,11 @@ const ExtraNavigation: FunctionComponent<ExtraNavigationProps> = ({
                                     href="#"
                                     className={`${className}__home-anchor`}
                                 >
-                                    <Icon name="facebook" />
+                                    <Icon
+                                        name="home"
+                                        size={16}
+                                        color="#343638"
+                                    />
                                 </a>
                                 <span className={`${className}__label`}>
                                     {label}

@@ -10,7 +10,8 @@ const SVGHome: FunctionComponent<SVGIconProps> = ({
             xmlns="http://www.w3.org/2000/svg"
             width={size}
             height={size}
-            viewBox={`0 0 ${size} ${size}`}>
+            viewBox={`0 0 ${size} ${size}`}
+        >
             <path fill={color} d="M0 8l8-8 8 8v8h-5v-6H5v6H0z" />
         </svg>
     );
