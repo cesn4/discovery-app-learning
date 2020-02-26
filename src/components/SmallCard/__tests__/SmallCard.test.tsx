@@ -7,7 +7,7 @@ const titleProp = 'Title';
 const testImage = '~/assets/image.jpg';
 const timeProp = 'Title';
 
-const happyProps: SmallCardProps = {
+const HappyProps: SmallCardProps = {
     title: titleProp,
     image: testImage,
     time: timeProp,
@@ -15,27 +15,27 @@ const happyProps: SmallCardProps = {
 
 describe('SmallCard component', () => {
     it('Should not have firstItem if firstItem prop is not passed', () => {
-        const wrapper = shallow(<SmallCard {...happyProps} />);
+        const wrapper = shallow(<SmallCard {...HappyProps} />);
         expect(wrapper.find('.small-card').hasClass('-firstItem')).toBeFalsy();
     });
 
     it('Should render image', () => {
-        const wrapper = shallow(<SmallCard {...happyProps} />);
+        const wrapper = shallow(<SmallCard {...HappyProps} />);
         expect(wrapper.find('img').prop('src')).toEqual(testImage);
     });
 
     it('Should render PostInfo component', () => {
-        const wrapper = shallow(<SmallCard {...happyProps} />);
+        const wrapper = shallow(<SmallCard {...HappyProps} />);
         expect(wrapper.find(PostInfo)).toBeTruthy();
     });
 
     it('Should render PostInfo subtitle', () => {
-        const wrapper = shallow(<SmallCard {...happyProps} />);
+        const wrapper = shallow(<SmallCard {...HappyProps} />);
         expect(wrapper.find(PostInfo).prop('subtitle')).toEqual(titleProp);
     });
 
     it('Should render PostInfo time', () => {
-        const wrapper = shallow(<SmallCard {...happyProps} />);
+        const wrapper = shallow(<SmallCard {...HappyProps} />);
         expect(wrapper.find(PostInfo).prop('time')).toEqual(timeProp);
     });
 });

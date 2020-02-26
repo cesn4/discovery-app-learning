@@ -1,1 +1,2 @@
-export { default, SmallCardProps } from './SmallCard';
+export { default } from './SmallCard';
+export { SmallCardProps } from './SmallCard';

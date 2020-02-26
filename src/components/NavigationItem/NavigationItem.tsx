@@ -17,6 +17,7 @@ const NavigationItem: FunctionComponent<NavigationItemProps> = ({
             <a href={href} className="navigation-item__anchor">
                 {profile && (
                     <div
+                        prop-test="propTest"
                         className={classNames('navigation-item__icon', {
                             '-profile': profile,
                         })}
