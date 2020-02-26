@@ -1,1 +1,2 @@
-export { default, NextStoryProps } from './NextStory';
+export { default } from './NextStory';
+export { NextStoryProps } from './NextStory';

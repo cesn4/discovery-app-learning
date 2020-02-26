@@ -1,1 +1,2 @@
-export { default, ArticleProps } from './Article';
+export { default } from './Article';
+export { ArticleProps } from './Article';

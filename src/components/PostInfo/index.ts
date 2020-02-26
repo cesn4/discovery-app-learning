@@ -1,1 +1,2 @@
-export { default, PostInfoProps } from './PostInfo';
+export { default } from './PostInfo';
+export { PostInfoProps } from './PostInfo';

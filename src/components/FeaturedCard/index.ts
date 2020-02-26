@@ -1,1 +1,2 @@
-export { default, FeaturedCardProps } from './FeaturedCard';
+export { default } from './FeaturedCard';
+export { FeaturedCardProps } from './FeaturedCard';
