@@ -1,4 +1,5 @@
 import React, { FunctionComponent } from 'react';
+import classNames from 'classnames';
 
 import Time from '~/components/Time';
 import Author from '~/components/Author';
@@ -10,12 +11,15 @@ const AuthorPost: FunctionComponent<AuthorPostProps> = ({
     image,
     post,
     time,
+    note = undefined,
 }: AuthorPostProps) => {
     const className = 'author-post';
     return (
         <div className={className}>
             <Author big image={image} name={name} />
-            <p className={`${className}__post`}>{post}</p>
+            <p className={classNames(`${className}__post`, { '-note': note })}>
+                {post}
+            </p>
             <Time text={time} />
         </div>
     );
@@ -26,6 +30,7 @@ export interface AuthorPostProps {
     image?: string;
     post: string;
     time: string;
+    note?: boolean;
 }
 
 export default AuthorPost;

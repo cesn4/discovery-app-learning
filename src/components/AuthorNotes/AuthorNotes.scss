@@ -11,11 +11,11 @@
     }
 
     &__title {
+        color: theme-color("active");
         font-family: $font-family-primary;
         font-size: font-size("h1");
-        line-height: $line-height-medium;
         font-weight: $font-weight-fat;
-        color: theme-color("active");
+        line-height: $line-height-medium;
         margin-top: spacer(medium-xxs);
     }
 }
