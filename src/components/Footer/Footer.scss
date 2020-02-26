@@ -24,4 +24,20 @@
             margin-top: spacer(small-xxs);
         }
     }
+
+    &__social-bar {
+        display: flex;
+
+        @include if-tablet {
+            align-items: flex-end;
+            height: 65px;
+            justify-content: flex-end;
+            width: 100%;
+        }
+
+        @include if-desktop {
+            align-items: flex-start;
+            margin-top: spacer(small-xxs);
+        }
+    }
 }

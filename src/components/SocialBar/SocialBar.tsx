@@ -1,26 +1,28 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, ReactChild } from 'react';
 
-import Icon from '~/components/Icons';
+import SocialButton, { SocialButtonProps } from '~/components/SocialButton';
 
 import './SocialBar.scss';
 
 const SocialBar: FunctionComponent = () => {
-    return (
-        <div className="social-bar">
-            <a href="#" className="social-bar__icon">
-                <Icon name="instagram" />
-            </a>
-            <a href="#" className="social-bar__icon">
-                <Icon name="twitter" />
-            </a>
-            <a href="#" className="social-bar__icon">
-                <Icon name="facebook" />
-            </a>
-            <a href="#" className="social-bar__icon">
-                <Icon name="web" />
-            </a>
-        </div>
+    const className = 'social-bar';
+    const list: Array<SocialButtonProps> = [
+        { name: 'instagram' },
+        { name: 'facebook' },
+        { name: 'twitter' },
+        { name: 'web' },
+    ];
+
+    const renderList: Array<ReactChild> = list.map(
+        ({ href, name }: SocialButtonProps, index) => {
+            return (
+                <div key={index.toString()} className={`${className}__icon`}>
+                    <SocialButton name={name} href={href} />
+                </div>
+            );
+        }
     );
+    return <div className={className}>{renderList}</div>;
 };
 
 export default SocialBar;
