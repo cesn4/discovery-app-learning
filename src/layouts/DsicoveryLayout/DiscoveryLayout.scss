@@ -1,0 +1,17 @@
+.discovery-layout {
+
+    &__header {
+        display: none;
+
+        @include if-tablet {
+            display: flex;
+        }
+    }
+
+    &__content {
+
+        @include if-tablet {
+            padding-top: spacer(medium-m);
+        }
+    }
+}
