@@ -1,10 +1,13 @@
 .extra-navigation {
-    align-items: center;
     background-color: theme-color("accent-2");
-    display: flex;
-    height: spacer(medium-s);
-    padding: 0 spacer(small-l);
-    width: 100%;
+
+    &__box {
+        align-items: center;
+        display: flex;
+        height: spacer(medium-s);
+        padding: 0 spacer(small-l);
+        width: 100%;
+    }
 
     &__back-box {
         margin-right: auto;
