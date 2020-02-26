@@ -8,6 +8,8 @@ import SVGWeb from './assets/SVGWeb';
 import SVGTopic from './assets/SVGTopic';
 import SVGRightArrow from './assets/SVGRightArrow';
 import SVGTime from './assets/SVGTime';
+import SVGFilter from './assets/SVGFilter';
+import SVGBack from './assets/SVGBack';
 
 import './Icon.scss';
 
@@ -35,6 +37,10 @@ const Icon: FunctionComponent<IconProps> = ({
                 return <SVGRightArrow {...iconProps} />;
             case 'time':
                 return <SVGTime {...iconProps} />;
+            case 'filter':
+                return <SVGFilter {...iconProps} />;
+            case 'back':
+                return <SVGBack {...iconProps} />;
             default:
                 return null;
         }
@@ -58,6 +64,8 @@ export type IconType =
     | 'twitter'
     | 'topic'
     | 'rightArrow'
-    | 'time';
+    | 'time'
+    | 'filter'
+    | 'back';
 
 export default Icon;
