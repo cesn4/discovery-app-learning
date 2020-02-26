@@ -10,6 +10,7 @@ import SVGRightArrow from './assets/SVGRightArrow';
 import SVGTime from './assets/SVGTime';
 import SVGFilter from './assets/SVGFilter';
 import SVGBack from './assets/SVGBack';
+import SVGHome from './assets/SVGHome';
 
 import './Icon.scss';
 
@@ -41,6 +42,8 @@ const Icon: FunctionComponent<IconProps> = ({
                 return <SVGFilter {...iconProps} />;
             case 'back':
                 return <SVGBack {...iconProps} />;
+            case 'home':
+                return <SVGHome {...iconProps} />;
             default:
                 return null;
         }
@@ -66,6 +69,7 @@ export type IconType =
     | 'rightArrow'
     | 'time'
     | 'filter'
-    | 'back';
+    | 'back'
+    | 'home';
 
 export default Icon;
