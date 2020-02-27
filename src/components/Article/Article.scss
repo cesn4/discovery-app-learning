@@ -22,6 +22,11 @@
         @include if-desktop {
             column-count: auto;
             column-gap: normal;
+
+            &.-notes {
+                column-count: 2;
+                column-gap: spacer(medium-s);
+            }
         }
     }
 

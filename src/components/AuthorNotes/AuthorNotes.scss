@@ -1,15 +1,15 @@
 .author-notes {
     background-color: theme-color("accent-2");
-    display: flex;
-    flex-direction: column;
 
     &__title-box {
         display: flex;
         flex-direction: column;
         margin-bottom: spacer(medium-xxs);
+        width: 100%;
 
-        @include if-tablet {
-            margin-right: 53%;
+        @include if-desktop {
+            margin-bottom: 0;
+            padding-right: spacer(medium-s);
         }
     }
 
