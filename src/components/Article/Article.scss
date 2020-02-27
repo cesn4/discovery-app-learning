@@ -8,6 +8,7 @@
 
         &.-notes {
             display: flex;
+            flex-direction: column;
         }
 
         @include if-tablet {
@@ -42,12 +43,12 @@
         font-size: font-size("paragraph");
         line-height: $line-height-big;
 
+        &.-notes {
+            margin-bottom: spacer(small-xl);
+        }
+
         @include if-tablet {
             margin-bottom: spacer(medium-xs);
-
-            &.-notes {
-                margin-bottom: spacer(small-xl);
-            }
         }
     }
 
@@ -60,6 +61,7 @@
 
         &.-notes {
             border: none;
+            display: flex;
             padding-top: 0;
         }
         @include if-tablet {
