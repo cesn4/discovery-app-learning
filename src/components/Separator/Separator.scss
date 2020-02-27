@@ -1,0 +1,5 @@
+.separator {
+    margin: spacer($_key) 0;
+    height: 1px;
+    background-color: theme-color("inactive");
+}
