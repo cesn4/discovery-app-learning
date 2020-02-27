@@ -17,7 +17,7 @@ const AuthorNotes: FunctionComponent<AuthorNotesProps> = ({
         <div className={className}>
             <Container>
                 <Row>
-                    <Col xs={12} md={12} lg={4}>
+                    <Col xs={12} md={6} lg={4}>
                         <div className={`${className}__title-box`}>
                             <Author image={image} big />
                             <span className={`${className}__title`}>
