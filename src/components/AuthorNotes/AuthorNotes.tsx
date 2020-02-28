@@ -34,7 +34,7 @@ const AuthorNotes: FunctionComponent<AuthorNotesProps> = ({
     );
 };
 
-interface AuthorNotesProps {
+export interface AuthorNotesProps {
     image: string;
     title: string;
     post: string;
