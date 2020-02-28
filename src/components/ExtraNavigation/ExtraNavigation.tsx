@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-grid-system';
 
 import Icon from '../Icons';
 
-import Colors from '~/styles/export/colors.scss';
+import { Color } from '~/constants';
 import './ExtraNavigation.scss';
 
 const ExtraNavigation: FunctionComponent<ExtraNavigationProps> = ({
@@ -24,7 +24,7 @@ const ExtraNavigation: FunctionComponent<ExtraNavigationProps> = ({
                                 <Icon
                                     name="back"
                                     size={16}
-                                    color={Colors.active}
+                                    color={Color.active}
                                 />
                             </a>
                             <div className={`${className}__home-box`}>
@@ -35,7 +35,7 @@ const ExtraNavigation: FunctionComponent<ExtraNavigationProps> = ({
                                     <Icon
                                         name="home"
                                         size={16}
-                                        color={Colors.active}
+                                        color={Color.active}
                                     />
                                 </a>
                                 <span className={`${className}__label`}>
@@ -46,7 +46,7 @@ const ExtraNavigation: FunctionComponent<ExtraNavigationProps> = ({
                                 <Icon
                                     name="filter"
                                     size={16}
-                                    color={Colors.active}
+                                    color={Color.active}
                                 />
                             </a>
                         </div>
