@@ -48,7 +48,7 @@ const ExtraNavigation: FunctionComponent<ExtraNavigationProps> = ({
     );
 };
 
-interface ExtraNavigationProps {
+export interface ExtraNavigationProps {
     label: string;
     href?: string;
 }
