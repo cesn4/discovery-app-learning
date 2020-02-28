@@ -72,7 +72,7 @@
             font-size: font-size("paragraph");
             font-weight: $font-weight-fat;
             line-height: $line-height-medium;
-            margin: 0 0 10px 0;
+            margin: 0 0 spacer(small-m) 0;
         }
     }
 }
