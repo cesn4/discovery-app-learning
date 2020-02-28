@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-grid-system';
 
 import Icon from '../Icons';
 
+import Colors from '~/styles/export/colors.scss';
 import './ExtraNavigation.scss';
 
 const ExtraNavigation: FunctionComponent<ExtraNavigationProps> = ({
@@ -20,7 +21,11 @@ const ExtraNavigation: FunctionComponent<ExtraNavigationProps> = ({
                                 href={href}
                                 className={`${className}__back-anchor`}
                             >
-                                <Icon name="back" size={16} color="#343638" />
+                                <Icon
+                                    name="back"
+                                    size={16}
+                                    color={Colors.active}
+                                />
                             </a>
                             <div className={`${className}__home-box`}>
                                 <a
@@ -30,7 +35,7 @@ const ExtraNavigation: FunctionComponent<ExtraNavigationProps> = ({
                                     <Icon
                                         name="home"
                                         size={16}
-                                        color="#343638"
+                                        color={Colors.active}
                                     />
                                 </a>
                                 <span className={`${className}__label`}>
@@ -38,7 +43,11 @@ const ExtraNavigation: FunctionComponent<ExtraNavigationProps> = ({
                                 </span>
                             </div>
                             <a href="#" className={`${className}__filter-box`}>
-                                <Icon name="filter" size={16} color="#343638" />
+                                <Icon
+                                    name="filter"
+                                    size={16}
+                                    color={Colors.active}
+                                />
                             </a>
                         </div>
                     </Col>

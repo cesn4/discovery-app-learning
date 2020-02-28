@@ -2,7 +2,8 @@
 
 /*stylelint-disable */
 :export {
-    white: thme-color("white");
+    white: theme-color("white");
     accent: theme-color("accent-1");
+    active: theme-color("active");
 }
 /* stylelint-enable */
