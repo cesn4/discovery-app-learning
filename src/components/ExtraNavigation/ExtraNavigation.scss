@@ -48,10 +48,10 @@
 
     &__filter-box {
         @include if-tablet {
-            border: solid 2px;
+            border: solid border(m);
             border-color: rgba(theme-color("inactive"), 0.1);
-            border-radius: 6px;
-            padding: 12px;
+            border-radius: radius(l);
+            padding: spacer(small-m);
         }
     }
 }
