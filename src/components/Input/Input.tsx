@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import classNames from 'classnames';
 
+// TODO change png files to svg //
 import send from '~/assets/img/send.png';
 import './Input.scss';
 
@@ -38,7 +39,7 @@ const Input: FunctionComponent<InputProps> = ({
     );
 };
 
-interface InputProps {
+export interface InputProps {
     search?: boolean;
     label?: string;
     placeholder?: string;
