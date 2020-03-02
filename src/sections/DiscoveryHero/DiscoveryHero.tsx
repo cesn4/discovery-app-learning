@@ -4,7 +4,6 @@ import { Container, Row, Col } from 'react-grid-system';
 import DiscoveryTitle from '~/components/DiscoveryTitle';
 
 import Dude from '~/assets/img/dude.jpg';
-
 import '~/assets/img/DiscoveryMountain.jpg';
 import './DiscoveryHero.scss';
 
