@@ -13,7 +13,7 @@
 
     @include if-desktop {
         height: 600px;
-        padding: spacer(trojan-m) spacer(trojan-s) 0 spacer(trojan-s);
+        padding: spacer(trojan-l) spacer(trojan-s) 0 spacer(trojan-s);
     }
 
     &__news-box {

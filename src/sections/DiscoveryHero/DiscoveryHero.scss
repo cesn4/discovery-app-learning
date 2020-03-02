@@ -3,29 +3,29 @@
     width: 100%;
 
     &__box {
-
-        @include if-tablet {
-            padding: 0 80px;
-        }
         @include if-desktop {
-            padding: 0 140px;
+            padding: 0 spacer(trojan-s);
         }
     }
 
     &__content {
-        background-image: url('/assets/img/DiscoveryMountain.jpg');
-        background-size: cover;
-        height: 100%;
-        padding: 90px spacer(small-xl);
+        align-items: center;
+        background-size: cover;     display: flex;
+        flex-direction: column;
+        height: 360px;
+        justify-content: center;
+        padding: 0 spacer(small-xl);
 
         @include if-tablet {
-            padding: spacer(trojan-xs) 170px;
+            height: 480px;
+            padding: 0 spacer(trojan-l);
         }
 
         @include if-desktop {
-            border-bottom-left-radius: radius(l);
-            border-top-left-radius: radius(l);
-            padding: 150px spacer(trojan-xs);
+            border-bottom-left-radius: radius(m);
+            border-top-left-radius: radius(m);
+            height: 580px;
+            padding: 0 spacer(medium-xl);
         }
     }
 
