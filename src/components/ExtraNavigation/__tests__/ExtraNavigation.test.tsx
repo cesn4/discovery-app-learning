@@ -12,7 +12,7 @@ const HappyProps: ExtraNavigationProps = {
     href: testHref,
 };
 
-describe('ExtraNavigatio component', () => {
+describe('ExtraNavigation component', () => {
     it('Should render ExtraNavigation Label', () => {
         const wrapper = shallow(<ExtraNavigation {...HappyProps} />);
         expect(wrapper.find('.extra-navigation__label').text()).toBe(testLabel);
