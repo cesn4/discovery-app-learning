@@ -2,8 +2,8 @@ import React, { FunctionComponent } from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 
 import Icon from '../Icons';
-
 import { Color } from '~/constants';
+
 import './ExtraNavigation.scss';
 
 const ExtraNavigation: FunctionComponent<ExtraNavigationProps> = ({
