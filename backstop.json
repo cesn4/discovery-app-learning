@@ -71,7 +71,7 @@
       "readyEvent": "",
       "readySelector": "",
       "delay": 500,
-      "hideSelectors": [""],
+      "hideSelectors": [],
       "removeSelectors": [],
       "hoverSelector": "",
       "clickSelector": "",
