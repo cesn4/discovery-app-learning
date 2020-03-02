@@ -11,7 +11,7 @@
         }
 
         @include if-desktop {
-            padding: 100px 140px;
+            padding: 100px spacer(trojan-m);
         }
     }
     &__article {

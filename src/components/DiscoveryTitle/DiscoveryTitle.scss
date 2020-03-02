@@ -1,0 +1,29 @@
+.discovery-title {
+    align-items: center;
+    color: theme-color("white");
+    display: flex;
+    flex-direction: column;
+    font-family: $font-family-primary;
+    font-weight: $font-weight-fat;
+
+    &__title {
+        font-size: font-size("heading");
+        line-height: $line-height-medium;
+        text-align: center;
+    }
+
+    &__separator {
+        background-color: theme-color("accent-1");
+        height: border(m);
+        margin: spacer(medium-xs) 0;
+        width: 40px;
+    }
+    &__subtitle {
+        font-size: font-size("text");
+        line-height: $line-height-medium;
+        text-align: center;
+    }
+    &__author-img {
+        margin-top: spacer(medium-xs);
+    }
+}
