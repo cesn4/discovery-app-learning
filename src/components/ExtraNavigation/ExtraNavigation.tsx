@@ -8,7 +8,8 @@ import './ExtraNavigation.scss';
 
 const ExtraNavigation: FunctionComponent<ExtraNavigationProps> = ({
     label,
-    href = '#',
+    backHref = '#',
+    homeHref = '#',
 }: ExtraNavigationProps) => {
     const className = 'extra-navigation';
     return (
@@ -18,7 +19,7 @@ const ExtraNavigation: FunctionComponent<ExtraNavigationProps> = ({
                     <Col>
                         <div className={`${className}__box`}>
                             <a
-                                href={href}
+                                href={backHref}
                                 className={`${className}__back-anchor`}
                             >
                                 <Icon
@@ -29,7 +30,7 @@ const ExtraNavigation: FunctionComponent<ExtraNavigationProps> = ({
                             </a>
                             <div className={`${className}__home-box`}>
                                 <a
-                                    href="#"
+                                    href={homeHref}
                                     className={`${className}__home-anchor`}
                                 >
                                     <Icon
@@ -59,7 +60,8 @@ const ExtraNavigation: FunctionComponent<ExtraNavigationProps> = ({
 
 export interface ExtraNavigationProps {
     label: string;
-    href?: string;
+    backHref?: string;
+    homeHref?: string;
 }
 
 export default ExtraNavigation;
