@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react';
 
 import InputDropdown from '~/components/InputDropdown';
 import Input from '~/components/Input';
-import SimpleButton from '../SimpleButton';
+import SimpleButton from '~/components/SimpleButton';
 
 import './DiscoverySearch.scss';
 
