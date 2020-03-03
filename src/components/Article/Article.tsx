@@ -10,7 +10,7 @@ const Article: FunctionComponent<ArticleProps> = ({
     content,
     subtitle,
     time,
-    notes = undefined,
+    notes = false,
 }: ArticleProps) => {
     const className = 'article';
     return (
