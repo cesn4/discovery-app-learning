@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import Select from 'react-select';
+import InputLabel from '~/components/InputLabel';
 
 import './InputDropdown.scss';
 
@@ -14,7 +14,7 @@ const InputDropdown: FunctionComponent = () => {
         <div className={className}>
             <span className={`${className}__label`}>Select date</span>
             {/* TODO change font family */}
-            <Select options={options}></Select>
+            <InputLabel options={options} />
         </div>
     );
 };
