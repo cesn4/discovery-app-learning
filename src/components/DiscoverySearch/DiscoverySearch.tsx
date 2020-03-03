@@ -11,7 +11,7 @@ const DiscoverySearch: FunctionComponent = () => {
     return (
         <div className={className}>
             <div className={`${className}__input-dropdown`}>
-                <InputDropdown />
+                <InputDropdown title="Select date" />
             </div>
             <div className={`${className}__input`}>
                 <Input search label="Enter the first keywords" />
