@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 
-import Icon from '../Icons';
+import Icon from '~/components/Icons';
 import { Color } from '~/constants';
 
 import './ExtraNavigation.scss';
