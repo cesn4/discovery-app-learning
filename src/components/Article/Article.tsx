@@ -40,7 +40,7 @@ const Article: FunctionComponent<ArticleProps> = ({
 
 export interface ArticleProps {
     title?: string;
-    content?: string;
+    content: string;
     subtitle?: string;
     time?: string;
     notes?: boolean;
