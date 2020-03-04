@@ -7,6 +7,7 @@ const DropdownInput: FunctionComponent<DropdownINputProps> = ({
     label,
 }: DropdownINputProps) => {
     const className = 'dropdown-input';
+    // TODO make a props for this one ( react-select doesnt accept undefined )
     const list = [
         { value: 'chocolate', label: 'Chocolate' },
         { value: 'strawberry', label: 'Strawberry' },
