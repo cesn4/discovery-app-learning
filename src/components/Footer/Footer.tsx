@@ -2,7 +2,7 @@ import React, { FunctionComponent } from 'react';
 import { Container, Row, Col, Hidden } from 'react-grid-system';
 
 import Logo from '~/components/Logo';
-import Input from '~/components/Input';
+import InputLabel from '~/components/InputLabel';
 import FooterList from '~/components/FooterList';
 import SocialBar from '~/components/SocialBar';
 
@@ -54,7 +54,11 @@ const Footer: FunctionComponent = () => {
                         <Hidden sm>
                             <Col md={6} lg={3}>
                                 <div className="footer__input-box">
-                                    <Input label="Stay in touch with us for the freshest products!" />
+                                    <InputLabel
+                                        name="button"
+                                        label="Stay in touch with us for the freshest products!"
+                                        placeholder="Email"
+                                    />
                                 </div>
                             </Col>
                         </Hidden>

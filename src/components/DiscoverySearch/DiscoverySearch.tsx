@@ -1,7 +1,6 @@
 import React, { FunctionComponent } from 'react';
 
-import InputDropdown from '~/components/InputDropdown';
-import Input from '~/components/Input';
+import InputLabel from '~/components/InputLabel';
 import SimpleButton from '~/components/SimpleButton';
 
 import './DiscoverySearch.scss';
@@ -11,10 +10,10 @@ const DiscoverySearch: FunctionComponent = () => {
     return (
         <div className={className}>
             <div className={`${className}__input-dropdown`}>
-                <InputDropdown title="Select date" />
+                <InputLabel name="dropdown" label={'Select date'} />
             </div>
             <div className={`${className}__input`}>
-                <Input search label="Enter the first keywords" />
+                <InputLabel label="Enter the first keywords" name="basic" />
             </div>
             <div className={`${className}__button`}>
                 {/* TODO re-do hover */}

@@ -3,13 +3,13 @@ import classNames from 'classnames';
 
 // TODO change png files to svg //
 import send from '~/assets/img/send.png';
-import './Input.scss';
+import './SimpleInput.scss';
 
-const Input: FunctionComponent<InputProps> = ({
+const Input: FunctionComponent<SimpleInputProps> = ({
     search,
     label,
     placeholder,
-}: InputProps) => {
+}: SimpleInputProps) => {
     return (
         <div className={classNames('input', { '-search': search })}>
             <div className={classNames('input__box', { '-search': search })}>
@@ -39,7 +39,7 @@ const Input: FunctionComponent<InputProps> = ({
     );
 };
 
-export interface InputProps {
+export interface SimpleInputProps {
     search?: boolean;
     label?: string;
     placeholder?: string;

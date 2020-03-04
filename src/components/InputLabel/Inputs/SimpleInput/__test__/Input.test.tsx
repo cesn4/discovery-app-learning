@@ -1,18 +1,18 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Input, { InputProps } from '../Input';
+import SimpleInput, { SimpleInputProps } from '../SimpleInput';
 
 const labelTest = 'label Test';
 const placeholderTest = 'placeholder Test';
 
-const HappyProps: InputProps = {
+const HappyProps: SimpleInputProps = {
     label: labelTest,
     placeholder: placeholderTest,
 };
 
-describe('IconLabel component', () => {
+describe('SimpleInput component', () => {
     it('Input should not render search class if search prop is not passed', () => {
-        const wrapper = shallow(<Input {...HappyProps} />);
+        const wrapper = shallow(<SimpleInput {...HappyProps} />);
         expect(wrapper.find('.input').hasClass('-search')).toBeFalsy();
         expect(wrapper.find('.input__box').hasClass('-search')).toBeFalsy();
         expect(wrapper.find('.input__anchor').hasClass('-search')).toBeFalsy();
@@ -21,7 +21,7 @@ describe('IconLabel component', () => {
     });
 
     it('Input should render search class if search prop is passed', () => {
-        const wrapper = shallow(<Input {...HappyProps} search />);
+        const wrapper = shallow(<SimpleInput {...HappyProps} search />);
         expect(wrapper.find('.input').hasClass('-search')).toBeTruthy();
         expect(wrapper.find('.input__box').hasClass('-search')).toBeTruthy();
         expect(wrapper.find('.input__anchor').hasClass('-search')).toBeTruthy();
@@ -30,12 +30,12 @@ describe('IconLabel component', () => {
     });
 
     it('Should render Input label', () => {
-        const wrapper = shallow(<Input {...HappyProps} />);
+        const wrapper = shallow(<SimpleInput {...HappyProps} />);
         expect(wrapper.find('.input__label').text()).toBe(labelTest);
     });
 
     it('Should render Input placeholder text', () => {
-        const wrapper = shallow(<Input {...HappyProps} />);
+        const wrapper = shallow(<SimpleInput {...HappyProps} />);
         expect(wrapper.find('.input__text').prop('placeholder')).toBe(
             placeholderTest
         );

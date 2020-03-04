@@ -1,0 +1,27 @@
+.dropdown-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &__label {
+        font-family: $font-family-primary;
+        font-size: font-size("paragraph");
+        font-weight: $font-weight-fat;
+        line-height: $line-height-medium;
+        margin-bottom: spacer(small-m);
+    }
+}
+
+.react-select {
+    &__value-container {
+        color: theme-color('inactive');
+        font-family: $font-family-primary;
+        font-size: font-size('text');
+    }
+
+    &__menu {
+        color: theme-color('active');
+        font-family: $font-family-primary;
+        font-size: font-size('text');
+    }
+}
