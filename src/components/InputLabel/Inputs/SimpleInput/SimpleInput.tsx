@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from 'react';
 import classNames from 'classnames';
 
-// TODO change png files to svg //
-import send from '~/assets/img/send.png';
+import Icon from '~/components/Icons';
+
 import './SimpleInput.scss';
 
 const Input: FunctionComponent<SimpleInputProps> = ({
@@ -28,7 +28,8 @@ const Input: FunctionComponent<SimpleInputProps> = ({
                             '-search': search,
                         })}
                     >
-                        <img src={send} className="input__button-img" />
+                        <Icon name="send" color="#fff" />
+                        {/* TODO use color declarations then merged */}
                     </div>
                 </a>
             </div>
