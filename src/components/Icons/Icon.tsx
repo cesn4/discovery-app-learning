@@ -8,6 +8,7 @@ import SVGWeb from './assets/SVGWeb';
 import SVGTopic from './assets/SVGTopic';
 import SVGRightArrow from './assets/SVGRightArrow';
 import SVGTime from './assets/SVGTime';
+import SVGSend from './assets/SVGSend';
 
 import './Icon.scss';
 
@@ -35,6 +36,8 @@ const Icon: FunctionComponent<IconProps> = ({
                 return <SVGRightArrow {...iconProps} />;
             case 'time':
                 return <SVGTime {...iconProps} />;
+            case 'send':
+                return <SVGSend {...iconProps} />;
             default:
                 return null;
         }
@@ -58,6 +61,7 @@ export type IconType =
     | 'twitter'
     | 'topic'
     | 'rightArrow'
-    | 'time';
+    | 'time'
+    | 'send';
 
 export default Icon;
