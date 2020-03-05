@@ -3,9 +3,9 @@ import Select from 'react-select';
 
 import './DropdownInput.scss';
 
-const DropdownInput: FunctionComponent<DropdownINputProps> = ({
+const DropdownInput: FunctionComponent<DropdownInputProps> = ({
     label,
-}: DropdownINputProps) => {
+}: DropdownInputProps) => {
     const className = 'dropdown-input';
     // TODO make a props for this one ( react-select doesnt accept undefined )
     const list = [
@@ -21,7 +21,7 @@ const DropdownInput: FunctionComponent<DropdownINputProps> = ({
     );
 };
 
-interface DropdownINputProps {
+interface DropdownInputProps {
     label?: string;
 }
 

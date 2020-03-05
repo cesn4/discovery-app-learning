@@ -10,10 +10,10 @@ const DiscoverySearch: FunctionComponent = () => {
     return (
         <div className={className}>
             <div className={`${className}__input-dropdown`}>
-                <InputLabel name="dropdown" label="Select date" />
+                <InputLabel type="dropdown" label="Select date" />
             </div>
             <div className={`${className}__input`}>
-                <InputLabel label="Enter the first keywords" name="basic" />
+                <InputLabel label="Enter the first keywords" type="basic" />
             </div>
             <div className={`${className}__button`}>
                 {/* TODO re-do hover */}

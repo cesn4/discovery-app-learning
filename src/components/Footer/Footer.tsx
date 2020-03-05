@@ -55,7 +55,7 @@ const Footer: FunctionComponent = () => {
                             <Col md={6} lg={3}>
                                 <div className="footer__input-box">
                                     <InputLabel
-                                        name="button"
+                                        type="button"
                                         label="Stay in touch with us for the freshest products!"
                                         placeholder="Email"
                                     />

@@ -4,13 +4,13 @@ import DropdownInput from '~/components/InputLabel/Inputs/DropdownInput';
 import SimpleInput from '~/components/InputLabel/Inputs/SimpleInput';
 
 const InputLabel: FunctionComponent<InputLabelProps> = ({
-    name,
+    type,
     label,
     placeholder,
 }: InputLabelProps) => {
     const className = 'input-label';
-    const renderInput: ElementType = (name: InputType) => {
-        switch (name) {
+    const renderInput: ElementType = (type: InputType) => {
+        switch (type) {
             case 'dropdown':
                 return <DropdownInput label={label} />;
             case 'basic':
@@ -21,11 +21,11 @@ const InputLabel: FunctionComponent<InputLabelProps> = ({
                 return null;
         }
     };
-    return <div className={className}>{renderInput(name)}</div>;
+    return <div className={className}>{renderInput(type)}</div>;
 };
 
 interface InputLabelProps {
-    name: InputType;
+    type: InputType;
     label?: string;
     placeholder?: string;
 }
