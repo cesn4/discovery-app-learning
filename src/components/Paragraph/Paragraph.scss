@@ -1,7 +1,7 @@
 .discovery-paragraph {
     background-color: theme-color("accent-2");
-    width: 100%;
     padding: 0 spacer(medium-xxs);
+    width: 100%;
 
     @include if-tablet {
         padding: 0 spacer(medium-xl);
@@ -12,11 +12,11 @@
     }
 
     &__image {
-        height: 180px;
         border-radius: radius(l);
-        width: 100%;
-        object-fit: cover;
+        height: 180px;
         margin-bottom: spacer(medium-xxs);
+        object-fit: cover;
+        width: 100%;
 
         @include if-tablet {
             height: 260px;
@@ -28,10 +28,10 @@
     }
 
     &__paragraph {
+        color: theme-color("inactive");
         font-family: $font-family-primary;
         font-size: font-size("paragraph");
         line-height: $line-height-big;
-        color: theme-color("inactive");
         margin-bottom: spacer(medium-xxs);
 
         @include if-desktop {
@@ -40,11 +40,11 @@
     }
 
     &__comment {
+        color: theme-color("active");
         font-family: $font-family-primary;
         font-size: font-size("paragraph");
-        line-height: $line-height-big;
-        color: theme-color("active");
-        margin-bottom: spacer(medium-xxs);
         font-style: italic;
+        line-height: $line-height-big;
+        margin-bottom: spacer(medium-xxs);
     }
 }
