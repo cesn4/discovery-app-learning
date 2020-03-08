@@ -1,8 +1,12 @@
-.page-layout__content {
+.page-layout {
+    display: flex;
+    flex-direction: column;
 
-    padding-top: spacer(medium-s);
+    &__content {
+        padding-top: spacer(medium-s);
 
-    @include if-tablet {
-        padding-top: spacer(medium-m);
+        @include if-tablet {
+            padding-top: spacer(medium-m);
+        }
     }
 }

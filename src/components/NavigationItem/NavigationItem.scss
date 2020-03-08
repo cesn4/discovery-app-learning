@@ -7,20 +7,18 @@
     text-transform: uppercase;
 
     &__anchor {
-        $_item-transition-list: transform, color;
+        $_item-transition-list: color;
         color: theme-color("inactive");
         display:flex;
         text-decoration: none;
         transition: cta-transition($_item-transition-list);
 
         &:hover {
-            color: theme-color("active");
-            transform: scale(1.1);
+            color: theme-color("accent-1");
         }
     }
 
     &__title {
-
         &.-active {
             color: theme-color("active");
         }

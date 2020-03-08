@@ -1,0 +1,12 @@
+.discovery-search {
+
+    &__input-dropdown {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: spacer(medium-s);
+    }
+
+    &__button {
+        margin-top: spacer(medium-s);
+    }
+}

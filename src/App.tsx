@@ -5,8 +5,8 @@ import {
     HashRouter,
     Route,
 } from 'react-router-dom';
+import { Routes } from './constants';
 
-import { Routes } from './types';
 import Story from '~/views/Story';
 import Home from '~/views/Home';
 import Discovery from '~/views/Discovery';

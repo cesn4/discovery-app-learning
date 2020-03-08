@@ -3,11 +3,11 @@
     &__box {
         background-image: url('/assets/img/jungle.jpg');
         background-size: cover;
-        padding: 140px spacer(medium-xxs) spacer(medium-s) spacer(medium-xxs);
+        padding: spacer(trojan-m) spacer(medium-xxs) spacer(medium-s) spacer(medium-xxs);
         width: 100%;
 
         @include if-tablet {
-            padding: 110px spacer(medium-s) spacer(medium-s) spacer(medium-s);
+            padding: spacer(spacer-xs) spacer(medium-s) spacer(medium-s) spacer(medium-s);
         }
 
         @include if-desktop {
@@ -36,7 +36,7 @@
         margin-bottom: spacer(medium-l);
 
         @include if-tablet {
-            margin-bottom: 110px;
+            margin-bottom: spacer(spacer-xs);
         }
     }
 
