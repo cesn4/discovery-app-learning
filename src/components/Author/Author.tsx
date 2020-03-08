@@ -11,10 +11,14 @@ const Author: FunctionComponent<AuthorProps> = ({
     const className = 'author';
     return (
         <div className={className}>
-            <img
-                className={classNames(`${className}__image`, { '-big': big })}
-                src={image}
-            ></img>
+            {image && (
+                <img
+                    className={classNames(`${className}__image`, {
+                        '-big': big,
+                    })}
+                    src={image}
+                ></img>
+            )}
             <span
                 className={classNames(`${className}__author-name`, {
                     '-big': big,
@@ -27,7 +31,7 @@ const Author: FunctionComponent<AuthorProps> = ({
 };
 
 export interface AuthorProps {
-    image: string;
+    image?: string;
     name?: string;
     big?: boolean;
 }

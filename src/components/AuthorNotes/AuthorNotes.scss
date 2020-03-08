@@ -1,0 +1,24 @@
+.author-notes {
+    background-color: theme-color("accent-2");
+
+    &__title-box {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: spacer(medium-xxs);
+        width: 100%;
+
+        @include if-desktop {
+            margin-bottom: 0;
+            padding-right: spacer(medium-s);
+        }
+    }
+
+    &__title {
+        color: theme-color("active");
+        font-family: $font-family-primary;
+        font-size: font-size("h1");
+        font-weight: $font-weight-fat;
+        line-height: $line-height-medium;
+        margin-top: spacer(medium-xxs);
+    }
+}
