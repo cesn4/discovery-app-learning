@@ -12,22 +12,26 @@ const Paragraph: FunctionComponent<ParagraphProps> = ({
     return (
         <div className={className}>
             <Container>
-                <Row>
-                    <Col xs={12} md={12} lg={12}>
-                        <img
-                            src={image}
-                            className={`${className}__image`}
-                        ></img>
-                    </Col>
-                    <Col xs={12} md={12} lg={8}>
-                        <p className={`${className}__paragraph`}>{paragraph}</p>
-                    </Col>
-                    <Col xs={12} md={12} lg={4}>
-                        <span className={`${className}__comment`}>
-                            {comment}
-                        </span>
-                    </Col>
-                </Row>
+                <div className={`${className}__box`}>
+                    <Row>
+                        <Col xs={12} md={12}>
+                            <img
+                                src={image}
+                                className={`${className}__image`}
+                            ></img>
+                        </Col>
+                        <Col xs={12} md={12} lg={8}>
+                            <p className={`${className}__paragraph`}>
+                                {paragraph}
+                            </p>
+                        </Col>
+                        <Col xs={12} md={12} lg={4}>
+                            <span className={`${className}__comment`}>
+                                {comment}
+                            </span>
+                        </Col>
+                    </Row>
+                </div>
             </Container>
         </div>
     );
