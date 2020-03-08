@@ -1,0 +1,57 @@
+.extra-navigation {
+    background-color: theme-color("accent-2");
+
+    &__box {
+        align-items: center;
+        display: flex;
+        height: spacer(medium-s);
+        padding: 0 spacer(small-l);
+        width: 100%;
+
+        @include if-tablet {
+            height: 80px;
+            padding: 0 spacer(medium-xl);
+        }
+
+        @include if-desktop {
+            padding: 0 spacer(trojan-s);
+        }
+    }
+
+    &__back-anchor {
+        margin-right: auto;
+
+        @include if-tablet {
+            display: none;
+        }
+    }
+
+    &__home-box {
+        align-items: center;
+        display: none;
+        margin-right: auto;
+
+        @include if-tablet {
+            display: flex;
+        }
+    }
+
+    &__label {
+        color: theme-color("active");
+        font-family: $font-family-primary;
+        font-size: font-size("button");
+        font-weight: $font-weight-fat;
+        line-height: $line-height-big;
+        margin-left: spacer(medium-xs);
+        text-transform: uppercase;
+    }
+
+    &__filter-box {
+        @include if-tablet {
+            border: solid border(m);
+            border-color: rgba(theme-color("inactive"), 0.1);
+            border-radius: radius(l);
+            padding: spacer(small-m);
+        }
+    }
+}

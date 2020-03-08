@@ -30,5 +30,4 @@ describe('SidebarMenu component', () => {
         const wrapper = shallow(<SidebarMenu closeSidebar={testHandler} />);
         expect(wrapper.find('button').prop('onClick')).toEqual(testHandler);
     });
-
 });
