@@ -5,24 +5,31 @@ import './DropdownInput.scss';
 
 const DropdownInput: FunctionComponent<DropdownInputProps> = ({
     label,
+    list,
 }: DropdownInputProps) => {
     const className = 'dropdown-input';
-    // TODO make a props for this one ( react-select doesnt accept undefined )
-    const list = [
-        { value: 'chocolate', label: 'Chocolate' },
-        { value: 'strawberry', label: 'Strawberry' },
-        { value: 'vanilla', label: 'Vanilla' },
-    ];
+    const backUpList = [{ value: 'error', label: 'No informationa available' }];
+    const renderList = list ? (
+        <Select options={list} classNamePrefix="react-select" />
+    ) : (
+        <Select options={backUpList} classNamePrefix="react-select" />
+    );
     return (
         <div className={className}>
             <span className={`${className}__label`}>{label}</span>
-            <Select options={list} classNamePrefix="react-select" />
+            {renderList}
         </div>
     );
 };
 
 interface DropdownInputProps {
     label?: string;
+    list?: Array<ListItems>;
+}
+
+export interface ListItems {
+    value: string;
+    label: string;
 }
 
 export default DropdownInput;

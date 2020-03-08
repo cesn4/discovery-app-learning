@@ -7,10 +7,15 @@ import './DiscoverySearch.scss';
 
 const DiscoverySearch: FunctionComponent = () => {
     const className = 'discovery-search';
+    const list = [
+        { value: 'chocolate', label: 'Chocolate' },
+        { value: 'strawberry', label: 'Strawberry' },
+        { value: 'vanilla', label: 'Vanilla' },
+    ];
     return (
         <div className={className}>
             <div className={`${className}__input-dropdown`}>
-                <InputLabel type="dropdown" label="Select date" />
+                <InputLabel type="dropdown" label="Select date" list={list} />
             </div>
             <div className={`${className}__input`}>
                 <InputLabel label="Enter the first keywords" type="basic" />
