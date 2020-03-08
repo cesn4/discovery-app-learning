@@ -2,12 +2,20 @@
     display: flex;
     flex-direction: column;
 
+    &.-search {
+        flex-direction: column-reverse;
+    }
+
     &__box {
         align-items: center;
         background-color: theme-color("inactive");
         display: flex;
         height: spacer(medium-s);
         position: relative;
+
+        &.-search {
+            background-color: theme-color("white");
+        }
     }
 
     &__text {
@@ -19,12 +27,27 @@
         font-family: $font-family-primary;
         padding: spacer(small-m) spacer(small-xl);
         width: 100%;
+
+        &.-search {
+            background-color: theme-color("white");
+            border-radius: 5px;
+            color: theme-color("active");
+            padding: spacer(small-m) 8px;
+
+            &:hover {
+                border-color: darken(theme-color("footer-accent"), 10% );
+            }
+        }
     }
 
     &__anchor {
         position: absolute;
         right: 0;
         top: spacer(small-xxs);
+
+        &.-search {
+            display: none;
+        }
     }
 
     &__button {
@@ -35,14 +58,18 @@
         pointer-events: none;
     }
 
-    &__button-img {
-        @include size(16px);
-    }
-
     &__label {
         font-size: font-size("navigation");
         line-height: $line-height-big;
         margin-top: spacer(a);
+
+        &.-search {
+            font-family: $font-family-primary;
+            font-size: font-size("paragraph");
+            font-weight: $font-weight-fat;
+            line-height: $line-height-medium;
+            margin: 0 0 spacer(small-m) 0;
+        }
     }
 }
 

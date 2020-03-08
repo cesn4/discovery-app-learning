@@ -8,6 +8,7 @@ import SVGWeb from './assets/SVGWeb';
 import SVGTopic from './assets/SVGTopic';
 import SVGRightArrow from './assets/SVGRightArrow';
 import SVGTime from './assets/SVGTime';
+import SVGSend from './assets/SVGSend';
 import SVGFilter from './assets/SVGFilter';
 import SVGBack from './assets/SVGBack';
 import SVGHome from './assets/SVGHome';
@@ -38,6 +39,8 @@ const Icon: FunctionComponent<IconProps> = ({
                 return <SVGRightArrow {...iconProps} />;
             case 'time':
                 return <SVGTime {...iconProps} />;
+            case 'send':
+                return <SVGSend {...iconProps} />;
             case 'filter':
                 return <SVGFilter {...iconProps} />;
             case 'back':
@@ -68,6 +71,7 @@ export type IconType =
     | 'topic'
     | 'rightArrow'
     | 'time'
+    | 'send'
     | 'filter'
     | 'back'
     | 'home';
