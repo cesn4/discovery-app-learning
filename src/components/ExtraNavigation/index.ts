@@ -1,1 +1,1 @@
-export { default } from './ExtraNavigation';
+export { default, ExtraNavigationProps } from './ExtraNavigation';

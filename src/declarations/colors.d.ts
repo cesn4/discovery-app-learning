@@ -7,4 +7,5 @@ declare module "~/styles/export/colors.scss" {
 interface Colors {
     white: string;
     accent: string;
+    active: string;
 }

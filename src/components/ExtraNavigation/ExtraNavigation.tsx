@@ -1,13 +1,15 @@
 import React, { FunctionComponent } from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 
-import Icon from '../Icons';
+import Icon from '~/components/Icons';
+import { Color } from '~/constants';
 
 import './ExtraNavigation.scss';
 
 const ExtraNavigation: FunctionComponent<ExtraNavigationProps> = ({
     label,
-    href = '#',
+    backHref = '#',
+    homeHref = '#',
 }: ExtraNavigationProps) => {
     const className = 'extra-navigation';
     return (
@@ -17,20 +19,24 @@ const ExtraNavigation: FunctionComponent<ExtraNavigationProps> = ({
                     <Col>
                         <div className={`${className}__box`}>
                             <a
-                                href={href}
+                                href={backHref}
                                 className={`${className}__back-anchor`}
                             >
-                                <Icon name="back" size={16} color="#343638" />
+                                <Icon
+                                    name="back"
+                                    size={16}
+                                    color={Color.active}
+                                />
                             </a>
                             <div className={`${className}__home-box`}>
                                 <a
-                                    href="#"
+                                    href={homeHref}
                                     className={`${className}__home-anchor`}
                                 >
                                     <Icon
                                         name="home"
                                         size={16}
-                                        color="#343638"
+                                        color={Color.active}
                                     />
                                 </a>
                                 <span className={`${className}__label`}>
@@ -38,7 +44,11 @@ const ExtraNavigation: FunctionComponent<ExtraNavigationProps> = ({
                                 </span>
                             </div>
                             <a href="#" className={`${className}__filter-box`}>
-                                <Icon name="filter" size={16} color="#343638" />
+                                <Icon
+                                    name="filter"
+                                    size={16}
+                                    color={Color.active}
+                                />
                             </a>
                         </div>
                     </Col>
@@ -48,9 +58,10 @@ const ExtraNavigation: FunctionComponent<ExtraNavigationProps> = ({
     );
 };
 
-interface ExtraNavigationProps {
+export interface ExtraNavigationProps {
     label: string;
-    href?: string;
+    backHref?: string;
+    homeHref?: string;
 }
 
 export default ExtraNavigation;
