@@ -21,6 +21,8 @@ const StoryKnight: FunctionComponent = () => {
                                     title="Quisque viverra interdum velit?"
                                     content="Culpa qui officia deserunt mollit anim id esto polujimi laborum. Sed ut perspiciatis unde omnis iste eropluk onatuspop error sit voluptartem accusantium wetrop doloremque laudantium, totam rem aperiam, eaquep ipsa quaeer ab illo inventore veritatisy et quasi weth ropeior architecto beatae vitae dicta sunt explicapbo. Nemo popul eniem ipsam yui voluptatem quialoperyi voluptas sit aspernatur aute odit aut fugit, sed quiawi consequuntur joki erty magni dolores eosep quiklopii ratione wertyuil voluptatem sequi nesciunt. Nequeop porro polu quisquam est, quepi dolorem ipsum quiat lopi dolor srit amet, consectetur adipisci velit, topitop seid quia non numquam eiuris modij tempora poluko incidunt ut labore et dolore magnam aliquam mokeru quaerat iope voluptatem.
                                     Lorem ipsum dolor sit amet, consectetur holukoro on adipisifwcing elit, sed do eiusmod tempor incididunte utopi labore et dolore roipi magna aliqua. Ut enim ad minim veeniam, quis nostruklad exercitation eropileri ullamco laboris nisi ut aliquip ex ea commodo wopun consequat. Duis aute irure dolor in reprehenderit inie tufpoy voluptate velit esse cillum dolore eu fugiat holi nulla parieratur. Excepteur sint occaecat ropukuli uki cupidatat."
+                                    subtitle="Thought Experiment- VR Travel App"
+                                    time="3h ago by Worldnews"
                                 />
                             </div>
                         </Col>

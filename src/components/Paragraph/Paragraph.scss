@@ -1,0 +1,52 @@
+.discovery-paragraph {
+    background-color: theme-color("accent-2");
+    width: 100%;
+    &__box {
+        padding: 0 spacer(medium-xxs);
+
+        @include if-tablet {
+            padding: 0 spacer(medium-xl);
+        }
+
+        @include if-desktop {
+            padding: 0 spacer(trojan-s);
+        }
+    }
+
+    &__image {
+        border-radius: radius(l);
+        height: 180px;
+        margin-bottom: spacer(medium-xxs);
+        object-fit: cover;
+        width: 100%;
+
+        @include if-tablet {
+            height: 260px;
+        }
+
+        @include if-desktop {
+            height: 500px;
+        }
+    }
+
+    &__paragraph {
+        color: theme-color("inactive");
+        font-family: $font-family-primary;
+        font-size: font-size("paragraph");
+        line-height: $line-height-big;
+        margin-bottom: spacer(medium-xxs);
+
+        @include if-desktop {
+            margin-bottom: 0;
+        }
+    }
+
+    &__comment {
+        color: theme-color("active");
+        font-family: $font-family-primary;
+        font-size: font-size("paragraph");
+        font-style: italic;
+        line-height: $line-height-big;
+        margin-bottom: spacer(medium-xxs);
+    }
+}

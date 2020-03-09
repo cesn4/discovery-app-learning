@@ -19,4 +19,14 @@ describe('Article', () => {
         const wrapper = shallow(<Article {...HappyProps} />);
         expect(wrapper.find('.article__content').text()).toEqual(contentTest);
     });
+
+    it('Should not render notes class if notes prop is not passed', () => {
+        const wrapper = shallow(<Article {...HappyProps} />);
+        expect(wrapper.find('.article__box').hasClass('-notes')).toBeFalsy();
+    });
+
+    it('Should render notes class if notes prop is passed', () => {
+        const wrapper = shallow(<Article {...HappyProps} notes />);
+        expect(wrapper.find('.article__box').hasClass('-notes')).toBeTruthy();
+    });
 });

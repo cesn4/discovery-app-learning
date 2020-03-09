@@ -8,6 +8,7 @@
 
     &__clock-time {
         color: theme-color("inactive");
+        font-family: $font-family-primary;
         font-size: font-size("navigation");
         font-style: italic;
         line-height: $line-height-big;
