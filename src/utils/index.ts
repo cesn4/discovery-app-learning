@@ -1,1 +1,1 @@
-export { fetchStoryContent } from './fetchHeroBackground';
+export { fetchStoryContent } from './fetchStoryContent';
