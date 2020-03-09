@@ -5,10 +5,20 @@ import Video from '~/components/Video';
 import Article from '~/components/Article';
 import AuthorPost from '~/components/AuthorPost';
 
-import AuthorPhoto from '~/assets/img/author.jpg';
-import './StoryKNight.scss';
+import './StoryKnight.scss';
 
-const StoryKnight: FunctionComponent = () => {
+const StoryKnight: FunctionComponent<StoryKnightProps> = ({
+    paragraphTitle,
+    paragraph,
+    paragraphSubtitle,
+    commentAuthorName,
+    commentImage,
+    comment,
+    commentAuthorNameSecond,
+    commentImageSecond,
+    commentSecond,
+    videoURL,
+}: StoryKnightProps) => {
     const className = 'story-knight';
     return (
         <div className={className}>
@@ -18,10 +28,9 @@ const StoryKnight: FunctionComponent = () => {
                         <Col xs={12} md={12} lg={6}>
                             <div className={`${className}__article`}>
                                 <Article
-                                    title="Quisque viverra interdum velit?"
-                                    content="Culpa qui officia deserunt mollit anim id esto polujimi laborum. Sed ut perspiciatis unde omnis iste eropluk onatuspop error sit voluptartem accusantium wetrop doloremque laudantium, totam rem aperiam, eaquep ipsa quaeer ab illo inventore veritatisy et quasi weth ropeior architecto beatae vitae dicta sunt explicapbo. Nemo popul eniem ipsam yui voluptatem quialoperyi voluptas sit aspernatur aute odit aut fugit, sed quiawi consequuntur joki erty magni dolores eosep quiklopii ratione wertyuil voluptatem sequi nesciunt. Nequeop porro polu quisquam est, quepi dolorem ipsum quiat lopi dolor srit amet, consectetur adipisci velit, topitop seid quia non numquam eiuris modij tempora poluko incidunt ut labore et dolore magnam aliquam mokeru quaerat iope voluptatem.
-                                    Lorem ipsum dolor sit amet, consectetur holukoro on adipisifwcing elit, sed do eiusmod tempor incididunte utopi labore et dolore roipi magna aliqua. Ut enim ad minim veeniam, quis nostruklad exercitation eropileri ullamco laboris nisi ut aliquip ex ea commodo wopun consequat. Duis aute irure dolor in reprehenderit inie tufpoy voluptate velit esse cillum dolore eu fugiat holi nulla parieratur. Excepteur sint occaecat ropukuli uki cupidatat."
-                                    subtitle="Thought Experiment- VR Travel App"
+                                    title={paragraphTitle}
+                                    content={paragraph}
+                                    subtitle={paragraphSubtitle}
                                     time="3h ago by Worldnews"
                                 />
                             </div>
@@ -30,22 +39,22 @@ const StoryKnight: FunctionComponent = () => {
                         <Col xs={12} md={12} lg={6}>
                             <div className={`${className}__author-posts`}>
                                 <AuthorPost
-                                    name="Jonathan Walker"
-                                    post="In hac habitasse platea dictumst. Sed nec venenatis odio. Nulla faucibus ipsum sed faucibus accumsan…"
+                                    name={commentAuthorName}
+                                    post={comment}
                                     time="2m ago"
-                                    image={AuthorPhoto}
+                                    image={commentImage}
                                 />
                             </div>
                             <div className={`${className}__author-posts`}>
                                 <AuthorPost
-                                    name="Brenda Mercer"
-                                    post="Nulla faucibus ipsum sed faucibus accumsan. Donec rhoncus luctus massa vitae lobortis. Duis consequat, nunc a pretim…"
+                                    name={commentAuthorNameSecond}
+                                    post={commentSecond}
                                     time="2m ago"
-                                    image={AuthorPhoto}
+                                    image={commentImageSecond}
                                 />
                             </div>
                             <div className={`${className}__video`}>
-                                <Video url="https://www.youtube.com/watch?v=6lt2JfJdGSY" />
+                                <Video url={videoURL} />
                             </div>
                         </Col>
                     </Row>
@@ -54,5 +63,18 @@ const StoryKnight: FunctionComponent = () => {
         </div>
     );
 };
+
+interface StoryKnightProps {
+    paragraphTitle: string;
+    paragraph: string;
+    paragraphSubtitle: string;
+    commentAuthorName: string;
+    commentImage: string;
+    comment: string;
+    commentAuthorNameSecond: string;
+    commentImageSecond: string;
+    commentSecond: string;
+    videoURL: string;
+}
 
 export default StoryKnight;

@@ -4,12 +4,15 @@ import { Container, Row, Col } from 'react-grid-system';
 import IconLabel from '~/components/IconLabel';
 import Author from '~/components/Author';
 import NextStory from '~/components/NextStory';
-import AuthorPhoto from '~/assets/img/author.jpg';
 
 import '~/assets/img/jungle.jpg';
 import './StoryHero.scss';
 
-const StoryHero: FunctionComponent = () => {
+const StoryHero: FunctionComponent<StoryHeroProps> = ({
+    title,
+    authorPhoto,
+    authorName,
+}: StoryHeroProps) => {
     const className = 'story-hero';
 
     return (
@@ -18,9 +21,7 @@ const StoryHero: FunctionComponent = () => {
                 <div className={`${className}__box`}>
                     <Row>
                         <Col xs={12} md={12} lg={12}>
-                            <div className={`${className}__title`}>
-                                AMAZING PLACES IN AMERICA TO VISIT
-                            </div>
+                            <div className={`${className}__title`}>{title}</div>
                         </Col>
                         <Col>
                             <div className={`${className}__icon-box`}>
@@ -39,10 +40,7 @@ const StoryHero: FunctionComponent = () => {
                     <Row>
                         <Col>
                             <div className={`${className}__bottom-row`}>
-                                <Author
-                                    image={AuthorPhoto}
-                                    name="by Steven Voorhees"
-                                />
+                                <Author image={authorPhoto} name={authorName} />
                                 <NextStory
                                     subtitle="Morbi eleifend a libero"
                                     paragraph="Quisque viverra interdum velit, et cursus magna sagittis in. In dui dui."
@@ -55,5 +53,11 @@ const StoryHero: FunctionComponent = () => {
         </div>
     );
 };
+
+interface StoryHeroProps {
+    title: string;
+    authorPhoto: string;
+    authorName: string;
+}
 
 export default StoryHero;

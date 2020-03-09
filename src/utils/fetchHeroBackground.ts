@@ -1,17 +1,14 @@
-// import axios from 'axios';
-import { background } from '../../api/index';
-import { setHeroBackground } from '~/store/actions';
+import axios from 'axios';
+// import { background } from '../../api/index';
+import { SetStoryContent } from '~/store/actions';
 
-export const fetchHeroBackground = (): void => {
-    // axios
-    //     .get('http://localhost:1337/backgrounds')
-    //     .then(function(response) {
-    //       setHeroBackground(response.data);
-    //     })
-    //     .catch(function(error) {
-    //         console.log(error);
-    //     });
-    setTimeout(() => {
-        setHeroBackground(background);
-    }, 1000);
+export const fetchStoryContent = (): void => {
+    axios
+        .get('http://localhost:1337/story')
+        .then(function(response) {
+            SetStoryContent(response.data);
+        })
+        .catch(function(error) {
+            console.log(error);
+        });
 };

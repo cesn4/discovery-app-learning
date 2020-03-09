@@ -1,13 +1,27 @@
 import { store } from '~/store';
 
-export const setHeroBackground = (
-    payload: Array<HeroBackgroundItems>
-): void => {
-    store.dispatch({ type: 'SetHeroBackground', payload: payload });
+export const SetStoryContent = (payload: StoryConentItems): void => {
+    store.dispatch({ type: 'SetStoryContent', payload: payload });
 };
 
-interface HeroBackgroundItems {
+interface StoryConentItems {
     title: string;
-    subtitle: string;
+    paragraphTitle: string;
     paragraph: string;
+    paragraphSubtitle: string;
+    videoURL: string;
+    author: AuhtorProfile;
+    comments: AuthorComment;
+    backgroundImage: string;
+}
+
+interface AuhtorProfile {
+    name: string;
+    profile: string;
+}
+
+interface AuthorComment {
+    name: string;
+    comment: string;
+    profile: string;
 }

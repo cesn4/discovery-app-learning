@@ -1,13 +1,22 @@
 const initialState: ApplicationState = {
-    heroBackground: [],
+    storyContent: {
+        title: '',
+        paragraphTitle: '',
+        paragraph: '',
+        paragraphSubtitle: '',
+        videoURL: '',
+        author: { name: '', profile: '' },
+        comments: { name: '', comment: '', profile: '' },
+        backgroundImage: '',
+    },
 };
 
 const reducer = (state = initialState, action: Actions): ApplicationState => {
     switch (action.type) {
-        case 'SetHeroBackground': {
+        case 'SetStoryContent': {
             return {
                 ...state,
-                heroBackground: action.payload,
+                storyContent: action.payload,
             };
         }
         default:
@@ -15,21 +24,37 @@ const reducer = (state = initialState, action: Actions): ApplicationState => {
     }
 };
 
-interface SetHeroBackground {
-    type: 'SetHeroBackground';
-    payload: Array<HeroBackgroundItems>;
+interface SetStoryConent {
+    type: 'SetStoryContent';
+    payload: StoryConentItems;
 }
 
-type Actions = SetHeroBackground;
+type Actions = SetStoryConent;
 
 interface ApplicationState {
-    heroBackground: Array<HeroBackgroundItems>;
+    storyContent: StoryConentItems;
 }
 
-interface HeroBackgroundItems {
+interface StoryConentItems {
     title: string;
-    subtitle: string;
+    paragraphTitle: string;
     paragraph: string;
+    paragraphSubtitle: string;
+    videoURL: string;
+    author: AuhtorProfile;
+    comments: AuthorComment;
+    backgroundImage: string;
+}
+
+interface AuhtorProfile {
+    name: string;
+    profile: string;
+}
+
+interface AuthorComment {
+    name: string;
+    comment: string;
+    profile: string;
 }
 
 export default reducer;

@@ -1,8 +1,7 @@
 import React, { FunctionComponent, Fragment } from 'react';
 
-import StoryHero from '~/sections/StoryHero';
-import StoryKnight from '~/sections/StoryKnight';
 import PageLayout from '~/layouts/PageLayout';
+import StoryContainer from '~/containers/StoryContainer';
 
 const Story: FunctionComponent = () => {
     return (
@@ -10,8 +9,7 @@ const Story: FunctionComponent = () => {
             <PageLayout
                 content={
                     <Fragment>
-                        <StoryHero />
-                        <StoryKnight />
+                        <StoryContainer />
                     </Fragment>
                 }
             />
