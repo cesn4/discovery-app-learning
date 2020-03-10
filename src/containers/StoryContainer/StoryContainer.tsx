@@ -26,13 +26,7 @@ const StoryContainer: FunctionComponent<MappedProps> = ({
                 paragraphTitle={story.paragraphTitle}
                 paragraph={story.paragraph}
                 paragraphSubtitle={story.paragraphSubtitle}
-                // Pass an array to component //
-                commentAuthorName={story.paragraphComment[0].commentAuthor}
-                comment={story.paragraphComment[0].commentText}
-                commentImage={story.paragraphComment[0].commentAuthorImage}
-                commentAuthorNameSecond=""
-                commentImageSecond=""
-                commentSecond=""
+                comments={story.paragraphComment}
                 videoURL={story.videoURL}
             />
         </Fragment>
@@ -40,15 +34,10 @@ const StoryContainer: FunctionComponent<MappedProps> = ({
         <Fragment>
             <StoryHero title="" authorName="" authorPhoto="" background="" />
             <StoryKnight
+                comments={[]}
                 paragraphTitle=""
                 paragraph=""
                 paragraphSubtitle=""
-                commentAuthorName=""
-                comment=""
-                commentImage=""
-                commentAuthorNameSecond=""
-                commentImageSecond=""
-                commentSecond=""
                 videoURL=""
             />
         </Fragment>

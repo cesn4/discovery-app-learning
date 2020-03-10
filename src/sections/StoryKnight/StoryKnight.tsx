@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, ReactChild } from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 
 import Video from '~/components/Video';
@@ -11,15 +11,30 @@ const StoryKnight: FunctionComponent<StoryKnightProps> = ({
     paragraphTitle,
     paragraph,
     paragraphSubtitle,
-    commentAuthorName,
-    commentImage,
-    comment,
-    commentAuthorNameSecond,
-    commentImageSecond,
-    commentSecond,
+    comments,
     videoURL,
 }: StoryKnightProps) => {
     const className = 'story-knight';
+    const renderComments: Array<ReactChild> = comments.map(
+        (
+            { commentAuthor, commentText, commentAuthorImage }: CommentObject,
+            index
+        ) => {
+            return (
+                <div
+                    key={index.toString()}
+                    className={`${className}__author-posts`}
+                >
+                    <AuthorPost
+                        name={commentAuthor}
+                        post={commentText}
+                        time="2m ago"
+                        image={commentAuthorImage}
+                    />
+                </div>
+            );
+        }
+    );
     return (
         <div className={className}>
             <Container>
@@ -37,22 +52,7 @@ const StoryKnight: FunctionComponent<StoryKnightProps> = ({
                         </Col>
                         <div className={`${className}__separator`}>&nbsp;</div>
                         <Col xs={12} md={12} lg={6}>
-                            <div className={`${className}__author-posts`}>
-                                <AuthorPost
-                                    name={commentAuthorName}
-                                    post={comment}
-                                    time="2m ago"
-                                    image={commentImage}
-                                />
-                            </div>
-                            <div className={`${className}__author-posts`}>
-                                <AuthorPost
-                                    name={commentAuthorNameSecond}
-                                    post={commentSecond}
-                                    time="2m ago"
-                                    image={commentImageSecond}
-                                />
-                            </div>
+                            {renderComments}
                             <div className={`${className}__video`}>
                                 <Video url={videoURL} />
                             </div>
@@ -68,13 +68,13 @@ interface StoryKnightProps {
     paragraphTitle: string;
     paragraph: string;
     paragraphSubtitle: string;
-    commentAuthorName: string;
-    commentImage: string;
-    comment: string;
-    commentAuthorNameSecond: string;
-    commentImageSecond: string;
-    commentSecond: string;
     videoURL: string;
+    comments: Array<CommentObject>;
 }
 
+interface CommentObject {
+    commentAuthor: string;
+    commentAuthorImage: string;
+    commentText: string;
+}
 export default StoryKnight;
