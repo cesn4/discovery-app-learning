@@ -15,15 +15,42 @@ import Story from '~/views/Story';
 import Home from '~/views/Home';
 import Discovery from '~/views/Discovery';
 import '~/config/layout';
+import { fetchStoryContent } from '~/utils';
+
+fetchStoryContent();
 
 const App: FunctionComponent<StoryPages> = ({ storyContent }: StoryPages) => {
     const renderStoryPages: Array<ReactChild> = storyContent.map(
-        ({ id }: IdObject, index) => {
+        (
+            {
+                id,
+                title,
+                paragraphTitle,
+                paragraph,
+                paragraphSubtitle,
+                authorName,
+                authorImage,
+                videoURL,
+                backgroundImage,
+                paragraphComment,
+            }: StoryContentItems,
+            index
+        ) => {
             const route = '/story/' + id + '';
             console.log(route);
             return (
                 <Route exact path={route} key={index.toString()}>
-                    <Story />
+                    <Story
+                        title={title}
+                        paragraphTitle={paragraphTitle}
+                        paragraph={paragraph}
+                        paragraphSubtitle={paragraphSubtitle}
+                        authorName={authorName}
+                        authorPhoto={authorImage}
+                        videoURL={videoURL}
+                        background={backgroundImage}
+                        comments={paragraphComment}
+                    />
                 </Route>
             );
         }
@@ -53,9 +80,6 @@ const mapStateToProps = (state: ApplicationState): StoryPages => {
 
 interface StoryPages {
     storyContent: Array<StoryContentItems>;
-}
-interface IdObject {
-    id: string;
 }
 
 export default connect(mapStateToProps)(App);

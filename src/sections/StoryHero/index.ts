@@ -1,1 +1,1 @@
-export { default } from './StoryHero';
+export { default, StoryHeroProps } from './StoryHero';

@@ -58,7 +58,7 @@ const StoryHero: FunctionComponent<StoryHeroProps> = ({
     );
 };
 
-interface StoryHeroProps {
+export interface StoryHeroProps {
     title: string;
     authorPhoto: string;
     authorName: string;

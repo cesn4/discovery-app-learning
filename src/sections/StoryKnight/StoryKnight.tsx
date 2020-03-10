@@ -64,7 +64,7 @@ const StoryKnight: FunctionComponent<StoryKnightProps> = ({
     );
 };
 
-interface StoryKnightProps {
+export interface StoryKnightProps {
     paragraphTitle: string;
     paragraph: string;
     paragraphSubtitle: string;
