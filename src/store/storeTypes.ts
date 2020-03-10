@@ -15,6 +15,7 @@ export interface SetStoryContent {
 //ConentItems types
 
 export interface StoryContentItems {
+    id: string;
     title: string;
     paragraphTitle: string;
     paragraph: string;

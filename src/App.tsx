@@ -17,13 +17,17 @@ import Discovery from '~/views/Discovery';
 import '~/config/layout';
 
 const App: FunctionComponent<StoryPages> = ({ storyContent }: StoryPages) => {
-    const renderStoryPages: Array<ReactChild> = storyContent.map((index) => {
-        return (
-            <Route exact path={Routes.story} key={index.toString()}>
-                <Story />
-            </Route>
-        );
-    });
+    const renderStoryPages: Array<ReactChild> = storyContent.map(
+        ({ id }: IdObject, index) => {
+            const route = '/story/' + id + '';
+            console.log(route);
+            return (
+                <Route exact path={route} key={index.toString()}>
+                    <Story />
+                </Route>
+            );
+        }
+    );
     return (
         <Router>
             <Switch>
@@ -49,6 +53,9 @@ const mapStateToProps = (state: ApplicationState): StoryPages => {
 
 interface StoryPages {
     storyContent: Array<StoryContentItems>;
+}
+interface IdObject {
+    id: string;
 }
 
 export default connect(mapStateToProps)(App);
