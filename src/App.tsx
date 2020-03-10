@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import React, { FunctionComponent, ReactChild } from 'react';
 import { connect } from 'react-redux';
 import {
     BrowserRouter as Router,
@@ -16,7 +16,14 @@ import Home from '~/views/Home';
 import Discovery from '~/views/Discovery';
 import '~/config/layout';
 
-const App: FunctionComponent = () => {
+const App: FunctionComponent<StoryPages> = ({ storyContent }: StoryPages) => {
+    const renderStoryPages: Array<ReactChild> = storyContent.map((index) => {
+        return (
+            <Route exact path={Routes.story} key={index.toString()}>
+                <Story />
+            </Route>
+        );
+    });
     return (
         <Router>
             <Switch>
@@ -24,9 +31,7 @@ const App: FunctionComponent = () => {
                     <Route exact path={Routes.home}>
                         <Home />
                     </Route>
-                    <Route exact path={Routes.story}>
-                        <Story />
-                    </Route>
+                    {renderStoryPages}
                     <Route exact path={Routes.discovery}>
                         <Discovery />
                     </Route>
