@@ -11,11 +11,13 @@ const initialState: ApplicationState = {
         authorImage: '',
         videoURL: '',
         backgroundImage: '',
-        paragraphComment: {
-            commentAuthor: '',
-            commentText: '',
-            commentAuthorImage: '',
-        },
+        paragraphComment: [
+            {
+                commentAuthor: '',
+                commentText: '',
+                commentAuthorImage: '',
+            },
+        ],
     },
 };
 
