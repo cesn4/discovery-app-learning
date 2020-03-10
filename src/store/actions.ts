@@ -1,7 +1,7 @@
 import { store } from '~/store';
 
-import { StoryConentItems } from './storeTypes';
+import { StoryContentItems } from './storeTypes';
 
-export const SetStoryContent = (payload: StoryConentItems): void => {
+export const SetStoryContent = (payload: Array<StoryContentItems>): void => {
     store.dispatch({ type: 'SetStoryContent', payload: payload });
 };

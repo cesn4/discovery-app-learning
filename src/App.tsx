@@ -1,11 +1,15 @@
 import React, { FunctionComponent } from 'react';
+import { connect } from 'react-redux';
 import {
     BrowserRouter as Router,
     Switch,
     HashRouter,
     Route,
 } from 'react-router-dom';
+
 import { Routes } from './constants';
+import { ApplicationState } from '~/store/storeTypes';
+import { StoryContentItems } from '~/store/storeTypes';
 
 import Story from '~/views/Story';
 import Home from '~/views/Home';
@@ -32,4 +36,14 @@ const App: FunctionComponent = () => {
     );
 };
 
-export default App;
+const mapStateToProps = (state: ApplicationState): StoryPages => {
+    return {
+        storyContent: state.storyContent,
+    };
+};
+
+interface StoryPages {
+    storyContent: Array<StoryContentItems>;
+}
+
+export default connect(mapStateToProps)(App);

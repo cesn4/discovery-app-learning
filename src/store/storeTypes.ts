@@ -1,20 +1,20 @@
 //ApplicationState types
 
 export interface ApplicationState {
-    storyContent: StoryConentItems;
+    storyContent: Array<StoryContentItems>;
 }
 
 //Actions types
-export type Actions = SetStoryConent;
+export type Actions = SetStoryContent;
 
-export interface SetStoryConent {
+export interface SetStoryContent {
     type: 'SetStoryContent';
-    payload: StoryConentItems;
+    payload: Array<StoryContentItems>;
 }
 
 //ConentItems types
 
-export interface StoryConentItems {
+export interface StoryContentItems {
     title: string;
     paragraphTitle: string;
     paragraph: string;

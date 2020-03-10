@@ -5,14 +5,14 @@ import StoryHero from '~/sections/StoryHero';
 import StoryKnight from '~/sections/StoryKnight';
 import { fetchStoryContent } from '~/utils';
 import { ApplicationState } from '~/store/storeTypes';
-import { StoryConentItems } from '~/store/storeTypes';
+import { StoryContentItems } from '~/store/storeTypes';
 
 fetchStoryContent();
 
 const StoryContainer: FunctionComponent<MappedProps> = ({
     storyContent,
 }: MappedProps) => {
-    const story = storyContent;
+    const story = storyContent[0];
     console.log(story.paragraphComment[0].commentAuthorImage);
     const renderStory = story ? (
         <Fragment>
@@ -52,7 +52,7 @@ const mapStateToProps = (state: ApplicationState): MappedProps => {
 };
 
 interface MappedProps {
-    storyContent: StoryConentItems;
+    storyContent: Array<StoryContentItems>;
 }
 
 export default connect(mapStateToProps)(StoryContainer);
