@@ -2,7 +2,19 @@ import { ApplicationState } from './storeTypes';
 import { Actions } from './storeTypes';
 
 const initialState: ApplicationState = {
-    storyContent: [],
+    storyContent: {
+        title: '',
+        paragraphTitle: '',
+        paragraph: '',
+        paragraphSubtitle: '',
+        authorName: '',
+        authorImage: '',
+        videoURL: '',
+        backgroundImage: '',
+        paragraphComment: [
+            { commentAuthor: '', commentText: '', commentAuthorImage: '' },
+        ],
+    },
 };
 
 const reducer = (state = initialState, action: Actions): ApplicationState => {

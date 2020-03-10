@@ -1,7 +1,7 @@
 //ApplicationState types
 
 export interface ApplicationState {
-    storyContent: Array<StoryConentItems>;
+    storyContent: StoryConentItems;
 }
 
 //Actions types
@@ -9,7 +9,7 @@ export type Actions = SetStoryConent;
 
 export interface SetStoryConent {
     type: 'SetStoryContent';
-    payload: Array<StoryConentItems>;
+    payload: StoryConentItems;
 }
 
 //ConentItems types
