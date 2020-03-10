@@ -23,7 +23,7 @@ export interface StoryConentItems {
     authorImage: string;
     videoURL: string;
     backgroundImage: string;
-    paragraphComment: Array<ParagraphComment>;
+    paragraphComment: ParagraphComment;
 }
 
 export interface ParagraphComment {

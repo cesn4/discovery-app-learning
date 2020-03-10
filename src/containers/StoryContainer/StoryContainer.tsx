@@ -13,21 +13,22 @@ const StoryContainer: FunctionComponent<MappedProps> = ({
     storyContent,
 }: MappedProps) => {
     const story = storyContent;
-    console.log(story.authorImage[0].url);
+    console.log(story.paragraphComment.commentAuthorImage);
     const renderStory = storyContent ? (
         <Fragment>
             <StoryHero
                 title={story.title}
                 authorName={story.authorName}
                 authorPhoto={story.authorImage}
+                background={story.backgroundImage}
             />
             <StoryKnight
                 paragraphTitle={story.paragraphTitle}
                 paragraph={story.paragraph}
                 paragraphSubtitle={story.paragraphSubtitle}
-                commentAuthorName=""
-                comment=""
-                commentImage=""
+                commentAuthorName={story.paragraphComment.commentAuthor}
+                comment={story.paragraphComment.commentText}
+                commentImage={story.paragraphComment.commentAuthorImage}
                 commentAuthorNameSecond=""
                 commentImageSecond=""
                 commentSecond=""
@@ -36,7 +37,7 @@ const StoryContainer: FunctionComponent<MappedProps> = ({
         </Fragment>
     ) : (
         <Fragment>
-            <StoryHero title="" authorName="" authorPhoto="" />
+            <StoryHero title="" authorName="" authorPhoto="" background="" />
             <StoryKnight
                 paragraphTitle=""
                 paragraph=""

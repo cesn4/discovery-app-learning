@@ -12,13 +12,17 @@ const StoryHero: FunctionComponent<StoryHeroProps> = ({
     title,
     authorPhoto,
     authorName,
+    background,
 }: StoryHeroProps) => {
     const className = 'story-hero';
+    const styleBackground: FeaturedCardBackgroundObject = {
+        backgroundImage: 'url(' + background + ')',
+    };
 
     return (
         <div className={className}>
             <Container>
-                <div className={`${className}__box`}>
+                <div className={`${className}__box`} style={styleBackground}>
                     <Row>
                         <Col xs={12} md={12} lg={12}>
                             <div className={`${className}__title`}>{title}</div>
@@ -58,6 +62,11 @@ interface StoryHeroProps {
     title: string;
     authorPhoto: string;
     authorName: string;
+    background: string;
+}
+
+interface FeaturedCardBackgroundObject {
+    backgroundImage: string;
 }
 
 export default StoryHero;
