@@ -14,7 +14,7 @@ const StoryContainer: FunctionComponent<MappedProps> = ({
 }: MappedProps) => {
     const story = storyContent;
     console.log(story.paragraphComment.commentAuthorImage);
-    const renderStory = storyContent ? (
+    const renderStory = story ? (
         <Fragment>
             <StoryHero
                 title={story.title}
