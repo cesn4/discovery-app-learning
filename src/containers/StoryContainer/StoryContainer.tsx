@@ -26,6 +26,7 @@ const StoryContainer: FunctionComponent<MappedProps> = ({
                 paragraphTitle={story.paragraphTitle}
                 paragraph={story.paragraph}
                 paragraphSubtitle={story.paragraphSubtitle}
+                // Pass an array to component //
                 commentAuthorName={story.paragraphComment[0].commentAuthor}
                 comment={story.paragraphComment[0].commentText}
                 commentImage={story.paragraphComment[0].commentAuthorImage}
