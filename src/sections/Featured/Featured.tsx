@@ -1,16 +1,14 @@
 import React, { FunctionComponent } from 'react';
 import { Container, Row, Col, Hidden } from 'react-grid-system';
 
-import FeaturedCard from '~/components/FeaturedCard';
 import SectionNavigation from '~/components/SectionNavigation';
 import SmallCard from '~/components/SmallCard';
 
 import castle from '~/assets/img/castle.jpg';
 import wall from '~/assets/img/wall.jpg';
-import house from '~/assets/img/house.jpg';
-import hand from '~/assets/img/hand.jpg';
 import random from '~/assets/img/random.jpg';
 import './Featured.scss';
+import FeaturedCardsContainer from '~/containers/FeaturedContainer';
 
 const Featured: FunctionComponent = () => {
     return (
@@ -28,22 +26,7 @@ const Featured: FunctionComponent = () => {
                         </Col>
                         <Col xs={12} md={12} lg={8}>
                             <div className="featured__cards">
-                                <FeaturedCard
-                                    firstItem
-                                    background={hand}
-                                    theme="CITY"
-                                    title="Large article title mobile layout"
-                                    paragraph="Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit vituperatoribus duo id. Affert detraxit voluptatum vis eu, inermis eloquentiam."
-                                    time="2m ago"
-                                />
-                                <FeaturedCard
-                                    lastItem
-                                    background={house}
-                                    theme="TRAVEL"
-                                    title="Large article title mobile layout"
-                                    paragraph="Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto, vidit vituperatoribus duo id. Affert detraxit voluptatum vis eu, inermis eloquentiam."
-                                    time="2m ago"
-                                />
+                                <FeaturedCardsContainer />
                             </div>
                         </Col>
                         <Col xs={12} md={12} lg={4}>

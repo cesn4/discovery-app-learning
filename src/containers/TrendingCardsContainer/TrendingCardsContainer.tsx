@@ -38,7 +38,7 @@ const TrendingCardsContainer: FunctionComponent<StoryPages> = ({
                 hiddenState = true;
             }
             console.log(hiddenState);
-
+            //Route generation
             const route = '#/story/' + id;
             return (
                 <Fragment key={index.toString()}>
