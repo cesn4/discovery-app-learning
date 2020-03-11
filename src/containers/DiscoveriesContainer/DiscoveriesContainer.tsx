@@ -31,7 +31,7 @@ const DiscoveriesContainer: FunctionComponent<DiscoveryPages> = ({
             const route = '/discovery/' + id;
             console.log(route);
             return (
-                <Route exact route={route} key={index.toString()}>
+                <Route exact path={route} key={index.toString()}>
                     <Discovery
                         background={background}
                         title={title}
