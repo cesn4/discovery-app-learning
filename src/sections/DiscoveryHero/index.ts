@@ -1,1 +1,1 @@
-export { default } from './DiscoveryHero';
+export { default, DiscoveryHeroProps } from './DiscoveryHero';

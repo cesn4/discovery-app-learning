@@ -1,1 +1,1 @@
-export { default } from './DiscoveryKnight';
+export { default, DiscoveryKnightProps } from './DiscoveryKnight';

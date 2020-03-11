@@ -1,1 +1,1 @@
-export { default } from './DiscoveryParagraph';
+export { default, DiscoveryParagraphProps } from './DiscoveryParagraph';

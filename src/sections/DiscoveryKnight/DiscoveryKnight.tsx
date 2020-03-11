@@ -4,10 +4,13 @@ import { Container, Row, Col } from 'react-grid-system';
 import AuthorNotes from '~/components/AuthorNotes';
 import Separator from '~/components/Separator';
 
-import AuthorPhoto from '~/assets/img/author.jpg';
 import './DiscoveryKnight.scss';
 
-const DisocveryKNight: FunctionComponent = () => {
+const DiscoveryKnight: FunctionComponent<DiscoveryKnightProps> = ({
+    noteAuthorImage,
+    noteTitle,
+    notePost,
+}: DiscoveryKnightProps) => {
     const className = 'discovery-knight';
     return (
         <div className={className}>
@@ -17,9 +20,9 @@ const DisocveryKNight: FunctionComponent = () => {
                         <div className={`${className}__content`}>
                             <Separator />
                             <AuthorNotes
-                                image={AuthorPhoto}
-                                title="Phasellus eu nulla malesuada, luctus diam."
-                                post="Dignissim rutrum ridiculus lacinia phasellus torquent ad aliquet, nisi dictum cubilia class habitasse commodo, semper potenti nec ac per egestas. Ac volutpat ullamcorper phasellus montes sollicitudin litora ridiculus mi conubia inceptos euismod odio curabitur, tortor eros porta venenatis facilisis quam blandit in ut lobortis consequat justo. Hac libero quisque tortor conubia iaculis. Nascetur himenaeos morbi gravida porta sapien justo aliquam pellentesque dapibus curae, cursus ultrices suspendisse cras ligula id aenean vulputate taciti, eleifend eros bibendum scelerisque lobortis venenatis nulla tristique tempus. Quisque eleifend vulputate."
+                                image={noteAuthorImage}
+                                title={noteTitle}
+                                post={notePost}
                                 time="2 min ago"
                             />
                             <Separator />
@@ -31,4 +34,10 @@ const DisocveryKNight: FunctionComponent = () => {
     );
 };
 
-export default DisocveryKNight;
+export interface DiscoveryKnightProps {
+    noteAuthorImage: string;
+    noteTitle: string;
+    notePost: string;
+}
+
+export default DiscoveryKnight;

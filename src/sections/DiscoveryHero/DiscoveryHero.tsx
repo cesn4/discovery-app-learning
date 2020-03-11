@@ -4,12 +4,13 @@ import { Container, Row, Col } from 'react-grid-system';
 import DiscoveryTitle from '~/components/DiscoveryTitle';
 import DiscoverySearch from '~/components/DiscoverySearch';
 
-import Dude from '~/assets/img/dude.jpg';
-import '~/assets/img/DiscoveryMountain.jpg';
 import './DiscoveryHero.scss';
 
 const DiscoveryHero: FunctionComponent<DiscoveryHeroProps> = ({
     background,
+    title,
+    subtitle,
+    author,
 }: DiscoveryHeroProps) => {
     const styleBackground: DiscoveryBackgroundObject = {
         backgroundImage: 'url(' + background + ')',
@@ -26,9 +27,9 @@ const DiscoveryHero: FunctionComponent<DiscoveryHeroProps> = ({
                                 style={styleBackground}
                             >
                                 <DiscoveryTitle
-                                    title="DISCOVERY"
-                                    subtitle="Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto vidit."
-                                    image={Dude}
+                                    title={title}
+                                    subtitle={subtitle}
+                                    image={author}
                                 />
                             </div>
                         </Col>
@@ -44,8 +45,11 @@ const DiscoveryHero: FunctionComponent<DiscoveryHeroProps> = ({
     );
 };
 
-interface DiscoveryHeroProps {
+export interface DiscoveryHeroProps {
     background: string;
+    title: string;
+    subtitle: string;
+    author: string;
 }
 
 interface DiscoveryBackgroundObject {

@@ -1,27 +1,57 @@
 import React, { FunctionComponent, Fragment } from 'react';
 
 import DiscoveryLayout from '~/layouts/DsicoveryLayout';
-import DiscoveryKnight from '~/sections/DiscoveryKnight';
-import DiscoveryHero from '~/sections/DiscoveryHero';
-import DiscoveryParagraph from '~/sections/DiscoveryParagraph';
+import DiscoveryKnight, {
+    DiscoveryKnightProps,
+} from '~/sections/DiscoveryKnight';
+import DiscoveryHero, { DiscoveryHeroProps } from '~/sections/DiscoveryHero';
+import DiscoveryParagraph, {
+    DiscoveryParagraphProps,
+} from '~/sections/DiscoveryParagraph';
 
-import Mountain from '~/assets/img/DiscoveryMountain.jpg';
-
-const Discovery: FunctionComponent = () => {
+const Discovery: FunctionComponent<DiscoveryCombinedProps> = ({
+    background,
+    title,
+    subtitle,
+    author,
+    noteAuthorImage,
+    notePost,
+    noteTitle,
+    paragraphComment,
+    paragraphImage,
+    paragraphText,
+}: DiscoveryCombinedProps) => {
     const className = 'discovery';
     return (
         <div className={className}>
             <DiscoveryLayout
                 content={
                     <Fragment>
-                        <DiscoveryHero background={Mountain} />
-                        <DiscoveryKnight />
-                        <DiscoveryParagraph />
+                        <DiscoveryHero
+                            background={background}
+                            title={title}
+                            subtitle={subtitle}
+                            author={author}
+                        />
+                        <DiscoveryKnight
+                            noteAuthorImage={noteAuthorImage}
+                            notePost={notePost}
+                            noteTitle={noteTitle}
+                        />
+                        <DiscoveryParagraph
+                            paragraphComment={paragraphComment}
+                            paragraphImage={paragraphImage}
+                            paragraphText={paragraphText}
+                        />
                     </Fragment>
                 }
             />
         </div>
     );
 };
+
+type DiscoveryCombinedProps = DiscoveryHeroProps &
+    DiscoveryKnightProps &
+    DiscoveryParagraphProps;
 
 export default Discovery;
