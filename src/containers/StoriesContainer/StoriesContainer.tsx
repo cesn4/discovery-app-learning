@@ -55,7 +55,7 @@ const mapStateToProps = (state: ApplicationState): StoryPages => {
     };
 };
 
-interface StoryPages {
+export interface StoryPages {
     storyContent: Array<StoryContentItems>;
 }
 

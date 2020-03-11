@@ -57,7 +57,7 @@ const mapStateToProps = (state: ApplicationState): DiscoveryPages => {
     };
 };
 
-interface DiscoveryPages {
+export interface DiscoveryPages {
     discoveryContent: Array<DiscoveryContentItems>;
 }
 

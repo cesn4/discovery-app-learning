@@ -1,13 +1,10 @@
 import React, { FunctionComponent } from 'react';
-import { Container, Row, Col, Hidden } from 'react-grid-system';
+import { Container, Row, Col } from 'react-grid-system';
 
-import TrendingCard from '~/components/TrendingCard';
 import SectionNavigation from '~/components/SectionNavigation';
 
-import sunflower from '~/assets/img/sunflower.jpg';
-import road from '~/assets/img/road.jpg';
-import bridge from '~/assets/img/bridge.jpg';
 import './Knight.scss';
+import TrendingCardsContainer from '~/containers/TrendingCardsContainer';
 
 const Knight: FunctionComponent = () => {
     return (
@@ -20,38 +17,7 @@ const Knight: FunctionComponent = () => {
                                 <SectionNavigation title="Trending" />
                             </div>
                         </Col>
-                        <Col xs={12} md={6} lg={4}>
-                            <div className="knight__trending-card -first">
-                                <TrendingCard
-                                    image={bridge}
-                                    subtitle="Dolore magna aliqua"
-                                    primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat."
-                                    time="2m ago"
-                                />
-                            </div>
-                        </Col>
-                        <Col xs={12} md={6} lg={4}>
-                            <div className="knight__trending-card -second">
-                                <TrendingCard
-                                    image={road}
-                                    subtitle="Morbi eleifend a libero"
-                                    primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat."
-                                    time="1h ago"
-                                />
-                            </div>
-                        </Col>
-                        <Hidden sm md>
-                            <Col lg={4}>
-                                <div className="knight__trending-card -third">
-                                    <TrendingCard
-                                        image={sunflower}
-                                        subtitle="Morbi eleifend a libero"
-                                        primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat."
-                                        time="3h ago"
-                                    />
-                                </div>
-                            </Col>
-                        </Hidden>
+                        <TrendingCardsContainer />
                     </Row>
                 </div>
             </Container>

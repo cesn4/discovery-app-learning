@@ -1,1 +1,1 @@
-export { default } from './DiscoveriesContainer';
+export { default, DiscoveryPages } from './DiscoveriesContainer';

@@ -1,1 +1,1 @@
-export { default } from './StoriesContainer';
+export { default, StoryPages } from './StoriesContainer';
