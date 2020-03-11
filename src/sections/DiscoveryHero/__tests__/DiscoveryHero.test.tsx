@@ -1,13 +1,22 @@
-// import React from 'react';
-// import { shallow } from 'enzyme';
-// import DiscoveryHero from '../DiscoveryHero';
+import React from 'react';
+import { shallow } from 'enzyme';
+import DiscoveryHero, { DiscoveryHeroProps } from '../DiscoveryHero';
 
-// describe('DiscoveryHero component', () => {
-//     it('Should render Discovery background', () => {
-//         const testBackground = 'Background Test';
-//         const wrapper = shallow(<DiscoveryHero  background={testBackground} />);
-//         expect(wrapper.find('.discovery-hero__content').prop('style')).toEqual({
-//             backgroundImage: 'url(Background Test)',
-//         });
-//     });
-// });
+const testString = 'Test String';
+const testBackground = 'Background Test';
+
+const HappyProps: DiscoveryHeroProps = {
+    background: testBackground,
+    title: testString,
+    subtitle: testString,
+    author: testString,
+};
+
+describe('DiscoveryHero component', () => {
+    it('Should render Discovery background', () => {
+        const wrapper = shallow(<DiscoveryHero {...HappyProps} />);
+        expect(wrapper.find('DiscoveryTitle').prop('title')).toEqual(
+            testString
+        );
+    });
+});
