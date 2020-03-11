@@ -2,18 +2,25 @@
 
 export interface ApplicationState {
     storyContent: Array<StoryContentItems>;
+    discoveryContent: Array<DiscoveryContentItems>;
 }
 
 //Actions types
-export type Actions = SetStoryContent;
+export type Actions = SetStoryContent | SetDiscoveryContent;
 
 export interface SetStoryContent {
     type: 'SetStoryContent';
     payload: Array<StoryContentItems>;
 }
 
+export interface SetDiscoveryContent {
+    type: 'SetDiscoveryContent';
+    payload: Array<DiscoveryContentItems>;
+}
+
 //ConentItems types
 
+// Story
 export interface StoryContentItems {
     id: number;
     title: string;
@@ -31,4 +38,19 @@ export interface ParagraphComment {
     commentAuthor: string;
     commentText: string;
     commentAuthorImage: string;
+}
+
+//Discovery
+
+export interface DiscoveryContentItems {
+    background: string;
+    title: string;
+    subtitle: string;
+    author: string;
+    noteAuthorImage: string;
+    notePost: string;
+    noteTitle: string;
+    paragraphComment: string;
+    paragraphImage: string;
+    paragraphText: string;
 }

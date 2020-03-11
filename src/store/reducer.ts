@@ -3,6 +3,7 @@ import { Actions } from './storeTypes';
 
 const initialState: ApplicationState = {
     storyContent: [],
+    discoveryContent: [],
 };
 
 const reducer = (state = initialState, action: Actions): ApplicationState => {
@@ -11,6 +12,12 @@ const reducer = (state = initialState, action: Actions): ApplicationState => {
             return {
                 ...state,
                 storyContent: action.payload,
+            };
+        }
+        case 'SetDiscoveryContent': {
+            return {
+                ...state,
+                discoveryContent: action.payload,
             };
         }
         default:
