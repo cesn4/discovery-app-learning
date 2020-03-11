@@ -2,8 +2,7 @@ import React, { FunctionComponent, Fragment, ReactChild } from 'react';
 import { connect } from 'react-redux';
 import { Route } from 'react-router-dom';
 
-import { ApplicationState } from '~/store/storeTypes';
-import { StoryContentItems } from '~/store/storeTypes';
+import { ApplicationState, StoryContentItems } from '~/store/storeTypes';
 import Story from '~/views/Story';
 import { fetchStoryContent } from '~/utils';
 
@@ -28,7 +27,7 @@ const StoriesContainer: FunctionComponent<StoryPages> = ({
             }: StoryContentItems,
             index
         ) => {
-            const route = '/story/' + id + '';
+            const route = '/story/' + id;
             console.log(route);
             return (
                 <Route exact path={route} key={index.toString()}>

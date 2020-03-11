@@ -43,6 +43,7 @@ export interface ParagraphComment {
 //Discovery
 
 export interface DiscoveryContentItems {
+    id: number;
     background: string;
     title: string;
     subtitle: string;

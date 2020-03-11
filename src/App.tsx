@@ -8,9 +8,9 @@ import {
 
 import { Routes } from './constants';
 import Home from '~/views/Home';
-import Discovery from '~/views/Discovery';
 import '~/config/layout';
 import StoriesContainer from '~/containers/StoriesContainer';
+import DiscoveriesContainer from './containers/DiscoveriesContainer';
 
 const App: FunctionComponent = () => {
     return (
@@ -21,9 +21,7 @@ const App: FunctionComponent = () => {
                         <Home />
                     </Route>
                     <StoriesContainer />
-                    <Route exact path={Routes.discovery}>
-                        <Discovery />
-                    </Route>
+                    <DiscoveriesContainer />
                 </HashRouter>
             </Switch>
         </Router>
