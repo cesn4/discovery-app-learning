@@ -47,7 +47,7 @@ export interface DiscoveryContentItems {
     background: string;
     title: string;
     subtitle: string;
-    author: string;
+    authorImage: string;
     noteAuthorImage: string;
     notePost: string;
     noteTitle: string;

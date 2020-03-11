@@ -18,7 +18,7 @@ const DiscoveriesContainer: FunctionComponent<DiscoveryPages> = ({
                 background,
                 title,
                 subtitle,
-                author,
+                authorImage,
                 noteAuthorImage,
                 notePost,
                 noteTitle,
@@ -29,13 +29,14 @@ const DiscoveriesContainer: FunctionComponent<DiscoveryPages> = ({
             index
         ) => {
             const route = '/discovery/' + id;
+            console.log(route);
             return (
                 <Route exact route={route} key={index.toString()}>
                     <Discovery
                         background={background}
                         title={title}
                         subtitle={subtitle}
-                        author={author}
+                        author={authorImage}
                         noteAuthorImage={noteAuthorImage}
                         notePost={notePost}
                         noteTitle={noteTitle}
