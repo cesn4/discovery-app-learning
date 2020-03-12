@@ -8,7 +8,7 @@ import Background from '~/components/Background';
 const BackgroundContainer: FunctionComponent<DiscoveryPages> = ({
     discoveryContent,
 }: DiscoveryPages) => {
-    const backgroundContent = discoveryContent[3];
+    const backgroundContent = discoveryContent[2];
     if (backgroundContent) {
         const route = '#/discovery/' + backgroundContent.id;
         return (
