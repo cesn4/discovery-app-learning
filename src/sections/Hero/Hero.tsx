@@ -2,10 +2,10 @@ import React, { FunctionComponent } from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 
 import SectionNavigation from '~/components/SectionNavigation';
-// import BackgroundContainer from '~/containers/BackgroundContainer';
+import PostInfoContainer from '~/containers/PostInfoContainer';
+import BackgroundContainer from '~/containers/BackgroundContainer';
 
 import './Hero.scss';
-import PostInfoContainer from '~/containers/PostInfoContainer';
 
 const Hero: FunctionComponent = () => {
     return (
@@ -14,7 +14,7 @@ const Hero: FunctionComponent = () => {
                 <div className="hero__box">
                     <Row>
                         <Col xs={12} md={12} lg={7}>
-                            {/* <BackgroundContainer /> */}
+                            <BackgroundContainer />
                         </Col>
                         <Col xs={12} md={12} lg={5}>
                             <div className="hero__post-box">

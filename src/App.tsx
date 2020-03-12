@@ -11,6 +11,11 @@ import Home from '~/views/Home';
 import '~/config/layout';
 import StoriesContainer from '~/containers/StoriesContainer';
 import DiscoveriesContainer from './containers/DiscoveriesContainer';
+import { fetchDiscoveryContent } from '~/utils';
+import { fetchStoryContent } from '~/utils';
+
+fetchDiscoveryContent();
+fetchStoryContent();
 
 const App: FunctionComponent = () => {
     return (

@@ -5,9 +5,6 @@ import { Col, Hidden } from 'react-grid-system';
 import TrendingCard from '~/components/TrendingCard';
 import { ApplicationState } from '~/store/storeTypes';
 import { StoryPages } from '~/containers/StoriesContainer';
-import { fetchStoryContent } from '~/utils';
-
-fetchStoryContent();
 
 const TrendingCardsContainer: FunctionComponent<StoryPages> = ({
     storyContent,

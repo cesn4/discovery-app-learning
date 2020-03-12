@@ -26,8 +26,9 @@ const FeaturedCardsContainer: FunctionComponent<DiscoveryPages> = ({
                 const route = '#/discovery/' + id;
 
                 return (
-                    <Fragment key={index.toString()}>
+                    <Fragment>
                         <FeaturedCard
+                            key={index.toString()}
                             href={route}
                             firstItem={firstItem}
                             lastItem={lastItem}

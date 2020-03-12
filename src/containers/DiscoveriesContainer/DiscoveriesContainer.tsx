@@ -4,9 +4,6 @@ import { Route } from 'react-router-dom';
 
 import { ApplicationState, DiscoveryContentItems } from '~/store/storeTypes';
 import Discovery from '~/views/Discovery';
-import { fetchDiscoveryContent } from '~/utils';
-
-fetchDiscoveryContent();
 
 const DiscoveriesContainer: FunctionComponent<DiscoveryPages> = ({
     discoveryContent,

@@ -4,9 +4,6 @@ import { Route } from 'react-router-dom';
 
 import { ApplicationState, StoryContentItems } from '~/store/storeTypes';
 import Story from '~/views/Story';
-import { fetchStoryContent } from '~/utils';
-
-fetchStoryContent();
 
 const StoriesContainer: FunctionComponent<StoryPages> = ({
     storyContent,

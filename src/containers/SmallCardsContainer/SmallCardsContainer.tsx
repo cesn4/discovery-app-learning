@@ -29,9 +29,9 @@ const SmallCardsContainer: FunctionComponent<DiscoveryPages> = ({
                 const route = '#/discovery/' + id;
 
                 return (
-                    <Fragment key={index.toString()}>
+                    <Fragment>
                         <Hidden sm={hiddenState} md={hiddenState}>
-                            <Col md={6} lg={12}>
+                            <Col md={6} lg={12} key={index.toString()}>
                                 <div className={className}>
                                     <SmallCard
                                         href={route}

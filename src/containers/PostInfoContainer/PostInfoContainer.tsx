@@ -21,8 +21,8 @@ const PostInfoContainer: FunctionComponent<DiscoveryPages> = ({
                 const route = '#/discovery/' + id;
 
                 return (
-                    <Fragment key={index.toString()}>
-                        <div className={className}>
+                    <Fragment>
+                        <div className={className} key={index.toString()}>
                             <PostInfo
                                 href={route}
                                 title={category}
