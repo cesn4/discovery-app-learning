@@ -22,6 +22,12 @@
         }
     }
 
+    &__anchor {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+    }
+
     &__subtitle {
         color: theme-color("active");
         font-size: font-size("text");

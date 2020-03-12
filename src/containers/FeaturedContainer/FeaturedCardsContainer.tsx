@@ -9,7 +9,10 @@ const FeaturedCardsContainer: FunctionComponent<DiscoveryPages> = ({
     discoveryContent,
 }: DiscoveryPages) => {
     const renderFeaturedCards: Array<ReactChild> = discoveryContent.map(
-        ({ id, title, subtitle, background }: FeaturedCardsItems, index) => {
+        (
+            { id, title, subtitle, background, category }: FeaturedCardsItems,
+            index
+        ) => {
             if (id <= 2) {
                 let firstItem = false;
                 if (id === 1) {
@@ -28,7 +31,7 @@ const FeaturedCardsContainer: FunctionComponent<DiscoveryPages> = ({
                             href={route}
                             firstItem={firstItem}
                             lastItem={lastItem}
-                            theme="Travel"
+                            theme={category}
                             time="2min ago"
                             title={title}
                             paragraph={subtitle}
@@ -55,6 +58,7 @@ interface FeaturedCardsItems {
     background: string;
     title: string;
     subtitle: string;
+    category: string;
 }
 
 export default connect(mapStateToProps)(FeaturedCardsContainer);

@@ -2,10 +2,10 @@ import React, { FunctionComponent } from 'react';
 import { Container, Row, Col } from 'react-grid-system';
 
 import SectionNavigation from '~/components/SectionNavigation';
-import PostInfo from '~/components/PostInfo';
 // import BackgroundContainer from '~/containers/BackgroundContainer';
 
 import './Hero.scss';
+import PostInfoContainer from '~/containers/PostInfoContainer';
 
 const Hero: FunctionComponent = () => {
     return (
@@ -22,22 +22,7 @@ const Hero: FunctionComponent = () => {
                                     <SectionNavigation title="Discoveries" />
                                 </div>
                                 <div className="hero__posts">
-                                    <div className="hero__first-post">
-                                        <PostInfo
-                                            title="Travel"
-                                            subtitle="Article title"
-                                            primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…"
-                                            time="2m ago"
-                                        />
-                                    </div>
-                                    <div className="hero__second-post">
-                                        <PostInfo
-                                            title="Technology"
-                                            subtitle="Article title"
-                                            primaryText="Lorem ipsum dolor sit amet, ipsum labitur lucilius mel id, ad has appareat…"
-                                            time="1h ago"
-                                        />
-                                    </div>
+                                    <PostInfoContainer />
                                 </div>
                             </div>
                         </Col>

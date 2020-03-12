@@ -54,4 +54,5 @@ export interface DiscoveryContentItems {
     paragraphComment: string;
     paragraphImage: string;
     paragraphText: string;
+    category: string;
 }
