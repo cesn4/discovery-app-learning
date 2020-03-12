@@ -19,7 +19,6 @@ const TrendingCardsContainer: FunctionComponent<StoryPages> = ({
             }: TrendingCardItems,
             index
         ) => {
-            // ClassName generator
             let className = '';
             if (id === 1) {
                 className = 'knight__trending-card -first';
@@ -29,14 +28,15 @@ const TrendingCardsContainer: FunctionComponent<StoryPages> = ({
                 className = 'knight__trending-card -third';
             }
             console.log(className);
-            // Hidden Generator
+
             let hiddenState = false;
             if (id === 3) {
                 hiddenState = true;
             }
             console.log(hiddenState);
-            //Route generation
+
             const route = '#/story/' + id;
+
             return (
                 <Fragment key={index.toString()}>
                     <Hidden sm={hiddenState} md={hiddenState}>
