@@ -1,9 +1,10 @@
 import axios from 'axios';
 import { SetDiscoveryContent } from '~/store/actions';
+import { Fetch } from '~/constants';
 
 export const fetchDiscoveryContent = (): void => {
     axios
-        .get('http://localhost:1337/discoveries')
+        .get(Fetch.discoveries)
         .then(function(response) {
             SetDiscoveryContent(response.data);
         })
