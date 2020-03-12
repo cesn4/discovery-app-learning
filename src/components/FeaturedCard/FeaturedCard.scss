@@ -1,6 +1,4 @@
 .featured-card {
-    background-position: center;
-    background-size: cover;
     border-radius: radius(l);
     height: 300px;
     width: 100%;
@@ -18,6 +16,17 @@
 
     @include if-tablet {
         height: 430px;
+    }
+
+    &__anchor {
+        text-decoration: none;
+    }
+
+    &__background {
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
     }
 
     &__text-box {

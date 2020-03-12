@@ -9,17 +9,21 @@ const SmallCard: FunctionComponent<SmallCardProps> = ({
     image,
     title,
     time,
+    href,
     firstItem = false,
 }: SmallCardProps) => {
     return (
         <div className={classNames('small-card', { '-firstItem': firstItem })}>
-            <img src={image} alt="" className="small-card__image" />
-            <PostInfo subtitle={title} time={time} />
+            <a href={href} className="small-card__anchor">
+                <img src={image} alt="" className="small-card__image" />
+                <PostInfo subtitle={title} time={time} />
+            </a>
         </div>
     );
 };
 
 export interface SmallCardProps {
+    href?: string;
     image: string;
     title: string;
     time: string;

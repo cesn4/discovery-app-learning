@@ -20,16 +20,21 @@ const SmallCardsContainer: FunctionComponent<DiscoveryPages> = ({
                 } else if (id === 5) {
                     className = 'featured__small-card -third';
                 }
+
                 let hiddenState = false;
                 if (id === 5) {
                     hiddenState = true;
                 }
+
+                const route = '#/discovery/' + id;
+
                 return (
                     <Fragment key={index.toString()}>
                         <Hidden sm={hiddenState} md={hiddenState}>
                             <Col md={6} lg={12}>
                                 <div className={className}>
                                     <SmallCard
+                                        href={route}
                                         image={background}
                                         title={title}
                                         time="4h ago by Days"

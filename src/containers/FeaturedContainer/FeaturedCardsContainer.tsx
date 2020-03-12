@@ -19,9 +19,13 @@ const FeaturedCardsContainer: FunctionComponent<DiscoveryPages> = ({
                 if (id === 2) {
                     lastItem = true;
                 }
+
+                const route = '#/discovery/' + id;
+
                 return (
                     <Fragment key={index.toString()}>
                         <FeaturedCard
+                            href={route}
                             firstItem={firstItem}
                             lastItem={lastItem}
                             theme="Travel"
