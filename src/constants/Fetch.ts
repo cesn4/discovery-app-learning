@@ -1,5 +1,5 @@
 // eslint-disable-next-line prettier/prettier
 export enum Fetch {
-    stories = "https://ra-discovery-app.herokuapp.com/stories",
-    discoveries = "https://ra-discovery-app.herokuapp.com/discoveries"
+    stories = "http://localhost:1337/stories",
+    discoveries = "http://localhost:1337/discoveries"
 }
