@@ -18,13 +18,10 @@ const PostInfoContainer: FunctionComponent<DiscoveryPages> = ({
                     className = 'hero__second-post';
                 }
 
-                const route = '#/discovery/' + id;
-
                 return (
                     <Fragment key={index.toString()}>
                         <div className={className}>
                             <PostInfo
-                                href={route}
                                 title={category}
                                 subtitle={title}
                                 primaryText={subtitle}

@@ -12,7 +12,6 @@ const PostInfo: FunctionComponent<PostInfoProps> = ({
     primaryText,
     time,
     white = false,
-    href,
 }: PostInfoProps) => {
     return (
         <div className={classNames('post-info', { '-white': white })}>
@@ -25,27 +24,25 @@ const PostInfo: FunctionComponent<PostInfoProps> = ({
                     {title}
                 </span>
             )}
-            <a href={href} className="post-info__anchor">
-                {subtitle && (
-                    <span
-                        className={classNames('post-info__subtitle', {
-                            '-white': white,
-                        })}
-                    >
-                        {subtitle}
-                    </span>
-                )}
-                {primaryText && (
-                    <p
-                        className={classNames('post-info__text', {
-                            '-white': white,
-                        })}
-                    >
-                        {primaryText}
-                    </p>
-                )}
-                {time && <Time text={time} />}
-            </a>
+            {subtitle && (
+                <span
+                    className={classNames('post-info__subtitle', {
+                        '-white': white,
+                    })}
+                >
+                    {subtitle}
+                </span>
+            )}
+            {primaryText && (
+                <p
+                    className={classNames('post-info__text', {
+                        '-white': white,
+                    })}
+                >
+                    {primaryText}
+                </p>
+            )}
+            {time && <Time text={time} />}
         </div>
     );
 };
