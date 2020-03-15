@@ -12,14 +12,9 @@ const SmallCard: FunctionComponent<SmallCardProps> = ({
     href,
     firstItem = false,
 }: SmallCardProps) => {
-    const scrollToTop: VoidFunction = () => {
-        window.scrollTo({
-            top: 0,
-        });
-    };
     return (
         <div className={classNames('small-card', { '-firstItem': firstItem })}>
-            <a href={href} className="small-card__anchor" onClick={scrollToTop}>
+            <a href={href} className="small-card__anchor">
                 <img src={image} alt="" className="small-card__image" />
                 <PostInfo subtitle={title} time={time} />
             </a>

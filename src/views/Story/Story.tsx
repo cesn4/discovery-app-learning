@@ -1,4 +1,4 @@
-import React, { FunctionComponent, Fragment } from 'react';
+import React, { FunctionComponent, Fragment, useEffect } from 'react';
 
 import PageLayout from '~/layouts/PageLayout';
 import StoryHero, { StoryHeroProps } from '~/sections/StoryHero';
@@ -15,6 +15,10 @@ const Story: FunctionComponent<StoryPropsCombined> = ({
     comments,
     videoURL,
 }: StoryPropsCombined) => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className="story">
             <PageLayout

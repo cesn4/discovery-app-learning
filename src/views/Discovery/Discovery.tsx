@@ -1,4 +1,4 @@
-import React, { FunctionComponent, Fragment } from 'react';
+import React, { FunctionComponent, Fragment, useEffect } from 'react';
 
 import DiscoveryLayout from '~/layouts/DsicoveryLayout';
 import DiscoveryKnight, {
@@ -22,6 +22,9 @@ const Discovery: FunctionComponent<DiscoveryCombinedProps> = ({
     paragraphText,
 }: DiscoveryCombinedProps) => {
     const className = 'discovery';
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    });
     return (
         <div className={className}>
             <DiscoveryLayout
