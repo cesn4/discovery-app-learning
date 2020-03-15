@@ -28,20 +28,22 @@ const DiscoveriesContainer: FunctionComponent<DiscoveryPages> = ({
             const route = '/discovery/' + id;
             console.log(route);
             return (
-                <Route exact path={route} key={index.toString()}>
-                    <Discovery
-                        background={background}
-                        title={title}
-                        subtitle={subtitle}
-                        author={authorImage}
-                        noteAuthorImage={noteAuthorImage}
-                        notePost={notePost}
-                        noteTitle={noteTitle}
-                        paragraphComment={paragraphComment}
-                        paragraphImage={paragraphImage}
-                        paragraphText={paragraphText}
-                    />
-                </Route>
+                <Fragment key={index.toString()}>
+                    <Route exact path={route}>
+                        <Discovery
+                            background={background}
+                            title={title}
+                            subtitle={subtitle}
+                            author={authorImage}
+                            noteAuthorImage={noteAuthorImage}
+                            notePost={notePost}
+                            noteTitle={noteTitle}
+                            paragraphComment={paragraphComment}
+                            paragraphImage={paragraphImage}
+                            paragraphText={paragraphText}
+                        />
+                    </Route>
+                </Fragment>
             );
         }
     );

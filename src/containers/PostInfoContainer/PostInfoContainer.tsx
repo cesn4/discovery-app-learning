@@ -21,8 +21,8 @@ const PostInfoContainer: FunctionComponent<DiscoveryPages> = ({
                 const route = '#/discovery/' + id;
 
                 return (
-                    <Fragment>
-                        <div className={className} key={index.toString()}>
+                    <Fragment key={index.toString()}>
+                        <div className={className}>
                             <PostInfo
                                 href={route}
                                 title={category}
@@ -33,7 +33,7 @@ const PostInfoContainer: FunctionComponent<DiscoveryPages> = ({
                     </Fragment>
                 );
             } else {
-                return <Fragment></Fragment>;
+                return <Fragment key={index.toString()}></Fragment>;
             }
         }
     );
