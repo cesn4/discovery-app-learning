@@ -4,6 +4,7 @@ import { Actions } from './storeTypes';
 const initialState: ApplicationState = {
     storyContent: [],
     discoveryContent: [],
+    logoContent: { title: '' },
 };
 
 const reducer = (state = initialState, action: Actions): ApplicationState => {
@@ -18,6 +19,12 @@ const reducer = (state = initialState, action: Actions): ApplicationState => {
             return {
                 ...state,
                 discoveryContent: action.payload,
+            };
+        }
+        case 'SetLogoContent': {
+            return {
+                ...state,
+                logoContent: action.payload,
             };
         }
         default:

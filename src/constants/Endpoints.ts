@@ -4,4 +4,5 @@ export const Endpoints = {
     api: API_URL,
     stories: `${API_URL}/stories`,
     discoveries: `${API_URL}/discoveries`,
+    logo: `${API_URL}/logo`,
 };

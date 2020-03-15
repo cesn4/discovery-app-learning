@@ -6,6 +6,7 @@ import './Logo.scss';
 const Logo: FunctionComponent<LogoProps> = ({
     light = false,
     accent = false,
+    title,
 }: LogoProps) => {
     return (
         <div
@@ -15,12 +16,13 @@ const Logo: FunctionComponent<LogoProps> = ({
                 { '-accent': accent }
             )}
         >
-            LOGO
+            {title}
         </div>
     );
 };
 
 interface LogoProps {
+    title: string;
     light?: boolean;
     accent?: boolean;
 }

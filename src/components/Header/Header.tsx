@@ -3,12 +3,12 @@ import { Container, Row, Col } from 'react-grid-system';
 
 import Sidebar from '~/components/Sidebar';
 import ProfilePhoto from '~/components/ProfilePhoto';
-import Logo from '~/components/Logo';
 import MainNavigation from '~/components/MainNavigation';
 
 import '~/assets/img/menuIcon.png';
 
 import './Header.scss';
+import LogoContainer from '~/containers/LogoContainer';
 
 const Header: FunctionComponent = () => {
     return (
@@ -20,7 +20,7 @@ const Header: FunctionComponent = () => {
                             <div className="header__sidebar">
                                 <Sidebar />
                             </div>
-                            <Logo />
+                            <LogoContainer />
                             <MainNavigation />
                             <div className="header__photo">
                                 <ProfilePhoto medium />

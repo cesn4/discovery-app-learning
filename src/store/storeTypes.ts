@@ -3,10 +3,11 @@
 export interface ApplicationState {
     storyContent: Array<StoryContentItems>;
     discoveryContent: Array<DiscoveryContentItems>;
+    logoContent: LogoContentItems;
 }
 
 //Actions types
-export type Actions = SetStoryContent | SetDiscoveryContent;
+export type Actions = SetStoryContent | SetDiscoveryContent | SetLogoContent;
 
 export interface SetStoryContent {
     type: 'SetStoryContent';
@@ -16,6 +17,11 @@ export interface SetStoryContent {
 export interface SetDiscoveryContent {
     type: 'SetDiscoveryContent';
     payload: Array<DiscoveryContentItems>;
+}
+
+export interface SetLogoContent {
+    type: 'SetLogoContent';
+    payload: LogoContentItems;
 }
 
 //ConentItems types
@@ -55,4 +61,10 @@ export interface DiscoveryContentItems {
     paragraphImage: string;
     paragraphText: string;
     category: string;
+}
+
+//LOGO
+
+export interface LogoContentItems {
+    title: string;
 }

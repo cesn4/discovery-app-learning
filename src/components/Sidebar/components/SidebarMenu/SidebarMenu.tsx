@@ -1,7 +1,6 @@
 import React, { FunctionComponent, ReactChild } from 'react';
 import classNames from 'classnames';
 
-import Logo from '~/components/Logo';
 import NavigationItem, {
     NavigationItemProps,
 } from '~/components/NavigationItem';
@@ -11,6 +10,7 @@ import discover from '~/assets/img/discover.png';
 import photos from '~/assets/img/photos.png';
 import mail from '~/assets/img/mail.png';
 import './SidebarMenu.scss';
+import LogoContainer from '~/containers/LogoContainer';
 
 const SidebarMenu: FunctionComponent<SidebarMenuProps> = ({
     closeSidebar,
@@ -51,7 +51,7 @@ const SidebarMenu: FunctionComponent<SidebarMenuProps> = ({
         <div className={classNames('sidebar-menu', { 'is-open': isOpen })}>
             <div className="sidebar-menu__text-box">
                 <div className="sidebar-menu__logo">
-                    <Logo accent />
+                    <LogoContainer accent />
                 </div>
                 <div className="sidebar-menu__nav">{renderList}</div>
             </div>

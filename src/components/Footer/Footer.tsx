@@ -1,12 +1,12 @@
 import React, { FunctionComponent } from 'react';
 import { Container, Row, Col, Hidden } from 'react-grid-system';
 
-import Logo from '~/components/Logo';
 import InputLabel from '~/components/InputLabel';
 import FooterList from '~/components/FooterList';
 import SocialBar from '~/components/SocialBar';
 
 import './Footer.scss';
+import LogoContainer from '~/containers/LogoContainer';
 
 const Footer: FunctionComponent = () => {
     return (
@@ -16,7 +16,7 @@ const Footer: FunctionComponent = () => {
                     <Row>
                         <Hidden sm>
                             <Col md={6} lg={1}>
-                                <Logo light />
+                                <LogoContainer light />
                             </Col>
                         </Hidden>
                         <Hidden sm>
