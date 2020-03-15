@@ -40,6 +40,8 @@
 
     &__first-post {
         padding-bottom: spacer(medium-s);
+        text-decoration: none;
+
 
         @include if-tablet {
             padding-bottom: 0;
@@ -51,6 +53,8 @@
     }
 
     &__second-post {
+        text-decoration: none;
+
         @include if-tablet {
             padding-left: spacer(small-xl);
         }
