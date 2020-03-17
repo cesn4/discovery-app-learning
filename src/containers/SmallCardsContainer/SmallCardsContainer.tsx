@@ -2,7 +2,7 @@ import React, { FunctionComponent, Fragment } from 'react';
 import { connect } from 'react-redux';
 import { Col, Hidden } from 'react-grid-system';
 
-import { ApplicationState } from '~/store/storeTypes';
+import { ApplicationState } from '~/store/types';
 import { DiscoveryPages } from '~/containers/DiscoveriesContainer';
 import SmallCard from '~/components/SmallCard';
 

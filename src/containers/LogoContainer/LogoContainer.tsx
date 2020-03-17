@@ -1,9 +1,9 @@
 import React, { FunctionComponent, Fragment } from 'react';
 import { connect } from 'react-redux';
 
-import { ApplicationState } from '~/store/storeTypes';
+import { ApplicationState } from '~/store/types';
 import Logo from '~/components/Logo';
-import { LogoContentItems } from '~/store/storeTypes';
+import { LogoContentItems } from '~/store/types';
 
 const LogoContainer: FunctionComponent<LogoCombinedProps> = ({
     logoContent,

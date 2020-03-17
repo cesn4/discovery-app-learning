@@ -1,32 +1,3 @@
-//ApplicationState types
-
-export interface ApplicationState {
-    storyContent: Array<StoryContentItems>;
-    discoveryContent: Array<DiscoveryContentItems>;
-    logoContent: LogoContentItems;
-}
-
-//Actions types
-export type Actions = SetStoryContent | SetDiscoveryContent | SetLogoContent;
-
-export interface SetStoryContent {
-    type: 'SetStoryContent';
-    payload: Array<StoryContentItems>;
-}
-
-export interface SetDiscoveryContent {
-    type: 'SetDiscoveryContent';
-    payload: Array<DiscoveryContentItems>;
-}
-
-export interface SetLogoContent {
-    type: 'SetLogoContent';
-    payload: LogoContentItems;
-}
-
-//ConentItems types
-
-// Story
 export interface StoryContentItems {
     id: number;
     title: string;
@@ -46,8 +17,6 @@ export interface ParagraphComment {
     commentAuthorImage: string;
 }
 
-//Discovery
-
 export interface DiscoveryContentItems {
     id: number;
     background: string;
@@ -62,8 +31,6 @@ export interface DiscoveryContentItems {
     paragraphText: string;
     category: string;
 }
-
-//LOGO
 
 export interface LogoContentItems {
     title: string;

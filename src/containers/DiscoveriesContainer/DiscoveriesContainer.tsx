@@ -2,7 +2,7 @@ import React, { FunctionComponent, Fragment, ReactChild } from 'react';
 import { connect } from 'react-redux';
 import { Route } from 'react-router-dom';
 
-import { ApplicationState, DiscoveryContentItems } from '~/store/storeTypes';
+import { ApplicationState, DiscoveryContentItems } from '~/store/types';
 import Discovery from '~/views/Discovery';
 
 const DiscoveriesContainer: FunctionComponent<DiscoveryPages> = ({

@@ -1,5 +1,5 @@
-import { ApplicationState } from './storeTypes';
-import { Actions } from './storeTypes';
+import { ApplicationState } from './types';
+import { Actions } from './types';
 
 const initialState: ApplicationState = {
     storyContent: [],

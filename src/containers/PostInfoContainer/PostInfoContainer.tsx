@@ -2,7 +2,7 @@ import React, { FunctionComponent, Fragment } from 'react';
 import { connect } from 'react-redux';
 
 import PostInfo from '~/components/PostInfo';
-import { ApplicationState } from '~/store/storeTypes';
+import { ApplicationState } from '~/store/types';
 import { DiscoveryPages } from '../DiscoveriesContainer';
 
 const PostInfoContainer: FunctionComponent<DiscoveryPages> = ({

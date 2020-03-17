@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { Col, Hidden } from 'react-grid-system';
 
 import TrendingCard from '~/components/TrendingCard';
-import { ApplicationState } from '~/store/storeTypes';
+import { ApplicationState } from '~/store/types';
 import { StoryPages } from '~/containers/StoriesContainer';
 
 const TrendingCardsContainer: FunctionComponent<StoryPages> = ({

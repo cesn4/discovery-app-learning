@@ -2,7 +2,7 @@ import React, { FunctionComponent, Fragment, ReactChild } from 'react';
 import { connect } from 'react-redux';
 import { Route } from 'react-router-dom';
 
-import { ApplicationState, StoryContentItems } from '~/store/storeTypes';
+import { ApplicationState, StoryContentItems } from '~/store/types';
 import Story from '~/views/Story';
 
 const StoriesContainer: FunctionComponent<StoryPages> = ({
